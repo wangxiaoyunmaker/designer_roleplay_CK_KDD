@@ -1,17 +1,8 @@
-pandas>=2.0
-    numpy>=1.24
-    scikit-learn>=1.3
-    scipy>=1.10
-    pyyaml>=6.0
-    openpyxl>=3.1
-    jsonschema>=4.0
-    openai>=1.0
-    anthropic>=0.25
-    torch>=2.1
-    transformers>=4.51.0
-    peft>=0.10
-    accelerate>=1.0
-    huggingface-hub>=0.30
-    factor-analyzer>=0.5
-    matplotlib>=3.7
-    networkx>=3.0
+numpy>=1.24
+scipy>=1.10
+scikit-learn>=1.3
+openai>=1.0
+torch>=2.1
+transformers>=4.51
+sentence-transformers>=3.0
+# Formal rule induction additionally requires the exact frozen versions in tools/kc_operational_ontology.py.

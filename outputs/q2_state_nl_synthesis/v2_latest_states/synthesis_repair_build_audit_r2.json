@@ -1,9 +1,0 @@
-{
-  "schema_version": "synthesis_repair_build_audit_v7",
-  "job_count": 43,
-  "q7_gold_used": false,
-  "pi_used": false,
-  "raw_user_ids_written": false,
-  "score_vectors_written": false,
-  "q7_rows_read": false
-}
