@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0.0",
+  "system_id": "route_a_full",
+  "segments": {
+    "seg1": {"use_planner": false, "max_new_tokens": 256},
+    "seg2": {"use_planner": true, "max_new_tokens": 768},
+    "seg3": {"use_planner": false, "max_new_tokens": 256}
+  },
+  "text_generation": {
+    "temperature": 0.8,
+    "top_p": 0.95,
+    "repetition_penalty": 1.05
+  },
+  "best_of_n": {
+    "planner_candidates": 4,
+    "text_candidates_per_plan": 2,
+    "requires_development_calibration": true,
+    "fallback_without_calibration": "GREEDY_ONLY"
+  },
+  "prediction_schema_version": "1.0.0"
+}

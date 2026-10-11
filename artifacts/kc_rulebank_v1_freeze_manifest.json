@@ -1,0 +1,46 @@
+{
+  "schema_version": "kc_rulebank_freeze_manifest_v1",
+  "rulebank_id": "KC_RULEBANK_V1",
+  "status": "FROZEN_EXPLORATORY",
+  "frozen_on": "2026-07-27",
+  "resampling_protocol_id": "participant_resampling_v1",
+  "q7_used_for_discovery_or_selection": false,
+  "policy": {
+    "rule_expansion_allowed": false,
+    "rule_parameter_tuning_allowed": false,
+    "q7_driven_rule_edits_allowed": false,
+    "layer_ablation_allowed": true,
+    "allowed_layer_decision": "Experiments may decide which frozen layers to enable, but may not modify rules within a layer."
+  },
+  "layers": [
+    {
+      "layer_id": "q2_single_dimension_main_effect",
+      "path": "artifacts/kc_operational_ontology_v1_uniform/rules.json",
+      "sha256": "6c867dadd18631a4b9802415c1c7b3b748c7b261434dffd9e88656e6264189af",
+      "rule_selector": "rules",
+      "rule_count": 12
+    },
+    {
+      "layer_id": "q2_double_dimension_interaction",
+      "path": "artifacts/kc_v30_relation_ontology_v1_uniform/rules.json",
+      "sha256": "e8dfa785529ea4aaf7732d5d6d4402180db5709654ca4ec0bd9c447863e70313",
+      "rule_selector": "rules",
+      "rule_count": 49
+    },
+    {
+      "layer_id": "q3_q6_contextual_preference",
+      "path": "artifacts/kc_aux_preference_sweep_v1_uniform/rules_by_arm.json",
+      "sha256": "ef4243f35c27c0bdf4fdbd0489c9c0c48345107a5f2cde4f02f714c3383c2b4b",
+      "rule_selector": "rules.c03_balanced",
+      "rule_count": 29
+    }
+  ],
+  "uniform_audit": {
+    "path": "artifacts/kc_uniform_rule_audit_v1.json",
+    "sha256": "e673a5c1bedb7a43e2a96077266bb8856df85f4cb87dd9ca425861a38a2b304f",
+    "required_status": "PASS"
+  },
+  "q2_rule_count": 61,
+  "total_rule_count": 90,
+  "validated_rule_count": 0
+}

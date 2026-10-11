@@ -1,0 +1,23 @@
+{
+  "summary": {
+    "fail": 2
+  },
+  "q7_gold_used": false,
+  "pi_used": false,
+  "records": [
+    {
+      "job_id": "repair-v7-D001",
+      "issues": [
+        "full response coverage trace mismatch",
+        "personalization realization missing from generated text"
+      ]
+    },
+    {
+      "job_id": "repair-v7-D002",
+      "issues": [
+        "full response coverage trace mismatch",
+        "personalization realization missing from generated text"
+      ]
+    }
+  ]
+}

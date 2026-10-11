@@ -1,0 +1,14 @@
+{
+  "job_count": 162,
+  "prompt_sha256": "40785d8ee9224111929c752b047d1b01405b623e86ef6da2a2201d0e2016f83f",
+  "q7_gold_used": false,
+  "raw_user_ids_written": false,
+  "score_vectors_written": false,
+  "style_questions": [
+    "Q1",
+    "Q3",
+    "Q4",
+    "Q5",
+    "Q6"
+  ]
+}

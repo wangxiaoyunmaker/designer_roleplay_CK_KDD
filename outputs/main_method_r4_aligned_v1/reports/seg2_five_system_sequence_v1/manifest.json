@@ -1,0 +1,19 @@
+{
+  "schema_version": "q7_main_r4_evaluation_manifest_v2",
+  "sources": {
+    "outputs/main_method_r4_aligned_v1/formal152_qwen3_8b_aligned_full_boundary_v2_final.jsonl": "ad7a99a46c5a62a8d04b905e712cbfe841aba7ee9fb4a2189298b13e3f59353a",
+    "outputs/main_method_r4_aligned_v1/formal152_llama_3_1_8b_instruct_aligned_full_boundary_v2_final.jsonl": "0d3cea98aac94819c4fd0ef5111fea8529b4bdcf7c6a8862e5a4a8fc689a41fe",
+    "outputs/main_method_r4_aligned_v1/formal152_gpt4o_all_conditions_boundary_v2_final.jsonl": "97d2e081de9f7a2994e83cd7c587edadd71653467487fa7fd533c6b5ea3a5a7c",
+    "outputs/main_method_r4_aligned_v1/formal152_claude_sonnet_4_6_aligned_full_boundary_v2_merged_final.jsonl": "3900d11eb48ebc715affb02413088d7464cd4a66aa605adf539e29445d02df64",
+    "outputs/main_method_r4_aligned_v1/formal152_qwen3_235b_a22b_instruct_2507_aligned_full_boundary_v2_final.jsonl": "c1217dc8496380f276e3c05631923b5ac37aa54a9cc92952b0ef4410dffea436",
+    "/Users/wy/Desktop/KDD/processed_data/q7_human_gold_adjudicated_v2.json": "d6e3e4b2d0f78cbb6ee3ea0e1855efacb2339bb2278ae85b47c038fd972647fa",
+    "/Users/wy/Desktop/KDD/processed_data/route_a_training_v2_latest_states_candidate/private/user_id_mapping.json": "e062a411514a6c4f67d2494ac54f6afa1eae7a6a8d7e4e2709745bb8015d1e74"
+  },
+  "outputs": {
+    "participant_metrics.jsonl": "3072f73948947ee9e19dfe818d3fbd6e348807dd026eb42093f13efb87e53230",
+    "summary.json": "1e0e9e10a8801d3b4b44cba274b5691b913ab007149c26a5d2720fb04fda533c",
+    "paper_table.csv": "d65d6a9fc0992ca494c3a72b18615a33b5ccf32d8312ff7a220bb2ab0075d9b0",
+    "paired_comparisons.csv": "9c88a7f912f77098ddcceca0bce9af6684fe18814c7c2337664f7a7fd9a919e7",
+    "personalization_null_tests.csv": "aad0775d9ae656277bc3c4baedb2bff8e1b8c07f01d48f69c0907ad6bb4f6e72"
+  }
+}

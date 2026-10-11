@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.0.0",
+  "dataset_id": "route_a_training_v1",
+  "choice_mapping_id": "choice_state_mapping_v1",
+  "kc_filter_id": "DROP_V_PRESERVE_ORDER",
+  "modeled_questions": ["Q1", "Q2", "Q3", "Q4", "Q5", "Q6"],
+  "aux_questions": ["Q1", "Q3", "Q4", "Q5", "Q6"],
+  "model_state_order": ["K", "C", "KtoC", "CtoK", "KtoK", "CtoC"],
+  "outer_folds": 5,
+  "split_salt": "route-a-outer-v1-20260721",
+  "expected_counts": {
+    "participants": 162,
+    "task_records_q1_q6": 972,
+    "aux_records": 751,
+    "choice_state_realizer": 751,
+    "no_kc_state_realizer": 59,
+    "planner_records": 162,
+    "process_sequence_realizer": 162,
+    "realizer_draft": 972,
+    "q2_source_steps": 1282,
+    "q2_removed_v": 173,
+    "q2_kc_steps": 1109,
+    "q2_participants_with_v": 113,
+    "q2_empty_sequences": 0,
+    "q2_length_min": 2,
+    "q2_length_median": 7,
+    "q2_length_max": 19,
+    "q2_kc_state_counts": {
+      "K": 141,
+      "C": 292,
+      "KtoC": 249,
+      "CtoK": 179,
+      "KtoK": 110,
+      "CtoC": 138
+    }
+  }
+}

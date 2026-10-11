@@ -1,0 +1,27 @@
+{
+  "summary": {
+    "fail": 3
+  },
+  "q7_gold_used": false,
+  "pi_used": false,
+  "records": [
+    {
+      "job_id": "persona-v7-D001",
+      "issues": [
+        "commitment count outside 1-4"
+      ]
+    },
+    {
+      "job_id": "persona-v7-D002",
+      "issues": [
+        "commitment count outside 1-4"
+      ]
+    },
+    {
+      "job_id": "persona-v7-D003",
+      "issues": [
+        "commitment count outside 1-4"
+      ]
+    }
+  ]
+}

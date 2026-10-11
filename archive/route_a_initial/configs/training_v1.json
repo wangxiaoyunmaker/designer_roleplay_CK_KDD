@@ -1,0 +1,81 @@
+{
+  "schema_version": "1.0.0",
+  "experiment_id": "route_a_v10_qwen3_8b",
+  "model_id": "Qwen/Qwen3-8B",
+  "precision": "bf16",
+  "enable_thinking": false,
+  "model_state_order": ["K", "C", "KtoC", "CtoK", "KtoK", "CtoC"],
+  "control_state": "STOP",
+  "outer_folds": 5,
+  "preference_encoder": {
+    "input_dim": 30,
+    "hidden_dim": 64,
+    "output_dim": 16,
+    "dropout": 0.1
+  },
+  "soft_prefix": {
+    "tokens": 4,
+    "projection_hidden_dim": 256
+  },
+  "lora": {
+    "rank": 16,
+    "alpha": 32,
+    "dropout": 0.05,
+    "target_modules": ["q_proj", "k_proj", "v_proj", "o_proj"],
+    "bias": "none"
+  },
+  "auxiliary": {
+    "informative_questions": ["Q1", "Q3", "Q4", "Q5"],
+    "audit_only_questions": ["Q6"],
+    "learning_rate": 0.001,
+    "weight_decay": 0.01,
+    "batch_size": 32,
+    "max_updates": 1000,
+    "patience": 80,
+    "class_weight_min": 0.5,
+    "class_weight_max": 2.0,
+    "anchor_weight": 0.01
+  },
+  "planner": {
+    "learning_rate": 0.0002,
+    "weight_decay": 0.01,
+    "micro_batch_size": 1,
+    "effective_state_batch": 32,
+    "max_input_tokens": 1024,
+    "max_generated_states": 20,
+    "auxiliary_replay_weight": 0.2,
+    "anchor_weight": 0.01,
+    "max_updates": 1500,
+    "patience": 100
+  },
+  "realizer": {
+    "learning_rate": 0.0001,
+    "weight_decay": 0.01,
+    "micro_batch_size": 1,
+    "gradient_accumulation_steps": 16,
+    "max_input_tokens": 4096,
+    "process_fraction": 0.5,
+    "max_updates": 1200,
+    "patience": 80
+  },
+  "optimizer": {
+    "name": "adamw",
+    "warmup_ratio": 0.1,
+    "max_grad_norm": 1.0
+  },
+  "selection": {
+    "inner_folds": 3,
+    "validation_inner_fold": 0,
+    "split_salt": "route-a-inner-v1-20260721"
+  },
+  "best_of_n": {
+    "planner_candidates": 4,
+    "text_candidates_per_plan": 2,
+    "temperature": 0.8,
+    "top_p": 0.95,
+    "plan_logprob_weight": 0.5,
+    "text_logprob_weight": 0.5,
+    "consistency_weight": 0.0
+  },
+  "seeds": [42, 43, 44]
+}

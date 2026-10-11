@@ -1,0 +1,45 @@
+{
+  "schema_version": "kc_uniform_rule_audit_v1",
+  "status": "PASS",
+  "resampling_protocol_id": "participant_resampling_v1",
+  "software_versions": {
+    "python": "3.11.15",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "scikit_learn": "1.8.0"
+  },
+  "sampling": {
+    "participant_bootstrap": 1000,
+    "participant_permutations": 1000,
+    "participant_heldout_folds": 5,
+    "seed": 20260727
+  },
+  "shared_input_sha256": {
+    "participants": "9657ed1e383007fca68f2c7d21d55916cf1779cdbb0c54270617bf8f036a7ed1",
+    "trait_items_30": "67d9fc5f90a6d93b5e4d8358b8588bd88e8e994b2953e6193e5d466a399937b5",
+    "q2_planner": "8dfc7c3d725596a487fe0844dd0667140f2a7fcba4e1c2f667b1f79986d903d1",
+    "q3_q6_aux": "9a7191c3940517716d4f4937110c52bc47f16400a2ba8cc34b5301550e86b45b"
+  },
+  "layers": [
+    {
+      "layer": "q2_single_dimension_main_effect",
+      "exploratory_rule_count": 12,
+      "validated_rule_count": 0
+    },
+    {
+      "layer": "q2_double_dimension_interaction",
+      "exploratory_rule_count": 49,
+      "validated_rule_count": 0
+    },
+    {
+      "layer": "q3_q6_contextual_preference",
+      "arm": "c03_balanced",
+      "exploratory_rule_count": 29,
+      "validated_rule_count": 0,
+      "v30_dimension_count": 16
+    }
+  ],
+  "q2_exploratory_rule_count": 61,
+  "total_exploratory_rule_count": 90,
+  "total_validated_rule_count": 0
+}

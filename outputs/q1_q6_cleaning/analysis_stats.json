@@ -1,0 +1,38 @@
+{
+  "totalRows": 1296,
+  "q1q6Rows": 972,
+  "perQuestion": {
+    "Q1": {
+      "rows": 162,
+      "blanks": 2
+    },
+    "Q2": {
+      "rows": 162,
+      "blanks": 2
+    },
+    "Q3": {
+      "rows": 162,
+      "blanks": 2
+    },
+    "Q4": {
+      "rows": 162,
+      "blanks": 1
+    },
+    "Q5": {
+      "rows": 162,
+      "blanks": 1
+    },
+    "Q6": {
+      "rows": 162,
+      "blanks": 1
+    }
+  },
+  "issueCounts": {
+    "surface_disfluency": 10,
+    "very_short": 31,
+    "non_substantive": 2,
+    "blank": 9,
+    "option_reference": 1
+  },
+  "candidateRows": 51
+}

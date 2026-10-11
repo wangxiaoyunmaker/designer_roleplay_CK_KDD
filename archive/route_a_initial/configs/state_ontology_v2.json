@@ -1,0 +1,25 @@
+{
+  "schema_version": "2.0.0",
+  "source_manual_artifact": "processed_data/docs/C-K 设计过程标注说明（标注员版）.md",
+  "source_manual_sha256": "9bc3465bc95534dfe39d8fcd36c707af42213683798acf63f331b7f77479d13e",
+  "annotation_state_order": ["K", "C", "KtoC", "CtoK", "KtoK", "CtoC", "V"],
+  "kc_state_order": ["K", "C", "KtoC", "CtoK", "KtoK", "CtoC"],
+  "states": [
+    {"id": "K", "display_symbol": "K", "definition": "陈述已知信息，或把一个假设当成已知来讲", "planner_eligible": true, "aux_eligible": true, "evaluation_only": false},
+    {"id": "C", "display_symbol": "C", "definition": "提出或持有一个待实现、不确定的概念或方案，只是认为可以", "planner_eligible": true, "aux_eligible": true, "evaluation_only": false},
+    {"id": "KtoC", "display_symbol": "K→C", "definition": "根据已知条件或数据，推导出新的概念、目标或方案", "planner_eligible": true, "aux_eligible": true, "evaluation_only": false},
+    {"id": "CtoK", "display_symbol": "C→K", "definition": "已有概念或方案，向外查数据、问用户、测试或求解释，从不确定走向确定", "planner_eligible": true, "aux_eligible": true, "evaluation_only": false},
+    {"id": "KtoK", "display_symbol": "K→K", "definition": "在已知范围内推理或推导后果，不产出新概念", "planner_eligible": true, "aux_eligible": true, "evaluation_only": false},
+    {"id": "CtoC", "display_symbol": "C→C", "definition": "在已有概念或方案上细化、调整、增加或减少属性，包含用已知结果调整方案", "planner_eligible": true, "aux_eligible": true, "evaluation_only": false},
+    {"id": "V", "display_symbol": "V", "definition": "表述观点、态度、原则、立场或方法论准则，作为评判尺子且不指向具体待造之物", "planner_eligible": false, "aux_eligible": false, "evaluation_only": true}
+  ],
+  "kc_filter": {
+    "id": "DROP_V_PRESERVE_ORDER",
+    "input_state_order": ["K", "C", "KtoC", "CtoK", "KtoK", "CtoC", "V"],
+    "output_state_order": ["K", "C", "KtoC", "CtoK", "KtoK", "CtoC"],
+    "drop_labels": ["V"],
+    "preserve_order": true,
+    "allow_empty": true
+  },
+  "control_tokens": ["START", "STOP"]
+}

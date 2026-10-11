@@ -1,0 +1,7 @@
+comparison,metric,delta,ci95_low,ci95_high,n
+llama_3_1_8b_instruct__aligned_full-qwen3_8b__aligned_full,kc_nes,-0.027957860852597695,-0.05898521480347138,0.004553919673163076,152
+qwen3_235b_a22b_instruct_2507__aligned_full-qwen3_8b__aligned_full,kc_nes,0.006472146274777866,-0.018845272508923816,0.03222315969848866,152
+llama_3_1_8b_instruct__aligned_full-qwen3_8b__aligned_full,kc_own_user_margin,0.004103727108258296,-0.026142760581780066,0.03599246790591771,152
+qwen3_235b_a22b_instruct_2507__aligned_full-qwen3_8b__aligned_full,kc_own_user_margin,-0.005589379831275967,-0.030429194497821416,0.0196612158500556,152
+llama_3_1_8b_instruct__aligned_full-qwen3_8b__aligned_full,kc_own_user_auc,0.011110142906936214,-0.047294353433252,0.0691241504008365,152
+qwen3_235b_a22b_instruct_2507__aligned_full-qwen3_8b__aligned_full,kc_own_user_auc,-0.013419309864064139,-0.06295802108748695,0.0368388375740676,152

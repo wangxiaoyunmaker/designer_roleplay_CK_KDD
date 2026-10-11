@@ -1,0 +1,41 @@
+{
+  "schema_version": "1.0.0",
+  "resource_id": "q1_q6_expression_candidate_dimensions_v2",
+  "status": "proposed_for_pilot_only",
+  "purpose": "Public-question-local V30 dimensions for option-grounded expression-evidence annotation. This is not a prompt-time selector.",
+  "questions": {
+    "Q1": [],
+    "Q3": ["V01", "V11", "V22"],
+    "Q4": ["V07", "V20", "V21", "V25", "V27", "V28"],
+    "Q5": ["V03", "V04", "V05", "V11", "V15", "V16"],
+    "Q6": ["V09", "V22", "V24", "V26", "V27", "V29"]
+  },
+  "required_evidence_terms": {
+    "V01": ["数据", "测试", "访谈", "问卷", "研究", "直觉"],
+    "V03": ["替代", "岗位", "就业", "淘汰", "保护", "过渡"],
+    "V04": ["长期", "社会影响", "整合", "谨慎", "新兴技术"],
+    "V05": ["参数化", "生成式", "编程", "复杂工具"],
+    "V07": ["黑盒", "透明", "知情", "解释", "逻辑"],
+    "V09": ["MVP", "上线", "发布", "市场窗口", "完成度", "细节", "迭代", "二期"],
+    "V11": ["A/B", "转化", "购买意愿", "用户偏好", "专业标准"],
+    "V15": ["本土", "文化", "全球", "通用", "可扩展"],
+    "V16": ["有机", "自然", "几何", "工业"],
+    "V20": ["开源", "组件库", "源文件", "竞争壁垒"],
+    "V21": ["封闭", "开放", "互通", "自由选择", "生态"],
+    "V22": ["风险", "稳妥", "不确定", "高回报", "激进", "客诉", "容错"],
+    "V24": ["成瘾", "财务危机", "商业困难"],
+    "V25": ["隐私", "数据", "许可", "个性化"],
+    "V26": ["边缘", "无障碍", "少数", "ADHD", "光敏", "偏头痛"],
+    "V27": ["股东", "雇主", "老板", "商业", "利润", "市场", "吃饭"],
+    "V28": ["中立", "社会议题", "政治", "倡议"],
+    "V29": ["责任", "成瘾", "自制力", "设计师"]
+  },
+  "guardrails": {
+    "max_dimensions_per_question": 9,
+    "requires_selected_option_text": true,
+    "requires_explanation_span": true,
+    "allows_no_evidence": true,
+    "q7_gold_used": false,
+    "pi_visible_to_model": false
+  }
+}

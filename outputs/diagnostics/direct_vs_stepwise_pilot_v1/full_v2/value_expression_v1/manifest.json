@@ -1,0 +1,23 @@
+{
+  "conditions": [
+    "direct_guarded_joint",
+    "direct_joint",
+    "onecall_aligned_steps",
+    "stepwise_context_composed",
+    "stepwise_context_concat",
+    "stepwise_fresh_concat"
+  ],
+  "evaluation_tier": "POST_HOC_DIAGNOSTIC",
+  "lexicon_sha256": "283a6b650df4ea70fd9992a04cb521050bcc228e7687510c5be5b4e3b84082f5",
+  "participants_sha256": "9657ed1e383007fca68f2c7d21d55916cf1779cdbb0c54270617bf8f036a7ed1",
+  "pilot_sha256": "6e92c6604e8aea3f625880f8381b2e64051f70175494c8eb3880b52742ba615f",
+  "probe_model": "/data/wy/roleplay_smoke_runtime_v2/hf/models--Qwen--Qwen3-8B/snapshots/b968826d9c46dd6066d109eabc6255188de91218",
+  "probe_protocol": "per_item_two_pole_nli_v4_yes_no_logits",
+  "q7_human_text_used": false,
+  "records": 60,
+  "reference_condition": "direct_joint",
+  "schema_version": "stance_signature_value_expression_manifest_v1",
+  "source_text_retained": false,
+  "theta": 0.9,
+  "training_or_selection_allowed": false
+}

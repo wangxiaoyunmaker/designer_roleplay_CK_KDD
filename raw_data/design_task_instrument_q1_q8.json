@@ -1,0 +1,380 @@
+{
+  "schema_version": "1.0.0",
+  "instrument_id": "design_scenarios_q1_q8",
+  "title": "CK-设计情境题（Q1–Q8）",
+  "language": "zh-CN",
+  "source_document": "pasted-text.txt",
+  "source_revision_date": "2026-07-20",
+  "current_project_scope": {
+    "modeling_questions": ["Q1", "Q2", "Q3", "Q4", "Q5", "Q6", "Q7"],
+    "meta_questions": ["Q8"],
+    "expected_new_annotation_unit": "sentence",
+    "expected_new_labels": ["K", "C", "KtoC", "CtoK"],
+    "annotation_status": "本文件仅保存问卷工具，不包含新的句级 K/C 金标。"
+  },
+  "legacy_annotation_notice": "legacy_annotation 仅保留最新版原文中每个选项末尾的完整标签序列；更早的 PKVC 节点、括号关系和中间版本均已删除。原文箭头统一用 to 序列化，例如 K→C 写为 KtoC，K→K→C 写为 KtoKtoC。该字段是选项级来源注释，不是新的句级 K/C 金标。",
+  "shared_scenario_q1_q6": {
+    "title": "全感知效率空间/系统",
+    "role_adaptation": "无论是环境设计师、交互设计师还是工业/视觉设计师，请代入自己的设计专业领域；任务可设想为充满传感器的智能办公舱、脑机接口可穿戴设备，或一套极致效率重构 UI。",
+    "objective": "通过实时监测、干预用户的疲劳与专注度（静音消息、调整光线/白噪音、锁定娱乐等），将核心用户的办公/学习效率提升 30%。",
+    "phase": "方案定型期",
+    "dilemmas": [
+      {
+        "id": "D1",
+        "text": "传感器需要紧贴皮肤，最准确的方案看起来像医疗器械；经过美学调整后的方案会导致数据准确率下降 20%。"
+      },
+      {
+        "id": "D2",
+        "text": "通过 AI 判定什么消息重要可以帮助用户保持心流，但其逻辑是黑盒的，有时可能误杀老板或其他紧急微信。"
+      },
+      {
+        "id": "D3",
+        "text": "内部测试显示主流用户效率提升 30%，但轻微强光与高频提示导致约 5% 的光敏性偏头痛或 ADHD 用户出现严重生理与心理不适；部分用户下班后焦虑，感觉被系统异化为工作机器。"
+      },
+      {
+        "id": "D4",
+        "text": "竞品将在 3 个月后发布，老板要求砍掉尚未成熟的用户心理健康疏导模块，立刻按 MVP 模式上线。"
+      }
+    ]
+  },
+  "questions": [
+    {
+      "question_id": "Q1",
+      "order": 1,
+      "type": "single_choice",
+      "uses_shared_scenario": true,
+      "prompt": "面对这样的委托，当您第一次坐在白板前准备推进项目时，您的大脑中最先启动的认知模块是哪一个？",
+      "options": [
+        {
+          "option_id": "A",
+          "text": "我会先在脑中形成产品形态和使用场景，想象它如何与手机 App 协同，并尽量做到自然、顺畅、低打扰。",
+          "active": true,
+          "legacy_annotation": "CtoC"
+        },
+        {
+          "option_id": "B",
+          "text": "我会开始梳理项目中提升效率和保障用户身心健康的关系。这个核心矛盾如果不理清，没法往下做。",
+          "active": true,
+          "legacy_annotation": "KtoK"
+        },
+        {
+          "option_id": "C",
+          "text": "我会要求查看内测时用户抑郁和焦虑的具体定量数据，以及现有 EEG 传感器的精度测试报告，拿事实说话。",
+          "active": true,
+          "legacy_annotation": "CtoK"
+        },
+        {
+          "option_id": "D",
+          "text": "我内心立刻产生了一个强烈的判断：把人异化为机器是绝对不可接受的，或者效率至上才是商业的唯一真理。我会带着立场去审视。",
+          "active": true,
+          "legacy_annotation": "V"
+        }
+      ]
+    },
+    {
+      "question_id": "Q2",
+      "order": 2,
+      "type": "sequence_builder",
+      "uses_shared_scenario": true,
+      "prompt": "回顾您刚才面对这个复杂设计情境的思考过程。请从左侧拖拽符合您真实思考状态的卡片到右侧画布中，构建您最核心的思考路径。",
+      "instructions": "人的思考往往不是线性的，可能跳跃、死磕某一点或反复推翻。不必使用所有种类的卡片；同一种卡片可以多次使用；也可以将多个卡片组合成一个反复纠结的循环组。",
+      "cards": [
+        {
+          "card_id": "P1",
+          "legacy_category": "P",
+          "legacy_category_name": "Problem Framing",
+          "text": "界定这个项目的核心底线和真实要解决的问题",
+          "legacy_transition": "C"
+        },
+        {
+          "card_id": "P2",
+          "legacy_category": "P",
+          "legacy_category_name": "Problem Framing",
+          "text": "将复杂的总委托拆解为几个具体的子问题",
+          "legacy_transition": "CtoC"
+        },
+        {
+          "card_id": "P3",
+          "legacy_category": "P",
+          "legacy_category_name": "Problem Framing",
+          "text": "重新推翻之前的假定，认为问题根本不在这里",
+          "legacy_transition": "C"
+        },
+        {
+          "card_id": "K1",
+          "legacy_category": "K",
+          "legacy_category_name": "Knowledge Retrieval",
+          "text": "调用过去的经验、竞品案例或行业规范作参考",
+          "legacy_transition": "KtoC"
+        },
+        {
+          "card_id": "K2",
+          "legacy_category": "K",
+          "legacy_category_name": "Knowledge Retrieval",
+          "text": "使用客观数据、测试报告来证明某个逻辑",
+          "legacy_transition": "CtoK"
+        },
+        {
+          "card_id": "K3",
+          "legacy_category": "K",
+          "legacy_category_name": "Knowledge Retrieval",
+          "text": "评估现有技术栈、材料以及工具边界能实现什么",
+          "legacy_transition": "KtoC"
+        },
+        {
+          "card_id": "V1",
+          "legacy_category": "V",
+          "legacy_category_name": "Value Judgment",
+          "text": "基于专业价值立场给出判断标准",
+          "legacy_transition": "K"
+        },
+        {
+          "card_id": "V2",
+          "legacy_category": "V",
+          "legacy_category_name": "Value Judgment",
+          "text": "在多方利益（商业、用户、社会）发生冲突时进行优先级排序",
+          "legacy_transition": "KtoK"
+        },
+        {
+          "card_id": "V3",
+          "legacy_category": "V",
+          "legacy_category_name": "Value Judgment",
+          "text": "设立一条绝对不可牺牲的原则底线",
+          "legacy_transition": "V"
+        },
+        {
+          "card_id": "C1",
+          "legacy_category": "C",
+          "legacy_category_name": "Concept Formation",
+          "text": "脑海中快速涌现出一个模糊但强烈的形态或愿景画面",
+          "legacy_transition": "C"
+        },
+        {
+          "card_id": "C2",
+          "legacy_category": "C",
+          "legacy_category_name": "Concept Formation",
+          "text": "把零散观察整合为一个统摄全局的核心设计逻辑",
+          "legacy_transition": "KtoC"
+        },
+        {
+          "card_id": "C3",
+          "legacy_category": "C",
+          "legacy_category_name": "Concept Formation",
+          "text": "提炼一些可复用的设计原则",
+          "legacy_transition": "CtoK"
+        }
+      ],
+      "legacy_source_notes": [
+        "原文件另记有两种类型，但类型名缺失。",
+        "p(v)：括号外的主导因子可能由括号内因素引起或激活。",
+        "k：不带括号的是纯 k 主导。"
+      ]
+    },
+    {
+      "question_id": "Q3",
+      "order": 3,
+      "type": "single_choice",
+      "uses_shared_scenario": true,
+      "scenario": "针对硬件形态的冲突：工程部门拿出数据证明，只有采用医疗器械般笨重但紧贴的设计，脑电波数据才能达到 99% 的准确率，否则只有 79%。但您认为那极其丑陋，违背了消费级产品的美学。",
+      "prompt": "您会如何决策？",
+      "conflict_axes": ["数据效用 vs 美感形态", "设计师立场"],
+      "options": [
+        {
+          "option_id": "A",
+          "text": "数据是不可违背的铁律。直接采用工程部门的 99% 准确率方案。在客观性能数据面前，其他方面的考量必须做出让步。",
+          "legacy_annotation": "KtoC"
+        },
+        {
+          "option_id": "B",
+          "text": "质疑数据。要求工程团队给出 79% 和 99% 在实际用户体验中的真实差异报告，如果 79% 够用，就坚决拒绝丑陋的设计。",
+          "legacy_annotation": "KtoC"
+        },
+        {
+          "option_id": "C",
+          "text": "否决工程方案，推进美学优化的方案。客观数据层面的折损，交由后期的算法或运营去寻找弥补途径。",
+          "legacy_annotation": "CtoC"
+        },
+        {
+          "option_id": "D",
+          "text": "将这两种方案做成低保真原型（或概念沙盘），投放到市场进行小规模定量测试，让用户的购买意愿数据来替我做决定。",
+          "legacy_annotation": "CtoK"
+        }
+      ]
+    },
+    {
+      "question_id": "Q4",
+      "order": 4,
+      "type": "single_choice",
+      "uses_shared_scenario": true,
+      "scenario": "随着项目推进，公司发现用户使用收集的脑电波数据极具商业价值。老板提出借此打造封闭的商业生态，获取隐私数据以训练独家 AI。但这游走在道德灰度边缘，且开源社区正在呼吁共享理念。",
+      "prompt": "面对这个复杂局面，您下一步会如何推进决策工作？",
+      "conflict_axes": ["商业利润 vs 隐私风险", "封闭 vs 开源"],
+      "legacy_factor_contrast": "K/P vs. V vs. C",
+      "options": [
+        {
+          "option_id": "A",
+          "text": "暂停主观争论。我会立刻调阅相关的数据合规法案、竞品的用户隐私协议以及商业变现的精算报告，用法律底线和客观商业数据重新界定我们到底能做什么。",
+          "legacy_annotation": "KtoC"
+        },
+        {
+          "option_id": "B",
+          "text": "不需要看数据。我会在内心里立刻画下一条绝对的伦理红线（如用户隐私神圣不可侵犯或商业利益绝对优先），再用这个原则筛选不合适的方案。",
+          "legacy_annotation": "CtoC"
+        },
+        {
+          "option_id": "C",
+          "text": "纯粹的争论没有意义。我会直接构思一种全新的本地化隐私计算或数据确权交互界面架构，用一个极具颠覆性的设计概念尝试同时满足隐私和商业需求，用设计本身解决问题。",
+          "legacy_annotation": "CtoC"
+        },
+        {
+          "option_id": "D",
+          "text": "隐私和开源只是表象。我会重新调研在什么真实使用场景下用户才会对数据敏感，把宏大的道德议题降维拆解成一个个具体的痛点需求。",
+          "legacy_annotation": "KtoK"
+        }
+      ]
+    },
+    {
+      "question_id": "Q5",
+      "order": 5,
+      "type": "single_choice",
+      "uses_shared_scenario": true,
+      "scenario": "设计 UI 界面时，项目经理引入强大的 AI 自动生成引擎，数秒内能生成 100 种符合国际通用极简标准（类似硅谷主流风格）的界面，但毫无有机的人味和针对特定本土文化的细腻洞察。老板认为这是降本增效工具，甚至打算淘汰部分初级设计/执行岗位。",
+      "prompt": "面对这种生产力工具对传统设计流的冲击，您在行动上的第一反应是？",
+      "conflict_axes": ["技术加速 vs 人本", "标准化极简 vs 有机/本土"],
+      "legacy_factor_contrast": "K vs. C vs. V vs. P",
+      "options": [
+        {
+          "option_id": "A",
+          "text": "直接挑选几套 AI 生成的界面进行 A/B 测试，由用户的测试数据决定方案去留。",
+          "legacy_annotation": "CtoK"
+        },
+        {
+          "option_id": "B",
+          "text": "搁置 AI 工具。我会先独立构思核心概念，只让 AI 执行后期的延展工作。",
+          "legacy_annotation": "CtoC"
+        },
+        {
+          "option_id": "C",
+          "text": "在团队内部颁布一套严苛的工具限制规范，通过人为干预，在特定设计环节禁用 AI，即便这会拖慢整体进度。",
+          "legacy_annotation": "C"
+        },
+        {
+          "option_id": "D",
+          "text": "既然 AI 解决了画图效率，我就不纠结界面了。我会把精力放在理解用户行为逻辑上，例如为什么会感到焦虑，用人脑探索 AI 无法触及的业务痛点。",
+          "legacy_annotation": "KtoK"
+        }
+      ]
+    },
+    {
+      "question_id": "Q6",
+      "order": 6,
+      "type": "single_choice",
+      "uses_shared_scenario": true,
+      "scenario": "系统干预让效率提升 30%，但内测显示部分用户长时间体验后普遍极度焦虑，产生被系统异化和监视的轻度剥夺感。老板/甲方拍板商业第一，竞品马上发布，3 个月内必须按原样强行上线/落地，暂时砍掉所有拖慢进度的人性化舒缓与心理疏导设计。",
+      "prompt": "作为主创，您最终怎么做？",
+      "conflict_axes": ["商业导向与利润至上 vs 用户导向与责任感", "主流用户 vs 少数/弱势群体"],
+      "legacy_factor_contrast": "V vs. C vs. P/K",
+      "options": [
+        {
+          "option_id": "A",
+          "text": "拒绝执行该上线指令，与管理层正面交涉；若抗议无效，宁可退出该项目。",
+          "legacy_annotation": "V"
+        },
+        {
+          "option_id": "B",
+          "text": "表面同意落地，但在设计细节中用极其隐晦的专业微操对抗系统，试图给用户留下一些自主呼吸的空间。",
+          "legacy_annotation": "KtoC"
+        },
+        {
+          "option_id": "C",
+          "text": "按原计划按时上线以保住市场先发优势。将针对焦虑缓解与边缘用户的设计优化全部降级并推迟至二期工程或下一次迭代。",
+          "legacy_annotation": "CtoC"
+        },
+        {
+          "option_id": "D",
+          "text": "认同老板，执行上线指令，不对现有核心机制做修改，按原方案全量推向市场。",
+          "legacy_annotation": "V"
+        }
+      ]
+    },
+    {
+      "question_id": "Q7",
+      "order": 7,
+      "type": "multi_segment_open_response",
+      "uses_shared_scenario": false,
+      "scenario": {
+        "title": "老城区超级社区超市重构",
+        "role_adaptation": "无论是环境设计师、交互设计师还是工业/视觉设计师，请代入自己的设计专业领域；可设想设计超市物理空间动线、自助结账机 UI 界面或整体会员服务触点。",
+        "commission": "受雇于一家激进的零售巨头，负责重构一家位于老城区核心地段的超大型社区超市。公司希望将其打造为全国首个全数字化、无人化的高效零售标杆。",
+        "dilemmas": [
+          {
+            "id": "D1",
+            "text": "完全拆除人工收银台、全部换成密集排列的极简自助结账柱，可将坪效提升 20%，但必须拆除老年人习惯的传统人工收银台、排队通道以及现金结账方式。"
+          },
+          {
+            "id": "D2",
+            "text": "AI 动态货架/界面推荐算法会故意把高利润非必需品推到最显眼位置或动线必经处，把必需品藏在深处；这能显著提升客单价，但可能涉及诱导和操纵等伦理问题。"
+          },
+          {
+            "id": "D3",
+            "text": "面对抗议和质疑，上层认为三个月内必须按原数字化方案铺开，这是公司的战略生死战，不能为了少部分人牺牲年轻新贵的极致效率体验。"
+          }
+        ]
+      },
+      "main_prompt": "您作为拥有最终方案专业把控权的主创设计师，必须在今天下午的董事会上给出最终拍板决定。请说出面对这个设计困境时的真实思考过程和最终辩护理由。",
+      "instructions": "本题是一个全新的独立设计情境，旨在捕捉最真实的思考推演过程；回答是研究的核心定性数据。",
+      "segments": [
+        {
+          "segment_id": "SEG1",
+          "order": 1,
+          "role": "initial_intuition",
+          "prompt": "您可以先说出您的直觉第一反应是什么？",
+          "recommended_min_minutes": 2
+        },
+        {
+          "segment_id": "SEG2",
+          "order": 2,
+          "role": "reasoning_process",
+          "prompt": "您是如何权衡数据、商业要求与用户伦理的？您会如何一步一步构建设计方案？不用具体到方案本身的细节，讲述思考顺序和逻辑即可。",
+          "recommended_min_minutes": 3,
+          "current_evaluation_role": "primary_held_out_test_segment"
+        },
+        {
+          "segment_id": "SEG3",
+          "order": 3,
+          "role": "final_bottom_line",
+          "prompt": "最后您向上层提出的最核心设计底线或妥协是什么？",
+          "recommended_min_minutes": 2
+        }
+      ]
+    },
+    {
+      "question_id": "Q8",
+      "order": 8,
+      "type": "single_choice",
+      "uses_shared_scenario": false,
+      "role": "post_task_meta",
+      "excluded_from_current_modeling": true,
+      "prompt": "您在处理以上两个设计任务的过程中，思考推理的关注重点和顺序有没有重大差异变化？",
+      "options": [
+        {
+          "option_id": "A",
+          "text": "有"
+        },
+        {
+          "option_id": "B",
+          "text": "没有"
+        },
+        {
+          "option_id": "C",
+          "text": "没什么感受"
+        }
+      ]
+    }
+  ],
+  "administration_notes": {
+    "record_total_duration": true,
+    "use_unified_participant_id": true,
+    "source_note": "记录两个部分及各部分时长，用于质量控制。"
+  }
+}

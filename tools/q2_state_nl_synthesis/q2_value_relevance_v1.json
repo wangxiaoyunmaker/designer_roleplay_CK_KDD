@@ -1,0 +1,75 @@
+{
+  "schema_version": "q2_value_relevance_v1",
+  "purpose": "A fixed, auditable mapping from the public Q2 dilemmas to V30 dimensions. It selects contextual value cues; it does not infer a participant's values from Q2 text.",
+  "direct_dimensions": [
+    {
+      "item_id": "V01",
+      "dilemmas": ["D1", "D4"],
+      "relevance": "在外观、上线与方案验证之间，需要判断直觉、调研和数据各应承担什么作用。"
+    },
+    {
+      "item_id": "V04",
+      "dilemmas": ["D2"],
+      "relevance": "AI 介入办公决策时，需要判断技术整合速度与社会影响审慎性。"
+    },
+    {
+      "item_id": "V07",
+      "dilemmas": ["D2"],
+      "relevance": "黑盒消息筛选直接涉及可解释性、透明度与用户知情。"
+    },
+    {
+      "item_id": "V09",
+      "dilemmas": ["D4"],
+      "relevance": "竞品压力和心理健康模块未成熟，直接构成 MVP 与完成度的取舍。"
+    },
+    {
+      "item_id": "V10",
+      "dilemmas": ["D1", "D4"],
+      "relevance": "新型效率干预的探索价值，需要与成熟、可验证的方案比较。"
+    },
+    {
+      "item_id": "V11",
+      "dilemmas": ["D1"],
+      "relevance": "医疗器械感的准确方案与调整后的外观之间，涉及审美标准和用户反应。"
+    },
+    {
+      "item_id": "V18",
+      "dilemmas": ["D2", "D3"],
+      "relevance": "系统是否限制信息、娱乐和行为以提高效率，涉及防错与保留操作空间。"
+    },
+    {
+      "item_id": "V22",
+      "dilemmas": ["D3", "D4"],
+      "relevance": "不适风险、客诉风险与竞品窗口，涉及保守推进还是承担不确定性。"
+    },
+    {
+      "item_id": "V24",
+      "dilemmas": ["D3", "D4"],
+      "relevance": "效率和商业压力不能脱离对诱导、焦虑与操纵的伦理判断。"
+    },
+    {
+      "item_id": "V25",
+      "dilemmas": ["D2"],
+      "relevance": "传感器、个性化干预和消息筛选涉及利用个人数据的边界。"
+    },
+    {
+      "item_id": "V26",
+      "dilemmas": ["D3"],
+      "relevance": "光敏性偏头痛和 ADHD 用户的严重不适，直接涉及弱势群体与多数效率的优先级。"
+    },
+    {
+      "item_id": "V27",
+      "dilemmas": ["D3", "D4"],
+      "relevance": "老板的上线要求、商业目标与用户身心利益发生直接冲突。"
+    },
+    {
+      "item_id": "V29",
+      "dilemmas": ["D3"],
+      "relevance": "用户被效率系统异化、下班后焦虑，涉及设计系统应承担多少责任。"
+    }
+  ],
+  "strong_tendency_rule": {
+    "eligible_scores": [1, 6],
+    "instruction": "保留用户在任一维度上的强烈端点倾向，但只有能与当前情境、过程卡片或已有信念直接相连时才可使用；不得把无关维度硬写进回答。"
+  }
+}

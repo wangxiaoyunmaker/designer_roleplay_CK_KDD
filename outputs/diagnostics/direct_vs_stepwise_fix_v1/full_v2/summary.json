@@ -1,0 +1,275 @@
+{
+  "evaluation_tier": "POST_HOC_DIAGNOSTIC",
+  "sequence_comparison_intentionally_omitted": true,
+  "conditions": {
+    "direct_guarded_joint": {
+      "n": 10,
+      "mean_answer_chars": 269.3,
+      "answer_length_compliance": 1.0,
+      "parse_failure_records": 0,
+      "label_leak_records": 0,
+      "unsupported_completed_evidence_records": 0,
+      "unique_answers": 10,
+      "top_answer_share": 0.1,
+      "mean_call_count": 1.0,
+      "unique_sequences": 2,
+      "mean_runtime_seconds_observed": 6.698970347642899
+    },
+    "direct_joint": {
+      "n": 10,
+      "mean_answer_chars": 355.7,
+      "answer_length_compliance": 0.9,
+      "parse_failure_records": 0,
+      "label_leak_records": 0,
+      "unsupported_completed_evidence_records": 9,
+      "unique_answers": 10,
+      "top_answer_share": 0.1,
+      "mean_call_count": 1.0,
+      "unique_sequences": 1,
+      "mean_runtime_seconds_observed": null
+    },
+    "onecall_aligned_steps": {
+      "n": 10,
+      "mean_answer_chars": 261.7,
+      "answer_length_compliance": 1.0,
+      "parse_failure_records": 0,
+      "label_leak_records": 0,
+      "unsupported_completed_evidence_records": 0,
+      "unique_answers": 10,
+      "top_answer_share": 0.1,
+      "mean_call_count": 1.0,
+      "unique_sequences": 1,
+      "mean_runtime_seconds_observed": 8.544084152579307,
+      "step_parse_failures": 0,
+      "exact_step_count_rate": 1.0,
+      "step_format_failure_rate": 0.0,
+      "step_length_compliance_rate": 1.0,
+      "step_label_leak_rate": 0.0,
+      "step_state_contract_warning_rate": 0.0,
+      "punctuation_repairs": 0,
+      "targeted_repair_attempts": 0,
+      "targeted_repair_successes": 0,
+      "mean_proposal_anchor_continuity_posthoc": 0.4333333333333333
+    },
+    "stepwise_context_composed": {
+      "n": 10,
+      "mean_answer_chars": 287.7,
+      "answer_length_compliance": 1.0,
+      "parse_failure_records": 0,
+      "label_leak_records": 0,
+      "unsupported_completed_evidence_records": 0,
+      "unique_answers": 10,
+      "top_answer_share": 0.1,
+      "mean_call_count": 7.5,
+      "unique_sequences": 1,
+      "mean_runtime_seconds_observed": 12.961348609626294,
+      "step_parse_failures": 0,
+      "exact_step_count_rate": 1.0,
+      "step_format_failure_rate": 0.0,
+      "step_length_compliance_rate": 1.0,
+      "step_label_leak_rate": 0.0,
+      "step_state_contract_warning_rate": 0.06666666666666667,
+      "punctuation_repairs": 0,
+      "targeted_repair_attempts": 5,
+      "targeted_repair_successes": 1,
+      "mean_proposal_anchor_continuity_posthoc": 0.9,
+      "mean_composer_exact_sentence_coverage": 1.0,
+      "mean_composer_source_bigram_recall": 1.0,
+      "mean_composer_novel_bigram_rate": 0.0,
+      "mean_composer_compression_ratio": 1.0,
+      "composer_exact_order_rate": 1.0
+    },
+    "stepwise_context_concat": {
+      "n": 10,
+      "mean_answer_chars": 287.7,
+      "answer_length_compliance": 1.0,
+      "parse_failure_records": 0,
+      "label_leak_records": 0,
+      "unsupported_completed_evidence_records": 0,
+      "unique_answers": 10,
+      "top_answer_share": 0.1,
+      "mean_call_count": 6.5,
+      "unique_sequences": 1,
+      "mean_runtime_seconds_observed": 7.409445089101792,
+      "step_parse_failures": 0,
+      "exact_step_count_rate": 1.0,
+      "step_format_failure_rate": 0.0,
+      "step_length_compliance_rate": 1.0,
+      "step_label_leak_rate": 0.0,
+      "step_state_contract_warning_rate": 0.06666666666666667,
+      "punctuation_repairs": 0,
+      "targeted_repair_attempts": 5,
+      "targeted_repair_successes": 1,
+      "mean_proposal_anchor_continuity_posthoc": 0.9
+    },
+    "stepwise_fresh_concat": {
+      "n": 10,
+      "mean_answer_chars": 269.6,
+      "answer_length_compliance": 1.0,
+      "parse_failure_records": 0,
+      "label_leak_records": 0,
+      "unsupported_completed_evidence_records": 0,
+      "unique_answers": 10,
+      "top_answer_share": 0.1,
+      "mean_call_count": 6.2,
+      "unique_sequences": 1,
+      "mean_runtime_seconds_observed": 6.600552862882614,
+      "step_parse_failures": 0,
+      "exact_step_count_rate": 1.0,
+      "step_format_failure_rate": 0.0,
+      "step_length_compliance_rate": 1.0,
+      "step_label_leak_rate": 0.0,
+      "step_state_contract_warning_rate": 0.0,
+      "punctuation_repairs": 0,
+      "targeted_repair_attempts": 2,
+      "targeted_repair_successes": 2,
+      "mean_proposal_anchor_continuity_posthoc": 0.06666666666666667
+    }
+  },
+  "paired_comparisons": {
+    "guardrail_minus_original_joint/answer_chars": {
+      "delta": -86.4,
+      "ci95_low": -105.3,
+      "ci95_high": -68.6,
+      "n": 10,
+      "n_resamples": 10000,
+      "seed": 20260727
+    },
+    "guardrail_minus_original_joint/length_compliance": {
+      "delta": 0.1,
+      "ci95_low": 0.0,
+      "ci95_high": 0.3,
+      "n": 10,
+      "n_resamples": 10000,
+      "seed": 20260727
+    },
+    "guardrail_minus_original_joint/unsupported_completed_evidence": {
+      "delta": -0.9,
+      "ci95_low": -1.0,
+      "ci95_high": -0.7,
+      "n": 10,
+      "n_resamples": 10000,
+      "seed": 20260727
+    },
+    "aligned_output_minus_guarded_joint/answer_chars": {
+      "delta": -7.6,
+      "ci95_low": -18.502499999999998,
+      "ci95_high": 3.0,
+      "n": 10,
+      "n_resamples": 10000,
+      "seed": 20260727
+    },
+    "aligned_output_minus_guarded_joint/length_compliance": {
+      "delta": 0.0,
+      "ci95_low": 0.0,
+      "ci95_high": 0.0,
+      "n": 10,
+      "n_resamples": 10000,
+      "seed": 20260727
+    },
+    "aligned_output_minus_guarded_joint/unsupported_completed_evidence": {
+      "delta": 0.0,
+      "ci95_low": 0.0,
+      "ci95_high": 0.0,
+      "n": 10,
+      "n_resamples": 10000,
+      "seed": 20260727
+    },
+    "multicall_minus_aligned_onecall/answer_chars": {
+      "delta": 26.0,
+      "ci95_low": 18.5,
+      "ci95_high": 32.30249999999996,
+      "n": 10,
+      "n_resamples": 10000,
+      "seed": 20260727
+    },
+    "multicall_minus_aligned_onecall/length_compliance": {
+      "delta": 0.0,
+      "ci95_low": 0.0,
+      "ci95_high": 0.0,
+      "n": 10,
+      "n_resamples": 10000,
+      "seed": 20260727
+    },
+    "multicall_minus_aligned_onecall/unsupported_completed_evidence": {
+      "delta": 0.0,
+      "ci95_low": 0.0,
+      "ci95_high": 0.0,
+      "n": 10,
+      "n_resamples": 10000,
+      "seed": 20260727
+    },
+    "multicall_minus_aligned_onecall/proposal_anchor_continuity_posthoc": {
+      "delta": 0.4666666666666667,
+      "ci95_low": 0.3666666666666667,
+      "ci95_high": 0.5666666666666667,
+      "n": 10,
+      "n_resamples": 10000,
+      "seed": 20260727
+    },
+    "context_carry_minus_fresh/answer_chars": {
+      "delta": 18.1,
+      "ci95_low": 12.3,
+      "ci95_high": 22.7,
+      "n": 10,
+      "n_resamples": 10000,
+      "seed": 20260727
+    },
+    "context_carry_minus_fresh/length_compliance": {
+      "delta": 0.0,
+      "ci95_low": 0.0,
+      "ci95_high": 0.0,
+      "n": 10,
+      "n_resamples": 10000,
+      "seed": 20260727
+    },
+    "context_carry_minus_fresh/unsupported_completed_evidence": {
+      "delta": 0.0,
+      "ci95_low": 0.0,
+      "ci95_high": 0.0,
+      "n": 10,
+      "n_resamples": 10000,
+      "seed": 20260727
+    },
+    "context_carry_minus_fresh/proposal_anchor_continuity_posthoc": {
+      "delta": 0.8333333333333334,
+      "ci95_low": 0.7333333333333333,
+      "ci95_high": 0.9333333333333333,
+      "n": 10,
+      "n_resamples": 10000,
+      "seed": 20260727
+    },
+    "composer_minus_rule_concat/answer_chars": {
+      "delta": 0.0,
+      "ci95_low": 0.0,
+      "ci95_high": 0.0,
+      "n": 10,
+      "n_resamples": 10000,
+      "seed": 20260727
+    },
+    "composer_minus_rule_concat/length_compliance": {
+      "delta": 0.0,
+      "ci95_low": 0.0,
+      "ci95_high": 0.0,
+      "n": 10,
+      "n_resamples": 10000,
+      "seed": 20260727
+    },
+    "composer_minus_rule_concat/unsupported_completed_evidence": {
+      "delta": 0.0,
+      "ci95_low": 0.0,
+      "ci95_high": 0.0,
+      "n": 10,
+      "n_resamples": 10000,
+      "seed": 20260727
+    },
+    "composer_minus_rule_concat/proposal_anchor_continuity_posthoc": {
+      "delta": 0.0,
+      "ci95_low": 0.0,
+      "ci95_high": 0.0,
+      "n": 10,
+      "n_resamples": 10000,
+      "seed": 20260727
+    }
+  }
+}

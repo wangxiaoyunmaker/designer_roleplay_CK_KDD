@@ -1,0 +1,102 @@
+\section{Trait-Conditioned C--K Trajectory Modeling}
+\label{sec:trait_conditioned_cktm}
+
+We model individualized designer role-playing as the joint generation of an
+observable C--K trajectory and a first-person decision with its justification.
+The trajectory summarizes operations expressed in the response; it is not an
+account of the model's hidden reasoning process.
+
+Given a public design situation $X^\ast$, generation is conditioned on
+designer $i$'s professional background $P_i$, Q2 reasoning record $H_i$,
+situation-adaptive trait cues $\widetilde V_i(X^\ast)$, selected
+trait-conditioned rules $R_i$ learned from Q1--Q6, and aligned examples $E_i$:
+\begin{equation}
+p_\psi(M_i,Y_i\mid
+X^\ast,P_i,\widetilde V_i(X^\ast),H_i,R_i,E_i).
+\label{eq:tcktm_joint}
+\end{equation}
+The complete 30-dimensional profile $V_i$ is used internally for cue and rule
+selection, but is not fully serialized in the prompt. Instead,
+$\widetilde V_i(X^\ast)$ contains the four dimensions that are most relevant
+to Q7 and salient for the target designer. $E_i$ contains three
+state--text-aligned Q7 examples from other designers; they calibrate operation
+semantics and output granularity rather than provide answers to imitate. The
+target designer is excluded from $E_i$, and their Q7 response is never
+provided. Public task facts take precedence over all conditioning signals.
+
+\subsection{Learning Trait-Conditioned Rules}
+
+We derive trait-conditioned rules from Q1--Q6 and freeze them before Q7
+generation. The rules express preferences over initial orientations,
+subsequent operations, and situation-specific choices; none specifies a
+deterministic transition. Initial-orientation rules apply to Seg1, whereas the
+Seg2 method uses the remaining three families in
+Table~\ref{tab:trait_conditioned_rules}.
+
+\begin{table}[t]
+\centering
+\small
+\caption{Trait-conditioned rule families.}
+\label{tab:trait_conditioned_rules}
+\begin{tabular}{p{0.22\columnwidth} p{0.36\columnwidth} p{0.32\columnwidth}}
+\toprule
+\textbf{Rule type} & \textbf{Condition} & \textbf{Guidance} \\
+\midrule
+Initial orientation & Trait tendency associated with the initial response. &
+Prefer an initial C--K operation. \\
+Single-trait transition & Trait tendency associated with a transition. &
+Prefer a next operation given the current operation. \\
+Trait-relation transition & Co-activation, tension, dominance, or balance
+between two traits. & Adjust the next-operation preference beyond separate
+trait effects. \\
+Contextual preference & Trait tendency under a recurring design conflict. &
+Prefer an operation appropriate to that conflict. \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+For a Q2 trajectory, let $z_{it}$ denote designer $i$'s C--K operation at
+position $t$. For each source--target pair, we fit an L1-regularized logistic
+regression over the standardized V30 profile and relative trajectory position:
+\begin{equation}
+z_{i,t+1}\sim p(\,\cdot\mid z_{it},V_i,\phi_{it}).
+\label{eq:tcktm_transition}
+\end{equation}
+Sparse coefficients identify trait tendencies associated with the next
+operation after accounting for the current operation and position. Candidate
+rules are filtered using participant-level support, bootstrap stability, sign
+consistency, and held-out evidence.
+
+Trait-relation rules are learned in two stages. We first identify stable trait
+pairs using participant-level rank correlations. For each pair, we construct
+interpretable predicates---co-activation, tension, dominance, and balance---
+and test whether the predicate adds predictive information beyond the two
+individual trait effects. Q3--Q6 provide contextual operation choices and are
+used to learn contextual preferences rather than artificial transitions.
+These rules are empirical soft preferences, not causal or universal
+psychological laws. Detailed thresholds and rule statistics are provided in
+Appendix~\ref{app:trait_conditioned_details}.
+
+\subsection{One-Call Conditioned Joint Generation}
+
+For designer $i$, the selector uses the complete $V_i$ internally and retains
+at most one active Seg2 rule from each family: a single-trait transition rule,
+a trait-relation transition rule, and a contextual preference rule. If
+single-trait and relation rules conflict for the same source operation, the
+relation rule receives soft priority. Rules may be ignored when inapplicable,
+and public facts always override rule guidance.
+
+The model produces all state--text pairs in one call:
+\begin{equation}
+\mathcal U_i=[(m_{i1},y_{i1}),\ldots,(m_{iT_i},y_{iT_i})],
+\quad
+M_i=[m_{i1},\ldots,m_{iT_i}],
+\quad
+Y_i=y_{i1}\oplus\cdots\oplus y_{iT_i}.
+\end{equation}
+Each $y_{it}$ must realize the observable operation $m_{it}$. In particular,
+$C\!\rightarrow\!K$ formulates a future or conditional verification step
+without inventing evidence, whereas $K\!\rightarrow\!K$ derives consequences
+from known facts without introducing a new proposal. The concatenated
+$Y_i$ is a coherent first-person Chinese response and does not expose trait
+scores or rule instructions.

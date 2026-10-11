@@ -1,0 +1,38 @@
+{
+  "schema_version": "kc_v30_relation_ontology_audit_v1",
+  "run_kind": "development",
+  "q7_used": false,
+  "participant_count": 162,
+  "sequence_count": 162,
+  "state_token_count": 1109,
+  "stable_relation_edge_count": 12,
+  "relation_predicate_count": 66,
+  "candidate_count": 1633,
+  "stable_rule_count": 43,
+  "validated_rule_count": 0,
+  "input_sha256": {
+    "participants.jsonl": "9657ed1e383007fca68f2c7d21d55916cf1779cdbb0c54270617bf8f036a7ed1",
+    "planner_records.jsonl": "8dfc7c3d725596a487fe0844dd0667140f2a7fcba4e1c2f667b1f79986d903d1",
+    "trait_items_30.csv": "67d9fc5f90a6d93b5e4d8358b8588bd88e8e994b2953e6193e5d466a399937b5"
+  },
+  "config": {
+    "participants": ".codex-staging/route-a-v11/data/route_a_training_v1/formal/participants.jsonl",
+    "planner": ".codex-staging/route-a-v11/data/route_a_training_v1/formal/planner_records.jsonl",
+    "trait_items": "artifacts/reproducibility/trait_items_30.csv",
+    "output_dir": "artifacts/kc_v30_relation_ontology_v1_dev",
+    "run_kind": "development",
+    "relation_bootstrap": 200,
+    "effect_bootstrap": 200,
+    "permutations": 199,
+    "folds": 5,
+    "seed": 20260727,
+    "min_abs_spearman": 0.2,
+    "min_edge_sign_consistency": 0.9,
+    "max_pairs": 12,
+    "min_subgroup_participants": 20,
+    "min_transition_support": 20,
+    "min_abs_residual_effect": 0.05,
+    "min_effect_sign_consistency": 0.9,
+    "max_fdr_q": 0.1
+  }
+}

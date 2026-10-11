@@ -1,0 +1,53 @@
+{
+  "conditions": {
+    "active4": {
+      "coverage_n": 30,
+      "mean_coverage": 0.11,
+      "mean_own_profile_advantage": 0.11196998985929776,
+      "mean_profile_precision": 0.663265306122449,
+      "n": 30,
+      "own_profile_advantage_n": 28,
+      "profile_precision_n": 28
+    },
+    "base": {
+      "coverage_n": 30,
+      "mean_coverage": 0.0,
+      "mean_own_profile_advantage": null,
+      "mean_profile_precision": null,
+      "n": 30,
+      "own_profile_advantage_n": 0,
+      "profile_precision_n": 0
+    },
+    "full": {
+      "coverage_n": 30,
+      "mean_coverage": 0.08888888888888888,
+      "mean_own_profile_advantage": 0.07176213480561308,
+      "mean_profile_precision": 0.65,
+      "n": 30,
+      "own_profile_advantage_n": 27,
+      "profile_precision_n": 27
+    }
+  },
+  "paired_comparisons": {
+    "active4-base/coverage": {
+      "ci95_high": 0.1411111111111111,
+      "ci95_low": 0.08333333333333333,
+      "delta": 0.11,
+      "n": 30,
+      "n_resamples": 10000,
+      "seed": 20260727
+    },
+    "active4-base/own_profile_advantage": null,
+    "active4-base/profile_precision": null,
+    "full-base/coverage": {
+      "ci95_high": 0.10666666666666667,
+      "ci95_low": 0.07111111111111111,
+      "delta": 0.08888888888888888,
+      "n": 30,
+      "n_resamples": 10000,
+      "seed": 20260727
+    },
+    "full-base/own_profile_advantage": null,
+    "full-base/profile_precision": null
+  }
+}

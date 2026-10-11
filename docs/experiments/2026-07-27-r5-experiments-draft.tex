@@ -1,0 +1,303 @@
+\section{Experiments}
+\label{sec:experiments}
+
+\subsection{Evaluation Benchmark and Protocol}
+\label{sec:evaluation_protocol}
+
+We evaluate personalized designer role-play in a cross-scenario transfer
+setting using behavioral data from 162 designers. Information collected in
+Questions 1--6 (Q1--Q6) is used to construct each participant's professional
+background, 30-dimensional value profile (V30), and historical response to a
+design problem. Question 7 (Q7) presents a previously unseen wicked-design
+dilemma involving conflicts among commercial efficiency, accessibility, and
+manipulative recommendation. The target output is the participant's response
+to Q7.
+
+Q7 contains three elicitation stages: an intuitive first reaction
+(\textbf{Seg1}), a decision-weighing reasoning process (\textbf{Seg2}), and a
+final design bottom line (\textbf{Seg3}). Our main experiment focuses on Seg2,
+where both a structured C--K trajectory and its natural-language realization
+are available for evaluation. Seg1 and Seg3 are used only in auxiliary
+analyses. All main tables report the full cohort of 162 participants.
+
+The first ten participants were used during prompt-format inspection and
+boundary-error diagnosis. We therefore distinguish configuration selection
+from cross-backbone evaluation: GPT-4o is used as the development backbone for
+selecting the final prompt configuration, after which the configuration is
+frozen and transferred unchanged to the remaining backbones. We report this
+protocol explicitly because the full-cohort results should be interpreted as
+model-transfer evidence rather than as a strictly untouched participant-level
+test set.
+
+\subsection{Compared Methods}
+\label{sec:baselines}
+
+We compare our method with three prompt-only baselines and two trainable role-playing
+baselines. Prompt-only baselines are evaluated on Qwen3-8B,
+Llama-3.1-8B-Instruct, Gemini 3 Flash, and GPT-4o. CoSER and RAR-RIA are
+adapted using Qwen3-8B and Llama-3.1-8B-Instruct. The focused main table
+reports Qwen3-8B, Llama-3.1-8B-Instruct, and GPT-4o; the remaining
+cross-backbone results are reported in the supplementary material.
+
+\paragraph{Prompt-only baselines.}
+All prompt-only baselines generate both a C--K state sequence and a
+natural-language answer in one response. They share the same Q7 situation and
+decoding configuration.
+
+\textbf{SP} uses only the Q7 situation and a generic designer role, without
+participant-specific information.
+
+\textbf{PP} additionally provides the target participant's personal and
+professional information (PI), including design field, educational
+background, work context, project role, and design experience.
+
+\textbf{ICL-Q2} extends PP with three Q2 demonstrations from other
+participants. Each demonstration contains PI, a Q2 C--K state sequence, and a
+Q2 natural-language response. The target participant is always excluded from
+the demonstration set.
+
+\paragraph{Trainable role-playing baselines.}
+We adapt CoSER~\citep{wang2025coser} and RAR-RIA~\citep{tang2026thinking} to
+the designer questionnaire data and train them on Q1--Q6 using their
+respective LoRA supervised fine-tuning procedures. CoSER uses its
+\texttt{model\_speech} field as the prediction, whereas RAR-RIA uses its
+\texttt{model\_answer} field. These methods do not define an explicit C--K
+trajectory; consequently, only natural-language and value-expression metrics
+are applicable to them.
+
+\subsection{Configuration of the Proposed Method}
+\label{sec:proposed_configuration}
+
+Our method performs trait-conditioned aligned C--K generation in a single
+model call. Given the public Q7
+situation, it first identifies four situation-relevant dimensions
+(\emph{active4}) from the target participant's V30 profile. The prompt contains
+(i) three other-participant Q7 Seg2 examples used to calibrate C--K operation
+boundaries and output granularity, (ii) target PI, (iii) the four activated
+V30 dimensions with their target-specific values and interpretations,
+(iv) the target participant's complete Q2 state sequence and response, and
+(v) selected trait-conditioned rules learned from Q1--Q6, and (vi) the full
+Q7 situation and Seg2 instruction. The target participant's Q7 answer is
+never included in the prompt.
+
+The model returns a single JSON object:
+
+\begin{equation}
+\mathcal{U}_i =
+\left[(m_{i1},y_{i1}),\ldots,(m_{iT_i},y_{iT_i})\right],
+\end{equation}
+
+where $m_{it}$ is one of
+$\{\mathrm{K},\mathrm{C},\mathrm{K{\to}C},\mathrm{C{\to}K},
+\mathrm{K{\to}K},\mathrm{C{\to}C}\}$ and $y_{it}$ is the text realizing that
+operation. The trajectory and final response are deterministic projections:
+
+\begin{equation}
+\hat{M}_i=[m_{i1},\ldots,m_{iT_i}], \qquad
+\hat{Y}_i=y_{i1}\oplus\cdots\oplus y_{iT_i}.
+\end{equation}
+
+Thus, our method does not use a separately called planner or realizer. It also does
+not generate one state per model call. All aligned units are produced in the
+same context and the same model call.
+
+The proposed configuration does not place the complete
+30-dimensional profile in the prompt. The full profile and active4 provide
+overlapping signals and jointly reduced both trajectory discrimination and
+value-expression alignment in the development experiment. It therefore uses
+active4 as a compact, situation-conditioned projection of V30.
+
+The proposed method is evaluated on Qwen3-8B, Llama-3.1-8B-Instruct, GPT-4o,
+and Claude Sonnet 4.6. GPT-4o is the development and ablation backbone; the
+other three models evaluate transfer of the frozen
+configuration. We use temperature $0.7$, top-$p$ $0.9$, and at most 1,024 new
+tokens for generation.
+
+\subsection{Evaluation Metrics}
+\label{sec:evaluation_metrics}
+
+We evaluate four complementary properties: response alignment, trajectory
+fidelity, participant-specific personalization, and resistance to population-
+level collapse. Metrics are calculated on Seg2.
+
+\paragraph{Response alignment.}
+\textbf{BGE own-user margin} compares the BGE-M3 similarity of a generated
+response to its target participant's gold response against its average
+similarity to other participants' gold responses. A positive value indicates
+preferential alignment with the intended participant.
+
+\paragraph{Trajectory fidelity.}
+\textbf{KC-NES} is one minus the normalized edit distance between the
+generated and gold C--K sequences. We additionally report exact match
+(\textbf{EM}) and absolute sequence-length error (\textbf{LenErr}) as
+diagnostic measures.
+
+\paragraph{Trajectory personalization.}
+\textbf{KC own-user AUC} measures how often the predicted trajectory is more
+similar to its own participant's gold trajectory than to another
+participant's trajectory. \textbf{KC own-user margin} measures the
+corresponding mean similarity difference. These metrics distinguish genuine
+participant conditioning from a population-level trajectory that is
+moderately similar to everyone.
+
+\paragraph{Value-expression faithfulness.}
+A frozen evaluator extracts directional V30 claims from human and generated
+responses. \textbf{Human-profile Expression Precision, Recall, and F1}
+compare generated claims with claims expressed in the same participant's
+human Q7 response. \textbf{Profile-polarity precision} measures whether
+generated claim directions agree with the participant's V30 profile.
+\textbf{Expression coverage} reports the fraction of V30 dimensions expressed
+in the response and is treated as descriptive rather than intrinsically
+better when larger. \textbf{Own-profile advantage} is the generated
+response's alignment with its intended V30 profile minus its average
+alignment with other participants' profiles. The same frozen extraction
+procedure is applied to human and model responses.
+
+\paragraph{Anti-collapse.}
+\textbf{KCDR} measures how much of the pairwise diversity in human C--K
+trajectories is retained by generated trajectories. \textbf{TGC} measures the
+agreement between pairwise participant geometry in generated and gold
+trajectory spaces. We also report the number of unique predicted trajectories
+(\textbf{Unique}) and the frequency of the most common exact trajectory
+(\textbf{Top share}). Unique and Top share are interpreted jointly with
+KC-NES, KCDR, and TGC because unconstrained randomness can increase diversity
+without improving fidelity.
+
+\begin{table}[t]
+\centering
+\small
+\caption{Evaluation dimensions and primary metrics. Diagnostic metrics are
+reported in the appendix.}
+\label{tab:evaluation_metrics}
+\begin{tabular}{p{0.22\linewidth}p{0.68\linewidth}}
+\toprule
+\textbf{Dimension} & \textbf{Metrics} \\
+\midrule
+Response alignment & BGE own-user margin $\uparrow$ \\
+Trajectory fidelity & KC-NES $\uparrow$ \\
+Trajectory personalization & KC own-user AUC $\uparrow$; KC own-user margin $\uparrow$ \\
+Value faithfulness & Human-profile Expression F1 $\uparrow$; profile-polarity precision $\uparrow$; own-profile advantage $\uparrow$ \\
+Anti-collapse & KCDR $\uparrow$; TGC $\uparrow$; Top share $\downarrow$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Main Results}
+\label{sec:main_results}
+
+\subsubsection{Comparison with Prompt and Trainable Baselines}
+
+\begin{table*}[t]
+\centering
+\small
+\caption{Personalization and anti-collapse results on 162 participants.
+Higher is better for BGE, KC-NES, Polarity, Own-profile advantage, KCDR, and
+Unique; lower is better for LenErr and TopShare. A value is bolded only when
+Ours is the best-performing method within that backbone; SP serves only as a
+non-personalized reference and is excluded from this comparison. ``--''
+denotes an unavailable or non-applicable metric.}
+\label{tab:r5_main_results}
+\resizebox{\textwidth}{!}{
+\begin{tabular}{llrrrrrrrr}
+\toprule
+\textbf{Model} & \textbf{Method} &
+\textbf{BGE} &
+\textbf{KC-NES} &
+\textbf{LenErr} &
+\textbf{Polarity} &
+\textbf{Own-profile Adv.} &
+\textbf{KCDR} &
+\textbf{Unique} &
+\textbf{Top share} \\
+\midrule
+Qwen3-8B & SP       & $-0.0000$ & 0.2977 & 1.4444 & -- & -- & 0.0000 & 1 & 1.0000 \\
+         & PP       & $-0.0000$ & 0.2773 & 2.0370 & -- & -- & 0.3953 & 20 & 0.3889 \\
+         & ICL-Q2   & $-0.0017$ & 0.2435 & 3.6173 & -- & -- & 0.3811 & 47 & 0.2037 \\
+         & CoSER    & $-0.0056$ & -- & -- & 0.4940 & $-0.0296$ & -- & -- & -- \\
+         & RAR-RIA  & $-0.0075$ & -- & -- & 0.5141 & 0.0157 & -- & -- & -- \\
+         & \textbf{Ours} & \textbf{0.0035} & 0.2521 & \textbf{1.6049} & \textbf{0.5264} & \textbf{0.0432} & \textbf{0.5472} & \textbf{50} & \textbf{0.1173} \\
+\midrule
+Llama-3.1-8B & SP       & $-0.0000$ & 0.2522 & 4.3210 & -- & -- & 0.0000 & 1 & 1.0000 \\
+             & PP       & 0.0004 & 0.2550 & 7.6852 & -- & -- & 0.7783 & 154 & 0.0123 \\
+             & ICL-Q2   & $-0.0073$ & 0.2589 & 5.0185 & -- & -- & 0.7580 & 156 & 0.0123 \\
+             & CoSER    & $-0.0035$ & -- & -- & 0.5370 & 0.0491 & -- & -- & -- \\
+             & RAR-RIA  & 0.0040 & -- & -- & 0.4406 & $-0.0309$ & -- & -- & -- \\
+             & \textbf{Ours} & $-0.0013$ & 0.2202 & \textbf{2.4198} & 0.5353 & 0.0485 & 0.7002 & 119 & 0.1728 \\
+\midrule
+GPT-4o & SP       & 0.0030 & 0.2764 & 1.5926 & -- & -- & 0.3482 & 40 & 0.4506 \\
+       & PP       & $-0.0012$ & 0.2650 & 1.5679 & -- & -- & 0.3908 & 43 & 0.3457 \\
+       & ICL-Q2   & 0.0003 & 0.2504 & 2.3642 & -- & -- & 0.5888 & 121 & 0.0494 \\
+       & \textbf{Ours} & $-0.0017$ & 0.2638 & 3.8272 & 0.5298 & 0.0210 & \textbf{0.5904} & \textbf{132} & \textbf{0.0309} \\
+\bottomrule
+\end{tabular}}
+\end{table*}
+
+On Qwen3-8B, our method achieves the strongest V30 alignment, with the highest
+profile-polarity precision (\(0.5264\)) and own-profile advantage
+(\(0.0432\)). It also produces 50 unique trajectories and reduces TopShare
+from \(1.0000\) under SP to \(0.1173\). On GPT-4o, it produces 132 unique
+trajectories, lowers TopShare to \(0.0309\), and achieves the highest KCDR
+(\(0.5904\)). These results show that the proposed conditioning scheme
+reduces population-level trajectory collapse while retaining alignment with
+the intended participant's value profile.
+
+\subsection{Ablation Analysis}
+\label{sec:ablation}
+
+Our method uses PI, the target participant's Q2 record, Q7-specific active4
+cues, selected trait-conditioned rules, and other-participant aligned Q7
+examples. Table~\ref{tab:r5_ablation_design} defines ablations relative to
+this final configuration.
+
+\begin{table}[t]
+\centering
+\small
+\caption{Component ablations of the proposed method. All variants retain the same Q7 task,
+aligned-unit output contract, Q7 examples, and decoding parameters.}
+\label{tab:r5_ablation_design}
+\begin{tabular}{lccccc}
+\toprule
+\textbf{Variant} & \textbf{PI} & \textbf{Q2} & \textbf{active4} &
+\textbf{Rules} & \textbf{Full30} \\
+\midrule
+Ours & \checkmark & \checkmark & \checkmark & \checkmark & $\times$ \\
+Ours $+$ Full30 & \checkmark & \checkmark & \checkmark & \checkmark & \checkmark \\
+Ours w/o Q2 & \checkmark & $\times$ & \checkmark & \checkmark & $\times$ \\
+Ours w/o active4 & \checkmark & \checkmark & $\times$ & \checkmark & $\times$ \\
+Ours w/o rules & \checkmark & \checkmark & \checkmark & $\times$ & $\times$ \\
+Ours w/ shuffled rules & \checkmark & \checkmark & \checkmark & shuffled & $\times$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table*}[t]
+\centering
+\small
+\caption{Ablation results on GPT-4o with 162 participants. Higher is better
+for BGE, KC-NES, Polarity, Own-profile advantage, KCDR, and Unique; lower is
+better for LenErr and TopShare.}
+\label{tab:r5_ablation_results}
+\resizebox{\textwidth}{!}{
+\begin{tabular}{lrrrrrrrr}
+\toprule
+\textbf{Configuration} & \textbf{BGE} & \textbf{KC-NES} &
+\textbf{LenErr} & \textbf{Polarity} & \textbf{Own-profile Adv.} &
+\textbf{KCDR} & \textbf{Unique} & \textbf{TopShare} \\
+\midrule
+Ours                   & $-0.0017$ & 0.2638 & 3.8272 & 0.5298 & 0.0210 & 0.5904 & 132 & 0.0309 \\
+Ours w/o rules         & $-0.0008$ & 0.2674 & 3.8580 & 0.5509 & 0.0446 & 0.5736 & 139 & 0.0247 \\
+Ours \(+\) Full30      & $-0.0007$ & 0.2632 & 3.8148 & 0.5330 & 0.0241 & 0.5852 & 138 & 0.0247 \\
+Ours w/o Q2            & $-0.0009$ & 0.2706 & 3.1543 & 0.5550 & 0.0542 & 0.5732 & 125 & 0.0617 \\
+Ours w/o active4       & 0.0017 & 0.2688 & 3.8765 & 0.4881 & $-0.0163$ & 0.5646 & 130 & 0.0494 \\
+Ours w/ shuffled rules & 0.0018 & 0.2674 & 3.6049 & 0.5252 & 0.0220 & 0.5974 & 134 & 0.0370 \\
+\bottomrule
+\end{tabular}}
+\end{table*}
+
+Table~\ref{tab:r5_ablation_results} shows that removing Q2 increases TopShare
+from \(0.0309\) to \(0.0617\) and reduces Unique from 132 to 125, indicating
+that participant history helps differentiate trajectories. Removing the
+learned rules reduces KCDR from \(0.5904\) to \(0.5736\), whereas adding
+Full30 provides no KCDR gain over active4-only (\(0.5852\) vs.\
+\(0.5904\)). We therefore retain Q2, the rule library, and the more compact
+active4-only profile representation in the final configuration.

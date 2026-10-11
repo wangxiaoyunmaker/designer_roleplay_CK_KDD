@@ -1,0 +1,15 @@
+{
+  "schema_version": "1.0.0",
+  "bootstrap_seed": 20260720,
+  "bootstrap_resamples": 10000,
+  "permutation_seed": 20260720,
+  "permutation_resamples": 100000,
+  "bge": {
+    "model_id": "BAAI/bge-m3",
+    "dense_dimension": 1024,
+    "max_length": 8192,
+    "use_fp16": false,
+    "query_instruction": null,
+    "l2_normalize": true
+  }
+}

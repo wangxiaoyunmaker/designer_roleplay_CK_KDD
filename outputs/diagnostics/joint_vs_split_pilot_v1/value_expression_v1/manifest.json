@@ -1,0 +1,20 @@
+{
+  "conditions": [
+    "joint_active4",
+    "split_routed_active4",
+    "split_shared_active4"
+  ],
+  "evaluation_tier": "POST_HOC_DIAGNOSTIC",
+  "lexicon_sha256": "283a6b650df4ea70fd9992a04cb521050bcc228e7687510c5be5b4e3b84082f5",
+  "participants_sha256": "9657ed1e383007fca68f2c7d21d55916cf1779cdbb0c54270617bf8f036a7ed1",
+  "pilot_sha256": "954fe99336ebe027d3c95aa67ad9118cb4eeacd8b4bd08e780d0612699c7c072",
+  "probe_model": "/data/wy/roleplay_smoke_runtime_v2/hf/models--Qwen--Qwen3-8B/snapshots/b968826d9c46dd6066d109eabc6255188de91218",
+  "probe_protocol": "per_item_two_pole_nli_v4_yes_no_logits",
+  "q7_human_text_used": false,
+  "records": 90,
+  "reference_condition": "joint_active4",
+  "schema_version": "stance_signature_value_expression_manifest_v1",
+  "source_text_retained": false,
+  "theta": 0.9,
+  "training_or_selection_allowed": false
+}

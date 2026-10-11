@@ -1,0 +1,19 @@
+prompt_id,category,path,status,notes
+B0,baseline,docs/briefs/paper_appendix_prompts.md,public,Zero-shot module ladder baseline.
+B1,baseline,docs/briefs/paper_appendix_prompts.md,public,Module ladder: add pi.
+B2,baseline,docs/briefs/paper_appendix_prompts.md,public,Module ladder: add stance.
+B3,baseline,docs/briefs/paper_appendix_prompts.md,public,Module ladder: add self behavior.
+B4,baseline,docs/briefs/paper_appendix_prompts.md,public,v2_anchor full configuration with CAPS routing.
+v2_no_caps,ablation,docs/briefs/paper_appendix_prompts.md,public,Remove the CAPS routing block.
+v2_no_seg3_rule,ablation,docs/briefs/paper_appendix_prompts.md,public,Remove the explicit seg3 judgment rule.
+v2_no_beta_summary,ablation,docs/briefs/paper_appendix_prompts.md,public,Remove the CAPS beta-strength summary.
+v2_no_pkvc_def,ablation,docs/briefs/paper_appendix_prompts.md,public,Remove the PKVC framework primer.
+v2_plus_peer,ablation,docs/briefs/paper_appendix_prompts.md,public,Add same-segment peer retrieval.
+v2_hybrid,ablation,docs/briefs/paper_appendix_prompts.md,public,Use v2_clean for seg3 and v2_anchor elsewhere.
+extractor_v7g_ablation,ablation,sft_pipeline/config/prompts/extractor_v7g_ablation.md,public,Extractor ablation prompt.
+extractor_v8_nomarker,ablation,sft_pipeline/config/prompts/extractor_v8_nomarker.md,public,Extractor variant without marker tables.
+extractor_v8_nosc,ablation,sft_pipeline/config/prompts/extractor_v8_nosc.md,public,Extractor variant without self-checks.
+extractor_v8.7,extractor,sft_pipeline/config/prompts/extractor_v8.7.md,public,Released v8.7 extraction prompt.
+sft_pipeline_overview,sft,sft_pipeline/README.md,public,SFT pipeline overview and run interface.
+sft_data_format,sft,docs/briefs/sft_data_format_v1.md,public,SFT training data and prompt contract.
+sft_expand_q1q6_v3,sft,sft_pipeline/config/prompts/expand_q1q6_v3.md,public,Q1-Q6 explanation expansion prompt.

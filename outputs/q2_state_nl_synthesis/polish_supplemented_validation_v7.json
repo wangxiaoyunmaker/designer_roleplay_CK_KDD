@@ -1,0 +1,56 @@
+{
+  "summary": {
+    "fail": 7,
+    "pass": 1
+  },
+  "q7_gold_used": false,
+  "pi_used": false,
+  "records": [
+    {
+      "job_id": "polish-v7-D036",
+      "issues": [
+        "personalization realization missing from generated text"
+      ]
+    },
+    {
+      "job_id": "polish-v7-D041",
+      "issues": [
+        "personalization realization missing from generated text"
+      ]
+    },
+    {
+      "job_id": "polish-v7-D045",
+      "issues": [
+        "personalization realization missing from generated text"
+      ]
+    },
+    {
+      "job_id": "polish-v7-D071",
+      "issues": [
+        "personalization realization missing from generated text"
+      ]
+    },
+    {
+      "job_id": "polish-v7-D079",
+      "issues": [
+        "personalization realization missing from generated text"
+      ]
+    },
+    {
+      "job_id": "polish-v7-D100",
+      "issues": [
+        "personalization realization missing from generated text"
+      ]
+    },
+    {
+      "job_id": "polish-v7-D111",
+      "issues": [
+        "personalization realization missing from generated text"
+      ]
+    },
+    {
+      "job_id": "polish-v7-D146",
+      "issues": []
+    }
+  ]
+}

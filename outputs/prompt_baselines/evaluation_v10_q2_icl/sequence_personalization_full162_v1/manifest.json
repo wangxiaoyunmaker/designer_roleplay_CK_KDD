@@ -1,0 +1,14 @@
+{
+  "schema_version": "q7_v10_sequence_personalization_manifest_v1",
+  "sources": {
+    "outputs/prompt_baselines/evaluation_v10_q2_icl/raw/predictions_q7_prompt_baselines.jsonl": "c14abb1645bdfc8ab4a14729c312ee754b0690bb2e9422fde841adace6faf958",
+    "/Users/wy/Desktop/KDD/processed_data/q7_human_gold_adjudicated_v2.json": "d6e3e4b2d0f78cbb6ee3ea0e1855efacb2339bb2278ae85b47c038fd972647fa",
+    "/Users/wy/Desktop/KDD/processed_data/route_a_training_v1/private/user_id_mapping.json": "e062a411514a6c4f67d2494ac54f6afa1eae7a6a8d7e4e2709745bb8015d1e74"
+  },
+  "outputs": {
+    "participant_metrics.jsonl": "4ac5350c1c3e8f6920150388959f97c896c62b2a8983e2959bb1db4bf8e27dd9",
+    "complete_baseline_table.csv": "6ad0341453fa403de29ab84bafac2943903f300ab4de2bc9f3fe1544d939bd5c",
+    "complete_baseline_table.md": "e804bea0ab068a8c1baee42a0b9dc8d8b6ef0502b9eae6ca89ec440562d63940",
+    "summary.json": "5c4f121136d9865e2a0c3ad010d82175c89590fda6d3de0a3bb6ff7b9d237fce"
+  }
+}

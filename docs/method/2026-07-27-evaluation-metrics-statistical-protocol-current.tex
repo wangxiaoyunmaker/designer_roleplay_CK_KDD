@@ -1,0 +1,247 @@
+\section{Evaluation Metrics and Statistical Protocol}
+\label{app:evaluation_metrics}
+
+We evaluate the Q7 reasoning response (Seg2) on the fixed cohort of 162
+participants. The proposed method returns one ordered array of aligned units,
+where each unit contains a C--K state and the text realizing that state. The
+state alphabet is
+\(\mathcal Z=\{K,C,K{\to}C,C{\to}K,K{\to}K,C{\to}C\}\).
+V30 denotes the participant's value profile and is not a trajectory state.
+Let \(M_u=(m_{u1},\ldots,m_{uT_u})\) and
+\(\widehat M_u=(\widehat m_{u1},\ldots,\widehat m_{u\widehat T_u})\)
+be the gold and predicted trajectories for participant \(u\), respectively.
+Auxiliary boundary symbols, if present, are removed before evaluation. Let
+\(Y_u\) and \(\widehat Y_u\) denote the corresponding gold and generated
+responses. Metrics are grouped into trajectory fidelity, participant-specific
+personalization, and anti-collapse diagnostics; high diversity alone is not
+interpreted as fidelity or personalization.
+
+\subsection{Textual Own-User Fidelity}
+
+\paragraph{BGE own-user margin.}
+We encode every response with the frozen BGE-M3 dense encoder \(e(\cdot)\)
+(1024 dimensions; L2-normalized). For
+\[
+q_{uv}=\cos\!\left(e(\widehat Y_u),e(Y_v)\right),
+\]
+the participant-level margin is
+\begin{equation}
+b_u=q_{uu}-\frac{1}{N-1}\sum_{v\ne u}q_{uv},
+\qquad
+\operatorname{BGE\text{-}Margin}=\frac{1}{N}\sum_u b_u .
+\label{eq:bge_own_user_margin}
+\end{equation}
+A positive value means that a generated response is, on average, closer to
+its intended participant's gold response than to the gold responses of the
+other participants. This is an identity-specific text metric, rather than a
+generic semantic-similarity score. We also retain mean own-user and
+other-user similarities for interpretation.
+
+\subsection{C--K Trajectory Fidelity}
+
+\paragraph{Exact match and length error.}
+Exact match requires equality of the complete ordered state sequences:
+\begin{equation}
+\operatorname{EM}=\frac{1}{N}\sum_u
+\mathbb I[\widehat M_u=M_u].
+\label{eq:kc_exact_match}
+\end{equation}
+Length error measures only the discrepancy in the number of operations:
+\begin{equation}
+\operatorname{LenErr}=\frac{1}{N}\sum_u
+\left|\widehat T_u-T_u\right|.
+\label{eq:kc_length_error}
+\end{equation}
+Thus, EM is higher-is-better and LenErr is lower-is-better.
+
+\paragraph{KC normalized edit similarity (KC-NES).}
+Let \(\operatorname{Lev}(\cdot,\cdot)\) be Levenshtein distance with unit
+insertion, deletion, and substitution costs. We compute
+\begin{equation}
+\operatorname{NES}_u
+=1-\frac{\operatorname{Lev}(\widehat M_u,M_u)}
+{\max(\widehat T_u,T_u,1)},
+\qquad
+\operatorname{KC\text{-}NES}=\frac{1}{N}\sum_u\operatorname{NES}_u .
+\label{eq:kc_nes}
+\end{equation}
+KC-NES lies in \([0,1]\); higher values indicate better joint agreement in
+state identity, order, and length. An invalid or missing trajectory receives
+zero under the fixed failure policy.
+
+\subsection{C--K Trajectory Personalization}
+
+KC-NES measures fidelity to the intended gold trajectory but does not by
+itself establish that the prediction is more specific to its owner than to a
+population-level trajectory. We therefore contrast each prediction with all
+gold trajectories in the cohort. Define
+\begin{equation}
+a_{uv}=1-\frac{\operatorname{Lev}(\widehat M_u,M_v)}
+{\max(\widehat T_u,T_v,1)}.
+\label{eq:kc_cross_user_similarity}
+\end{equation}
+
+\paragraph{KC own-user margin.}
+\begin{equation}
+\Delta_u^{\mathrm{KC}}
+=a_{uu}-\frac{1}{N-1}\sum_{v\ne u}a_{uv},
+\qquad
+\operatorname{KC\text{-}Margin}
+=\frac{1}{N}\sum_u\Delta_u^{\mathrm{KC}} .
+\label{eq:kc_own_user_margin}
+\end{equation}
+A positive margin indicates that the generated trajectory fits its intended
+participant better than an average non-target participant.
+
+\paragraph{KC own-user AUC.}
+For each participant, we treat the own gold trajectory as the positive and
+each other participant's trajectory as a negative:
+\begin{equation}
+\operatorname{AUC}_u^{\mathrm{KC}}
+=\frac{1}{N-1}\sum_{v\ne u}
+\left(
+\mathbb I[a_{uu}>a_{uv}]
++\frac{1}{2}\mathbb I[a_{uu}=a_{uv}]
+\right),
+\qquad
+\operatorname{KC\text{-}AUC}
+=\frac{1}{N}\sum_u\operatorname{AUC}_u^{\mathrm{KC}} .
+\label{eq:kc_own_user_auc}
+\end{equation}
+KC-AUC is bounded by \([0,1]\); \(0.5\) is the chance-ranking reference.
+KC-AUC and KC-Margin are the primary sequence-personalization metrics.
+
+\subsection{Trajectory Anti-Collapse and Geometry}
+
+Let
+\[
+d(A,B)=1-\left[1-
+\frac{\operatorname{Lev}(A,B)}{\max(|A|,|B|,1)}\right]
+\]
+be normalized edit distance. Let
+\(\overline d_{\mathrm{pred}}\) and \(\overline d_{\mathrm{gold}}\)
+be its means over all unordered participant pairs for predicted and gold
+trajectories, respectively.
+
+\paragraph{KC diversity retention (KCDR).}
+\begin{equation}
+\operatorname{KCDR}
+=\frac{\overline d_{\mathrm{pred}}}{\overline d_{\mathrm{gold}}}.
+\label{eq:kcdr}
+\end{equation}
+Higher KCDR indicates greater retention of the cross-participant variation
+present in the gold trajectories, with \(1\) denoting equal average
+dispersion. Values above \(1\) indicate over-dispersion and therefore are not
+automatically evidence of better personalization.
+
+\paragraph{Trajectory geometry correlation (TGC).}
+\begin{equation}
+\operatorname{TGC}
+=\rho_{\mathrm{Spearman}}
+\left(
+\{d(\widehat M_u,\widehat M_v)\}_{u<v},
+\{d(M_u,M_v)\}_{u<v}
+\right).
+\label{eq:tgc}
+\end{equation}
+TGC lies in \([-1,1]\) and tests whether the relative geometry of
+between-participant trajectory distances is preserved; higher is better.
+
+\paragraph{Unique trajectories and top share.}
+For each distinct predicted trajectory \(A\), let
+\(n_A=\sum_u\mathbb I[\widehat M_u=A]\). We report
+\begin{equation}
+\operatorname{Unique}=\left|\{A:n_A>0\}\right|,
+\qquad
+\operatorname{TopShare}=\frac{\max_A n_A}{N}.
+\label{eq:unique_topshare}
+\end{equation}
+More unique trajectories and a lower TopShare indicate less exact mode
+collapse. Chain diversity equals \(1-\operatorname{TopShare}\) and is
+therefore omitted from the main table as redundant. KCDR, TGC, Unique, and
+TopShare are cohort-level diagnostics: none alone establishes that the
+variation is assigned to the correct participants.
+
+\subsection{NLI-Based V30 Value Expression}
+
+A frozen two-pole NLI probe maps each generated response and each human gold
+response to one stance for every V30 dimension:
+\(\{\textsc{agree},\textsc{disagree},\textsc{not-expressed}\}\).
+Accordingly, ``Human'' below denotes automatic agreement with value claims
+extracted from the human response, not a manual rating. For participant \(u\),
+let \(G_u\) and \(H_u\) be the sets of non-neutral
+\((\text{dimension},\text{polarity})\) claims extracted from generated and
+human responses.
+
+\paragraph{Human expression precision, recall, and F1.}
+We micro-aggregate directional claims over participants:
+\begin{align}
+\operatorname{TP}&=\sum_u|G_u\cap H_u|, &
+\operatorname{FP}&=\sum_u|G_u\setminus H_u|, &
+\operatorname{FN}&=\sum_u|H_u\setminus G_u|, \nonumber\\
+P_{\mathrm{human}}&=\frac{\operatorname{TP}}
+{\operatorname{TP}+\operatorname{FP}},&
+R_{\mathrm{human}}&=\frac{\operatorname{TP}}
+{\operatorname{TP}+\operatorname{FN}},&
+F1_{\mathrm{human}}&=\frac{2P_{\mathrm{human}}R_{\mathrm{human}}}
+{P_{\mathrm{human}}+R_{\mathrm{human}}}.
+\label{eq:human_expression_prf}
+\end{align}
+All three are higher-is-better. Matching a dimension with the wrong polarity
+does not count as a true positive. Undefined denominators are reported as
+missing rather than assigned an artificial perfect score.
+
+\paragraph{Profile-polarity precision and expression coverage.}
+The six-point V30 score is binarized as \textsc{disagree} for scores 1--3 and
+\textsc{agree} for scores 4--6. Let \(p_{uj}\) be this profile polarity and
+\(g_{uj}\) the generated claim polarity. For participants with
+\(|G_u|>0\),
+\begin{equation}
+\operatorname{PPP}_u
+=\frac{1}{|G_u|}\sum_{(j,g_{uj})\in G_u}\mathbb I[g_{uj}=p_{uj}].
+\label{eq:profile_polarity_precision}
+\end{equation}
+Profile-polarity precision is the mean of \(\operatorname{PPP}_u\) over
+participants who express at least one claim. Expression coverage includes
+all participants and is
+\begin{equation}
+\operatorname{Coverage}=\frac{1}{N}\sum_u\frac{|G_u|}{30}.
+\label{eq:expression_coverage}
+\end{equation}
+PPP measures directional consistency conditional on expression, whereas
+coverage exposes systems that attain precision by expressing very little.
+
+\paragraph{Own-profile advantage.}
+Let
+\[
+\operatorname{Fit}(G_u,p_v)
+=\frac{1}{|G_u|}\sum_{(j,g_{uj})\in G_u}\mathbb I[g_{uj}=p_{vj}]
+\]
+for \(|G_u|>0\). The participant-specific contrast is
+\begin{equation}
+\operatorname{OPA}_u
+=\operatorname{Fit}(G_u,p_u)
+-\frac{1}{N-1}\sum_{v\ne u}\operatorname{Fit}(G_u,p_v),
+\qquad
+\operatorname{OPA}=\operatorname{mean}_{u:|G_u|>0}\operatorname{OPA}_u .
+\label{eq:own_profile_advantage}
+\end{equation}
+A positive OPA means that the expressed value polarities fit the target
+profile better than the profiles of other participants on average. As with
+PPP, participants without generated claims are excluded, so OPA must be
+interpreted jointly with coverage.
+
+\subsection{Statistical Reporting}
+
+The participant is the sole unit of inference. All system comparisons use a
+paired participant bootstrap with 10,000 resamples; each resample draws 162
+participants with replacement, recomputes the statistic for both systems,
+and reports the 2.5th and 97.5th percentiles of the paired difference as its
+95\% confidence interval. Participant-decomposable scores are averaged within
+each resample, while micro-aggregated value-expression scores are recomputed
+from the resampled claim counts. For KCDR, TGC, Unique, and TopShare, the
+complete cohort statistic is recomputed after participant resampling.
+Although KCDR and TGC contain participant pairs, these pairs are dependent
+and are never treated as independent observations. We report valid sample
+sizes and expression coverage wherever undefined or missing outputs can
+change the effective cohort.

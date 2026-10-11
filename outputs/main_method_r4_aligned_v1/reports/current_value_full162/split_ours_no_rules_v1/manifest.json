@@ -1,0 +1,40 @@
+{
+  "accepted": true,
+  "cohort_participant_ids_sha256": "f01552328a3ef5cf5ddc9256dcabb59233a89531d43aba3f2f8b98a4f3ba5ba7",
+  "cohort_participants": 162,
+  "decoding": "greedy verbaliser logits over 是/否; no free-form generation",
+  "evidence_span_retained": false,
+  "failure_counts": {},
+  "failures": 0,
+  "generated_records": 162,
+  "generated_records_by_system": {
+    "ours_no_rules__sp": 162
+  },
+  "gold_excluded_unit_records": 3,
+  "gold_exclusions_by_reason": {
+    "missing_final_adjudication": 3
+  },
+  "human_records": 162,
+  "id_mapping_sha256": "99ecbe1926725d99a63a32ff988ce17bf11d1d46db89e68b1411d671d64d43cf",
+  "lexicon_sha256": "283a6b650df4ea70fd9992a04cb521050bcc228e7687510c5be5b4e3b84082f5",
+  "participants_sha256": "9657ed1e383007fca68f2c7d21d55916cf1779cdbb0c54270617bf8f036a7ed1",
+  "pi_used": false,
+  "prediction_sha256": {
+    "ours_no_rules": "58f1c0309321bfadf7f1664e3b2e5fdce0cb5dfb721facca7febde1a34dd6014"
+  },
+  "probe_max_text_tokens": 1200,
+  "probe_model_path": "/data/wy/roleplay_smoke_runtime_v2/hf/models--Qwen--Qwen3-8B/snapshots/b968826d9c46dd6066d109eabc6255188de91218",
+  "probe_prefix_cache": true,
+  "probe_prompt_sha256": "95ef67faa3b087f98e8d0d88312bc07491240dc625c71fdeb734249588bc002e",
+  "probe_prompt_version": "q7_value_expression_two_pole_nli_v4_yes_no_logits",
+  "probe_protocol": "per_item_two_pole_nli_v4_yes_no_logits",
+  "probe_theta": 0.9,
+  "q7_gold_sha256": "542ad45c81ea42586f94a42eace6855cff6b09a4b64cc33d5b8d7135d444057a",
+  "q7_gold_used": true,
+  "q7_text_used": false,
+  "schema_version": "q7_value_expression_manifest_v2",
+  "sealed_final_evaluation": true,
+  "segment_aggregation": "single_segment_seg2",
+  "source_text_retained": false,
+  "training_or_selection_allowed": false
+}

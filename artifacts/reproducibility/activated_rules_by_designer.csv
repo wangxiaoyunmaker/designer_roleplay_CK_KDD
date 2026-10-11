@@ -1,0 +1,645 @@
+user_id,rank,class_anchor,procedure_id,trait,trait_score,polarity,active,S_coef,transition,O_subtype
+D001,1,P,Q1_B__系统责任归属,系统责任归属,2.0,-,True,-0.38,strictly_inhibits,P
+D001,2,K,Q5_A__数据 vs 直觉,数据 vs 直觉,2.0,-,True,-0.516,strictly_inhibits,k2
+D001,3,V,Q6_B__本土文化妥协,本土文化妥协,6.0,+,True,0.539,strongly_forces_transition_to,v1➡️c2
+D001,4,C,Q4_C__资产开源,资产开源,5.0,+,True,0.759,strongly_forces_transition_to,c2
+D002,1,P,Q1_B__系统责任归属,系统责任归属,2.0,-,True,-0.38,strictly_inhibits,P
+D002,2,K,Q5_A__数据 vs 直觉,数据 vs 直觉,3.0,-,True,-0.516,strictly_inhibits,k2
+D002,3,V,Q3_C__仿生与有机,仿生与有机,2.0,-,True,-0.861,strictly_inhibits,v1➡️c1
+D002,4,C,Q5_B__系统微模块,系统微模块,2.0,-,True,-0.418,strictly_inhibits,c2
+D003,1,P,Q1_B__系统责任归属,系统责任归属,1.0,-,True,-0.38,strictly_inhibits,P
+D003,2,K,Q5_A__数据 vs 直觉,数据 vs 直觉,2.0,-,True,-0.516,strictly_inhibits,k2
+D003,3,V,Q3_C__仿生与有机,仿生与有机,3.0,-,True,-0.861,strictly_inhibits,v1➡️c1
+D003,4,C,Q5_B__系统微模块,系统微模块,1.0,-,True,-0.418,strictly_inhibits,c2
+D004,1,P,Q5_D__本土文化妥协,本土文化妥协,2.0,-,True,-0.441,strictly_inhibits,p1
+D004,2,K,Q5_A__技术支持,技术支持,4.0,+,True,0.417,guides_transition_to,k2
+D004,3,V,Q3_C__数据 vs 直觉,数据 vs 直觉,5.0,+,True,0.692,weakly_shifts_to,v1➡️c1
+D005,1,P,Q1_B__系统责任归属,系统责任归属,2.0,-,True,-0.38,strictly_inhibits,P
+D005,2,K,Q5_A__数据 vs 直觉,数据 vs 直觉,2.0,-,True,-0.516,strictly_inhibits,k2
+D005,3,V,Q3_C__仿生与有机,仿生与有机,3.0,-,True,-0.861,strictly_inhibits,v1➡️c1
+D005,4,C,Q5_B__系统微模块,系统微模块,2.0,-,True,-0.418,strictly_inhibits,c2
+D006,1,P,Q5_D__本土文化妥协,本土文化妥协,3.0,-,True,-0.441,strictly_inhibits,p1
+D006,2,K,Q5_A__技术支持,技术支持,4.0,+,True,0.417,guides_transition_to,k2
+D006,3,V,Q3_C__仿生与有机,仿生与有机,3.0,-,True,-0.861,strictly_inhibits,v1➡️c1
+D006,4,C,Q4_C__资产开源,资产开源,4.0,+,True,0.759,strongly_forces_transition_to,c2
+D007,1,P,Q1_B__系统责任归属,系统责任归属,2.0,-,True,-0.38,strictly_inhibits,P
+D007,2,K,Q5_A__数据 vs 直觉,数据 vs 直觉,2.0,-,True,-0.516,strictly_inhibits,k2
+D007,3,V,Q3_C__仿生与有机,仿生与有机,2.0,-,True,-0.861,strictly_inhibits,v1➡️c1
+D007,4,C,Q5_B__系统微模块,系统微模块,1.0,-,True,-0.418,strictly_inhibits,c2
+D008,1,P,Q5_D__本土文化妥协,本土文化妥协,3.0,-,True,-0.441,strictly_inhibits,p1
+D008,2,K,Q5_A__封闭生态竞争,封闭生态竞争,4.0,+,True,0.412,guides_transition_to,k2
+D008,3,V,Q3_C__仿生与有机,仿生与有机,2.0,-,True,-0.861,strictly_inhibits,v1➡️c1
+D008,4,C,Q5_B__系统微模块,系统微模块,3.0,-,True,-0.418,strictly_inhibits,c2
+D009,1,P,Q1_B__系统责任归属,系统责任归属,3.0,-,True,-0.38,strictly_inhibits,P
+D009,2,K,Q5_A__封闭生态竞争,封闭生态竞争,5.0,+,True,0.412,guides_transition_to,k2
+D009,3,V,Q3_C__仿生与有机,仿生与有机,3.0,-,True,-0.861,strictly_inhibits,v1➡️c1
+D009,4,C,Q4_C__资产开源,资产开源,4.0,+,True,0.759,strongly_forces_transition_to,c2
+D010,1,P,Q5_D__本土文化妥协,本土文化妥协,3.0,-,True,-0.441,strictly_inhibits,p1
+D010,2,K,Q5_A__数据 vs 直觉,数据 vs 直觉,2.0,-,True,-0.516,strictly_inhibits,k2
+D010,3,V,Q3_C__仿生与有机,仿生与有机,2.0,-,True,-0.861,strictly_inhibits,v1➡️c1
+D010,4,C,Q5_B__系统微模块,系统微模块,2.0,-,True,-0.418,strictly_inhibits,c2
+D011,1,P,Q1_B__系统责任归属,系统责任归属,3.0,-,True,-0.38,strictly_inhibits,P
+D011,2,K,Q5_A__数据 vs 直觉,数据 vs 直觉,2.0,-,True,-0.516,strictly_inhibits,k2
+D011,3,V,Q6_B__本土文化妥协,本土文化妥协,5.0,+,True,0.539,strongly_forces_transition_to,v1➡️c2
+D011,4,C,Q1_A__数据隐私交换,数据隐私交换,5.0,+,True,0.235,weakly_shifts_to,C
+D012,1,P,Q1_B__系统责任归属,系统责任归属,2.0,-,True,-0.38,strictly_inhibits,P
+D012,2,K,Q5_A__数据 vs 直觉,数据 vs 直觉,2.0,-,True,-0.516,strictly_inhibits,k2
+D012,3,V,Q3_C__仿生与有机,仿生与有机,3.0,-,True,-0.861,strictly_inhibits,v1➡️c1
+D012,4,C,Q5_B__系统微模块,系统微模块,3.0,-,True,-0.418,strictly_inhibits,c2
+D013,1,P,Q1_B__时代 vs 永恒,时代 vs 永恒,5.0,+,True,0.325,weakly_shifts_to,P
+D013,2,K,Q5_A__技术支持,技术支持,4.0,+,True,0.417,guides_transition_to,k2
+D013,3,V,Q3_C__数据 vs 直觉,数据 vs 直觉,6.0,+,True,0.692,weakly_shifts_to,v1➡️c1
+D013,4,C,Q4_C__资产开源,资产开源,5.0,+,True,0.759,strongly_forces_transition_to,c2
+D014,1,P,Q5_D__本土文化妥协,本土文化妥协,1.0,-,True,-0.441,strictly_inhibits,p1
+D014,2,K,Q5_A__技术支持,技术支持,6.0,+,True,0.417,guides_transition_to,k2
+D014,3,V,Q3_C__仿生与有机,仿生与有机,1.0,-,True,-0.861,strictly_inhibits,v1➡️c1
+D014,4,C,Q5_B__系统微模块,系统微模块,3.0,-,True,-0.418,strictly_inhibits,c2
+D015,1,P,Q1_B__系统责任归属,系统责任归属,1.0,-,True,-0.38,strictly_inhibits,P
+D015,2,K,Q5_A__数据 vs 直觉,数据 vs 直觉,2.0,-,True,-0.516,strictly_inhibits,k2
+D015,3,V,Q3_C__仿生与有机,仿生与有机,2.0,-,True,-0.861,strictly_inhibits,v1➡️c1
+D015,4,C,Q5_B__系统微模块,系统微模块,1.0,-,True,-0.418,strictly_inhibits,c2
+D016,1,P,Q1_B__时代 vs 永恒,时代 vs 永恒,4.0,+,True,0.325,weakly_shifts_to,P
+D016,2,K,Q5_A__技术支持,技术支持,4.0,+,True,0.417,guides_transition_to,k2
+D016,3,V,Q3_C__数据 vs 直觉,数据 vs 直觉,4.0,+,True,0.692,weakly_shifts_to,v1➡️c1
+D016,4,C,Q4_C__资产开源,资产开源,4.0,+,True,0.759,strongly_forces_transition_to,c2
+D017,1,P,Q1_B__时代 vs 永恒,时代 vs 永恒,4.0,+,True,0.325,weakly_shifts_to,P
+D017,2,K,Q5_A__封闭生态竞争,封闭生态竞争,5.0,+,True,0.412,guides_transition_to,k2
+D017,3,V,Q3_C__仿生与有机,仿生与有机,2.0,-,True,-0.861,strictly_inhibits,v1➡️c1
+D017,4,C,Q5_B__系统微模块,系统微模块,2.0,-,True,-0.418,strictly_inhibits,c2
+D018,1,P,Q1_B__时代 vs 永恒,时代 vs 永恒,5.0,+,True,0.325,weakly_shifts_to,P
+D018,2,K,Q5_A__数据 vs 直觉,数据 vs 直觉,2.0,-,True,-0.516,strictly_inhibits,k2
+D018,3,V,Q6_B__本土文化妥协,本土文化妥协,5.0,+,True,0.539,strongly_forces_transition_to,v1➡️c2
+D018,4,C,Q4_C__资产开源,资产开源,5.0,+,True,0.759,strongly_forces_transition_to,c2
+D019,1,P,Q1_B__系统责任归属,系统责任归属,1.0,-,True,-0.38,strictly_inhibits,P
+D019,2,K,Q5_A__数据 vs 直觉,数据 vs 直觉,2.0,-,True,-0.516,strictly_inhibits,k2
+D019,3,V,Q3_C__仿生与有机,仿生与有机,2.0,-,True,-0.861,strictly_inhibits,v1➡️c1
+D019,4,C,Q5_B__系统微模块,系统微模块,3.0,-,True,-0.418,strictly_inhibits,c2
+D020,1,P,Q5_D__本土文化妥协,本土文化妥协,2.0,-,True,-0.441,strictly_inhibits,p1
+D020,2,K,Q5_A__技术支持,技术支持,5.0,+,True,0.417,guides_transition_to,k2
+D020,3,V,Q3_C__数据 vs 直觉,数据 vs 直觉,4.0,+,True,0.692,weakly_shifts_to,v1➡️c1
+D020,4,C,Q5_B__系统微模块,系统微模块,2.0,-,True,-0.418,strictly_inhibits,c2
+D021,1,P,Q1_B__系统责任归属,系统责任归属,3.0,-,True,-0.38,strictly_inhibits,P
+D021,2,K,Q5_A__数据 vs 直觉,数据 vs 直觉,3.0,-,True,-0.516,strictly_inhibits,k2
+D021,3,V,Q6_B__本土文化妥协,本土文化妥协,4.0,+,True,0.539,strongly_forces_transition_to,v1➡️c2
+D021,4,C,Q4_C__资产开源,资产开源,4.0,+,True,0.759,strongly_forces_transition_to,c2
+D022,1,P,Q5_D__本土文化妥协,本土文化妥协,2.0,-,True,-0.441,strictly_inhibits,p1
+D022,2,K,Q5_A__数据 vs 直觉,数据 vs 直觉,3.0,-,True,-0.516,strictly_inhibits,k2
+D022,3,V,Q5_C__商业操纵伦理,商业操纵伦理,3.0,-,True,-0.461,strictly_inhibits,v3
+D022,4,C,Q5_B__技术支持,技术支持,3.0,-,True,-0.405,strictly_inhibits,c2
+D023,1,P,Q5_D__本土文化妥协,本土文化妥协,3.0,-,True,-0.441,strictly_inhibits,p1
+D023,2,K,Q5_A__数据 vs 直觉,数据 vs 直觉,2.0,-,True,-0.516,strictly_inhibits,k2
+D023,3,V,Q3_C__仿生与有机,仿生与有机,2.0,-,True,-0.861,strictly_inhibits,v1➡️c1
+D023,4,C,Q5_B__系统微模块,系统微模块,2.0,-,True,-0.418,strictly_inhibits,c2
+D024,1,P,Q1_B__系统责任归属,系统责任归属,3.0,-,True,-0.38,strictly_inhibits,P
+D024,2,K,Q5_A__数据 vs 直觉,数据 vs 直觉,2.0,-,True,-0.516,strictly_inhibits,k2
+D024,3,V,Q3_C__仿生与有机,仿生与有机,2.0,-,True,-0.861,strictly_inhibits,v1➡️c1
+D024,4,C,Q5_B__技术支持,技术支持,2.0,-,True,-0.405,strictly_inhibits,c2
+D025,1,P,Q1_B__系统责任归属,系统责任归属,2.0,-,True,-0.38,strictly_inhibits,P
+D025,2,K,Q5_A__数据 vs 直觉,数据 vs 直觉,2.0,-,True,-0.516,strictly_inhibits,k2
+D025,3,V,Q3_C__仿生与有机,仿生与有机,3.0,-,True,-0.861,strictly_inhibits,v1➡️c1
+D025,4,C,Q5_B__系统微模块,系统微模块,2.0,-,True,-0.418,strictly_inhibits,c2
+D026,1,P,Q5_D__本土文化妥协,本土文化妥协,3.0,-,True,-0.441,strictly_inhibits,p1
+D026,2,K,Q5_A__数据 vs 直觉,数据 vs 直觉,2.0,-,True,-0.516,strictly_inhibits,k2
+D026,3,V,Q5_C__商业操纵伦理,商业操纵伦理,1.0,-,True,-0.461,strictly_inhibits,v3
+D026,4,C,Q5_B__系统微模块,系统微模块,3.0,-,True,-0.418,strictly_inhibits,c2
+D027,1,P,Q5_D__本土文化妥协,本土文化妥协,3.0,-,True,-0.441,strictly_inhibits,p1
+D027,2,K,Q5_A__封闭生态竞争,封闭生态竞争,4.0,+,True,0.412,guides_transition_to,k2
+D027,3,V,Q3_C__仿生与有机,仿生与有机,2.0,-,True,-0.861,strictly_inhibits,v1➡️c1
+D027,4,C,Q4_C__资产开源,资产开源,5.0,+,True,0.759,strongly_forces_transition_to,c2
+D028,1,P,Q5_D__独裁 vs 委员会,独裁 vs 委员会,5.0,+,True,0.288,weakly_shifts_to,p1
+D028,2,K,Q5_A__封闭生态竞争,封闭生态竞争,4.0,+,True,0.412,guides_transition_to,k2
+D028,3,V,Q3_C__仿生与有机,仿生与有机,2.0,-,True,-0.861,strictly_inhibits,v1➡️c1
+D028,4,C,Q5_B__系统微模块,系统微模块,2.0,-,True,-0.418,strictly_inhibits,c2
+D029,1,P,Q5_D__本土文化妥协,本土文化妥协,2.0,-,True,-0.441,strictly_inhibits,p1
+D029,2,K,Q5_A__技术支持,技术支持,4.0,+,True,0.417,guides_transition_to,k2
+D029,3,V,Q3_C__仿生与有机,仿生与有机,2.0,-,True,-0.861,strictly_inhibits,v1➡️c1
+D029,4,C,Q1_A__数据隐私交换,数据隐私交换,5.0,+,True,0.235,weakly_shifts_to,C
+D030,1,P,Q1_B__系统责任归属,系统责任归属,3.0,-,True,-0.38,strictly_inhibits,P
+D030,2,K,Q5_A__技术支持,技术支持,5.0,+,True,0.417,guides_transition_to,k2
+D030,3,V,Q3_C__仿生与有机,仿生与有机,3.0,-,True,-0.861,strictly_inhibits,v1➡️c1
+D030,4,C,Q4_C__资产开源,资产开源,5.0,+,True,0.759,strongly_forces_transition_to,c2
+D031,1,P,Q1_B__系统责任归属,系统责任归属,3.0,-,True,-0.38,strictly_inhibits,P
+D031,2,K,Q5_A__数据 vs 直觉,数据 vs 直觉,3.0,-,True,-0.516,strictly_inhibits,k2
+D031,3,V,Q6_B__本土文化妥协,本土文化妥协,5.0,+,True,0.539,strongly_forces_transition_to,v1➡️c2
+D031,4,C,Q4_C__资产开源,资产开源,6.0,+,True,0.759,strongly_forces_transition_to,c2
+D032,1,P,Q1_B__系统责任归属,系统责任归属,2.0,-,True,-0.38,strictly_inhibits,P
+D032,2,K,Q5_A__数据 vs 直觉,数据 vs 直觉,2.0,-,True,-0.516,strictly_inhibits,k2
+D032,3,V,Q3_C__仿生与有机,仿生与有机,3.0,-,True,-0.861,strictly_inhibits,v1➡️c1
+D032,4,C,Q4_C__资产开源,资产开源,4.0,+,True,0.759,strongly_forces_transition_to,c2
+D033,1,P,Q1_B__时代 vs 永恒,时代 vs 永恒,5.0,+,True,0.325,weakly_shifts_to,P
+D033,2,K,Q5_A__数据 vs 直觉,数据 vs 直觉,2.0,-,True,-0.516,strictly_inhibits,k2
+D033,3,V,Q3_C__仿生与有机,仿生与有机,3.0,-,True,-0.861,strictly_inhibits,v1➡️c1
+D033,4,C,Q1_A__数据隐私交换,数据隐私交换,4.0,+,True,0.235,weakly_shifts_to,C
+D034,1,P,Q1_B__时代 vs 永恒,时代 vs 永恒,5.0,+,True,0.325,weakly_shifts_to,P
+D034,2,K,Q5_A__技术支持,技术支持,4.0,+,True,0.417,guides_transition_to,k2
+D034,3,V,Q3_C__仿生与有机,仿生与有机,3.0,-,True,-0.861,strictly_inhibits,v1➡️c1
+D034,4,C,Q1_A__数据隐私交换,数据隐私交换,4.0,+,True,0.235,weakly_shifts_to,C
+D035,1,P,Q5_D__本土文化妥协,本土文化妥协,3.0,-,True,-0.441,strictly_inhibits,p1
+D035,2,K,Q5_A__数据 vs 直觉,数据 vs 直觉,3.0,-,True,-0.516,strictly_inhibits,k2
+D035,3,V,Q3_C__仿生与有机,仿生与有机,1.0,-,True,-0.861,strictly_inhibits,v1➡️c1
+D035,4,C,Q5_B__系统微模块,系统微模块,2.0,-,True,-0.418,strictly_inhibits,c2
+D036,1,P,Q1_B__时代 vs 永恒,时代 vs 永恒,6.0,+,True,0.325,weakly_shifts_to,P
+D036,2,K,Q5_A__数据 vs 直觉,数据 vs 直觉,2.0,-,True,-0.516,strictly_inhibits,k2
+D036,3,V,Q6_B__本土文化妥协,本土文化妥协,6.0,+,True,0.539,strongly_forces_transition_to,v1➡️c2
+D036,4,C,Q4_C__资产开源,资产开源,5.0,+,True,0.759,strongly_forces_transition_to,c2
+D037,1,P,Q1_B__系统责任归属,系统责任归属,2.0,-,True,-0.38,strictly_inhibits,P
+D037,2,K,Q5_A__数据 vs 直觉,数据 vs 直觉,1.0,-,True,-0.516,strictly_inhibits,k2
+D037,3,V,Q3_C__仿生与有机,仿生与有机,3.0,-,True,-0.861,strictly_inhibits,v1➡️c1
+D037,4,C,Q5_B__系统微模块,系统微模块,2.0,-,True,-0.418,strictly_inhibits,c2
+D038,1,P,Q5_D__本土文化妥协,本土文化妥协,3.0,-,True,-0.441,strictly_inhibits,p1
+D038,2,K,Q5_A__数据 vs 直觉,数据 vs 直觉,1.0,-,True,-0.516,strictly_inhibits,k2
+D038,3,V,Q1_D__封闭生态竞争,封闭生态竞争,3.0,-,True,-0.445,strictly_inhibits,V
+D038,4,C,Q5_B__系统微模块,系统微模块,1.0,-,True,-0.418,strictly_inhibits,c2
+D039,1,P,Q5_D__本土文化妥协,本土文化妥协,3.0,-,True,-0.441,strictly_inhibits,p1
+D039,2,K,Q5_A__数据 vs 直觉,数据 vs 直觉,2.0,-,True,-0.516,strictly_inhibits,k2
+D039,3,V,Q3_C__仿生与有机,仿生与有机,3.0,-,True,-0.861,strictly_inhibits,v1➡️c1
+D039,4,C,Q5_B__系统微模块,系统微模块,2.0,-,True,-0.418,strictly_inhibits,c2
+D040,1,P,Q1_B__系统责任归属,系统责任归属,3.0,-,True,-0.38,strictly_inhibits,P
+D040,2,K,Q5_A__技术支持,技术支持,4.0,+,True,0.417,guides_transition_to,k2
+D040,3,V,Q3_C__数据 vs 直觉,数据 vs 直觉,5.0,+,True,0.692,weakly_shifts_to,v1➡️c1
+D041,1,P,Q5_D__本土文化妥协,本土文化妥协,3.0,-,True,-0.441,strictly_inhibits,p1
+D041,2,K,Q5_A__封闭生态竞争,封闭生态竞争,4.0,+,True,0.412,guides_transition_to,k2
+D041,3,V,Q3_C__仿生与有机,仿生与有机,2.0,-,True,-0.861,strictly_inhibits,v1➡️c1
+D041,4,C,Q5_B__系统微模块,系统微模块,3.0,-,True,-0.418,strictly_inhibits,c2
+D042,1,P,Q5_D__本土文化妥协,本土文化妥协,3.0,-,True,-0.441,strictly_inhibits,p1
+D042,2,K,Q5_A__数据 vs 直觉,数据 vs 直觉,2.0,-,True,-0.516,strictly_inhibits,k2
+D042,3,V,Q3_C__仿生与有机,仿生与有机,2.0,-,True,-0.861,strictly_inhibits,v1➡️c1
+D042,4,C,Q5_B__系统微模块,系统微模块,2.0,-,True,-0.418,strictly_inhibits,c2
+D043,1,P,Q5_D__本土文化妥协,本土文化妥协,3.0,-,True,-0.441,strictly_inhibits,p1
+D043,2,K,Q5_A__数据 vs 直觉,数据 vs 直觉,2.0,-,True,-0.516,strictly_inhibits,k2
+D043,3,V,Q6_A__仿生与有机,仿生与有机,5.0,+,True,0.437,guides_transition_to,v
+D043,4,C,Q5_B__系统微模块,系统微模块,3.0,-,True,-0.418,strictly_inhibits,c2
+D044,1,P,Q1_B__时代 vs 永恒,时代 vs 永恒,5.0,+,True,0.325,weakly_shifts_to,P
+D044,2,K,Q5_A__数据 vs 直觉,数据 vs 直觉,1.0,-,True,-0.516,strictly_inhibits,k2
+D044,3,V,Q6_B__本土文化妥协,本土文化妥协,5.0,+,True,0.539,strongly_forces_transition_to,v1➡️c2
+D044,4,C,Q5_B__系统微模块,系统微模块,2.0,-,True,-0.418,strictly_inhibits,c2
+D045,1,P,Q1_B__系统责任归属,系统责任归属,2.0,-,True,-0.38,strictly_inhibits,P
+D045,2,K,Q5_A__技术支持,技术支持,5.0,+,True,0.417,guides_transition_to,k2
+D045,3,V,Q3_C__数据 vs 直觉,数据 vs 直觉,5.0,+,True,0.692,weakly_shifts_to,v1➡️c1
+D045,4,C,Q4_C__资产开源,资产开源,4.0,+,True,0.759,strongly_forces_transition_to,c2
+D046,1,P,Q1_B__系统责任归属,系统责任归属,1.0,-,True,-0.38,strictly_inhibits,P
+D046,2,K,Q3_D__救世主情结,救世主情结,6.0,+,True,0.362,guides_transition_to,k2
+D046,3,V,Q3_C__仿生与有机,仿生与有机,3.0,-,True,-0.861,strictly_inhibits,v1➡️c1
+D046,4,C,Q5_B__系统微模块,系统微模块,3.0,-,True,-0.418,strictly_inhibits,c2
+D047,1,P,Q1_B__时代 vs 永恒,时代 vs 永恒,6.0,+,True,0.325,weakly_shifts_to,P
+D047,2,K,Q5_A__技术支持,技术支持,5.0,+,True,0.417,guides_transition_to,k2
+D047,3,V,Q3_C__数据 vs 直觉,数据 vs 直觉,4.0,+,True,0.692,weakly_shifts_to,v1➡️c1
+D047,4,C,Q1_A__数据隐私交换,数据隐私交换,5.0,+,True,0.235,weakly_shifts_to,C
+D048,1,P,Q1_B__系统责任归属,系统责任归属,3.0,-,True,-0.38,strictly_inhibits,P
+D048,2,K,Q5_A__数据 vs 直觉,数据 vs 直觉,3.0,-,True,-0.516,strictly_inhibits,k2
+D048,3,V,Q6_B__本土文化妥协,本土文化妥协,4.0,+,True,0.539,strongly_forces_transition_to,v1➡️c2
+D048,4,C,Q5_B__系统微模块,系统微模块,2.0,-,True,-0.418,strictly_inhibits,c2
+D049,1,P,Q1_B__系统责任归属,系统责任归属,1.0,-,True,-0.38,strictly_inhibits,P
+D049,2,K,Q4_D__创作者署名,创作者署名,3.0,-,True,-0.282,strictly_inhibits,k2➡️p2
+D049,3,V,Q3_C__数据 vs 直觉,数据 vs 直觉,6.0,+,True,0.692,weakly_shifts_to,v1➡️c1
+D049,4,C,Q5_B__系统微模块,系统微模块,2.0,-,True,-0.418,strictly_inhibits,c2
+D050,1,P,Q1_B__系统责任归属,系统责任归属,2.0,-,True,-0.38,strictly_inhibits,P
+D050,2,K,Q5_A__封闭生态竞争,封闭生态竞争,5.0,+,True,0.412,guides_transition_to,k2
+D050,3,V,Q3_C__数据 vs 直觉,数据 vs 直觉,6.0,+,True,0.692,weakly_shifts_to,v1➡️c1
+D050,4,C,Q5_B__系统微模块,系统微模块,1.0,-,True,-0.418,strictly_inhibits,c2
+D051,1,P,Q1_B__时代 vs 永恒,时代 vs 永恒,5.0,+,True,0.325,weakly_shifts_to,P
+D051,2,K,Q5_A__数据 vs 直觉,数据 vs 直觉,2.0,-,True,-0.516,strictly_inhibits,k2
+D051,3,V,Q3_C__仿生与有机,仿生与有机,3.0,-,True,-0.861,strictly_inhibits,v1➡️c1
+D051,4,C,Q4_C__资产开源,资产开源,6.0,+,True,0.759,strongly_forces_transition_to,c2
+D052,1,P,Q1_B__系统责任归属,系统责任归属,3.0,-,True,-0.38,strictly_inhibits,P
+D052,2,K,Q5_A__数据 vs 直觉,数据 vs 直觉,2.0,-,True,-0.516,strictly_inhibits,k2
+D052,3,V,Q6_B__本土文化妥协,本土文化妥协,5.0,+,True,0.539,strongly_forces_transition_to,v1➡️c2
+D052,4,C,Q5_B__系统微模块,系统微模块,3.0,-,True,-0.418,strictly_inhibits,c2
+D053,1,P,Q1_B__系统责任归属,系统责任归属,2.0,-,True,-0.38,strictly_inhibits,P
+D053,2,K,Q3_D__救世主情结,救世主情结,4.0,+,True,0.362,guides_transition_to,k2
+D053,3,V,Q3_C__仿生与有机,仿生与有机,2.0,-,True,-0.861,strictly_inhibits,v1➡️c1
+D053,4,C,Q5_B__系统微模块,系统微模块,3.0,-,True,-0.418,strictly_inhibits,c2
+D054,1,P,Q5_D__本土文化妥协,本土文化妥协,3.0,-,True,-0.441,strictly_inhibits,p1
+D054,2,K,Q5_A__封闭生态竞争,封闭生态竞争,4.0,+,True,0.412,guides_transition_to,k2
+D054,3,V,Q3_C__仿生与有机,仿生与有机,2.0,-,True,-0.861,strictly_inhibits,v1➡️c1
+D054,4,C,Q5_B__系统微模块,系统微模块,1.0,-,True,-0.418,strictly_inhibits,c2
+D055,1,P,Q1_B__系统责任归属,系统责任归属,2.0,-,True,-0.38,strictly_inhibits,P
+D055,2,K,Q5_A__技术支持,技术支持,5.0,+,True,0.417,guides_transition_to,k2
+D055,3,V,Q3_C__数据 vs 直觉,数据 vs 直觉,5.0,+,True,0.692,weakly_shifts_to,v1➡️c1
+D055,4,C,Q1_A__数据隐私交换,数据隐私交换,5.0,+,True,0.235,weakly_shifts_to,C
+D056,1,P,Q5_D__本土文化妥协,本土文化妥协,3.0,-,True,-0.441,strictly_inhibits,p1
+D056,2,K,Q5_A__技术支持,技术支持,5.0,+,True,0.417,guides_transition_to,k2
+D056,3,V,Q3_C__数据 vs 直觉,数据 vs 直觉,5.0,+,True,0.692,weakly_shifts_to,v1➡️c1
+D056,4,C,Q5_B__系统微模块,系统微模块,2.0,-,True,-0.418,strictly_inhibits,c2
+D057,1,P,Q1_B__系统责任归属,系统责任归属,3.0,-,True,-0.38,strictly_inhibits,P
+D057,2,K,Q5_A__技术支持,技术支持,6.0,+,True,0.417,guides_transition_to,k2
+D057,3,V,Q3_C__数据 vs 直觉,数据 vs 直觉,4.0,+,True,0.692,weakly_shifts_to,v1➡️c1
+D057,4,C,Q5_B__系统微模块,系统微模块,2.0,-,True,-0.418,strictly_inhibits,c2
+D058,1,P,Q1_B__系统责任归属,系统责任归属,3.0,-,True,-0.38,strictly_inhibits,P
+D058,2,K,Q5_A__数据 vs 直觉,数据 vs 直觉,2.0,-,True,-0.516,strictly_inhibits,k2
+D058,3,V,Q6_B__本土文化妥协,本土文化妥协,5.0,+,True,0.539,strongly_forces_transition_to,v1➡️c2
+D058,4,C,Q5_B__系统微模块,系统微模块,2.0,-,True,-0.418,strictly_inhibits,c2
+D059,1,P,Q1_B__系统责任归属,系统责任归属,3.0,-,True,-0.38,strictly_inhibits,P
+D059,2,K,Q5_A__数据 vs 直觉,数据 vs 直觉,3.0,-,True,-0.516,strictly_inhibits,k2
+D059,3,V,Q3_C__仿生与有机,仿生与有机,2.0,-,True,-0.861,strictly_inhibits,v1➡️c1
+D059,4,C,Q4_C__资产开源,资产开源,5.0,+,True,0.759,strongly_forces_transition_to,c2
+D060,1,P,Q5_D__本土文化妥协,本土文化妥协,3.0,-,True,-0.441,strictly_inhibits,p1
+D060,2,K,Q5_A__数据 vs 直觉,数据 vs 直觉,2.0,-,True,-0.516,strictly_inhibits,k2
+D060,3,V,Q3_C__仿生与有机,仿生与有机,2.0,-,True,-0.861,strictly_inhibits,v1➡️c1
+D060,4,C,Q5_B__系统微模块,系统微模块,2.0,-,True,-0.418,strictly_inhibits,c2
+D061,1,P,Q1_B__时代 vs 永恒,时代 vs 永恒,5.0,+,True,0.325,weakly_shifts_to,P
+D061,2,K,Q5_A__数据 vs 直觉,数据 vs 直觉,2.0,-,True,-0.516,strictly_inhibits,k2
+D061,3,V,Q3_C__仿生与有机,仿生与有机,1.0,-,True,-0.861,strictly_inhibits,v1➡️c1
+D062,1,P,Q1_B__系统责任归属,系统责任归属,2.0,-,True,-0.38,strictly_inhibits,P
+D062,2,K,Q5_A__数据 vs 直觉,数据 vs 直觉,3.0,-,True,-0.516,strictly_inhibits,k2
+D062,3,V,Q3_C__仿生与有机,仿生与有机,3.0,-,True,-0.861,strictly_inhibits,v1➡️c1
+D062,4,C,Q5_B__系统微模块,系统微模块,3.0,-,True,-0.418,strictly_inhibits,c2
+D063,1,P,Q1_B__系统责任归属,系统责任归属,3.0,-,True,-0.38,strictly_inhibits,P
+D063,2,K,Q5_A__数据 vs 直觉,数据 vs 直觉,3.0,-,True,-0.516,strictly_inhibits,k2
+D063,3,V,Q3_C__仿生与有机,仿生与有机,2.0,-,True,-0.861,strictly_inhibits,v1➡️c1
+D063,4,C,Q5_B__技术支持,技术支持,3.0,-,True,-0.405,strictly_inhibits,c2
+D064,1,P,Q1_B__系统责任归属,系统责任归属,2.0,-,True,-0.38,strictly_inhibits,P
+D064,2,K,Q3_D__救世主情结,救世主情结,5.0,+,True,0.362,guides_transition_to,k2
+D064,3,V,Q3_C__仿生与有机,仿生与有机,3.0,-,True,-0.861,strictly_inhibits,v1➡️c1
+D064,4,C,Q5_B__系统微模块,系统微模块,2.0,-,True,-0.418,strictly_inhibits,c2
+D065,1,P,Q5_D__本土文化妥协,本土文化妥协,2.0,-,True,-0.441,strictly_inhibits,p1
+D065,2,K,Q5_A__封闭生态竞争,封闭生态竞争,4.0,+,True,0.412,guides_transition_to,k2
+D065,3,V,Q3_C__数据 vs 直觉,数据 vs 直觉,5.0,+,True,0.692,weakly_shifts_to,v1➡️c1
+D065,4,C,Q4_C__资产开源,资产开源,5.0,+,True,0.759,strongly_forces_transition_to,c2
+D066,1,P,Q1_B__时代 vs 永恒,时代 vs 永恒,5.0,+,True,0.325,weakly_shifts_to,P
+D066,2,K,Q5_A__数据 vs 直觉,数据 vs 直觉,3.0,-,True,-0.516,strictly_inhibits,k2
+D066,3,V,Q6_B__本土文化妥协,本土文化妥协,5.0,+,True,0.539,strongly_forces_transition_to,v1➡️c2
+D066,4,C,Q4_C__资产开源,资产开源,5.0,+,True,0.759,strongly_forces_transition_to,c2
+D067,1,P,Q5_D__本土文化妥协,本土文化妥协,3.0,-,True,-0.441,strictly_inhibits,p1
+D067,2,K,Q5_A__技术支持,技术支持,4.0,+,True,0.417,guides_transition_to,k2
+D067,3,V,Q3_C__数据 vs 直觉,数据 vs 直觉,4.0,+,True,0.692,weakly_shifts_to,v1➡️c1
+D067,4,C,Q5_B__系统微模块,系统微模块,2.0,-,True,-0.418,strictly_inhibits,c2
+D068,1,P,Q1_B__系统责任归属,系统责任归属,1.0,-,True,-0.38,strictly_inhibits,P
+D068,2,K,Q3_D__救世主情结,救世主情结,5.0,+,True,0.362,guides_transition_to,k2
+D068,3,V,Q3_C__仿生与有机,仿生与有机,1.0,-,True,-0.861,strictly_inhibits,v1➡️c1
+D068,4,C,Q5_B__技术支持,技术支持,2.0,-,True,-0.405,strictly_inhibits,c2
+D069,1,P,Q5_D__本土文化妥协,本土文化妥协,2.0,-,True,-0.441,strictly_inhibits,p1
+D069,2,K,Q5_A__数据 vs 直觉,数据 vs 直觉,2.0,-,True,-0.516,strictly_inhibits,k2
+D069,3,V,Q3_C__仿生与有机,仿生与有机,3.0,-,True,-0.861,strictly_inhibits,v1➡️c1
+D069,4,C,Q5_B__系统微模块,系统微模块,3.0,-,True,-0.418,strictly_inhibits,c2
+D070,1,P,Q1_B__系统责任归属,系统责任归属,2.0,-,True,-0.38,strictly_inhibits,P
+D070,2,K,Q5_A__技术支持,技术支持,5.0,+,True,0.417,guides_transition_to,k2
+D070,3,V,Q3_C__数据 vs 直觉,数据 vs 直觉,5.0,+,True,0.692,weakly_shifts_to,v1➡️c1
+D070,4,C,Q5_B__系统微模块,系统微模块,3.0,-,True,-0.418,strictly_inhibits,c2
+D071,1,P,Q1_B__系统责任归属,系统责任归属,2.0,-,True,-0.38,strictly_inhibits,P
+D071,2,K,Q5_A__封闭生态竞争,封闭生态竞争,5.0,+,True,0.412,guides_transition_to,k2
+D071,3,V,Q3_C__数据 vs 直觉,数据 vs 直觉,4.0,+,True,0.692,weakly_shifts_to,v1➡️c1
+D071,4,C,Q4_C__资产开源,资产开源,4.0,+,True,0.759,strongly_forces_transition_to,c2
+D072,1,P,Q5_D__本土文化妥协,本土文化妥协,3.0,-,True,-0.441,strictly_inhibits,p1
+D072,2,K,Q5_A__技术支持,技术支持,4.0,+,True,0.417,guides_transition_to,k2
+D072,3,V,Q3_C__数据 vs 直觉,数据 vs 直觉,5.0,+,True,0.692,weakly_shifts_to,v1➡️c1
+D072,4,C,Q5_B__系统微模块,系统微模块,3.0,-,True,-0.418,strictly_inhibits,c2
+D073,1,P,Q1_B__系统责任归属,系统责任归属,2.0,-,True,-0.38,strictly_inhibits,P
+D073,2,K,Q5_A__技术支持,技术支持,5.0,+,True,0.417,guides_transition_to,k2
+D073,3,V,Q3_C__仿生与有机,仿生与有机,2.0,-,True,-0.861,strictly_inhibits,v1➡️c1
+D073,4,C,Q5_B__系统微模块,系统微模块,1.0,-,True,-0.418,strictly_inhibits,c2
+D074,1,P,Q5_D__本土文化妥协,本土文化妥协,3.0,-,True,-0.441,strictly_inhibits,p1
+D074,2,K,Q5_A__数据 vs 直觉,数据 vs 直觉,2.0,-,True,-0.516,strictly_inhibits,k2
+D074,3,V,Q3_C__仿生与有机,仿生与有机,3.0,-,True,-0.861,strictly_inhibits,v1➡️c1
+D074,4,C,Q5_B__系统微模块,系统微模块,2.0,-,True,-0.418,strictly_inhibits,c2
+D075,1,P,Q1_B__系统责任归属,系统责任归属,3.0,-,True,-0.38,strictly_inhibits,P
+D075,2,K,Q5_A__数据 vs 直觉,数据 vs 直觉,3.0,-,True,-0.516,strictly_inhibits,k2
+D075,3,V,Q3_C__仿生与有机,仿生与有机,2.0,-,True,-0.861,strictly_inhibits,v1➡️c1
+D075,4,C,Q4_C__资产开源,资产开源,4.0,+,True,0.759,strongly_forces_transition_to,c2
+D076,1,P,Q5_D__本土文化妥协,本土文化妥协,3.0,-,True,-0.441,strictly_inhibits,p1
+D076,2,K,Q5_A__技术支持,技术支持,5.0,+,True,0.417,guides_transition_to,k2
+D076,3,V,Q3_C__仿生与有机,仿生与有机,3.0,-,True,-0.861,strictly_inhibits,v1➡️c1
+D076,4,C,Q5_B__系统微模块,系统微模块,1.0,-,True,-0.418,strictly_inhibits,c2
+D077,1,P,Q1_B__系统责任归属,系统责任归属,2.0,-,True,-0.38,strictly_inhibits,P
+D077,2,K,Q3_D__救世主情结,救世主情结,6.0,+,True,0.362,guides_transition_to,k2
+D077,3,V,Q3_C__数据 vs 直觉,数据 vs 直觉,4.0,+,True,0.692,weakly_shifts_to,v1➡️c1
+D077,4,C,Q5_B__系统微模块,系统微模块,2.0,-,True,-0.418,strictly_inhibits,c2
+D078,1,P,Q1_B__时代 vs 永恒,时代 vs 永恒,5.0,+,True,0.325,weakly_shifts_to,P
+D078,2,K,Q5_A__数据 vs 直觉,数据 vs 直觉,2.0,-,True,-0.516,strictly_inhibits,k2
+D078,3,V,Q3_C__仿生与有机,仿生与有机,2.0,-,True,-0.861,strictly_inhibits,v1➡️c1
+D078,4,C,Q5_B__系统微模块,系统微模块,3.0,-,True,-0.418,strictly_inhibits,c2
+D079,1,P,Q5_D__本土文化妥协,本土文化妥协,3.0,-,True,-0.441,strictly_inhibits,p1
+D079,2,K,Q5_A__数据 vs 直觉,数据 vs 直觉,2.0,-,True,-0.516,strictly_inhibits,k2
+D079,3,V,Q3_C__仿生与有机,仿生与有机,3.0,-,True,-0.861,strictly_inhibits,v1➡️c1
+D079,4,C,Q5_B__系统微模块,系统微模块,1.0,-,True,-0.418,strictly_inhibits,c2
+D080,1,P,Q5_D__本土文化妥协,本土文化妥协,3.0,-,True,-0.441,strictly_inhibits,p1
+D080,2,K,Q5_A__数据 vs 直觉,数据 vs 直觉,3.0,-,True,-0.516,strictly_inhibits,k2
+D080,3,V,Q3_C__仿生与有机,仿生与有机,2.0,-,True,-0.861,strictly_inhibits,v1➡️c1
+D080,4,C,Q5_B__系统微模块,系统微模块,2.0,-,True,-0.418,strictly_inhibits,c2
+D081,1,P,Q1_B__时代 vs 永恒,时代 vs 永恒,5.0,+,True,0.325,weakly_shifts_to,P
+D081,2,K,Q5_A__数据 vs 直觉,数据 vs 直觉,2.0,-,True,-0.516,strictly_inhibits,k2
+D081,3,V,Q3_C__仿生与有机,仿生与有机,1.0,-,True,-0.861,strictly_inhibits,v1➡️c1
+D082,1,P,Q5_D__本土文化妥协,本土文化妥协,2.0,-,True,-0.441,strictly_inhibits,p1
+D082,2,K,Q5_A__数据 vs 直觉,数据 vs 直觉,3.0,-,True,-0.516,strictly_inhibits,k2
+D082,3,V,Q3_C__仿生与有机,仿生与有机,2.0,-,True,-0.861,strictly_inhibits,v1➡️c1
+D082,4,C,Q4_C__资产开源,资产开源,4.0,+,True,0.759,strongly_forces_transition_to,c2
+D083,1,P,Q1_B__系统责任归属,系统责任归属,3.0,-,True,-0.38,strictly_inhibits,P
+D083,2,K,Q5_A__数据 vs 直觉,数据 vs 直觉,3.0,-,True,-0.516,strictly_inhibits,k2
+D083,3,V,Q6_B__本土文化妥协,本土文化妥协,5.0,+,True,0.539,strongly_forces_transition_to,v1➡️c2
+D083,4,C,Q4_C__资产开源,资产开源,5.0,+,True,0.759,strongly_forces_transition_to,c2
+D084,1,P,Q1_B__系统责任归属,系统责任归属,3.0,-,True,-0.38,strictly_inhibits,P
+D084,2,K,Q5_A__数据 vs 直觉,数据 vs 直觉,2.0,-,True,-0.516,strictly_inhibits,k2
+D084,3,V,Q3_C__仿生与有机,仿生与有机,2.0,-,True,-0.861,strictly_inhibits,v1➡️c1
+D084,4,C,Q4_C__资产开源,资产开源,5.0,+,True,0.759,strongly_forces_transition_to,c2
+D085,1,P,Q5_D__本土文化妥协,本土文化妥协,3.0,-,True,-0.441,strictly_inhibits,p1
+D085,2,K,Q5_A__数据 vs 直觉,数据 vs 直觉,2.0,-,True,-0.516,strictly_inhibits,k2
+D085,3,V,Q3_C__仿生与有机,仿生与有机,2.0,-,True,-0.861,strictly_inhibits,v1➡️c1
+D085,4,C,Q5_B__技术支持,技术支持,3.0,-,True,-0.405,strictly_inhibits,c2
+D086,1,P,Q1_B__时代 vs 永恒,时代 vs 永恒,6.0,+,True,0.325,weakly_shifts_to,P
+D086,2,K,Q5_A__数据 vs 直觉,数据 vs 直觉,3.0,-,True,-0.516,strictly_inhibits,k2
+D086,3,V,Q6_B__本土文化妥协,本土文化妥协,5.0,+,True,0.539,strongly_forces_transition_to,v1➡️c2
+D086,4,C,Q4_C__资产开源,资产开源,5.0,+,True,0.759,strongly_forces_transition_to,c2
+D087,1,P,Q1_B__系统责任归属,系统责任归属,2.0,-,True,-0.38,strictly_inhibits,P
+D087,2,K,Q5_A__技术支持,技术支持,4.0,+,True,0.417,guides_transition_to,k2
+D087,3,V,Q3_C__仿生与有机,仿生与有机,3.0,-,True,-0.861,strictly_inhibits,v1➡️c1
+D087,4,C,Q5_B__系统微模块,系统微模块,1.0,-,True,-0.418,strictly_inhibits,c2
+D088,1,P,Q5_D__本土文化妥协,本土文化妥协,3.0,-,True,-0.441,strictly_inhibits,p1
+D088,2,K,Q5_A__数据 vs 直觉,数据 vs 直觉,2.0,-,True,-0.516,strictly_inhibits,k2
+D088,3,V,Q3_C__仿生与有机,仿生与有机,2.0,-,True,-0.861,strictly_inhibits,v1➡️c1
+D088,4,C,Q5_B__系统微模块,系统微模块,1.0,-,True,-0.418,strictly_inhibits,c2
+D089,1,P,Q1_B__系统责任归属,系统责任归属,2.0,-,True,-0.38,strictly_inhibits,P
+D089,2,K,Q5_A__数据 vs 直觉,数据 vs 直觉,3.0,-,True,-0.516,strictly_inhibits,k2
+D089,3,V,Q6_B__本土文化妥协,本土文化妥协,5.0,+,True,0.539,strongly_forces_transition_to,v1➡️c2
+D089,4,C,Q4_C__资产开源,资产开源,4.0,+,True,0.759,strongly_forces_transition_to,c2
+D090,1,P,Q5_D__本土文化妥协,本土文化妥协,3.0,-,True,-0.441,strictly_inhibits,p1
+D090,2,K,Q5_A__技术支持,技术支持,4.0,+,True,0.417,guides_transition_to,k2
+D090,3,V,Q3_C__数据 vs 直觉,数据 vs 直觉,4.0,+,True,0.692,weakly_shifts_to,v1➡️c1
+D091,1,P,Q1_B__时代 vs 永恒,时代 vs 永恒,5.0,+,True,0.325,weakly_shifts_to,P
+D091,2,K,Q5_A__数据 vs 直觉,数据 vs 直觉,2.0,-,True,-0.516,strictly_inhibits,k2
+D091,3,V,Q3_C__仿生与有机,仿生与有机,2.0,-,True,-0.861,strictly_inhibits,v1➡️c1
+D091,4,C,Q5_B__系统微模块,系统微模块,3.0,-,True,-0.418,strictly_inhibits,c2
+D092,1,P,Q1_B__系统责任归属,系统责任归属,1.0,-,True,-0.38,strictly_inhibits,P
+D092,2,K,Q5_A__数据 vs 直觉,数据 vs 直觉,2.0,-,True,-0.516,strictly_inhibits,k2
+D092,3,V,Q3_C__仿生与有机,仿生与有机,2.0,-,True,-0.861,strictly_inhibits,v1➡️c1
+D092,4,C,Q5_B__系统微模块,系统微模块,1.0,-,True,-0.418,strictly_inhibits,c2
+D093,1,P,Q5_D__独裁 vs 委员会,独裁 vs 委员会,6.0,+,True,0.288,weakly_shifts_to,p1
+D093,2,K,Q5_A__数据 vs 直觉,数据 vs 直觉,3.0,-,True,-0.516,strictly_inhibits,k2
+D093,3,V,Q3_C__仿生与有机,仿生与有机,3.0,-,True,-0.861,strictly_inhibits,v1➡️c1
+D093,4,C,Q5_B__系统微模块,系统微模块,2.0,-,True,-0.418,strictly_inhibits,c2
+D094,1,P,Q5_D__混沌与灵感,混沌与灵感,2.0,-,True,-0.291,strictly_inhibits,p1
+D094,2,K,Q5_A__数据 vs 直觉,数据 vs 直觉,3.0,-,True,-0.516,strictly_inhibits,k2
+D094,3,V,Q3_C__仿生与有机,仿生与有机,2.0,-,True,-0.861,strictly_inhibits,v1➡️c1
+D094,4,C,Q5_B__系统微模块,系统微模块,1.0,-,True,-0.418,strictly_inhibits,c2
+D095,1,P,Q1_B__系统责任归属,系统责任归属,2.0,-,True,-0.38,strictly_inhibits,P
+D095,2,K,Q5_A__数据 vs 直觉,数据 vs 直觉,3.0,-,True,-0.516,strictly_inhibits,k2
+D095,3,V,Q6_B__本土文化妥协,本土文化妥协,4.0,+,True,0.539,strongly_forces_transition_to,v1➡️c2
+D095,4,C,Q5_B__系统微模块,系统微模块,3.0,-,True,-0.418,strictly_inhibits,c2
+D096,1,P,Q5_D__本土文化妥协,本土文化妥协,3.0,-,True,-0.441,strictly_inhibits,p1
+D096,2,K,Q5_A__数据 vs 直觉,数据 vs 直觉,2.0,-,True,-0.516,strictly_inhibits,k2
+D096,3,V,Q3_C__仿生与有机,仿生与有机,3.0,-,True,-0.861,strictly_inhibits,v1➡️c1
+D096,4,C,Q5_B__系统微模块,系统微模块,3.0,-,True,-0.418,strictly_inhibits,c2
+D097,1,K,Q5_A__数据 vs 直觉,数据 vs 直觉,1.0,-,True,-0.516,strictly_inhibits,k2
+D097,2,V,Q3_C__仿生与有机,仿生与有机,1.0,-,True,-0.861,strictly_inhibits,v1➡️c1
+D097,3,C,Q5_B__系统微模块,系统微模块,1.0,-,True,-0.418,strictly_inhibits,c2
+D098,1,P,Q5_D__本土文化妥协,本土文化妥协,2.0,-,True,-0.441,strictly_inhibits,p1
+D098,2,K,Q5_A__数据 vs 直觉,数据 vs 直觉,2.0,-,True,-0.516,strictly_inhibits,k2
+D098,3,V,Q3_C__仿生与有机,仿生与有机,2.0,-,True,-0.861,strictly_inhibits,v1➡️c1
+D098,4,C,Q5_B__系统微模块,系统微模块,2.0,-,True,-0.418,strictly_inhibits,c2
+D099,1,P,Q1_B__系统责任归属,系统责任归属,3.0,-,True,-0.38,strictly_inhibits,P
+D099,2,K,Q5_A__数据 vs 直觉,数据 vs 直觉,1.0,-,True,-0.516,strictly_inhibits,k2
+D099,3,V,Q3_C__仿生与有机,仿生与有机,2.0,-,True,-0.861,strictly_inhibits,v1➡️c1
+D099,4,C,Q4_C__资产开源,资产开源,4.0,+,True,0.759,strongly_forces_transition_to,c2
+D100,1,P,Q1_B__系统责任归属,系统责任归属,2.0,-,True,-0.38,strictly_inhibits,P
+D100,2,K,Q5_A__技术支持,技术支持,6.0,+,True,0.417,guides_transition_to,k2
+D100,3,V,Q3_C__仿生与有机,仿生与有机,2.0,-,True,-0.861,strictly_inhibits,v1➡️c1
+D100,4,C,Q1_A__数据隐私交换,数据隐私交换,4.0,+,True,0.235,weakly_shifts_to,C
+D101,1,P,Q5_D__本土文化妥协,本土文化妥协,2.0,-,True,-0.441,strictly_inhibits,p1
+D101,2,K,Q5_A__数据 vs 直觉,数据 vs 直觉,3.0,-,True,-0.516,strictly_inhibits,k2
+D101,3,V,Q3_C__仿生与有机,仿生与有机,2.0,-,True,-0.861,strictly_inhibits,v1➡️c1
+D101,4,C,Q5_B__系统微模块,系统微模块,3.0,-,True,-0.418,strictly_inhibits,c2
+D102,1,P,Q1_B__系统责任归属,系统责任归属,2.0,-,True,-0.38,strictly_inhibits,P
+D102,2,K,Q5_A__数据 vs 直觉,数据 vs 直觉,2.0,-,True,-0.516,strictly_inhibits,k2
+D102,3,V,Q3_C__仿生与有机,仿生与有机,3.0,-,True,-0.861,strictly_inhibits,v1➡️c1
+D102,4,C,Q5_B__系统微模块,系统微模块,1.0,-,True,-0.418,strictly_inhibits,c2
+D103,1,P,Q5_D__本土文化妥协,本土文化妥协,3.0,-,True,-0.441,strictly_inhibits,p1
+D103,2,K,Q5_A__数据 vs 直觉,数据 vs 直觉,2.0,-,True,-0.516,strictly_inhibits,k2
+D103,3,V,Q5_C__商业操纵伦理,商业操纵伦理,2.0,-,True,-0.461,strictly_inhibits,v3
+D103,4,C,Q4_C__资产开源,资产开源,6.0,+,True,0.759,strongly_forces_transition_to,c2
+D104,1,P,Q1_B__时代 vs 永恒,时代 vs 永恒,5.0,+,True,0.325,weakly_shifts_to,P
+D104,2,K,Q5_A__数据 vs 直觉,数据 vs 直觉,2.0,-,True,-0.516,strictly_inhibits,k2
+D104,3,V,Q3_C__仿生与有机,仿生与有机,2.0,-,True,-0.861,strictly_inhibits,v1➡️c1
+D104,4,C,Q5_B__系统微模块,系统微模块,3.0,-,True,-0.418,strictly_inhibits,c2
+D105,1,P,Q1_B__系统责任归属,系统责任归属,3.0,-,True,-0.38,strictly_inhibits,P
+D105,2,K,Q5_A__技术支持,技术支持,4.0,+,True,0.417,guides_transition_to,k2
+D105,3,V,Q3_C__仿生与有机,仿生与有机,2.0,-,True,-0.861,strictly_inhibits,v1➡️c1
+D105,4,C,Q5_B__系统微模块,系统微模块,2.0,-,True,-0.418,strictly_inhibits,c2
+D106,1,P,Q5_D__独裁 vs 委员会,独裁 vs 委员会,4.0,+,True,0.288,weakly_shifts_to,p1
+D106,2,K,Q3_D__救世主情结,救世主情结,6.0,+,True,0.362,guides_transition_to,k2
+D106,3,V,Q3_C__仿生与有机,仿生与有机,2.0,-,True,-0.861,strictly_inhibits,v1➡️c1
+D106,4,C,Q5_B__系统微模块,系统微模块,2.0,-,True,-0.418,strictly_inhibits,c2
+D107,1,P,Q1_B__时代 vs 永恒,时代 vs 永恒,5.0,+,True,0.325,weakly_shifts_to,P
+D107,2,K,Q5_A__数据 vs 直觉,数据 vs 直觉,2.0,-,True,-0.516,strictly_inhibits,k2
+D107,3,V,Q6_B__本土文化妥协,本土文化妥协,4.0,+,True,0.539,strongly_forces_transition_to,v1➡️c2
+D107,4,C,Q5_B__系统微模块,系统微模块,2.0,-,True,-0.418,strictly_inhibits,c2
+D108,1,P,Q1_B__系统责任归属,系统责任归属,1.0,-,True,-0.38,strictly_inhibits,P
+D108,2,K,Q5_A__封闭生态竞争,封闭生态竞争,4.0,+,True,0.412,guides_transition_to,k2
+D108,3,V,Q3_C__数据 vs 直觉,数据 vs 直觉,4.0,+,True,0.692,weakly_shifts_to,v1➡️c1
+D108,4,C,Q4_C__资产开源,资产开源,4.0,+,True,0.759,strongly_forces_transition_to,c2
+D109,1,P,Q5_D__本土文化妥协,本土文化妥协,3.0,-,True,-0.441,strictly_inhibits,p1
+D109,2,K,Q5_A__数据 vs 直觉,数据 vs 直觉,2.0,-,True,-0.516,strictly_inhibits,k2
+D109,3,V,Q3_C__仿生与有机,仿生与有机,2.0,-,True,-0.861,strictly_inhibits,v1➡️c1
+D109,4,C,Q5_B__系统微模块,系统微模块,2.0,-,True,-0.418,strictly_inhibits,c2
+D110,1,P,Q1_B__系统责任归属,系统责任归属,2.0,-,True,-0.38,strictly_inhibits,P
+D110,2,K,Q5_A__数据 vs 直觉,数据 vs 直觉,3.0,-,True,-0.516,strictly_inhibits,k2
+D110,3,V,Q3_C__仿生与有机,仿生与有机,2.0,-,True,-0.861,strictly_inhibits,v1➡️c1
+D110,4,C,Q5_B__系统微模块,系统微模块,2.0,-,True,-0.418,strictly_inhibits,c2
+D111,1,P,Q1_B__系统责任归属,系统责任归属,2.0,-,True,-0.38,strictly_inhibits,P
+D111,2,K,Q5_A__数据 vs 直觉,数据 vs 直觉,1.0,-,True,-0.516,strictly_inhibits,k2
+D111,3,V,Q3_C__仿生与有机,仿生与有机,2.0,-,True,-0.861,strictly_inhibits,v1➡️c1
+D111,4,C,Q5_B__技术支持,技术支持,2.0,-,True,-0.405,strictly_inhibits,c2
+D112,1,P,Q1_B__时代 vs 永恒,时代 vs 永恒,4.0,+,True,0.325,weakly_shifts_to,P
+D112,2,K,Q5_A__技术支持,技术支持,6.0,+,True,0.417,guides_transition_to,k2
+D112,3,V,Q3_C__仿生与有机,仿生与有机,1.0,-,True,-0.861,strictly_inhibits,v1➡️c1
+D112,4,C,Q5_B__系统微模块,系统微模块,2.0,-,True,-0.418,strictly_inhibits,c2
+D113,1,P,Q1_B__系统责任归属,系统责任归属,3.0,-,True,-0.38,strictly_inhibits,P
+D113,2,K,Q5_A__数据 vs 直觉,数据 vs 直觉,2.0,-,True,-0.516,strictly_inhibits,k2
+D113,3,V,Q3_C__仿生与有机,仿生与有机,3.0,-,True,-0.861,strictly_inhibits,v1➡️c1
+D114,1,P,Q1_B__系统责任归属,系统责任归属,2.0,-,True,-0.38,strictly_inhibits,P
+D114,2,K,Q5_A__技术支持,技术支持,4.0,+,True,0.417,guides_transition_to,k2
+D114,3,V,Q3_C__仿生与有机,仿生与有机,2.0,-,True,-0.861,strictly_inhibits,v1➡️c1
+D114,4,C,Q5_B__系统微模块,系统微模块,2.0,-,True,-0.418,strictly_inhibits,c2
+D115,1,K,Q5_A__数据 vs 直觉,数据 vs 直觉,3.0,-,True,-0.516,strictly_inhibits,k2
+D115,2,V,Q3_C__仿生与有机,仿生与有机,3.0,-,True,-0.861,strictly_inhibits,v1➡️c1
+D115,3,C,Q5_B__系统微模块,系统微模块,2.0,-,True,-0.418,strictly_inhibits,c2
+D116,1,P,Q1_B__系统责任归属,系统责任归属,3.0,-,True,-0.38,strictly_inhibits,P
+D116,2,K,Q5_A__技术支持,技术支持,6.0,+,True,0.417,guides_transition_to,k2
+D116,3,V,Q3_C__数据 vs 直觉,数据 vs 直觉,6.0,+,True,0.692,weakly_shifts_to,v1➡️c1
+D116,4,C,Q1_A__数据隐私交换,数据隐私交换,4.0,+,True,0.235,weakly_shifts_to,C
+D117,1,P,Q1_B__时代 vs 永恒,时代 vs 永恒,4.0,+,True,0.325,weakly_shifts_to,P
+D117,2,K,Q5_A__数据 vs 直觉,数据 vs 直觉,1.0,-,True,-0.516,strictly_inhibits,k2
+D117,3,V,Q6_B__本土文化妥协,本土文化妥协,5.0,+,True,0.539,strongly_forces_transition_to,v1➡️c2
+D117,4,C,Q5_B__系统微模块,系统微模块,2.0,-,True,-0.418,strictly_inhibits,c2
+D118,1,P,Q5_D__本土文化妥协,本土文化妥协,2.0,-,True,-0.441,strictly_inhibits,p1
+D118,2,K,Q3_A__天赋信仰,天赋信仰,3.0,-,True,-0.349,strictly_inhibits,k2
+D118,3,V,Q3_C__仿生与有机,仿生与有机,2.0,-,True,-0.861,strictly_inhibits,v1➡️c1
+D118,4,C,Q4_C__资产开源,资产开源,5.0,+,True,0.759,strongly_forces_transition_to,c2
+D119,1,P,Q1_B__系统责任归属,系统责任归属,3.0,-,True,-0.38,strictly_inhibits,P
+D119,2,K,Q5_A__数据 vs 直觉,数据 vs 直觉,2.0,-,True,-0.516,strictly_inhibits,k2
+D119,3,V,Q6_B__本土文化妥协,本土文化妥协,5.0,+,True,0.539,strongly_forces_transition_to,v1➡️c2
+D119,4,C,Q5_B__系统微模块,系统微模块,3.0,-,True,-0.418,strictly_inhibits,c2
+D120,1,P,Q5_D__本土文化妥协,本土文化妥协,3.0,-,True,-0.441,strictly_inhibits,p1
+D120,2,K,Q5_A__数据 vs 直觉,数据 vs 直觉,1.0,-,True,-0.516,strictly_inhibits,k2
+D120,3,V,Q3_C__仿生与有机,仿生与有机,2.0,-,True,-0.861,strictly_inhibits,v1➡️c1
+D120,4,C,Q5_B__系统微模块,系统微模块,3.0,-,True,-0.418,strictly_inhibits,c2
+D121,1,P,Q5_D__本土文化妥协,本土文化妥协,2.0,-,True,-0.441,strictly_inhibits,p1
+D121,2,K,Q5_A__封闭生态竞争,封闭生态竞争,5.0,+,True,0.412,guides_transition_to,k2
+D121,3,V,Q3_C__仿生与有机,仿生与有机,3.0,-,True,-0.861,strictly_inhibits,v1➡️c1
+D121,4,C,Q5_B__系统微模块,系统微模块,3.0,-,True,-0.418,strictly_inhibits,c2
+D122,1,P,Q1_B__时代 vs 永恒,时代 vs 永恒,5.0,+,True,0.325,weakly_shifts_to,P
+D122,2,K,Q5_A__封闭生态竞争,封闭生态竞争,4.0,+,True,0.412,guides_transition_to,k2
+D122,3,V,Q3_C__仿生与有机,仿生与有机,3.0,-,True,-0.861,strictly_inhibits,v1➡️c1
+D122,4,C,Q5_B__技术支持,技术支持,2.0,-,True,-0.405,strictly_inhibits,c2
+D123,1,P,Q5_D__本土文化妥协,本土文化妥协,2.0,-,True,-0.441,strictly_inhibits,p1
+D123,2,K,Q5_A__数据 vs 直觉,数据 vs 直觉,2.0,-,True,-0.516,strictly_inhibits,k2
+D123,3,V,Q3_C__仿生与有机,仿生与有机,2.0,-,True,-0.861,strictly_inhibits,v1➡️c1
+D123,4,C,Q5_B__系统微模块,系统微模块,3.0,-,True,-0.418,strictly_inhibits,c2
+D124,1,P,Q1_B__系统责任归属,系统责任归属,2.0,-,True,-0.38,strictly_inhibits,P
+D124,2,K,Q5_A__数据 vs 直觉,数据 vs 直觉,1.0,-,True,-0.516,strictly_inhibits,k2
+D124,3,V,Q3_C__仿生与有机,仿生与有机,1.0,-,True,-0.861,strictly_inhibits,v1➡️c1
+D124,4,C,Q5_B__系统微模块,系统微模块,2.0,-,True,-0.418,strictly_inhibits,c2
+D125,1,P,Q5_D__本土文化妥协,本土文化妥协,3.0,-,True,-0.441,strictly_inhibits,p1
+D125,2,K,Q5_A__数据 vs 直觉,数据 vs 直觉,2.0,-,True,-0.516,strictly_inhibits,k2
+D125,3,V,Q3_C__仿生与有机,仿生与有机,3.0,-,True,-0.861,strictly_inhibits,v1➡️c1
+D125,4,C,Q5_B__系统微模块,系统微模块,2.0,-,True,-0.418,strictly_inhibits,c2
+D126,1,P,Q1_B__系统责任归属,系统责任归属,3.0,-,True,-0.38,strictly_inhibits,P
+D126,2,K,Q5_A__数据 vs 直觉,数据 vs 直觉,3.0,-,True,-0.516,strictly_inhibits,k2
+D126,3,V,Q6_B__本土文化妥协,本土文化妥协,5.0,+,True,0.539,strongly_forces_transition_to,v1➡️c2
+D126,4,C,Q5_B__系统微模块,系统微模块,3.0,-,True,-0.418,strictly_inhibits,c2
+D127,1,P,Q1_B__时代 vs 永恒,时代 vs 永恒,5.0,+,True,0.325,weakly_shifts_to,P
+D127,2,K,Q5_A__技术支持,技术支持,5.0,+,True,0.417,guides_transition_to,k2
+D127,3,V,Q3_C__数据 vs 直觉,数据 vs 直觉,4.0,+,True,0.692,weakly_shifts_to,v1➡️c1
+D127,4,C,Q4_C__资产开源,资产开源,5.0,+,True,0.759,strongly_forces_transition_to,c2
+D128,1,P,Q1_B__时代 vs 永恒,时代 vs 永恒,5.0,+,True,0.325,weakly_shifts_to,P
+D128,2,K,Q5_A__数据 vs 直觉,数据 vs 直觉,1.0,-,True,-0.516,strictly_inhibits,k2
+D128,3,V,Q3_C__仿生与有机,仿生与有机,3.0,-,True,-0.861,strictly_inhibits,v1➡️c1
+D128,4,C,Q5_B__系统微模块,系统微模块,2.0,-,True,-0.418,strictly_inhibits,c2
+D129,1,P,Q1_B__系统责任归属,系统责任归属,2.0,-,True,-0.38,strictly_inhibits,P
+D129,2,K,Q5_A__数据 vs 直觉,数据 vs 直觉,2.0,-,True,-0.516,strictly_inhibits,k2
+D129,3,V,Q3_C__仿生与有机,仿生与有机,2.0,-,True,-0.861,strictly_inhibits,v1➡️c1
+D129,4,C,Q5_B__系统微模块,系统微模块,3.0,-,True,-0.418,strictly_inhibits,c2
+D130,1,P,Q5_D__本土文化妥协,本土文化妥协,2.0,-,True,-0.441,strictly_inhibits,p1
+D130,2,K,Q5_A__数据 vs 直觉,数据 vs 直觉,2.0,-,True,-0.516,strictly_inhibits,k2
+D130,3,V,Q5_C__商业操纵伦理,商业操纵伦理,3.0,-,True,-0.461,strictly_inhibits,v3
+D130,4,C,Q5_B__系统微模块,系统微模块,1.0,-,True,-0.418,strictly_inhibits,c2
+D131,1,P,Q1_B__时代 vs 永恒,时代 vs 永恒,5.0,+,True,0.325,weakly_shifts_to,P
+D131,2,K,Q5_A__技术支持,技术支持,4.0,+,True,0.417,guides_transition_to,k2
+D131,3,V,Q3_C__数据 vs 直觉,数据 vs 直觉,5.0,+,True,0.692,weakly_shifts_to,v1➡️c1
+D131,4,C,Q4_C__资产开源,资产开源,4.0,+,True,0.759,strongly_forces_transition_to,c2
+D132,1,P,Q1_B__时代 vs 永恒,时代 vs 永恒,6.0,+,True,0.325,weakly_shifts_to,P
+D132,2,K,Q5_A__封闭生态竞争,封闭生态竞争,6.0,+,True,0.412,guides_transition_to,k2
+D132,3,V,Q3_C__数据 vs 直觉,数据 vs 直觉,5.0,+,True,0.692,weakly_shifts_to,v1➡️c1
+D132,4,C,Q4_C__资产开源,资产开源,5.0,+,True,0.759,strongly_forces_transition_to,c2
+D133,1,P,Q1_B__系统责任归属,系统责任归属,2.0,-,True,-0.38,strictly_inhibits,P
+D133,2,K,Q5_A__数据 vs 直觉,数据 vs 直觉,1.0,-,True,-0.516,strictly_inhibits,k2
+D133,3,V,Q3_C__仿生与有机,仿生与有机,3.0,-,True,-0.861,strictly_inhibits,v1➡️c1
+D133,4,C,Q5_B__系统微模块,系统微模块,1.0,-,True,-0.418,strictly_inhibits,c2
+D134,1,P,Q5_D__本土文化妥协,本土文化妥协,1.0,-,True,-0.441,strictly_inhibits,p1
+D134,2,K,Q5_A__数据 vs 直觉,数据 vs 直觉,1.0,-,True,-0.516,strictly_inhibits,k2
+D134,3,V,Q5_C__商业操纵伦理,商业操纵伦理,2.0,-,True,-0.461,strictly_inhibits,v3
+D134,4,C,Q5_B__系统微模块,系统微模块,2.0,-,True,-0.418,strictly_inhibits,c2
+D135,1,P,Q1_B__时代 vs 永恒,时代 vs 永恒,4.0,+,True,0.325,weakly_shifts_to,P
+D135,2,K,Q5_A__数据 vs 直觉,数据 vs 直觉,3.0,-,True,-0.516,strictly_inhibits,k2
+D135,3,V,Q6_B__本土文化妥协,本土文化妥协,5.0,+,True,0.539,strongly_forces_transition_to,v1➡️c2
+D135,4,C,Q5_B__系统微模块,系统微模块,1.0,-,True,-0.418,strictly_inhibits,c2
+D136,1,P,Q1_B__时代 vs 永恒,时代 vs 永恒,5.0,+,True,0.325,weakly_shifts_to,P
+D136,2,K,Q5_A__数据 vs 直觉,数据 vs 直觉,3.0,-,True,-0.516,strictly_inhibits,k2
+D136,3,V,Q6_B__本土文化妥协,本土文化妥协,5.0,+,True,0.539,strongly_forces_transition_to,v1➡️c2
+D136,4,C,Q5_B__系统微模块,系统微模块,3.0,-,True,-0.418,strictly_inhibits,c2
+D137,1,P,Q5_D__本土文化妥协,本土文化妥协,3.0,-,True,-0.441,strictly_inhibits,p1
+D137,2,K,Q5_A__数据 vs 直觉,数据 vs 直觉,1.0,-,True,-0.516,strictly_inhibits,k2
+D137,3,V,Q5_C__商业操纵伦理,商业操纵伦理,1.0,-,True,-0.461,strictly_inhibits,v3
+D137,4,C,Q4_C__资产开源,资产开源,6.0,+,True,0.759,strongly_forces_transition_to,c2
+D138,1,P,Q1_B__系统责任归属,系统责任归属,2.0,-,True,-0.38,strictly_inhibits,P
+D138,2,K,Q5_A__数据 vs 直觉,数据 vs 直觉,2.0,-,True,-0.516,strictly_inhibits,k2
+D138,3,V,Q6_B__本土文化妥协,本土文化妥协,5.0,+,True,0.539,strongly_forces_transition_to,v1➡️c2
+D138,4,C,Q4_C__资产开源,资产开源,5.0,+,True,0.759,strongly_forces_transition_to,c2
+D139,1,P,Q5_D__本土文化妥协,本土文化妥协,3.0,-,True,-0.441,strictly_inhibits,p1
+D139,2,K,Q5_A__数据 vs 直觉,数据 vs 直觉,1.0,-,True,-0.516,strictly_inhibits,k2
+D139,3,V,Q3_C__仿生与有机,仿生与有机,3.0,-,True,-0.861,strictly_inhibits,v1➡️c1
+D139,4,C,Q5_B__系统微模块,系统微模块,1.0,-,True,-0.418,strictly_inhibits,c2
+D140,1,P,Q1_B__系统责任归属,系统责任归属,3.0,-,True,-0.38,strictly_inhibits,P
+D140,2,K,Q5_A__数据 vs 直觉,数据 vs 直觉,1.0,-,True,-0.516,strictly_inhibits,k2
+D140,3,V,Q3_C__仿生与有机,仿生与有机,2.0,-,True,-0.861,strictly_inhibits,v1➡️c1
+D140,4,C,Q5_B__系统微模块,系统微模块,3.0,-,True,-0.418,strictly_inhibits,c2
+D141,1,P,Q5_D__本土文化妥协,本土文化妥协,2.0,-,True,-0.441,strictly_inhibits,p1
+D141,2,K,Q5_A__数据 vs 直觉,数据 vs 直觉,2.0,-,True,-0.516,strictly_inhibits,k2
+D141,3,V,Q3_C__仿生与有机,仿生与有机,1.0,-,True,-0.861,strictly_inhibits,v1➡️c1
+D141,4,C,Q5_B__系统微模块,系统微模块,2.0,-,True,-0.418,strictly_inhibits,c2
+D142,1,P,Q5_D__独裁 vs 委员会,独裁 vs 委员会,6.0,+,True,0.288,weakly_shifts_to,p1
+D142,2,K,Q5_A__数据 vs 直觉,数据 vs 直觉,3.0,-,True,-0.516,strictly_inhibits,k2
+D142,3,V,Q6_B__本土文化妥协,本土文化妥协,5.0,+,True,0.539,strongly_forces_transition_to,v1➡️c2
+D142,4,C,Q4_C__资产开源,资产开源,5.0,+,True,0.759,strongly_forces_transition_to,c2
+D143,1,P,Q1_B__时代 vs 永恒,时代 vs 永恒,5.0,+,True,0.325,weakly_shifts_to,P
+D143,2,K,Q5_A__数据 vs 直觉,数据 vs 直觉,1.0,-,True,-0.516,strictly_inhibits,k2
+D143,3,V,Q6_B__本土文化妥协,本土文化妥协,4.0,+,True,0.539,strongly_forces_transition_to,v1➡️c2
+D143,4,C,Q5_B__系统微模块,系统微模块,1.0,-,True,-0.418,strictly_inhibits,c2
+D144,1,P,Q1_B__系统责任归属,系统责任归属,3.0,-,True,-0.38,strictly_inhibits,P
+D144,2,K,Q5_A__数据 vs 直觉,数据 vs 直觉,3.0,-,True,-0.516,strictly_inhibits,k2
+D144,3,V,Q3_C__仿生与有机,仿生与有机,3.0,-,True,-0.861,strictly_inhibits,v1➡️c1
+D144,4,C,Q5_B__系统微模块,系统微模块,2.0,-,True,-0.418,strictly_inhibits,c2
+D145,1,P,Q1_B__系统责任归属,系统责任归属,3.0,-,True,-0.38,strictly_inhibits,P
+D145,2,K,Q5_A__数据 vs 直觉,数据 vs 直觉,3.0,-,True,-0.516,strictly_inhibits,k2
+D145,3,V,Q6_B__本土文化妥协,本土文化妥协,6.0,+,True,0.539,strongly_forces_transition_to,v1➡️c2
+D145,4,C,Q5_B__系统微模块,系统微模块,1.0,-,True,-0.418,strictly_inhibits,c2
+D146,1,P,Q1_B__系统责任归属,系统责任归属,3.0,-,True,-0.38,strictly_inhibits,P
+D146,2,K,Q5_A__数据 vs 直觉,数据 vs 直觉,2.0,-,True,-0.516,strictly_inhibits,k2
+D146,3,V,Q3_C__仿生与有机,仿生与有机,2.0,-,True,-0.861,strictly_inhibits,v1➡️c1
+D146,4,C,Q5_B__技术支持,技术支持,3.0,-,True,-0.405,strictly_inhibits,c2
+D147,1,P,Q1_B__系统责任归属,系统责任归属,3.0,-,True,-0.38,strictly_inhibits,P
+D147,2,K,Q5_A__数据 vs 直觉,数据 vs 直觉,2.0,-,True,-0.516,strictly_inhibits,k2
+D147,3,V,Q3_C__仿生与有机,仿生与有机,1.0,-,True,-0.861,strictly_inhibits,v1➡️c1
+D147,4,C,Q1_A__数据隐私交换,数据隐私交换,4.0,+,True,0.235,weakly_shifts_to,C
+D148,1,P,Q5_D__本土文化妥协,本土文化妥协,3.0,-,True,-0.441,strictly_inhibits,p1
+D148,2,K,Q5_A__数据 vs 直觉,数据 vs 直觉,2.0,-,True,-0.516,strictly_inhibits,k2
+D148,3,V,Q5_C__商业操纵伦理,商业操纵伦理,3.0,-,True,-0.461,strictly_inhibits,v3
+D148,4,C,Q5_B__系统微模块,系统微模块,2.0,-,True,-0.418,strictly_inhibits,c2
+D149,1,P,Q5_D__本土文化妥协,本土文化妥协,3.0,-,True,-0.441,strictly_inhibits,p1
+D149,2,K,Q5_A__数据 vs 直觉,数据 vs 直觉,2.0,-,True,-0.516,strictly_inhibits,k2
+D149,3,V,Q3_C__仿生与有机,仿生与有机,2.0,-,True,-0.861,strictly_inhibits,v1➡️c1
+D149,4,C,Q5_B__系统微模块,系统微模块,2.0,-,True,-0.418,strictly_inhibits,c2
+D150,1,P,Q5_D__本土文化妥协,本土文化妥协,3.0,-,True,-0.441,strictly_inhibits,p1
+D150,2,K,Q5_A__技术支持,技术支持,4.0,+,True,0.417,guides_transition_to,k2
+D150,3,V,Q3_C__数据 vs 直觉,数据 vs 直觉,4.0,+,True,0.692,weakly_shifts_to,v1➡️c1
+D150,4,C,Q1_A__数据隐私交换,数据隐私交换,4.0,+,True,0.235,weakly_shifts_to,C
+D151,1,P,Q5_D__本土文化妥协,本土文化妥协,3.0,-,True,-0.441,strictly_inhibits,p1
+D151,2,K,Q5_A__数据 vs 直觉,数据 vs 直觉,2.0,-,True,-0.516,strictly_inhibits,k2
+D151,3,V,Q3_C__仿生与有机,仿生与有机,2.0,-,True,-0.861,strictly_inhibits,v1➡️c1
+D151,4,C,Q5_B__系统微模块,系统微模块,2.0,-,True,-0.418,strictly_inhibits,c2
+D152,1,P,Q1_B__系统责任归属,系统责任归属,2.0,-,True,-0.38,strictly_inhibits,P
+D152,2,K,Q5_A__数据 vs 直觉,数据 vs 直觉,1.0,-,True,-0.516,strictly_inhibits,k2
+D152,3,V,Q6_B__本土文化妥协,本土文化妥协,5.0,+,True,0.539,strongly_forces_transition_to,v1➡️c2
+D152,4,C,Q5_B__系统微模块,系统微模块,2.0,-,True,-0.418,strictly_inhibits,c2
+D153,1,P,Q5_D__本土文化妥协,本土文化妥协,2.0,-,True,-0.441,strictly_inhibits,p1
+D153,2,K,Q5_A__技术支持,技术支持,5.0,+,True,0.417,guides_transition_to,k2
+D153,3,V,Q3_C__数据 vs 直觉,数据 vs 直觉,5.0,+,True,0.692,weakly_shifts_to,v1➡️c1
+D153,4,C,Q5_B__系统微模块,系统微模块,2.0,-,True,-0.418,strictly_inhibits,c2
+D154,1,P,Q1_B__系统责任归属,系统责任归属,3.0,-,True,-0.38,strictly_inhibits,P
+D154,2,K,Q5_A__数据 vs 直觉,数据 vs 直觉,2.0,-,True,-0.516,strictly_inhibits,k2
+D154,3,V,Q3_C__仿生与有机,仿生与有机,3.0,-,True,-0.861,strictly_inhibits,v1➡️c1
+D154,4,C,Q5_B__系统微模块,系统微模块,2.0,-,True,-0.418,strictly_inhibits,c2
+D155,1,P,Q1_B__时代 vs 永恒,时代 vs 永恒,6.0,+,True,0.325,weakly_shifts_to,P
+D155,2,K,Q5_A__技术支持,技术支持,4.0,+,True,0.417,guides_transition_to,k2
+D155,3,V,Q3_C__数据 vs 直觉,数据 vs 直觉,5.0,+,True,0.692,weakly_shifts_to,v1➡️c1
+D155,4,C,Q5_B__系统微模块,系统微模块,1.0,-,True,-0.418,strictly_inhibits,c2
+D156,1,P,Q5_D__本土文化妥协,本土文化妥协,3.0,-,True,-0.441,strictly_inhibits,p1
+D156,2,K,Q5_A__数据 vs 直觉,数据 vs 直觉,1.0,-,True,-0.516,strictly_inhibits,k2
+D156,3,V,Q3_C__仿生与有机,仿生与有机,2.0,-,True,-0.861,strictly_inhibits,v1➡️c1
+D156,4,C,Q5_B__系统微模块,系统微模块,2.0,-,True,-0.418,strictly_inhibits,c2
+D157,1,P,Q5_D__独裁 vs 委员会,独裁 vs 委员会,4.0,+,True,0.288,weakly_shifts_to,p1
+D157,2,K,Q5_A__数据 vs 直觉,数据 vs 直觉,1.0,-,True,-0.516,strictly_inhibits,k2
+D157,3,V,Q6_B__本土文化妥协,本土文化妥协,5.0,+,True,0.539,strongly_forces_transition_to,v1➡️c2
+D157,4,C,Q5_B__系统微模块,系统微模块,1.0,-,True,-0.418,strictly_inhibits,c2
+D158,1,P,Q1_B__系统责任归属,系统责任归属,2.0,-,True,-0.38,strictly_inhibits,P
+D158,2,K,Q5_A__技术支持,技术支持,6.0,+,True,0.417,guides_transition_to,k2
+D158,3,V,Q3_C__仿生与有机,仿生与有机,2.0,-,True,-0.861,strictly_inhibits,v1➡️c1
+D158,4,C,Q1_A__数据隐私交换,数据隐私交换,6.0,+,True,0.235,weakly_shifts_to,C
+D159,1,P,Q1_B__时代 vs 永恒,时代 vs 永恒,4.0,+,True,0.325,weakly_shifts_to,P
+D159,2,K,Q5_A__数据 vs 直觉,数据 vs 直觉,3.0,-,True,-0.516,strictly_inhibits,k2
+D159,3,V,Q3_C__仿生与有机,仿生与有机,3.0,-,True,-0.861,strictly_inhibits,v1➡️c1
+D159,4,C,Q5_B__技术支持,技术支持,3.0,-,True,-0.405,strictly_inhibits,c2
+D160,1,P,Q1_B__系统责任归属,系统责任归属,2.0,-,True,-0.38,strictly_inhibits,P
+D160,2,K,Q5_A__技术支持,技术支持,5.0,+,True,0.417,guides_transition_to,k2
+D160,3,V,Q3_C__数据 vs 直觉,数据 vs 直觉,5.0,+,True,0.692,weakly_shifts_to,v1➡️c1
+D160,4,C,Q1_A__数据隐私交换,数据隐私交换,5.0,+,True,0.235,weakly_shifts_to,C
+D161,1,P,Q1_B__时代 vs 永恒,时代 vs 永恒,4.0,+,True,0.325,weakly_shifts_to,P
+D161,2,K,Q5_A__技术支持,技术支持,6.0,+,True,0.417,guides_transition_to,k2
+D161,3,V,Q3_C__数据 vs 直觉,数据 vs 直觉,4.0,+,True,0.692,weakly_shifts_to,v1➡️c1
+D161,4,C,Q5_B__系统微模块,系统微模块,3.0,-,True,-0.418,strictly_inhibits,c2
+D162,1,P,Q5_D__本土文化妥协,本土文化妥协,2.0,-,True,-0.441,strictly_inhibits,p1
+D162,2,K,Q5_A__数据 vs 直觉,数据 vs 直觉,2.0,-,True,-0.516,strictly_inhibits,k2
+D162,3,V,Q3_C__仿生与有机,仿生与有机,1.0,-,True,-0.861,strictly_inhibits,v1➡️c1
+D162,4,C,Q5_B__系统微模块,系统微模块,2.0,-,True,-0.418,strictly_inhibits,c2
+D163,1,P,Q1_B__时代 vs 永恒,时代 vs 永恒,6.0,+,True,0.325,weakly_shifts_to,P
+D163,2,K,Q5_A__技术支持,技术支持,5.0,+,True,0.417,guides_transition_to,k2
+D163,3,V,Q3_C__仿生与有机,仿生与有机,2.0,-,True,-0.861,strictly_inhibits,v1➡️c1
+D163,4,C,Q4_C__资产开源,资产开源,5.0,+,True,0.759,strongly_forces_transition_to,c2

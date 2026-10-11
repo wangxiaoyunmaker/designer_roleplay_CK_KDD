@@ -1,0 +1,12 @@
+{
+  "rows": 40,
+  "ok": 40,
+  "repaired_count": 2,
+  "repaired_target_ids": [
+    "D002/seg2",
+    "D010/seg2"
+  ],
+  "unresolved_count": 0,
+  "unresolved_target_ids": [],
+  "merged_retry_rows": 0
+}

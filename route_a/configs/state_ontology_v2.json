@@ -1,0 +1,30 @@
+{
+  "schema_version": "2.1.0",
+  "source_manual_artifact": "processed_data/docs/C-K 设计过程标注说明（标注员版）.md",
+  "source_manual_sha256": "9bc3465bc95534dfe39d8fcd36c707af42213683798acf63f331b7f77479d13e",
+  "annotation_state_order": ["K", "C", "KtoC", "CtoK", "KtoK", "CtoC", "V"],
+  "kc_state_order": ["K", "C", "KtoC", "CtoK", "KtoK", "CtoC"],
+  "states": [
+    {"id": "K", "display_symbol": "K", "display_name": "陈述已知", "definition": "陈述已知信息，或把一个假设当成已知来讲", "core_criterion": "静态；表达‘是、本来就、已经’或把假设作为既定条件。", "prompt_action": "陈述当前已知的事实、约束或假设。", "planner_eligible": true, "aux_eligible": true, "evaluation_only": false},
+    {"id": "C", "display_symbol": "C", "display_name": "提概念", "definition": "提出或持有一个待实现、不确定的概念或方案，只是认为可以", "core_criterion": "静态；指向待造之物，但尚未细化或验证。", "prompt_action": "提出一个待实现、但尚未细化或验证的设想。", "planner_eligible": true, "aux_eligible": true, "evaluation_only": false},
+    {"id": "KtoC", "display_symbol": "K→C", "display_name": "推导", "definition": "根据已知条件或数据，推导出新的概念、目标或方案", "core_criterion": "方向为已知→概念；由事实、数据、反馈或约束推出新方向。", "prompt_action": "依据已知事实、反馈或约束，提出一个新的具体方向或取舍。", "planner_eligible": true, "aux_eligible": true, "evaluation_only": false},
+    {"id": "CtoK", "display_symbol": "C→K", "display_name": "求证", "definition": "已有概念或方案，向外查数据、问用户、测试或求解释，从不确定走向确定", "core_criterion": "方向为想法→求确认；向外查、问、测或要解释。", "prompt_action": "围绕已有方案，提出要查、问、测试或解释什么来确认它。", "planner_eligible": true, "aux_eligible": true, "evaluation_only": false},
+    {"id": "KtoK", "display_symbol": "K→K", "display_name": "推理", "definition": "在已知范围内推理或推导后果，不产出新概念", "core_criterion": "无新概念、无求外部知识；只推论后果、限制或关系。", "prompt_action": "只推论已知条件的后果、限制或关系，不提出新方案。", "planner_eligible": true, "aux_eligible": true, "evaluation_only": false},
+    {"id": "CtoC", "display_symbol": "C→C", "display_name": "改概念", "definition": "在已有概念或方案上细化、调整、增加或减少属性，包含用已知结果调整方案", "core_criterion": "对象是已存在的方案；在其上加减、细化或重新界定。", "prompt_action": "对已有方案作具体加减、细化、调整或重新界定。", "planner_eligible": true, "aux_eligible": true, "evaluation_only": false},
+    {"id": "V", "display_symbol": "V", "display_name": "表态度", "definition": "表述观点、态度、原则、立场或方法论准则，作为评判尺子且不指向具体待造之物", "core_criterion": "静态；只给评判尺子。原则一旦落到具体可执行机制，应重新判为 C→C。", "prompt_action": "表达评判原则或立场，不生成具体方案。", "planner_eligible": false, "aux_eligible": false, "evaluation_only": true}
+  ],
+  "boundary_rules": [
+    {"id": "V_vs_C", "test": "是否指向一个待造、可细化或可验证的对象？", "C": "指向待实现对象；抽象原则落到具体机制时记 C→C。", "V": "只表达什么好、什么对或方法论原则，不指向待造对象。"},
+    {"id": "CtoK_vs_KtoC", "test": "信息方向是向外求确认，还是由已有知识推出概念？", "CtoK": "已有想法后向外查、问、测或要解释。", "KtoC": "从已有事实、数据或约束向内推出新概念。"},
+    {"id": "CtoC_vs_KtoC", "test": "对象是已有方案的修改，还是此前没有的新概念？", "CtoC": "在已有方案上加减、细化或调整。", "KtoC": "由已知条件首次推出新概念。"}
+  ],
+  "kc_filter": {
+    "id": "DROP_V_PRESERVE_ORDER",
+    "input_state_order": ["K", "C", "KtoC", "CtoK", "KtoK", "CtoC", "V"],
+    "output_state_order": ["K", "C", "KtoC", "CtoK", "KtoK", "CtoC"],
+    "drop_labels": ["V"],
+    "preserve_order": true,
+    "allow_empty": true
+  },
+  "control_tokens": ["START", "STOP"]
+}

@@ -1,0 +1,56 @@
+{
+  "schema_version": "1.0.0",
+  "lexicon_id": "v30_design_value_profile_v1",
+  "status": "approved",
+  "approved_on": "2026-07-23",
+  "source_instrument": {
+    "path": "raw_data/v30_scale_instrument.json",
+    "sha256": "2632a7974893093068c02b64530323eb9add15ed229cc7522817bd1217732f6f"
+  },
+  "interpretation": {
+    "agreement_direction": "agree_pole denotes high agreement with the source item's stated proposition; disagree_pole denotes low agreement.",
+    "warning": "This lexicon is a deterministic, item-level design-orientation rendering. It does not assert a validated higher-order psychological factor structure."
+  },
+  "score_buckets": [
+    {"scores": [1], "pole": "disagree_pole", "strength": "strong"},
+    {"scores": [2, 3], "pole": "disagree_pole", "strength": "moderate"},
+    {"scores": [4, 5], "pole": "agree_pole", "strength": "moderate"},
+    {"scores": [6], "pole": "agree_pole", "strength": "strong"}
+  ],
+  "render_templates": {
+    "strong": "强烈倾向：{pole}",
+    "moderate": "倾向：{pole}"
+  },
+  "items": [
+    {"item_id": "V01", "order": 1, "dimension": "数据 vs 直觉", "agree_pole": "优先相信设计判断，认为大规模用户研究的作用有限。", "disagree_pole": "重视用户访谈、问卷与数据验证，反对仅凭设计直觉决策。"},
+    {"item_id": "V02", "order": 2, "dimension": "天赋信仰", "agree_pole": "认为顶尖设计能力主要受先天天赋限制。", "disagree_pole": "认为持续练习、训练和流程积累能够达到顶尖水平。"},
+    {"item_id": "V03", "order": 3, "dimension": "AI 替代论", "agree_pole": "接受 AI 替代低技能设计执行岗位，不主张以道德理由保护这些岗位。", "disagree_pole": "关注 AI 替代低技能岗位的伦理与就业影响，主张给予保护或过渡支持。"},
+    {"item_id": "V04", "order": 4, "dimension": "技术支持", "agree_pole": "倾向尽早将新兴技术整合进产品，不等待长期社会影响完全明确。", "disagree_pole": "倾向在新技术的长期社会影响得到充分研究后再整合。"},
+    {"item_id": "V05", "order": 5, "dimension": "复杂工具信仰", "agree_pole": "认为掌握参数化、生成式或编程等复杂工具是理解当代设计思维的必要条件。", "disagree_pole": "认为设计思维不以掌握复杂技术工具为必要条件。"},
+    {"item_id": "V06", "order": 6, "dimension": "混沌与灵感", "agree_pole": "认为设计过程应为偶然、失控与灵感保留空间，即使减少严格验证。", "disagree_pole": "强调严谨的科学验证与可控过程，较少依赖偶然和失控。"},
+    {"item_id": "V07", "order": 7, "dimension": "黑盒透明度", "agree_pole": "认为用户不必了解算法或设计的运作逻辑，结果体验更重要。", "disagree_pole": "认为用户应了解算法或设计的基本运作逻辑，重视透明度与知情权。"},
+    {"item_id": "V08", "order": 8, "dimension": "系统微模块", "agree_pole": "支持高度解耦、微模块化的系统设计，即使整体感与全貌理解受影响。", "disagree_pole": "支持保留整体系统感和可理解的全貌，不追求完全解耦。"},
+    {"item_id": "V09", "order": 9, "dimension": "完美主义/MVP", "agree_pole": "宁可错过市场窗口，也坚持达到较高完成度和细节标准后再上线。", "disagree_pole": "倾向先以 MVP 上线验证，再通过迭代完善产品。"},
+    {"item_id": "V10", "order": 10, "dimension": "创新代价", "agree_pole": "愿意为探索新的交互范式承受初期转化率下降。", "disagree_pole": "优先采用成熟交互惯例，避免初期转化率下降。"},
+    {"item_id": "V11", "order": 11, "dimension": "审美反民粹", "agree_pole": "将专业审美标准置于 A/B 测试转化结果之前。", "disagree_pole": "当 A/B 测试显示转化更高时，愿意调整设计以适配用户偏好。"},
+    {"item_id": "V12", "order": 12, "dimension": "情感附加值", "agree_pole": "愿为仪式感和情感体验增加阻力或慢节奏，即使任务效率下降。", "disagree_pole": "优先任务效率，不愿为仪式感增加额外阻力或步骤。"},
+    {"item_id": "V13", "order": 13, "dimension": "装饰合法性", "agree_pole": "认可没有直接工具用途的视觉装饰也能产生设计价值。", "disagree_pole": "倾向功能优先和极简，避免没有直接用途的装饰。"},
+    {"item_id": "V14", "order": 14, "dimension": "时代 vs 永恒", "agree_pole": "认为设计应积极适配当下流行趋势与时代精神。", "disagree_pole": "认为设计应追求跨时代的经典性，而不随流行变化。"},
+    {"item_id": "V15", "order": 15, "dimension": "本土文化妥协", "agree_pole": "将本土文化语境置于全球通用性与可扩展性之前。", "disagree_pole": "将全球通用性与可扩展性置于深度本土化之前。"},
+    {"item_id": "V16", "order": 16, "dimension": "仿生与有机", "agree_pole": "偏好自然、有机形态的设计表达。", "disagree_pole": "偏好几何、工业逻辑的设计表达。"},
+    {"item_id": "V17", "order": 17, "dimension": "独裁 vs 委员会", "agree_pole": "认可由个人强愿景主导产品决策，较少依赖委员会投票。", "disagree_pole": "支持团队民主共创与共同决策，而非由个人强势主导。"},
+    {"item_id": "V18", "order": 18, "dimension": "秩序与防错", "agree_pole": "支持通过限制部分操作来预防错误。", "disagree_pole": "支持保留开放探索空间和操作灵活性，允许一定试错。"},
+    {"item_id": "V19", "order": 19, "dimension": "创作者署名", "agree_pole": "倾向在商业项目中保留设计师个人作者性和辨识度。", "disagree_pole": "倾向以项目与服务目标为主，不过度强调个人作者性。"},
+    {"item_id": "V20", "order": 20, "dimension": "资产开源", "agree_pole": "认为应开源组件库或源文件，即使这会削弱自身竞争壁垒。", "disagree_pole": "优先保护自有设计资产和竞争壁垒，不认为免费开源是义务。"},
+    {"item_id": "V21", "order": 21, "dimension": "封闭生态竞争", "agree_pole": "认为封闭生态即使限制用户选择，仍可作为优先竞争策略。", "disagree_pole": "支持开放互通与用户自由选择，不愿以封闭生态换取竞争优势。"},
+    {"item_id": "V22", "order": 22, "dimension": "风险规避", "agree_pole": "在高回报仍不确定时，优先选择安全稳妥、较少客诉风险的方案。", "disagree_pole": "愿为潜在高回报承担不确定性和风险，考虑激进方案。"},
+    {"item_id": "V23", "order": 23, "dimension": "团队依恋", "agree_pole": "倾向先独自将概念打磨到较成熟，再与团队分享。", "disagree_pole": "倾向在早期分享半成品，与团队共同探索和迭代。"},
+    {"item_id": "V24", "order": 24, "dimension": "商业操纵伦理", "agree_pole": "在公司财务危机下，可在一定程度上接受成瘾性交互。", "disagree_pole": "反对以商业困难作为采用成瘾性交互的理由。"},
+    {"item_id": "V25", "order": 25, "dimension": "数据隐私交换", "agree_pole": "愿在用户许可范围内较充分利用隐私数据以换取个性化体验。", "disagree_pole": "即使可换取个性化体验，也倾向限制对用户隐私数据的利用。"},
+    {"item_id": "V26", "order": 26, "dimension": "弱势群体优先", "agree_pole": "将边缘群体的无障碍需求置于多数用户操作效率之前。", "disagree_pole": "将多数用户操作效率置于边缘群体无障碍的额外要求之前。"},
+    {"item_id": "V27", "order": 27, "dimension": "股东服务优先", "agree_pole": "在用户诉求与商业变现冲突时，将对股东和雇主的责任置于前面。", "disagree_pole": "在用户诉求与商业变现冲突时，将用户利益置于股东和雇主利益之前。"},
+    {"item_id": "V28", "order": 28, "dimension": "政治中立性", "agree_pole": "认为设计师应中立解决问题，避免在作品中表达个人社会或政治主张。", "disagree_pole": "认为设计可以承载社会议题或价值倡议，不必完全保持中立。"},
+    {"item_id": "V29", "order": 29, "dimension": "系统责任归属", "agree_pole": "认为设计系统与设计师应对用户成瘾承担主要道德责任。", "disagree_pole": "认为用户个人自制力应对成瘾承担主要责任，而非主要归因于设计系统。"},
+    {"item_id": "V30", "order": 30, "dimension": "救世主情结", "agree_pole": "认为设计可作为应对气候变化、社会撕裂等系统性问题的强力干预。", "disagree_pole": "认为设计主要服务具体功能与商业问题，难以单独解决系统性危机。"}
+  ]
+}

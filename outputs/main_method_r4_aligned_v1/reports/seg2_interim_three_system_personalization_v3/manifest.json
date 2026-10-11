@@ -1,0 +1,16 @@
+{
+  "schema_version": "q7_main_r4_evaluation_manifest_v1",
+  "sources": {
+    "outputs/main_method_r4_aligned_v1/formal152_qwen3_8b_aligned_full_boundary_v2_final.jsonl": "ad7a99a46c5a62a8d04b905e712cbfe841aba7ee9fb4a2189298b13e3f59353a",
+    "outputs/main_method_r4_aligned_v1/formal152_llama_3_1_8b_instruct_aligned_full_boundary_v2_final.jsonl": "0d3cea98aac94819c4fd0ef5111fea8529b4bdcf7c6a8862e5a4a8fc689a41fe",
+    "outputs/main_method_r4_aligned_v1/formal152_qwen3_235b_a22b_instruct_2507_aligned_full_boundary_v2_final.jsonl": "c1217dc8496380f276e3c05631923b5ac37aa54a9cc92952b0ef4410dffea436",
+    "/Users/wy/Desktop/KDD/processed_data/q7_human_gold_adjudicated_v2.json": "d6e3e4b2d0f78cbb6ee3ea0e1855efacb2339bb2278ae85b47c038fd972647fa",
+    "/Users/wy/Desktop/KDD/processed_data/route_a_training_v2_latest_states_candidate/private/user_id_mapping.json": "e062a411514a6c4f67d2494ac54f6afa1eae7a6a8d7e4e2709745bb8015d1e74"
+  },
+  "outputs": {
+    "participant_metrics.jsonl": "9a6b332ea7609ce01151f8b85edd6ea23a57bcffeabe38dd60e258d21ce9a377",
+    "summary.json": "3478163b7ae5f0cb56c0d9214dfccb6a87a85c9cb53b0ae9992ed38970c6f618",
+    "paper_table.csv": "ee31029c073c8f9de407ec004833fd1d6255327e3279c6a31cc57eb1f902d50d",
+    "paired_comparisons.csv": "a69234b46d840f58b3ead6eda0c9195642279ebff6d9291aed9801dbe1f33375"
+  }
+}

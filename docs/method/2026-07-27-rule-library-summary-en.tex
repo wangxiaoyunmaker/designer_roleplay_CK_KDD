@@ -1,0 +1,42 @@
+\subsection{Exploratory Rule Library Summary}
+\label{app:rule_library_summary}
+
+Table~\ref{tab:rule_library_summary} summarizes the rule families used by the routing module. The table reports retained exploratory candidates rather than validated psychological laws. Full rule records, including anonymous triggers and stability diagnostics, are released as machine-readable supplementary material.
+
+\begin{table*}[t]
+\centering
+\small
+\caption{Summary of the trait-conditioned exploratory rule library. A rule specifies a profile condition, an applicable source operation or conflict context, and a preferred C--K operation.}
+\label{tab:rule_library_summary}
+\begin{tabular}{@{}p{0.16\textwidth} p{0.12\textwidth} p{0.26\textwidth} p{0.27\textwidth} p{0.07\textwidth}@{}}
+\toprule
+\textbf{Rule family} & \textbf{Source data} & \textbf{Candidate relation} & \textbf{Runtime interpretation} & \textbf{Retained} \\
+\midrule
+Initial-orientation rules &
+Q1 &
+$(\text{trait pole}) \Rightarrow z_{\mathrm{initial}}=y$ &
+Prefer an initial operation for an immediate response. Single-trait and trait-relation candidates are retained separately because Q1 has no preceding operation. &
+$6+12=18$ \\
+
+Single-trait transition rules &
+Q2 &
+$(\text{trait pole},z_t=s) \Rightarrow z_{t+1}=y$ &
+When the current operation is $s$, a high or low pole of one trait favors operation $y$. &
+12 \\
+
+Trait-relation transition rules &
+Q2 &
+$(R_{jk}(\mathbf v_i),z_t=s) \Rightarrow z_{t+1}=y$ &
+When a pair of traits is jointly activated, in tension, dominant, or balanced, adjust the next-operation preference beyond the two single-trait effects. &
+49 \\
+
+Contextual preference rules &
+Q3--Q6 &
+(\text{conflict context},\text{trait pole}) \Rightarrow y &
+Favor operation $y$ for a semantically matching design conflict. These rules are not treated as transitions because the source questions contain one operation choice only. &
+29 \\
+\bottomrule
+\end{tabular}
+\end{table*}
+
+All retained candidates are used as soft operational priors. They may be overridden by public task facts and never directly edit a generated trajectory. The Q2 transition and Q3--Q6 contextual families form the 90-rule library used for Seg2; Q1 candidates are used only for initial-response settings. Rule discovery uses Q1--Q6 only; the held-out Q7 responses are excluded from rule mining and rule selection.

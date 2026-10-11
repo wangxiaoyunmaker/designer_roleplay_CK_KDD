@@ -1,0 +1,77 @@
+{
+  "conditions": {
+    "joint_active4": {
+      "n": 30,
+      "mean_kc_nes": 0.24784632034632034,
+      "mean_pred_length": 6.0,
+      "parse_failures": 0,
+      "label_leaks": 0,
+      "unique_sequences": 1,
+      "top_sequence_share": 1.0,
+      "mean_answer_chars": 352.03333333333336,
+      "answer_length_compliance": 0.9666666666666667,
+      "unique_answers": 29,
+      "top_answer_share": 0.06666666666666667
+    },
+    "split_routed_active4": {
+      "n": 30,
+      "mean_kc_nes": 0.2569877344877345,
+      "mean_pred_length": 7.0,
+      "parse_failures": 0,
+      "label_leaks": 0,
+      "unique_sequences": 1,
+      "top_sequence_share": 1.0,
+      "mean_answer_chars": 338.76666666666665,
+      "answer_length_compliance": 0.9,
+      "unique_answers": 29,
+      "top_answer_share": 0.06666666666666667
+    },
+    "split_shared_active4": {
+      "n": 30,
+      "mean_kc_nes": 0.25762265512265514,
+      "mean_pred_length": 7.0,
+      "parse_failures": 0,
+      "label_leaks": 0,
+      "unique_sequences": 1,
+      "top_sequence_share": 1.0,
+      "mean_answer_chars": 321.03333333333336,
+      "answer_length_compliance": 0.9666666666666667,
+      "unique_answers": 29,
+      "top_answer_share": 0.06666666666666667
+    }
+  },
+  "paired_comparisons": {
+    "split_routed_active4-joint_active4/kc_nes": {
+      "delta": 0.00914141414141415,
+      "ci95_low": -0.02301587301587301,
+      "ci95_high": 0.04342911255411256,
+      "n": 30,
+      "n_resamples": 10000,
+      "seed": 20260727
+    },
+    "split_routed_active4-joint_active4/exact_sequence_agreement": {
+      "rate": 0.0,
+      "n": 30
+    },
+    "split_shared_active4-joint_active4/kc_nes": {
+      "delta": 0.009776334776334794,
+      "ci95_low": -0.01984126984126983,
+      "ci95_high": 0.038600288600288614,
+      "n": 30,
+      "n_resamples": 10000,
+      "seed": 20260727
+    },
+    "split_shared_active4-joint_active4/exact_sequence_agreement": {
+      "rate": 0.0,
+      "n": 30
+    },
+    "split_routed_active4-split_shared_active4/kc_nes": {
+      "delta": -0.0006349206349206438,
+      "ci95_low": -0.035317460317460324,
+      "ci95_high": 0.03476388888888886,
+      "n": 30,
+      "n_resamples": 10000,
+      "seed": 20260727
+    }
+  }
+}

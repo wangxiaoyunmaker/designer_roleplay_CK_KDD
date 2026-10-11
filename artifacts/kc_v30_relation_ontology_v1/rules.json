@@ -1,0 +1,2891 @@
+{
+  "schema_version": "kc_v30_relation_ontology_v1",
+  "run_kind": "formal",
+  "state_ontology": [
+    "K",
+    "C",
+    "KtoC",
+    "CtoK",
+    "KtoK",
+    "CtoC"
+  ],
+  "boundary_tokens": [
+    "START",
+    "STOP"
+  ],
+  "q7_used_for_mining": false,
+  "injection_policy": {
+    "default_rule_status": "validated",
+    "routing_strength": "soft_preference",
+    "semantic_relevance_required": true
+  },
+  "rules": [
+    {
+      "rule_id": "KCRR_968b906088",
+      "rule_status": "stable_exploratory",
+      "trigger": {
+        "profile_relation": {
+          "relation_id": "VRP_37d3cd2e62",
+          "relation_type": "left_dominant",
+          "left_trait": {
+            "trait_index": 0,
+            "trait_id": "T01",
+            "trait_name": "数据 vs 直觉",
+            "positive_label": "重直觉立场",
+            "negative_label": "重数据立场"
+          },
+          "right_trait": {
+            "trait_index": 22,
+            "trait_id": "T23",
+            "trait_name": "团队依恋",
+            "positive_label": "独立打磨派",
+            "negative_label": "团队共创派"
+          },
+          "natural_language": "数据 vs 直觉维度相对团队依恋维度至少高2分"
+        },
+        "current_state": "KtoK",
+        "context_policy": "activate_only_when_semantically_relevant"
+      },
+      "action": {
+        "next_state": "CtoK",
+        "routing": "prefer",
+        "semantic_operation": "检验已有方案所依赖的证据、用户影响和可行性",
+        "guard": "完成至少一项证据或风险检查前不得结束推理。"
+      },
+      "evidence": {
+        "relation_support_in_source": 25,
+        "target_support_participants": 20,
+        "residual_effect": 0.19922812,
+        "bootstrap_ci_low": 0.00462222,
+        "bootstrap_ci_high": 0.4095409,
+        "bootstrap_sign_consistency": 0.979,
+        "permutation_p": 0.01998002,
+        "fdr_q": 0.99672399,
+        "heldout_delta_log_loss": -0.02793251,
+        "heldout_improved_folds": 4,
+        "heldout_fold_count": 5,
+        "heldout_sign_agreement": 1.0
+      },
+      "internal_relation_evidence": {
+        "edge_id": "VREL_T01_T23",
+        "left_trait_index": 0,
+        "left_trait_id": "T01",
+        "left_trait_name": "数据 vs 直觉",
+        "right_trait_index": 22,
+        "right_trait_id": "T23",
+        "right_trait_name": "团队依恋",
+        "spearman_r": 0.34261075,
+        "bootstrap_ci_low": 0.17907793,
+        "bootstrap_ci_high": 0.47413392,
+        "bootstrap_sign_consistency": 1.0,
+        "bootstrap_samples": 1000
+      }
+    },
+    {
+      "rule_id": "KCRR_bc31531e63",
+      "rule_status": "stable_exploratory",
+      "trigger": {
+        "profile_relation": {
+          "relation_id": "VRP_91a94787d0",
+          "relation_type": "left_dominant",
+          "left_trait": {
+            "trait_index": 4,
+            "trait_id": "T05",
+            "trait_name": "复杂工具信仰",
+            "positive_label": "工具门槛论",
+            "negative_label": "工具无关论"
+          },
+          "right_trait": {
+            "trait_index": 19,
+            "trait_id": "T20",
+            "trait_name": "资产开源",
+            "positive_label": "开源道德派",
+            "negative_label": "竞争壁垒派"
+          },
+          "natural_language": "复杂工具信仰维度相对资产开源维度至少高2分"
+        },
+        "current_state": "KtoK",
+        "context_policy": "activate_only_when_semantically_relevant"
+      },
+      "action": {
+        "next_state": "CtoK",
+        "routing": "prefer",
+        "semantic_operation": "检验已有方案所依赖的证据、用户影响和可行性",
+        "guard": "完成至少一项证据或风险检查前不得结束推理。"
+      },
+      "evidence": {
+        "relation_support_in_source": 20,
+        "target_support_participants": 20,
+        "residual_effect": 0.17719662,
+        "bootstrap_ci_low": -0.03556778,
+        "bootstrap_ci_high": 0.4159225,
+        "bootstrap_sign_consistency": 0.942,
+        "permutation_p": 0.05694306,
+        "fdr_q": 0.99672399,
+        "heldout_delta_log_loss": -0.02167699,
+        "heldout_improved_folds": 5,
+        "heldout_fold_count": 5,
+        "heldout_sign_agreement": 1.0
+      },
+      "internal_relation_evidence": {
+        "edge_id": "VREL_T05_T20",
+        "left_trait_index": 4,
+        "left_trait_id": "T05",
+        "left_trait_name": "复杂工具信仰",
+        "right_trait_index": 19,
+        "right_trait_id": "T20",
+        "right_trait_name": "资产开源",
+        "spearman_r": 0.41037848,
+        "bootstrap_ci_low": 0.27823821,
+        "bootstrap_ci_high": 0.53875173,
+        "bootstrap_sign_consistency": 1.0,
+        "bootstrap_samples": 1000
+      }
+    },
+    {
+      "rule_id": "KCRR_f704622f3a",
+      "rule_status": "stable_exploratory",
+      "trigger": {
+        "profile_relation": {
+          "relation_id": "VRP_ceaf207fb1",
+          "relation_type": "balanced",
+          "left_trait": {
+            "trait_index": 4,
+            "trait_id": "T05",
+            "trait_name": "复杂工具信仰",
+            "positive_label": "工具门槛论",
+            "negative_label": "工具无关论"
+          },
+          "right_trait": {
+            "trait_index": 20,
+            "trait_id": "T21",
+            "trait_name": "封闭生态竞争",
+            "positive_label": "封闭生态派",
+            "negative_label": "开放兼容派"
+          },
+          "natural_language": "复杂工具信仰与封闭生态竞争两个维度得分接近平衡"
+        },
+        "current_state": "CtoK",
+        "context_policy": "activate_only_when_semantically_relevant"
+      },
+      "action": {
+        "next_state": "KtoC",
+        "routing": "prefer",
+        "semantic_operation": "基于已有证据或约束推导一个新的设计方案",
+        "guard": "必须说明依据如何导向新方案，并至少产出一个可执行候选。"
+      },
+      "evidence": {
+        "relation_support_in_source": 87,
+        "target_support_participants": 54,
+        "residual_effect": 0.17625969,
+        "bootstrap_ci_low": 0.01381245,
+        "bootstrap_ci_high": 0.32852887,
+        "bootstrap_sign_consistency": 0.987,
+        "permutation_p": 0.04295704,
+        "fdr_q": 0.99672399,
+        "heldout_delta_log_loss": -0.02068813,
+        "heldout_improved_folds": 5,
+        "heldout_fold_count": 5,
+        "heldout_sign_agreement": 1.0
+      },
+      "internal_relation_evidence": {
+        "edge_id": "VREL_T05_T21",
+        "left_trait_index": 4,
+        "left_trait_id": "T05",
+        "left_trait_name": "复杂工具信仰",
+        "right_trait_index": 20,
+        "right_trait_id": "T21",
+        "right_trait_name": "封闭生态竞争",
+        "spearman_r": 0.39207625,
+        "bootstrap_ci_low": 0.24773696,
+        "bootstrap_ci_high": 0.53189061,
+        "bootstrap_sign_consistency": 1.0,
+        "bootstrap_samples": 1000
+      }
+    },
+    {
+      "rule_id": "KCRR_d9c8792961",
+      "rule_status": "stable_exploratory",
+      "trigger": {
+        "profile_relation": {
+          "relation_id": "VRP_3fc6fd9bf4",
+          "relation_type": "synergy_low",
+          "left_trait": {
+            "trait_index": 7,
+            "trait_id": "T08",
+            "trait_name": "系统微模块",
+            "positive_label": "解耦优先",
+            "negative_label": "整体感优先"
+          },
+          "right_trait": {
+            "trait_index": 22,
+            "trait_id": "T23",
+            "trait_name": "团队依恋",
+            "positive_label": "独立打磨派",
+            "negative_label": "团队共创派"
+          },
+          "natural_language": "同时呈现“整体感优先”与“团队共创派”倾向"
+        },
+        "current_state": "K",
+        "context_policy": "activate_only_when_semantically_relevant"
+      },
+      "action": {
+        "next_state": "C",
+        "routing": "prefer",
+        "semantic_operation": "形成一个明确的设计概念、原则或候选方案",
+        "guard": "下一步必须给出具体概念或原则，不能只罗列已知条件。"
+      },
+      "evidence": {
+        "relation_support_in_source": 61,
+        "target_support_participants": 24,
+        "residual_effect": 0.12325228,
+        "bootstrap_ci_low": 0.00226534,
+        "bootstrap_ci_high": 0.25027393,
+        "bootstrap_sign_consistency": 0.977,
+        "permutation_p": 0.04495504,
+        "fdr_q": 0.99672399,
+        "heldout_delta_log_loss": -0.01625339,
+        "heldout_improved_folds": 5,
+        "heldout_fold_count": 5,
+        "heldout_sign_agreement": 1.0
+      },
+      "internal_relation_evidence": {
+        "edge_id": "VREL_T08_T23",
+        "left_trait_index": 7,
+        "left_trait_id": "T08",
+        "left_trait_name": "系统微模块",
+        "right_trait_index": 22,
+        "right_trait_id": "T23",
+        "right_trait_name": "团队依恋",
+        "spearman_r": 0.30558603,
+        "bootstrap_ci_low": 0.14614117,
+        "bootstrap_ci_high": 0.44964474,
+        "bootstrap_sign_consistency": 1.0,
+        "bootstrap_samples": 1000
+      }
+    },
+    {
+      "rule_id": "KCRR_f051b96a71",
+      "rule_status": "stable_exploratory",
+      "trigger": {
+        "profile_relation": {
+          "relation_id": "VRP_f351baa9dc",
+          "relation_type": "left_dominant",
+          "left_trait": {
+            "trait_index": 8,
+            "trait_id": "T09",
+            "trait_name": "完美主义/MVP",
+            "positive_label": "完美主义",
+            "negative_label": "速度优先"
+          },
+          "right_trait": {
+            "trait_index": 15,
+            "trait_id": "T16",
+            "trait_name": "仿生与有机",
+            "positive_label": "有机自然派",
+            "negative_label": "几何工业派"
+          },
+          "natural_language": "完美主义/MVP维度相对仿生与有机维度至少高2分"
+        },
+        "current_state": "START",
+        "context_policy": "activate_only_when_semantically_relevant"
+      },
+      "action": {
+        "next_state": "C",
+        "routing": "prefer",
+        "semantic_operation": "形成一个明确的设计概念、原则或候选方案",
+        "guard": "下一步必须给出具体概念或原则，不能只罗列已知条件。"
+      },
+      "evidence": {
+        "relation_support_in_source": 26,
+        "target_support_participants": 121,
+        "residual_effect": 0.18387101,
+        "bootstrap_ci_low": 0.02220019,
+        "bootstrap_ci_high": 0.31447945,
+        "bootstrap_sign_consistency": 0.988,
+        "permutation_p": 0.05694306,
+        "fdr_q": 0.99672399,
+        "heldout_delta_log_loss": -0.01468402,
+        "heldout_improved_folds": 4,
+        "heldout_fold_count": 5,
+        "heldout_sign_agreement": 1.0
+      },
+      "internal_relation_evidence": {
+        "edge_id": "VREL_T09_T16",
+        "left_trait_index": 8,
+        "left_trait_id": "T09",
+        "left_trait_name": "完美主义/MVP",
+        "right_trait_index": 15,
+        "right_trait_id": "T16",
+        "right_trait_name": "仿生与有机",
+        "spearman_r": 0.30603467,
+        "bootstrap_ci_low": 0.14298004,
+        "bootstrap_ci_high": 0.4566669,
+        "bootstrap_sign_consistency": 1.0,
+        "bootstrap_samples": 1000
+      }
+    },
+    {
+      "rule_id": "KCRR_ee93f0a676",
+      "rule_status": "stable_exploratory",
+      "trigger": {
+        "profile_relation": {
+          "relation_id": "VRP_32ede4315e",
+          "relation_type": "balanced",
+          "left_trait": {
+            "trait_index": 0,
+            "trait_id": "T01",
+            "trait_name": "数据 vs 直觉",
+            "positive_label": "重直觉立场",
+            "negative_label": "重数据立场"
+          },
+          "right_trait": {
+            "trait_index": 22,
+            "trait_id": "T23",
+            "trait_name": "团队依恋",
+            "positive_label": "独立打磨派",
+            "negative_label": "团队共创派"
+          },
+          "natural_language": "数据 vs 直觉与团队依恋两个维度得分接近平衡"
+        },
+        "current_state": "CtoK",
+        "context_policy": "activate_only_when_semantically_relevant"
+      },
+      "action": {
+        "next_state": "KtoC",
+        "routing": "prefer",
+        "semantic_operation": "基于已有证据或约束推导一个新的设计方案",
+        "guard": "必须说明依据如何导向新方案，并至少产出一个可执行候选。"
+      },
+      "evidence": {
+        "relation_support_in_source": 76,
+        "target_support_participants": 54,
+        "residual_effect": 0.16009328,
+        "bootstrap_ci_low": 0.01378823,
+        "bootstrap_ci_high": 0.29581115,
+        "bootstrap_sign_consistency": 0.983,
+        "permutation_p": 0.03796204,
+        "fdr_q": 0.99672399,
+        "heldout_delta_log_loss": -0.01214574,
+        "heldout_improved_folds": 5,
+        "heldout_fold_count": 5,
+        "heldout_sign_agreement": 1.0
+      },
+      "internal_relation_evidence": {
+        "edge_id": "VREL_T01_T23",
+        "left_trait_index": 0,
+        "left_trait_id": "T01",
+        "left_trait_name": "数据 vs 直觉",
+        "right_trait_index": 22,
+        "right_trait_id": "T23",
+        "right_trait_name": "团队依恋",
+        "spearman_r": 0.34261075,
+        "bootstrap_ci_low": 0.17907793,
+        "bootstrap_ci_high": 0.47413392,
+        "bootstrap_sign_consistency": 1.0,
+        "bootstrap_samples": 1000
+      }
+    },
+    {
+      "rule_id": "KCRR_19bf72a658",
+      "rule_status": "stable_exploratory",
+      "trigger": {
+        "profile_relation": {
+          "relation_id": "VRP_61f8366541",
+          "relation_type": "left_dominant",
+          "left_trait": {
+            "trait_index": 3,
+            "trait_id": "T04",
+            "trait_name": "技术支持",
+            "positive_label": "技术激进主义",
+            "negative_label": "技术审慎主义"
+          },
+          "right_trait": {
+            "trait_index": 13,
+            "trait_id": "T14",
+            "trait_name": "时代 vs 永恒",
+            "positive_label": "时代潮流派",
+            "negative_label": "永恒经典派"
+          },
+          "natural_language": "技术支持维度相对时代 vs 永恒维度至少高2分"
+        },
+        "current_state": "K",
+        "context_policy": "activate_only_when_semantically_relevant"
+      },
+      "action": {
+        "next_state": "CtoK",
+        "routing": "prefer",
+        "semantic_operation": "检验已有方案所依赖的证据、用户影响和可行性",
+        "guard": "完成至少一项证据或风险检查前不得结束推理。"
+      },
+      "evidence": {
+        "relation_support_in_source": 20,
+        "target_support_participants": 44,
+        "residual_effect": 0.16360026,
+        "bootstrap_ci_low": -0.05084735,
+        "bootstrap_ci_high": 0.41312593,
+        "bootstrap_sign_consistency": 0.918,
+        "permutation_p": 0.17682318,
+        "fdr_q": 0.99672399,
+        "heldout_delta_log_loss": -0.01208819,
+        "heldout_improved_folds": 3,
+        "heldout_fold_count": 5,
+        "heldout_sign_agreement": 1.0
+      },
+      "internal_relation_evidence": {
+        "edge_id": "VREL_T04_T14",
+        "left_trait_index": 3,
+        "left_trait_id": "T04",
+        "left_trait_name": "技术支持",
+        "right_trait_index": 13,
+        "right_trait_id": "T14",
+        "right_trait_name": "时代 vs 永恒",
+        "spearman_r": 0.29880198,
+        "bootstrap_ci_low": 0.14484289,
+        "bootstrap_ci_high": 0.43679544,
+        "bootstrap_sign_consistency": 1.0,
+        "bootstrap_samples": 1000
+      }
+    },
+    {
+      "rule_id": "KCRR_448be7988d",
+      "rule_status": "stable_exploratory",
+      "trigger": {
+        "profile_relation": {
+          "relation_id": "VRP_4048a80229",
+          "relation_type": "tension_left_high",
+          "left_trait": {
+            "trait_index": 3,
+            "trait_id": "T04",
+            "trait_name": "技术支持",
+            "positive_label": "技术激进主义",
+            "negative_label": "技术审慎主义"
+          },
+          "right_trait": {
+            "trait_index": 13,
+            "trait_id": "T14",
+            "trait_name": "时代 vs 永恒",
+            "positive_label": "时代潮流派",
+            "negative_label": "永恒经典派"
+          },
+          "natural_language": "“技术激进主义”与“永恒经典派”形成配置张力"
+        },
+        "current_state": "KtoC",
+        "context_policy": "activate_only_when_semantically_relevant"
+      },
+      "action": {
+        "next_state": "KtoK",
+        "routing": "prefer",
+        "semantic_operation": "在已有知识之间推导后果、限制或冲突关系",
+        "guard": "必须明确一项后果、限制或证据之间的关系。"
+      },
+      "evidence": {
+        "relation_support_in_source": 24,
+        "target_support_participants": 38,
+        "residual_effect": 0.14450101,
+        "bootstrap_ci_low": -0.00564736,
+        "bootstrap_ci_high": 0.30823295,
+        "bootstrap_sign_consistency": 0.968,
+        "permutation_p": 0.04295704,
+        "fdr_q": 0.99672399,
+        "heldout_delta_log_loss": -0.01068113,
+        "heldout_improved_folds": 5,
+        "heldout_fold_count": 5,
+        "heldout_sign_agreement": 1.0
+      },
+      "internal_relation_evidence": {
+        "edge_id": "VREL_T04_T14",
+        "left_trait_index": 3,
+        "left_trait_id": "T04",
+        "left_trait_name": "技术支持",
+        "right_trait_index": 13,
+        "right_trait_id": "T14",
+        "right_trait_name": "时代 vs 永恒",
+        "spearman_r": 0.29880198,
+        "bootstrap_ci_low": 0.14484289,
+        "bootstrap_ci_high": 0.43679544,
+        "bootstrap_sign_consistency": 1.0,
+        "bootstrap_samples": 1000
+      }
+    },
+    {
+      "rule_id": "KCRR_f383b70a0b",
+      "rule_status": "stable_exploratory",
+      "trigger": {
+        "profile_relation": {
+          "relation_id": "VRP_32ede4315e",
+          "relation_type": "balanced",
+          "left_trait": {
+            "trait_index": 0,
+            "trait_id": "T01",
+            "trait_name": "数据 vs 直觉",
+            "positive_label": "重直觉立场",
+            "negative_label": "重数据立场"
+          },
+          "right_trait": {
+            "trait_index": 22,
+            "trait_id": "T23",
+            "trait_name": "团队依恋",
+            "positive_label": "独立打磨派",
+            "negative_label": "团队共创派"
+          },
+          "natural_language": "数据 vs 直觉与团队依恋两个维度得分接近平衡"
+        },
+        "current_state": "KtoC",
+        "context_policy": "activate_only_when_semantically_relevant"
+      },
+      "action": {
+        "next_state": "KtoC",
+        "routing": "prefer",
+        "semantic_operation": "基于已有证据或约束推导一个新的设计方案",
+        "guard": "必须说明依据如何导向新方案，并至少产出一个可执行候选。"
+      },
+      "evidence": {
+        "relation_support_in_source": 96,
+        "target_support_participants": 22,
+        "residual_effect": 0.08118154,
+        "bootstrap_ci_low": 0.0312426,
+        "bootstrap_ci_high": 0.13128497,
+        "bootstrap_sign_consistency": 1.0,
+        "permutation_p": 0.00899101,
+        "fdr_q": 0.99672399,
+        "heldout_delta_log_loss": -0.00862135,
+        "heldout_improved_folds": 5,
+        "heldout_fold_count": 5,
+        "heldout_sign_agreement": 1.0
+      },
+      "internal_relation_evidence": {
+        "edge_id": "VREL_T01_T23",
+        "left_trait_index": 0,
+        "left_trait_id": "T01",
+        "left_trait_name": "数据 vs 直觉",
+        "right_trait_index": 22,
+        "right_trait_id": "T23",
+        "right_trait_name": "团队依恋",
+        "spearman_r": 0.34261075,
+        "bootstrap_ci_low": 0.17907793,
+        "bootstrap_ci_high": 0.47413392,
+        "bootstrap_sign_consistency": 1.0,
+        "bootstrap_samples": 1000
+      }
+    },
+    {
+      "rule_id": "KCRR_49ca1a628a",
+      "rule_status": "stable_exploratory",
+      "trigger": {
+        "profile_relation": {
+          "relation_id": "VRP_87c500fc8b",
+          "relation_type": "synergy_high",
+          "left_trait": {
+            "trait_index": 0,
+            "trait_id": "T01",
+            "trait_name": "数据 vs 直觉",
+            "positive_label": "重直觉立场",
+            "negative_label": "重数据立场"
+          },
+          "right_trait": {
+            "trait_index": 22,
+            "trait_id": "T23",
+            "trait_name": "团队依恋",
+            "positive_label": "独立打磨派",
+            "negative_label": "团队共创派"
+          },
+          "natural_language": "同时呈现“重直觉立场”与“独立打磨派”倾向"
+        },
+        "current_state": "K",
+        "context_policy": "activate_only_when_semantically_relevant"
+      },
+      "action": {
+        "next_state": "KtoC",
+        "routing": "prefer",
+        "semantic_operation": "基于已有证据或约束推导一个新的设计方案",
+        "guard": "必须说明依据如何导向新方案，并至少产出一个可执行候选。"
+      },
+      "evidence": {
+        "relation_support_in_source": 25,
+        "target_support_participants": 44,
+        "residual_effect": 0.13572656,
+        "bootstrap_ci_low": -0.06340385,
+        "bootstrap_ci_high": 0.34509914,
+        "bootstrap_sign_consistency": 0.906,
+        "permutation_p": 0.21478521,
+        "fdr_q": 0.99672399,
+        "heldout_delta_log_loss": -0.00859776,
+        "heldout_improved_folds": 4,
+        "heldout_fold_count": 5,
+        "heldout_sign_agreement": 1.0
+      },
+      "internal_relation_evidence": {
+        "edge_id": "VREL_T01_T23",
+        "left_trait_index": 0,
+        "left_trait_id": "T01",
+        "left_trait_name": "数据 vs 直觉",
+        "right_trait_index": 22,
+        "right_trait_id": "T23",
+        "right_trait_name": "团队依恋",
+        "spearman_r": 0.34261075,
+        "bootstrap_ci_low": 0.17907793,
+        "bootstrap_ci_high": 0.47413392,
+        "bootstrap_sign_consistency": 1.0,
+        "bootstrap_samples": 1000
+      }
+    },
+    {
+      "rule_id": "KCRR_892c13fd76",
+      "rule_status": "stable_exploratory",
+      "trigger": {
+        "profile_relation": {
+          "relation_id": "VRP_32ede4315e",
+          "relation_type": "balanced",
+          "left_trait": {
+            "trait_index": 0,
+            "trait_id": "T01",
+            "trait_name": "数据 vs 直觉",
+            "positive_label": "重直觉立场",
+            "negative_label": "重数据立场"
+          },
+          "right_trait": {
+            "trait_index": 22,
+            "trait_id": "T23",
+            "trait_name": "团队依恋",
+            "positive_label": "独立打磨派",
+            "negative_label": "团队共创派"
+          },
+          "natural_language": "数据 vs 直觉与团队依恋两个维度得分接近平衡"
+        },
+        "current_state": "C",
+        "context_policy": "activate_only_when_semantically_relevant"
+      },
+      "action": {
+        "next_state": "KtoK",
+        "routing": "prefer",
+        "semantic_operation": "在已有知识之间推导后果、限制或冲突关系",
+        "guard": "必须明确一项后果、限制或证据之间的关系。"
+      },
+      "evidence": {
+        "relation_support_in_source": 100,
+        "target_support_participants": 24,
+        "residual_effect": 0.10263544,
+        "bootstrap_ci_low": 0.04621659,
+        "bootstrap_ci_high": 0.16579732,
+        "bootstrap_sign_consistency": 1.0,
+        "permutation_p": 0.00999001,
+        "fdr_q": 0.99672399,
+        "heldout_delta_log_loss": -0.0085462,
+        "heldout_improved_folds": 5,
+        "heldout_fold_count": 5,
+        "heldout_sign_agreement": 1.0
+      },
+      "internal_relation_evidence": {
+        "edge_id": "VREL_T01_T23",
+        "left_trait_index": 0,
+        "left_trait_id": "T01",
+        "left_trait_name": "数据 vs 直觉",
+        "right_trait_index": 22,
+        "right_trait_id": "T23",
+        "right_trait_name": "团队依恋",
+        "spearman_r": 0.34261075,
+        "bootstrap_ci_low": 0.17907793,
+        "bootstrap_ci_high": 0.47413392,
+        "bootstrap_sign_consistency": 1.0,
+        "bootstrap_samples": 1000
+      }
+    },
+    {
+      "rule_id": "KCRR_68084bcb3a",
+      "rule_status": "stable_exploratory",
+      "trigger": {
+        "profile_relation": {
+          "relation_id": "VRP_4048a80229",
+          "relation_type": "tension_left_high",
+          "left_trait": {
+            "trait_index": 3,
+            "trait_id": "T04",
+            "trait_name": "技术支持",
+            "positive_label": "技术激进主义",
+            "negative_label": "技术审慎主义"
+          },
+          "right_trait": {
+            "trait_index": 13,
+            "trait_id": "T14",
+            "trait_name": "时代 vs 永恒",
+            "positive_label": "时代潮流派",
+            "negative_label": "永恒经典派"
+          },
+          "natural_language": "“技术激进主义”与“永恒经典派”形成配置张力"
+        },
+        "current_state": "START",
+        "context_policy": "activate_only_when_semantically_relevant"
+      },
+      "action": {
+        "next_state": "C",
+        "routing": "prefer",
+        "semantic_operation": "形成一个明确的设计概念、原则或候选方案",
+        "guard": "下一步必须给出具体概念或原则，不能只罗列已知条件。"
+      },
+      "evidence": {
+        "relation_support_in_source": 24,
+        "target_support_participants": 121,
+        "residual_effect": 0.1507584,
+        "bootstrap_ci_low": -0.01401812,
+        "bootstrap_ci_high": 0.302861,
+        "bootstrap_sign_consistency": 0.962,
+        "permutation_p": 0.10989011,
+        "fdr_q": 0.99672399,
+        "heldout_delta_log_loss": -0.00823795,
+        "heldout_improved_folds": 4,
+        "heldout_fold_count": 5,
+        "heldout_sign_agreement": 1.0
+      },
+      "internal_relation_evidence": {
+        "edge_id": "VREL_T04_T14",
+        "left_trait_index": 3,
+        "left_trait_id": "T04",
+        "left_trait_name": "技术支持",
+        "right_trait_index": 13,
+        "right_trait_id": "T14",
+        "right_trait_name": "时代 vs 永恒",
+        "spearman_r": 0.29880198,
+        "bootstrap_ci_low": 0.14484289,
+        "bootstrap_ci_high": 0.43679544,
+        "bootstrap_sign_consistency": 1.0,
+        "bootstrap_samples": 1000
+      }
+    },
+    {
+      "rule_id": "KCRR_8b6b41fb91",
+      "rule_status": "stable_exploratory",
+      "trigger": {
+        "profile_relation": {
+          "relation_id": "VRP_8cf921201e",
+          "relation_type": "balanced",
+          "left_trait": {
+            "trait_index": 4,
+            "trait_id": "T05",
+            "trait_name": "复杂工具信仰",
+            "positive_label": "工具门槛论",
+            "negative_label": "工具无关论"
+          },
+          "right_trait": {
+            "trait_index": 21,
+            "trait_id": "T22",
+            "trait_name": "风险规避",
+            "positive_label": "风险规避",
+            "negative_label": "风险偏好"
+          },
+          "natural_language": "复杂工具信仰与风险规避两个维度得分接近平衡"
+        },
+        "current_state": "CtoC",
+        "context_policy": "activate_only_when_semantically_relevant"
+      },
+      "action": {
+        "next_state": "CtoK",
+        "routing": "prefer",
+        "semantic_operation": "检验已有方案所依赖的证据、用户影响和可行性",
+        "guard": "完成至少一项证据或风险检查前不得结束推理。"
+      },
+      "evidence": {
+        "relation_support_in_source": 82,
+        "target_support_participants": 20,
+        "residual_effect": 0.11020738,
+        "bootstrap_ci_low": -0.00463641,
+        "bootstrap_ci_high": 0.21535158,
+        "bootstrap_sign_consistency": 0.97,
+        "permutation_p": 0.08491508,
+        "fdr_q": 0.99672399,
+        "heldout_delta_log_loss": -0.00740351,
+        "heldout_improved_folds": 5,
+        "heldout_fold_count": 5,
+        "heldout_sign_agreement": 1.0
+      },
+      "internal_relation_evidence": {
+        "edge_id": "VREL_T05_T22",
+        "left_trait_index": 4,
+        "left_trait_id": "T05",
+        "left_trait_name": "复杂工具信仰",
+        "right_trait_index": 21,
+        "right_trait_id": "T22",
+        "right_trait_name": "风险规避",
+        "spearman_r": 0.34633036,
+        "bootstrap_ci_low": 0.19670587,
+        "bootstrap_ci_high": 0.49105967,
+        "bootstrap_sign_consistency": 1.0,
+        "bootstrap_samples": 1000
+      }
+    },
+    {
+      "rule_id": "KCRR_92803a6cea",
+      "rule_status": "stable_exploratory",
+      "trigger": {
+        "profile_relation": {
+          "relation_id": "VRP_37d3cd2e62",
+          "relation_type": "left_dominant",
+          "left_trait": {
+            "trait_index": 0,
+            "trait_id": "T01",
+            "trait_name": "数据 vs 直觉",
+            "positive_label": "重直觉立场",
+            "negative_label": "重数据立场"
+          },
+          "right_trait": {
+            "trait_index": 22,
+            "trait_id": "T23",
+            "trait_name": "团队依恋",
+            "positive_label": "独立打磨派",
+            "negative_label": "团队共创派"
+          },
+          "natural_language": "数据 vs 直觉维度相对团队依恋维度至少高2分"
+        },
+        "current_state": "C",
+        "context_policy": "activate_only_when_semantically_relevant"
+      },
+      "action": {
+        "next_state": "KtoC",
+        "routing": "prefer",
+        "semantic_operation": "基于已有证据或约束推导一个新的设计方案",
+        "guard": "必须说明依据如何导向新方案，并至少产出一个可执行候选。"
+      },
+      "evidence": {
+        "relation_support_in_source": 30,
+        "target_support_participants": 54,
+        "residual_effect": 0.13783609,
+        "bootstrap_ci_low": 0.01283076,
+        "bootstrap_ci_high": 0.27902478,
+        "bootstrap_sign_consistency": 0.987,
+        "permutation_p": 0.01598402,
+        "fdr_q": 0.99672399,
+        "heldout_delta_log_loss": -0.00693795,
+        "heldout_improved_folds": 4,
+        "heldout_fold_count": 5,
+        "heldout_sign_agreement": 1.0
+      },
+      "internal_relation_evidence": {
+        "edge_id": "VREL_T01_T23",
+        "left_trait_index": 0,
+        "left_trait_id": "T01",
+        "left_trait_name": "数据 vs 直觉",
+        "right_trait_index": 22,
+        "right_trait_id": "T23",
+        "right_trait_name": "团队依恋",
+        "spearman_r": 0.34261075,
+        "bootstrap_ci_low": 0.17907793,
+        "bootstrap_ci_high": 0.47413392,
+        "bootstrap_sign_consistency": 1.0,
+        "bootstrap_samples": 1000
+      }
+    },
+    {
+      "rule_id": "KCRR_04af69a75f",
+      "rule_status": "stable_exploratory",
+      "trigger": {
+        "profile_relation": {
+          "relation_id": "VRP_762c6dc589",
+          "relation_type": "tension_right_high",
+          "left_trait": {
+            "trait_index": 3,
+            "trait_id": "T04",
+            "trait_name": "技术支持",
+            "positive_label": "技术激进主义",
+            "negative_label": "技术审慎主义"
+          },
+          "right_trait": {
+            "trait_index": 13,
+            "trait_id": "T14",
+            "trait_name": "时代 vs 永恒",
+            "positive_label": "时代潮流派",
+            "negative_label": "永恒经典派"
+          },
+          "natural_language": "“技术审慎主义”与“时代潮流派”形成配置张力"
+        },
+        "current_state": "START",
+        "context_policy": "activate_only_when_semantically_relevant"
+      },
+      "action": {
+        "next_state": "C",
+        "routing": "prefer",
+        "semantic_operation": "形成一个明确的设计概念、原则或候选方案",
+        "guard": "下一步必须给出具体概念或原则，不能只罗列已知条件。"
+      },
+      "evidence": {
+        "relation_support_in_source": 33,
+        "target_support_participants": 121,
+        "residual_effect": 0.11251576,
+        "bootstrap_ci_low": -0.04832961,
+        "bootstrap_ci_high": 0.25029786,
+        "bootstrap_sign_consistency": 0.915,
+        "permutation_p": 0.18981019,
+        "fdr_q": 0.99672399,
+        "heldout_delta_log_loss": -0.00650064,
+        "heldout_improved_folds": 4,
+        "heldout_fold_count": 5,
+        "heldout_sign_agreement": 1.0
+      },
+      "internal_relation_evidence": {
+        "edge_id": "VREL_T04_T14",
+        "left_trait_index": 3,
+        "left_trait_id": "T04",
+        "left_trait_name": "技术支持",
+        "right_trait_index": 13,
+        "right_trait_id": "T14",
+        "right_trait_name": "时代 vs 永恒",
+        "spearman_r": 0.29880198,
+        "bootstrap_ci_low": 0.14484289,
+        "bootstrap_ci_high": 0.43679544,
+        "bootstrap_sign_consistency": 1.0,
+        "bootstrap_samples": 1000
+      }
+    },
+    {
+      "rule_id": "KCRR_8b92651123",
+      "rule_status": "stable_exploratory",
+      "trigger": {
+        "profile_relation": {
+          "relation_id": "VRP_f0eb22a49f",
+          "relation_type": "balanced",
+          "left_trait": {
+            "trait_index": 3,
+            "trait_id": "T04",
+            "trait_name": "技术支持",
+            "positive_label": "技术激进主义",
+            "negative_label": "技术审慎主义"
+          },
+          "right_trait": {
+            "trait_index": 13,
+            "trait_id": "T14",
+            "trait_name": "时代 vs 永恒",
+            "positive_label": "时代潮流派",
+            "negative_label": "永恒经典派"
+          },
+          "natural_language": "技术支持与时代 vs 永恒两个维度得分接近平衡"
+        },
+        "current_state": "K",
+        "context_policy": "activate_only_when_semantically_relevant"
+      },
+      "action": {
+        "next_state": "KtoC",
+        "routing": "prefer",
+        "semantic_operation": "基于已有证据或约束推导一个新的设计方案",
+        "guard": "必须说明依据如何导向新方案，并至少产出一个可执行候选。"
+      },
+      "evidence": {
+        "relation_support_in_source": 83,
+        "target_support_participants": 44,
+        "residual_effect": 0.12187381,
+        "bootstrap_ci_low": -0.04367463,
+        "bootstrap_ci_high": 0.28158414,
+        "bootstrap_sign_consistency": 0.926,
+        "permutation_p": 0.17982018,
+        "fdr_q": 0.99672399,
+        "heldout_delta_log_loss": -0.00635989,
+        "heldout_improved_folds": 4,
+        "heldout_fold_count": 5,
+        "heldout_sign_agreement": 1.0
+      },
+      "internal_relation_evidence": {
+        "edge_id": "VREL_T04_T14",
+        "left_trait_index": 3,
+        "left_trait_id": "T04",
+        "left_trait_name": "技术支持",
+        "right_trait_index": 13,
+        "right_trait_id": "T14",
+        "right_trait_name": "时代 vs 永恒",
+        "spearman_r": 0.29880198,
+        "bootstrap_ci_low": 0.14484289,
+        "bootstrap_ci_high": 0.43679544,
+        "bootstrap_sign_consistency": 1.0,
+        "bootstrap_samples": 1000
+      }
+    },
+    {
+      "rule_id": "KCRR_37531970a7",
+      "rule_status": "stable_exploratory",
+      "trigger": {
+        "profile_relation": {
+          "relation_id": "VRP_aa8351c607",
+          "relation_type": "synergy_low",
+          "left_trait": {
+            "trait_index": 4,
+            "trait_id": "T05",
+            "trait_name": "复杂工具信仰",
+            "positive_label": "工具门槛论",
+            "negative_label": "工具无关论"
+          },
+          "right_trait": {
+            "trait_index": 20,
+            "trait_id": "T21",
+            "trait_name": "封闭生态竞争",
+            "positive_label": "封闭生态派",
+            "negative_label": "开放兼容派"
+          },
+          "natural_language": "同时呈现“工具无关论”与“开放兼容派”倾向"
+        },
+        "current_state": "C",
+        "context_policy": "activate_only_when_semantically_relevant"
+      },
+      "action": {
+        "next_state": "K",
+        "routing": "prefer",
+        "semantic_operation": "补充可核查的事实、数据、经验或现实约束",
+        "guard": "下一步必须明确至少一项可核查依据，不能只重复方案判断。"
+      },
+      "evidence": {
+        "relation_support_in_source": 62,
+        "target_support_participants": 51,
+        "residual_effect": 0.06229804,
+        "bootstrap_ci_low": -0.03042915,
+        "bootstrap_ci_high": 0.15763541,
+        "bootstrap_sign_consistency": 0.904,
+        "permutation_p": 0.21778222,
+        "fdr_q": 0.99672399,
+        "heldout_delta_log_loss": -0.00631042,
+        "heldout_improved_folds": 4,
+        "heldout_fold_count": 5,
+        "heldout_sign_agreement": 1.0
+      },
+      "internal_relation_evidence": {
+        "edge_id": "VREL_T05_T21",
+        "left_trait_index": 4,
+        "left_trait_id": "T05",
+        "left_trait_name": "复杂工具信仰",
+        "right_trait_index": 20,
+        "right_trait_id": "T21",
+        "right_trait_name": "封闭生态竞争",
+        "spearman_r": 0.39207625,
+        "bootstrap_ci_low": 0.24773696,
+        "bootstrap_ci_high": 0.53189061,
+        "bootstrap_sign_consistency": 1.0,
+        "bootstrap_samples": 1000
+      }
+    },
+    {
+      "rule_id": "KCRR_25994b69e0",
+      "rule_status": "stable_exploratory",
+      "trigger": {
+        "profile_relation": {
+          "relation_id": "VRP_d3ae4d24cc",
+          "relation_type": "tension_left_high",
+          "left_trait": {
+            "trait_index": 20,
+            "trait_id": "T21",
+            "trait_name": "封闭生态竞争",
+            "positive_label": "封闭生态派",
+            "negative_label": "开放兼容派"
+          },
+          "right_trait": {
+            "trait_index": 21,
+            "trait_id": "T22",
+            "trait_name": "风险规避",
+            "positive_label": "风险规避",
+            "negative_label": "风险偏好"
+          },
+          "natural_language": "“封闭生态派”与“风险偏好”形成配置张力"
+        },
+        "current_state": "C",
+        "context_policy": "activate_only_when_semantically_relevant"
+      },
+      "action": {
+        "next_state": "CtoK",
+        "routing": "prefer",
+        "semantic_operation": "检验已有方案所依赖的证据、用户影响和可行性",
+        "guard": "完成至少一项证据或风险检查前不得结束推理。"
+      },
+      "evidence": {
+        "relation_support_in_source": 37,
+        "target_support_participants": 28,
+        "residual_effect": 0.07574894,
+        "bootstrap_ci_low": -0.02437215,
+        "bootstrap_ci_high": 0.19316559,
+        "bootstrap_sign_consistency": 0.926,
+        "permutation_p": 0.0979021,
+        "fdr_q": 0.99672399,
+        "heldout_delta_log_loss": -0.00510864,
+        "heldout_improved_folds": 4,
+        "heldout_fold_count": 5,
+        "heldout_sign_agreement": 1.0
+      },
+      "internal_relation_evidence": {
+        "edge_id": "VREL_T21_T22",
+        "left_trait_index": 20,
+        "left_trait_id": "T21",
+        "left_trait_name": "封闭生态竞争",
+        "right_trait_index": 21,
+        "right_trait_id": "T22",
+        "right_trait_name": "风险规避",
+        "spearman_r": 0.29857852,
+        "bootstrap_ci_low": 0.13430208,
+        "bootstrap_ci_high": 0.44777012,
+        "bootstrap_sign_consistency": 1.0,
+        "bootstrap_samples": 1000
+      }
+    },
+    {
+      "rule_id": "KCRR_0c71462584",
+      "rule_status": "stable_exploratory",
+      "trigger": {
+        "profile_relation": {
+          "relation_id": "VRP_a2c028d974",
+          "relation_type": "balanced",
+          "left_trait": {
+            "trait_index": 8,
+            "trait_id": "T09",
+            "trait_name": "完美主义/MVP",
+            "positive_label": "完美主义",
+            "negative_label": "速度优先"
+          },
+          "right_trait": {
+            "trait_index": 15,
+            "trait_id": "T16",
+            "trait_name": "仿生与有机",
+            "positive_label": "有机自然派",
+            "negative_label": "几何工业派"
+          },
+          "natural_language": "完美主义/MVP与仿生与有机两个维度得分接近平衡"
+        },
+        "current_state": "CtoC",
+        "context_policy": "activate_only_when_semantically_relevant"
+      },
+      "action": {
+        "next_state": "CtoK",
+        "routing": "prefer",
+        "semantic_operation": "检验已有方案所依赖的证据、用户影响和可行性",
+        "guard": "完成至少一项证据或风险检查前不得结束推理。"
+      },
+      "evidence": {
+        "relation_support_in_source": 76,
+        "target_support_participants": 20,
+        "residual_effect": 0.1170604,
+        "bootstrap_ci_low": 0.01152492,
+        "bootstrap_ci_high": 0.22399286,
+        "bootstrap_sign_consistency": 0.982,
+        "permutation_p": 0.06093906,
+        "fdr_q": 0.99672399,
+        "heldout_delta_log_loss": -0.00503514,
+        "heldout_improved_folds": 4,
+        "heldout_fold_count": 5,
+        "heldout_sign_agreement": 1.0
+      },
+      "internal_relation_evidence": {
+        "edge_id": "VREL_T09_T16",
+        "left_trait_index": 8,
+        "left_trait_id": "T09",
+        "left_trait_name": "完美主义/MVP",
+        "right_trait_index": 15,
+        "right_trait_id": "T16",
+        "right_trait_name": "仿生与有机",
+        "spearman_r": 0.30603467,
+        "bootstrap_ci_low": 0.14298004,
+        "bootstrap_ci_high": 0.4566669,
+        "bootstrap_sign_consistency": 1.0,
+        "bootstrap_samples": 1000
+      }
+    },
+    {
+      "rule_id": "KCRR_f8eb8ee03b",
+      "rule_status": "stable_exploratory",
+      "trigger": {
+        "profile_relation": {
+          "relation_id": "VRP_1eda1a703b",
+          "relation_type": "balanced",
+          "left_trait": {
+            "trait_index": 20,
+            "trait_id": "T21",
+            "trait_name": "封闭生态竞争",
+            "positive_label": "封闭生态派",
+            "negative_label": "开放兼容派"
+          },
+          "right_trait": {
+            "trait_index": 21,
+            "trait_id": "T22",
+            "trait_name": "风险规避",
+            "positive_label": "风险规避",
+            "negative_label": "风险偏好"
+          },
+          "natural_language": "封闭生态竞争与风险规避两个维度得分接近平衡"
+        },
+        "current_state": "CtoC",
+        "context_policy": "activate_only_when_semantically_relevant"
+      },
+      "action": {
+        "next_state": "K",
+        "routing": "prefer",
+        "semantic_operation": "补充可核查的事实、数据、经验或现实约束",
+        "guard": "下一步必须明确至少一项可核查依据，不能只重复方案判断。"
+      },
+      "evidence": {
+        "relation_support_in_source": 88,
+        "target_support_participants": 37,
+        "residual_effect": 0.17777337,
+        "bootstrap_ci_low": 0.00367886,
+        "bootstrap_ci_high": 0.33453005,
+        "bootstrap_sign_consistency": 0.978,
+        "permutation_p": 0.05594406,
+        "fdr_q": 0.99672399,
+        "heldout_delta_log_loss": -0.00483834,
+        "heldout_improved_folds": 4,
+        "heldout_fold_count": 5,
+        "heldout_sign_agreement": 1.0
+      },
+      "internal_relation_evidence": {
+        "edge_id": "VREL_T21_T22",
+        "left_trait_index": 20,
+        "left_trait_id": "T21",
+        "left_trait_name": "封闭生态竞争",
+        "right_trait_index": 21,
+        "right_trait_id": "T22",
+        "right_trait_name": "风险规避",
+        "spearman_r": 0.29857852,
+        "bootstrap_ci_low": 0.13430208,
+        "bootstrap_ci_high": 0.44777012,
+        "bootstrap_sign_consistency": 1.0,
+        "bootstrap_samples": 1000
+      }
+    },
+    {
+      "rule_id": "KCRR_9e9fb3a14b",
+      "rule_status": "stable_exploratory",
+      "trigger": {
+        "profile_relation": {
+          "relation_id": "VRP_2d2e1f8ed8",
+          "relation_type": "synergy_low",
+          "left_trait": {
+            "trait_index": 20,
+            "trait_id": "T21",
+            "trait_name": "封闭生态竞争",
+            "positive_label": "封闭生态派",
+            "negative_label": "开放兼容派"
+          },
+          "right_trait": {
+            "trait_index": 21,
+            "trait_id": "T22",
+            "trait_name": "风险规避",
+            "positive_label": "风险规避",
+            "negative_label": "风险偏好"
+          },
+          "natural_language": "同时呈现“开放兼容派”与“风险偏好”倾向"
+        },
+        "current_state": "KtoC",
+        "context_policy": "activate_only_when_semantically_relevant"
+      },
+      "action": {
+        "next_state": "CtoK",
+        "routing": "prefer",
+        "semantic_operation": "检验已有方案所依赖的证据、用户影响和可行性",
+        "guard": "完成至少一项证据或风险检查前不得结束推理。"
+      },
+      "evidence": {
+        "relation_support_in_source": 52,
+        "target_support_participants": 43,
+        "residual_effect": 0.06787509,
+        "bootstrap_ci_low": -0.03155479,
+        "bootstrap_ci_high": 0.16761927,
+        "bootstrap_sign_consistency": 0.904,
+        "permutation_p": 0.18981019,
+        "fdr_q": 0.99672399,
+        "heldout_delta_log_loss": -0.00477601,
+        "heldout_improved_folds": 4,
+        "heldout_fold_count": 5,
+        "heldout_sign_agreement": 1.0
+      },
+      "internal_relation_evidence": {
+        "edge_id": "VREL_T21_T22",
+        "left_trait_index": 20,
+        "left_trait_id": "T21",
+        "left_trait_name": "封闭生态竞争",
+        "right_trait_index": 21,
+        "right_trait_id": "T22",
+        "right_trait_name": "风险规避",
+        "spearman_r": 0.29857852,
+        "bootstrap_ci_low": 0.13430208,
+        "bootstrap_ci_high": 0.44777012,
+        "bootstrap_sign_consistency": 1.0,
+        "bootstrap_samples": 1000
+      }
+    },
+    {
+      "rule_id": "KCRR_05f0989deb",
+      "rule_status": "stable_exploratory",
+      "trigger": {
+        "profile_relation": {
+          "relation_id": "VRP_1eda1a703b",
+          "relation_type": "balanced",
+          "left_trait": {
+            "trait_index": 20,
+            "trait_id": "T21",
+            "trait_name": "封闭生态竞争",
+            "positive_label": "封闭生态派",
+            "negative_label": "开放兼容派"
+          },
+          "right_trait": {
+            "trait_index": 21,
+            "trait_id": "T22",
+            "trait_name": "风险规避",
+            "positive_label": "风险规避",
+            "negative_label": "风险偏好"
+          },
+          "natural_language": "封闭生态竞争与风险规避两个维度得分接近平衡"
+        },
+        "current_state": "K",
+        "context_policy": "activate_only_when_semantically_relevant"
+      },
+      "action": {
+        "next_state": "KtoC",
+        "routing": "prefer",
+        "semantic_operation": "基于已有证据或约束推导一个新的设计方案",
+        "guard": "必须说明依据如何导向新方案，并至少产出一个可执行候选。"
+      },
+      "evidence": {
+        "relation_support_in_source": 92,
+        "target_support_participants": 44,
+        "residual_effect": 0.13757266,
+        "bootstrap_ci_low": -0.04563375,
+        "bootstrap_ci_high": 0.32517392,
+        "bootstrap_sign_consistency": 0.942,
+        "permutation_p": 0.14385614,
+        "fdr_q": 0.99672399,
+        "heldout_delta_log_loss": -0.00467762,
+        "heldout_improved_folds": 3,
+        "heldout_fold_count": 5,
+        "heldout_sign_agreement": 1.0
+      },
+      "internal_relation_evidence": {
+        "edge_id": "VREL_T21_T22",
+        "left_trait_index": 20,
+        "left_trait_id": "T21",
+        "left_trait_name": "封闭生态竞争",
+        "right_trait_index": 21,
+        "right_trait_id": "T22",
+        "right_trait_name": "风险规避",
+        "spearman_r": 0.29857852,
+        "bootstrap_ci_low": 0.13430208,
+        "bootstrap_ci_high": 0.44777012,
+        "bootstrap_sign_consistency": 1.0,
+        "bootstrap_samples": 1000
+      }
+    },
+    {
+      "rule_id": "KCRR_03d8104629",
+      "rule_status": "stable_exploratory",
+      "trigger": {
+        "profile_relation": {
+          "relation_id": "VRP_0c4ee880bb",
+          "relation_type": "synergy_high",
+          "left_trait": {
+            "trait_index": 3,
+            "trait_id": "T04",
+            "trait_name": "技术支持",
+            "positive_label": "技术激进主义",
+            "negative_label": "技术审慎主义"
+          },
+          "right_trait": {
+            "trait_index": 13,
+            "trait_id": "T14",
+            "trait_name": "时代 vs 永恒",
+            "positive_label": "时代潮流派",
+            "negative_label": "永恒经典派"
+          },
+          "natural_language": "同时呈现“技术激进主义”与“时代潮流派”倾向"
+        },
+        "current_state": "C",
+        "context_policy": "activate_only_when_semantically_relevant"
+      },
+      "action": {
+        "next_state": "CtoC",
+        "routing": "prefer",
+        "semantic_operation": "对已有方案进行细化、调整、组合或替换",
+        "guard": "必须指出具体调整内容以及它解决的冲突。"
+      },
+      "evidence": {
+        "relation_support_in_source": 64,
+        "target_support_participants": 60,
+        "residual_effect": 0.08604501,
+        "bootstrap_ci_low": -0.02672737,
+        "bootstrap_ci_high": 0.19623969,
+        "bootstrap_sign_consistency": 0.934,
+        "permutation_p": 0.10689311,
+        "fdr_q": 0.99672399,
+        "heldout_delta_log_loss": -0.00451621,
+        "heldout_improved_folds": 4,
+        "heldout_fold_count": 5,
+        "heldout_sign_agreement": 1.0
+      },
+      "internal_relation_evidence": {
+        "edge_id": "VREL_T04_T14",
+        "left_trait_index": 3,
+        "left_trait_id": "T04",
+        "left_trait_name": "技术支持",
+        "right_trait_index": 13,
+        "right_trait_id": "T14",
+        "right_trait_name": "时代 vs 永恒",
+        "spearman_r": 0.29880198,
+        "bootstrap_ci_low": 0.14484289,
+        "bootstrap_ci_high": 0.43679544,
+        "bootstrap_sign_consistency": 1.0,
+        "bootstrap_samples": 1000
+      }
+    },
+    {
+      "rule_id": "KCRR_000b9bb4c4",
+      "rule_status": "stable_exploratory",
+      "trigger": {
+        "profile_relation": {
+          "relation_id": "VRP_7d3e5925ea",
+          "relation_type": "tension_left_high",
+          "left_trait": {
+            "trait_index": 7,
+            "trait_id": "T08",
+            "trait_name": "系统微模块",
+            "positive_label": "解耦优先",
+            "negative_label": "整体感优先"
+          },
+          "right_trait": {
+            "trait_index": 19,
+            "trait_id": "T20",
+            "trait_name": "资产开源",
+            "positive_label": "开源道德派",
+            "negative_label": "竞争壁垒派"
+          },
+          "natural_language": "“解耦优先”与“竞争壁垒派”形成配置张力"
+        },
+        "current_state": "CtoK",
+        "context_policy": "activate_only_when_semantically_relevant"
+      },
+      "action": {
+        "next_state": "KtoK",
+        "routing": "prefer",
+        "semantic_operation": "在已有知识之间推导后果、限制或冲突关系",
+        "guard": "必须明确一项后果、限制或证据之间的关系。"
+      },
+      "evidence": {
+        "relation_support_in_source": 20,
+        "target_support_participants": 23,
+        "residual_effect": 0.13855051,
+        "bootstrap_ci_low": -0.0675544,
+        "bootstrap_ci_high": 0.34831138,
+        "bootstrap_sign_consistency": 0.906,
+        "permutation_p": 0.07392607,
+        "fdr_q": 0.99672399,
+        "heldout_delta_log_loss": -0.00446389,
+        "heldout_improved_folds": 5,
+        "heldout_fold_count": 5,
+        "heldout_sign_agreement": 1.0
+      },
+      "internal_relation_evidence": {
+        "edge_id": "VREL_T08_T20",
+        "left_trait_index": 7,
+        "left_trait_id": "T08",
+        "left_trait_name": "系统微模块",
+        "right_trait_index": 19,
+        "right_trait_id": "T20",
+        "right_trait_name": "资产开源",
+        "spearman_r": 0.30523286,
+        "bootstrap_ci_low": 0.14878375,
+        "bootstrap_ci_high": 0.45402495,
+        "bootstrap_sign_consistency": 1.0,
+        "bootstrap_samples": 1000
+      }
+    },
+    {
+      "rule_id": "KCRR_c3e146f6f6",
+      "rule_status": "stable_exploratory",
+      "trigger": {
+        "profile_relation": {
+          "relation_id": "VRP_81db174d1f",
+          "relation_type": "balanced",
+          "left_trait": {
+            "trait_index": 7,
+            "trait_id": "T08",
+            "trait_name": "系统微模块",
+            "positive_label": "解耦优先",
+            "negative_label": "整体感优先"
+          },
+          "right_trait": {
+            "trait_index": 22,
+            "trait_id": "T23",
+            "trait_name": "团队依恋",
+            "positive_label": "独立打磨派",
+            "negative_label": "团队共创派"
+          },
+          "natural_language": "系统微模块与团队依恋两个维度得分接近平衡"
+        },
+        "current_state": "KtoK",
+        "context_policy": "activate_only_when_semantically_relevant"
+      },
+      "action": {
+        "next_state": "KtoC",
+        "routing": "prefer",
+        "semantic_operation": "基于已有证据或约束推导一个新的设计方案",
+        "guard": "必须说明依据如何导向新方案，并至少产出一个可执行候选。"
+      },
+      "evidence": {
+        "relation_support_in_source": 70,
+        "target_support_participants": 26,
+        "residual_effect": 0.1441448,
+        "bootstrap_ci_low": -0.01800406,
+        "bootstrap_ci_high": 0.29135065,
+        "bootstrap_sign_consistency": 0.958,
+        "permutation_p": 0.11588412,
+        "fdr_q": 0.99672399,
+        "heldout_delta_log_loss": -0.00434809,
+        "heldout_improved_folds": 3,
+        "heldout_fold_count": 5,
+        "heldout_sign_agreement": 1.0
+      },
+      "internal_relation_evidence": {
+        "edge_id": "VREL_T08_T23",
+        "left_trait_index": 7,
+        "left_trait_id": "T08",
+        "left_trait_name": "系统微模块",
+        "right_trait_index": 22,
+        "right_trait_id": "T23",
+        "right_trait_name": "团队依恋",
+        "spearman_r": 0.30558603,
+        "bootstrap_ci_low": 0.14614117,
+        "bootstrap_ci_high": 0.44964474,
+        "bootstrap_sign_consistency": 1.0,
+        "bootstrap_samples": 1000
+      }
+    },
+    {
+      "rule_id": "KCRR_27b8d00f0d",
+      "rule_status": "stable_exploratory",
+      "trigger": {
+        "profile_relation": {
+          "relation_id": "VRP_fd1f657ec3",
+          "relation_type": "tension_right_high",
+          "left_trait": {
+            "trait_index": 4,
+            "trait_id": "T05",
+            "trait_name": "复杂工具信仰",
+            "positive_label": "工具门槛论",
+            "negative_label": "工具无关论"
+          },
+          "right_trait": {
+            "trait_index": 21,
+            "trait_id": "T22",
+            "trait_name": "风险规避",
+            "positive_label": "风险规避",
+            "negative_label": "风险偏好"
+          },
+          "natural_language": "“工具无关论”与“风险规避”形成配置张力"
+        },
+        "current_state": "CtoK",
+        "context_policy": "activate_only_when_semantically_relevant"
+      },
+      "action": {
+        "next_state": "KtoC",
+        "routing": "prefer",
+        "semantic_operation": "基于已有证据或约束推导一个新的设计方案",
+        "guard": "必须说明依据如何导向新方案，并至少产出一个可执行候选。"
+      },
+      "evidence": {
+        "relation_support_in_source": 26,
+        "target_support_participants": 54,
+        "residual_effect": 0.10197224,
+        "bootstrap_ci_low": -0.06326293,
+        "bootstrap_ci_high": 0.28772717,
+        "bootstrap_sign_consistency": 0.901,
+        "permutation_p": 0.25574426,
+        "fdr_q": 0.99672399,
+        "heldout_delta_log_loss": -0.00417425,
+        "heldout_improved_folds": 4,
+        "heldout_fold_count": 5,
+        "heldout_sign_agreement": 1.0
+      },
+      "internal_relation_evidence": {
+        "edge_id": "VREL_T05_T22",
+        "left_trait_index": 4,
+        "left_trait_id": "T05",
+        "left_trait_name": "复杂工具信仰",
+        "right_trait_index": 21,
+        "right_trait_id": "T22",
+        "right_trait_name": "风险规避",
+        "spearman_r": 0.34633036,
+        "bootstrap_ci_low": 0.19670587,
+        "bootstrap_ci_high": 0.49105967,
+        "bootstrap_sign_consistency": 1.0,
+        "bootstrap_samples": 1000
+      }
+    },
+    {
+      "rule_id": "KCRR_1f0dd583ee",
+      "rule_status": "stable_exploratory",
+      "trigger": {
+        "profile_relation": {
+          "relation_id": "VRP_87c500fc8b",
+          "relation_type": "synergy_high",
+          "left_trait": {
+            "trait_index": 0,
+            "trait_id": "T01",
+            "trait_name": "数据 vs 直觉",
+            "positive_label": "重直觉立场",
+            "negative_label": "重数据立场"
+          },
+          "right_trait": {
+            "trait_index": 22,
+            "trait_id": "T23",
+            "trait_name": "团队依恋",
+            "positive_label": "独立打磨派",
+            "negative_label": "团队共创派"
+          },
+          "natural_language": "同时呈现“重直觉立场”与“独立打磨派”倾向"
+        },
+        "current_state": "CtoK",
+        "context_policy": "activate_only_when_semantically_relevant"
+      },
+      "action": {
+        "next_state": "KtoC",
+        "routing": "prefer",
+        "semantic_operation": "基于已有证据或约束推导一个新的设计方案",
+        "guard": "必须说明依据如何导向新方案，并至少产出一个可执行候选。"
+      },
+      "evidence": {
+        "relation_support_in_source": 25,
+        "target_support_participants": 54,
+        "residual_effect": 0.13517517,
+        "bootstrap_ci_low": -0.03474964,
+        "bootstrap_ci_high": 0.29141934,
+        "bootstrap_sign_consistency": 0.94,
+        "permutation_p": 0.14885115,
+        "fdr_q": 0.99672399,
+        "heldout_delta_log_loss": -0.00374959,
+        "heldout_improved_folds": 4,
+        "heldout_fold_count": 5,
+        "heldout_sign_agreement": 1.0
+      },
+      "internal_relation_evidence": {
+        "edge_id": "VREL_T01_T23",
+        "left_trait_index": 0,
+        "left_trait_id": "T01",
+        "left_trait_name": "数据 vs 直觉",
+        "right_trait_index": 22,
+        "right_trait_id": "T23",
+        "right_trait_name": "团队依恋",
+        "spearman_r": 0.34261075,
+        "bootstrap_ci_low": 0.17907793,
+        "bootstrap_ci_high": 0.47413392,
+        "bootstrap_sign_consistency": 1.0,
+        "bootstrap_samples": 1000
+      }
+    },
+    {
+      "rule_id": "KCRR_69a586ffc2",
+      "rule_status": "stable_exploratory",
+      "trigger": {
+        "profile_relation": {
+          "relation_id": "VRP_1becb778b1",
+          "relation_type": "synergy_high",
+          "left_trait": {
+            "trait_index": 5,
+            "trait_id": "T06",
+            "trait_name": "混沌与灵感",
+            "positive_label": "包容失控派",
+            "negative_label": "验证至上派"
+          },
+          "right_trait": {
+            "trait_index": 9,
+            "trait_id": "T10",
+            "trait_name": "创新代价",
+            "positive_label": "创新激进派",
+            "negative_label": "惯例守护派"
+          },
+          "natural_language": "同时呈现“包容失控派”与“创新激进派”倾向"
+        },
+        "current_state": "KtoK",
+        "context_policy": "activate_only_when_semantically_relevant"
+      },
+      "action": {
+        "next_state": "CtoK",
+        "routing": "prefer",
+        "semantic_operation": "检验已有方案所依赖的证据、用户影响和可行性",
+        "guard": "完成至少一项证据或风险检查前不得结束推理。"
+      },
+      "evidence": {
+        "relation_support_in_source": 81,
+        "target_support_participants": 20,
+        "residual_effect": 0.11508638,
+        "bootstrap_ci_low": -0.0508101,
+        "bootstrap_ci_high": 0.25326117,
+        "bootstrap_sign_consistency": 0.925,
+        "permutation_p": 0.17082917,
+        "fdr_q": 0.99672399,
+        "heldout_delta_log_loss": -0.00364196,
+        "heldout_improved_folds": 5,
+        "heldout_fold_count": 5,
+        "heldout_sign_agreement": 1.0
+      },
+      "internal_relation_evidence": {
+        "edge_id": "VREL_T06_T10",
+        "left_trait_index": 5,
+        "left_trait_id": "T06",
+        "left_trait_name": "混沌与灵感",
+        "right_trait_index": 9,
+        "right_trait_id": "T10",
+        "right_trait_name": "创新代价",
+        "spearman_r": 0.3072229,
+        "bootstrap_ci_low": 0.15763262,
+        "bootstrap_ci_high": 0.46248931,
+        "bootstrap_sign_consistency": 1.0,
+        "bootstrap_samples": 1000
+      }
+    },
+    {
+      "rule_id": "KCRR_ec5f15f6e7",
+      "rule_status": "stable_exploratory",
+      "trigger": {
+        "profile_relation": {
+          "relation_id": "VRP_0870f66106",
+          "relation_type": "tension_left_high",
+          "left_trait": {
+            "trait_index": 4,
+            "trait_id": "T05",
+            "trait_name": "复杂工具信仰",
+            "positive_label": "工具门槛论",
+            "negative_label": "工具无关论"
+          },
+          "right_trait": {
+            "trait_index": 21,
+            "trait_id": "T22",
+            "trait_name": "风险规避",
+            "positive_label": "风险规避",
+            "negative_label": "风险偏好"
+          },
+          "natural_language": "“工具门槛论”与“风险偏好”形成配置张力"
+        },
+        "current_state": "C",
+        "context_policy": "activate_only_when_semantically_relevant"
+      },
+      "action": {
+        "next_state": "CtoC",
+        "routing": "prefer",
+        "semantic_operation": "对已有方案进行细化、调整、组合或替换",
+        "guard": "必须指出具体调整内容以及它解决的冲突。"
+      },
+      "evidence": {
+        "relation_support_in_source": 24,
+        "target_support_participants": 60,
+        "residual_effect": 0.09762506,
+        "bootstrap_ci_low": -0.04891512,
+        "bootstrap_ci_high": 0.25916944,
+        "bootstrap_sign_consistency": 0.918,
+        "permutation_p": 0.2007992,
+        "fdr_q": 0.99672399,
+        "heldout_delta_log_loss": -0.00345763,
+        "heldout_improved_folds": 4,
+        "heldout_fold_count": 5,
+        "heldout_sign_agreement": 1.0
+      },
+      "internal_relation_evidence": {
+        "edge_id": "VREL_T05_T22",
+        "left_trait_index": 4,
+        "left_trait_id": "T05",
+        "left_trait_name": "复杂工具信仰",
+        "right_trait_index": 21,
+        "right_trait_id": "T22",
+        "right_trait_name": "风险规避",
+        "spearman_r": 0.34633036,
+        "bootstrap_ci_low": 0.19670587,
+        "bootstrap_ci_high": 0.49105967,
+        "bootstrap_sign_consistency": 1.0,
+        "bootstrap_samples": 1000
+      }
+    },
+    {
+      "rule_id": "KCRR_f5ad790053",
+      "rule_status": "stable_exploratory",
+      "trigger": {
+        "profile_relation": {
+          "relation_id": "VRP_87c500fc8b",
+          "relation_type": "synergy_high",
+          "left_trait": {
+            "trait_index": 0,
+            "trait_id": "T01",
+            "trait_name": "数据 vs 直觉",
+            "positive_label": "重直觉立场",
+            "negative_label": "重数据立场"
+          },
+          "right_trait": {
+            "trait_index": 22,
+            "trait_id": "T23",
+            "trait_name": "团队依恋",
+            "positive_label": "独立打磨派",
+            "negative_label": "团队共创派"
+          },
+          "natural_language": "同时呈现“重直觉立场”与“独立打磨派”倾向"
+        },
+        "current_state": "C",
+        "context_policy": "activate_only_when_semantically_relevant"
+      },
+      "action": {
+        "next_state": "KtoK",
+        "routing": "prefer",
+        "semantic_operation": "在已有知识之间推导后果、限制或冲突关系",
+        "guard": "必须明确一项后果、限制或证据之间的关系。"
+      },
+      "evidence": {
+        "relation_support_in_source": 32,
+        "target_support_participants": 24,
+        "residual_effect": 0.08357435,
+        "bootstrap_ci_low": -0.0243258,
+        "bootstrap_ci_high": 0.21185817,
+        "bootstrap_sign_consistency": 0.936,
+        "permutation_p": 0.06493506,
+        "fdr_q": 0.99672399,
+        "heldout_delta_log_loss": -0.00332525,
+        "heldout_improved_folds": 4,
+        "heldout_fold_count": 5,
+        "heldout_sign_agreement": 1.0
+      },
+      "internal_relation_evidence": {
+        "edge_id": "VREL_T01_T23",
+        "left_trait_index": 0,
+        "left_trait_id": "T01",
+        "left_trait_name": "数据 vs 直觉",
+        "right_trait_index": 22,
+        "right_trait_id": "T23",
+        "right_trait_name": "团队依恋",
+        "spearman_r": 0.34261075,
+        "bootstrap_ci_low": 0.17907793,
+        "bootstrap_ci_high": 0.47413392,
+        "bootstrap_sign_consistency": 1.0,
+        "bootstrap_samples": 1000
+      }
+    },
+    {
+      "rule_id": "KCRR_0079a88e0f",
+      "rule_status": "stable_exploratory",
+      "trigger": {
+        "profile_relation": {
+          "relation_id": "VRP_341b1609df",
+          "relation_type": "balanced",
+          "left_trait": {
+            "trait_index": 4,
+            "trait_id": "T05",
+            "trait_name": "复杂工具信仰",
+            "positive_label": "工具门槛论",
+            "negative_label": "工具无关论"
+          },
+          "right_trait": {
+            "trait_index": 27,
+            "trait_id": "T28",
+            "trait_name": "政治中立性",
+            "positive_label": "政治中立派",
+            "negative_label": "政治表达派"
+          },
+          "natural_language": "复杂工具信仰与政治中立性两个维度得分接近平衡"
+        },
+        "current_state": "KtoK",
+        "context_policy": "activate_only_when_semantically_relevant"
+      },
+      "action": {
+        "next_state": "C",
+        "routing": "prefer",
+        "semantic_operation": "形成一个明确的设计概念、原则或候选方案",
+        "guard": "下一步必须给出具体概念或原则，不能只罗列已知条件。"
+      },
+      "evidence": {
+        "relation_support_in_source": 61,
+        "target_support_participants": 27,
+        "residual_effect": 0.10818578,
+        "bootstrap_ci_low": -0.04963698,
+        "bootstrap_ci_high": 0.26941753,
+        "bootstrap_sign_consistency": 0.913,
+        "permutation_p": 0.17682318,
+        "fdr_q": 0.99672399,
+        "heldout_delta_log_loss": -0.00296193,
+        "heldout_improved_folds": 3,
+        "heldout_fold_count": 5,
+        "heldout_sign_agreement": 1.0
+      },
+      "internal_relation_evidence": {
+        "edge_id": "VREL_T05_T28",
+        "left_trait_index": 4,
+        "left_trait_id": "T05",
+        "left_trait_name": "复杂工具信仰",
+        "right_trait_index": 27,
+        "right_trait_id": "T28",
+        "right_trait_name": "政治中立性",
+        "spearman_r": 0.30225682,
+        "bootstrap_ci_low": 0.15012343,
+        "bootstrap_ci_high": 0.45698523,
+        "bootstrap_sign_consistency": 1.0,
+        "bootstrap_samples": 1000
+      }
+    },
+    {
+      "rule_id": "KCRR_d29bff601c",
+      "rule_status": "stable_exploratory",
+      "trigger": {
+        "profile_relation": {
+          "relation_id": "VRP_fa239ff6de",
+          "relation_type": "right_dominant",
+          "left_trait": {
+            "trait_index": 8,
+            "trait_id": "T09",
+            "trait_name": "完美主义/MVP",
+            "positive_label": "完美主义",
+            "negative_label": "速度优先"
+          },
+          "right_trait": {
+            "trait_index": 15,
+            "trait_id": "T16",
+            "trait_name": "仿生与有机",
+            "positive_label": "有机自然派",
+            "negative_label": "几何工业派"
+          },
+          "natural_language": "仿生与有机维度相对完美主义/MVP维度至少高2分"
+        },
+        "current_state": "KtoC",
+        "context_policy": "activate_only_when_semantically_relevant"
+      },
+      "action": {
+        "next_state": "CtoK",
+        "routing": "prefer",
+        "semantic_operation": "检验已有方案所依赖的证据、用户影响和可行性",
+        "guard": "完成至少一项证据或风险检查前不得结束推理。"
+      },
+      "evidence": {
+        "relation_support_in_source": 26,
+        "target_support_participants": 43,
+        "residual_effect": 0.11287485,
+        "bootstrap_ci_low": -0.05048289,
+        "bootstrap_ci_high": 0.29064345,
+        "bootstrap_sign_consistency": 0.925,
+        "permutation_p": 0.07492507,
+        "fdr_q": 0.99672399,
+        "heldout_delta_log_loss": -0.00283959,
+        "heldout_improved_folds": 4,
+        "heldout_fold_count": 5,
+        "heldout_sign_agreement": 1.0
+      },
+      "internal_relation_evidence": {
+        "edge_id": "VREL_T09_T16",
+        "left_trait_index": 8,
+        "left_trait_id": "T09",
+        "left_trait_name": "完美主义/MVP",
+        "right_trait_index": 15,
+        "right_trait_id": "T16",
+        "right_trait_name": "仿生与有机",
+        "spearman_r": 0.30603467,
+        "bootstrap_ci_low": 0.14298004,
+        "bootstrap_ci_high": 0.4566669,
+        "bootstrap_sign_consistency": 1.0,
+        "bootstrap_samples": 1000
+      }
+    },
+    {
+      "rule_id": "KCRR_1561efc885",
+      "rule_status": "stable_exploratory",
+      "trigger": {
+        "profile_relation": {
+          "relation_id": "VRP_1cf49225dc",
+          "relation_type": "tension_right_high",
+          "left_trait": {
+            "trait_index": 8,
+            "trait_id": "T09",
+            "trait_name": "完美主义/MVP",
+            "positive_label": "完美主义",
+            "negative_label": "速度优先"
+          },
+          "right_trait": {
+            "trait_index": 9,
+            "trait_id": "T10",
+            "trait_name": "创新代价",
+            "positive_label": "创新激进派",
+            "negative_label": "惯例守护派"
+          },
+          "natural_language": "“速度优先”与“创新激进派”形成配置张力"
+        },
+        "current_state": "KtoC",
+        "context_policy": "activate_only_when_semantically_relevant"
+      },
+      "action": {
+        "next_state": "KtoK",
+        "routing": "prefer",
+        "semantic_operation": "在已有知识之间推导后果、限制或冲突关系",
+        "guard": "必须明确一项后果、限制或证据之间的关系。"
+      },
+      "evidence": {
+        "relation_support_in_source": 63,
+        "target_support_participants": 38,
+        "residual_effect": 0.08217743,
+        "bootstrap_ci_low": -0.02529402,
+        "bootstrap_ci_high": 0.18746614,
+        "bootstrap_sign_consistency": 0.929,
+        "permutation_p": 0.15384615,
+        "fdr_q": 0.99672399,
+        "heldout_delta_log_loss": -0.00283312,
+        "heldout_improved_folds": 4,
+        "heldout_fold_count": 5,
+        "heldout_sign_agreement": 1.0
+      },
+      "internal_relation_evidence": {
+        "edge_id": "VREL_T09_T10",
+        "left_trait_index": 8,
+        "left_trait_id": "T09",
+        "left_trait_name": "完美主义/MVP",
+        "right_trait_index": 9,
+        "right_trait_id": "T10",
+        "right_trait_name": "创新代价",
+        "spearman_r": 0.35477268,
+        "bootstrap_ci_low": 0.20606892,
+        "bootstrap_ci_high": 0.49205465,
+        "bootstrap_sign_consistency": 1.0,
+        "bootstrap_samples": 1000
+      }
+    },
+    {
+      "rule_id": "KCRR_ab386ffc08",
+      "rule_status": "stable_exploratory",
+      "trigger": {
+        "profile_relation": {
+          "relation_id": "VRP_f0eb22a49f",
+          "relation_type": "balanced",
+          "left_trait": {
+            "trait_index": 3,
+            "trait_id": "T04",
+            "trait_name": "技术支持",
+            "positive_label": "技术激进主义",
+            "negative_label": "技术审慎主义"
+          },
+          "right_trait": {
+            "trait_index": 13,
+            "trait_id": "T14",
+            "trait_name": "时代 vs 永恒",
+            "positive_label": "时代潮流派",
+            "negative_label": "永恒经典派"
+          },
+          "natural_language": "技术支持与时代 vs 永恒两个维度得分接近平衡"
+        },
+        "current_state": "KtoK",
+        "context_policy": "activate_only_when_semantically_relevant"
+      },
+      "action": {
+        "next_state": "C",
+        "routing": "prefer",
+        "semantic_operation": "形成一个明确的设计概念、原则或候选方案",
+        "guard": "下一步必须给出具体概念或原则，不能只罗列已知条件。"
+      },
+      "evidence": {
+        "relation_support_in_source": 72,
+        "target_support_participants": 27,
+        "residual_effect": 0.13194906,
+        "bootstrap_ci_low": -0.02030517,
+        "bootstrap_ci_high": 0.28328956,
+        "bootstrap_sign_consistency": 0.958,
+        "permutation_p": 0.13486513,
+        "fdr_q": 0.99672399,
+        "heldout_delta_log_loss": -0.00231982,
+        "heldout_improved_folds": 4,
+        "heldout_fold_count": 5,
+        "heldout_sign_agreement": 1.0
+      },
+      "internal_relation_evidence": {
+        "edge_id": "VREL_T04_T14",
+        "left_trait_index": 3,
+        "left_trait_id": "T04",
+        "left_trait_name": "技术支持",
+        "right_trait_index": 13,
+        "right_trait_id": "T14",
+        "right_trait_name": "时代 vs 永恒",
+        "spearman_r": 0.29880198,
+        "bootstrap_ci_low": 0.14484289,
+        "bootstrap_ci_high": 0.43679544,
+        "bootstrap_sign_consistency": 1.0,
+        "bootstrap_samples": 1000
+      }
+    },
+    {
+      "rule_id": "KCRR_461e16b697",
+      "rule_status": "stable_exploratory",
+      "trigger": {
+        "profile_relation": {
+          "relation_id": "VRP_fece1c08ef",
+          "relation_type": "right_dominant",
+          "left_trait": {
+            "trait_index": 0,
+            "trait_id": "T01",
+            "trait_name": "数据 vs 直觉",
+            "positive_label": "重直觉立场",
+            "negative_label": "重数据立场"
+          },
+          "right_trait": {
+            "trait_index": 22,
+            "trait_id": "T23",
+            "trait_name": "团队依恋",
+            "positive_label": "独立打磨派",
+            "negative_label": "团队共创派"
+          },
+          "natural_language": "团队依恋维度相对数据 vs 直觉维度至少高2分"
+        },
+        "current_state": "C",
+        "context_policy": "activate_only_when_semantically_relevant"
+      },
+      "action": {
+        "next_state": "C",
+        "routing": "prefer",
+        "semantic_operation": "形成一个明确的设计概念、原则或候选方案",
+        "guard": "下一步必须给出具体概念或原则，不能只罗列已知条件。"
+      },
+      "evidence": {
+        "relation_support_in_source": 25,
+        "target_support_participants": 46,
+        "residual_effect": 0.07585139,
+        "bootstrap_ci_low": -0.02394012,
+        "bootstrap_ci_high": 0.18456831,
+        "bootstrap_sign_consistency": 0.926,
+        "permutation_p": 0.11488511,
+        "fdr_q": 0.99672399,
+        "heldout_delta_log_loss": -0.00226288,
+        "heldout_improved_folds": 4,
+        "heldout_fold_count": 5,
+        "heldout_sign_agreement": 1.0
+      },
+      "internal_relation_evidence": {
+        "edge_id": "VREL_T01_T23",
+        "left_trait_index": 0,
+        "left_trait_id": "T01",
+        "left_trait_name": "数据 vs 直觉",
+        "right_trait_index": 22,
+        "right_trait_id": "T23",
+        "right_trait_name": "团队依恋",
+        "spearman_r": 0.34261075,
+        "bootstrap_ci_low": 0.17907793,
+        "bootstrap_ci_high": 0.47413392,
+        "bootstrap_sign_consistency": 1.0,
+        "bootstrap_samples": 1000
+      }
+    },
+    {
+      "rule_id": "KCRR_ae404ea0b8",
+      "rule_status": "stable_exploratory",
+      "trigger": {
+        "profile_relation": {
+          "relation_id": "VRP_a2c028d974",
+          "relation_type": "balanced",
+          "left_trait": {
+            "trait_index": 8,
+            "trait_id": "T09",
+            "trait_name": "完美主义/MVP",
+            "positive_label": "完美主义",
+            "negative_label": "速度优先"
+          },
+          "right_trait": {
+            "trait_index": 15,
+            "trait_id": "T16",
+            "trait_name": "仿生与有机",
+            "positive_label": "有机自然派",
+            "negative_label": "几何工业派"
+          },
+          "natural_language": "完美主义/MVP与仿生与有机两个维度得分接近平衡"
+        },
+        "current_state": "KtoC",
+        "context_policy": "activate_only_when_semantically_relevant"
+      },
+      "action": {
+        "next_state": "KtoC",
+        "routing": "prefer",
+        "semantic_operation": "基于已有证据或约束推导一个新的设计方案",
+        "guard": "必须说明依据如何导向新方案，并至少产出一个可执行候选。"
+      },
+      "evidence": {
+        "relation_support_in_source": 96,
+        "target_support_participants": 22,
+        "residual_effect": 0.05225283,
+        "bootstrap_ci_low": -0.00326729,
+        "bootstrap_ci_high": 0.10707621,
+        "bootstrap_sign_consistency": 0.965,
+        "permutation_p": 0.08691309,
+        "fdr_q": 0.99672399,
+        "heldout_delta_log_loss": -0.00198937,
+        "heldout_improved_folds": 5,
+        "heldout_fold_count": 5,
+        "heldout_sign_agreement": 1.0
+      },
+      "internal_relation_evidence": {
+        "edge_id": "VREL_T09_T16",
+        "left_trait_index": 8,
+        "left_trait_id": "T09",
+        "left_trait_name": "完美主义/MVP",
+        "right_trait_index": 15,
+        "right_trait_id": "T16",
+        "right_trait_name": "仿生与有机",
+        "spearman_r": 0.30603467,
+        "bootstrap_ci_low": 0.14298004,
+        "bootstrap_ci_high": 0.4566669,
+        "bootstrap_sign_consistency": 1.0,
+        "bootstrap_samples": 1000
+      }
+    },
+    {
+      "rule_id": "KCRR_be622abe20",
+      "rule_status": "stable_exploratory",
+      "trigger": {
+        "profile_relation": {
+          "relation_id": "VRP_f351baa9dc",
+          "relation_type": "left_dominant",
+          "left_trait": {
+            "trait_index": 8,
+            "trait_id": "T09",
+            "trait_name": "完美主义/MVP",
+            "positive_label": "完美主义",
+            "negative_label": "速度优先"
+          },
+          "right_trait": {
+            "trait_index": 15,
+            "trait_id": "T16",
+            "trait_name": "仿生与有机",
+            "positive_label": "有机自然派",
+            "negative_label": "几何工业派"
+          },
+          "natural_language": "完美主义/MVP维度相对仿生与有机维度至少高2分"
+        },
+        "current_state": "C",
+        "context_policy": "activate_only_when_semantically_relevant"
+      },
+      "action": {
+        "next_state": "KtoC",
+        "routing": "prefer",
+        "semantic_operation": "基于已有证据或约束推导一个新的设计方案",
+        "guard": "必须说明依据如何导向新方案，并至少产出一个可执行候选。"
+      },
+      "evidence": {
+        "relation_support_in_source": 25,
+        "target_support_participants": 54,
+        "residual_effect": 0.10332379,
+        "bootstrap_ci_low": -0.03520162,
+        "bootstrap_ci_high": 0.24557444,
+        "bootstrap_sign_consistency": 0.932,
+        "permutation_p": 0.08391608,
+        "fdr_q": 0.99672399,
+        "heldout_delta_log_loss": -0.00186798,
+        "heldout_improved_folds": 4,
+        "heldout_fold_count": 5,
+        "heldout_sign_agreement": 1.0
+      },
+      "internal_relation_evidence": {
+        "edge_id": "VREL_T09_T16",
+        "left_trait_index": 8,
+        "left_trait_id": "T09",
+        "left_trait_name": "完美主义/MVP",
+        "right_trait_index": 15,
+        "right_trait_id": "T16",
+        "right_trait_name": "仿生与有机",
+        "spearman_r": 0.30603467,
+        "bootstrap_ci_low": 0.14298004,
+        "bootstrap_ci_high": 0.4566669,
+        "bootstrap_sign_consistency": 1.0,
+        "bootstrap_samples": 1000
+      }
+    },
+    {
+      "rule_id": "KCRR_739e13351d",
+      "rule_status": "stable_exploratory",
+      "trigger": {
+        "profile_relation": {
+          "relation_id": "VRP_b881d4db0e",
+          "relation_type": "synergy_high",
+          "left_trait": {
+            "trait_index": 20,
+            "trait_id": "T21",
+            "trait_name": "封闭生态竞争",
+            "positive_label": "封闭生态派",
+            "negative_label": "开放兼容派"
+          },
+          "right_trait": {
+            "trait_index": 21,
+            "trait_id": "T22",
+            "trait_name": "风险规避",
+            "positive_label": "风险规避",
+            "negative_label": "风险偏好"
+          },
+          "natural_language": "同时呈现“封闭生态派”与“风险规避”倾向"
+        },
+        "current_state": "C",
+        "context_policy": "activate_only_when_semantically_relevant"
+      },
+      "action": {
+        "next_state": "C",
+        "routing": "prefer",
+        "semantic_operation": "形成一个明确的设计概念、原则或候选方案",
+        "guard": "下一步必须给出具体概念或原则，不能只罗列已知条件。"
+      },
+      "evidence": {
+        "relation_support_in_source": 42,
+        "target_support_participants": 46,
+        "residual_effect": 0.05942271,
+        "bootstrap_ci_low": -0.01405571,
+        "bootstrap_ci_high": 0.14248573,
+        "bootstrap_sign_consistency": 0.929,
+        "permutation_p": 0.11788212,
+        "fdr_q": 0.99672399,
+        "heldout_delta_log_loss": -0.00175506,
+        "heldout_improved_folds": 4,
+        "heldout_fold_count": 5,
+        "heldout_sign_agreement": 1.0
+      },
+      "internal_relation_evidence": {
+        "edge_id": "VREL_T21_T22",
+        "left_trait_index": 20,
+        "left_trait_id": "T21",
+        "left_trait_name": "封闭生态竞争",
+        "right_trait_index": 21,
+        "right_trait_id": "T22",
+        "right_trait_name": "风险规避",
+        "spearman_r": 0.29857852,
+        "bootstrap_ci_low": 0.13430208,
+        "bootstrap_ci_high": 0.44777012,
+        "bootstrap_sign_consistency": 1.0,
+        "bootstrap_samples": 1000
+      }
+    },
+    {
+      "rule_id": "KCRR_de76f5b607",
+      "rule_status": "stable_exploratory",
+      "trigger": {
+        "profile_relation": {
+          "relation_id": "VRP_81db174d1f",
+          "relation_type": "balanced",
+          "left_trait": {
+            "trait_index": 7,
+            "trait_id": "T08",
+            "trait_name": "系统微模块",
+            "positive_label": "解耦优先",
+            "negative_label": "整体感优先"
+          },
+          "right_trait": {
+            "trait_index": 22,
+            "trait_id": "T23",
+            "trait_name": "团队依恋",
+            "positive_label": "独立打磨派",
+            "negative_label": "团队共创派"
+          },
+          "natural_language": "系统微模块与团队依恋两个维度得分接近平衡"
+        },
+        "current_state": "KtoC",
+        "context_policy": "activate_only_when_semantically_relevant"
+      },
+      "action": {
+        "next_state": "KtoC",
+        "routing": "prefer",
+        "semantic_operation": "基于已有证据或约束推导一个新的设计方案",
+        "guard": "必须说明依据如何导向新方案，并至少产出一个可执行候选。"
+      },
+      "evidence": {
+        "relation_support_in_source": 98,
+        "target_support_participants": 22,
+        "residual_effect": 0.05105195,
+        "bootstrap_ci_low": -0.00996218,
+        "bootstrap_ci_high": 0.10538407,
+        "bootstrap_sign_consistency": 0.945,
+        "permutation_p": 0.0999001,
+        "fdr_q": 0.99672399,
+        "heldout_delta_log_loss": -0.00163867,
+        "heldout_improved_folds": 4,
+        "heldout_fold_count": 5,
+        "heldout_sign_agreement": 1.0
+      },
+      "internal_relation_evidence": {
+        "edge_id": "VREL_T08_T23",
+        "left_trait_index": 7,
+        "left_trait_id": "T08",
+        "left_trait_name": "系统微模块",
+        "right_trait_index": 22,
+        "right_trait_id": "T23",
+        "right_trait_name": "团队依恋",
+        "spearman_r": 0.30558603,
+        "bootstrap_ci_low": 0.14614117,
+        "bootstrap_ci_high": 0.44964474,
+        "bootstrap_sign_consistency": 1.0,
+        "bootstrap_samples": 1000
+      }
+    },
+    {
+      "rule_id": "KCRR_ac0f619ab4",
+      "rule_status": "stable_exploratory",
+      "trigger": {
+        "profile_relation": {
+          "relation_id": "VRP_fd1f657ec3",
+          "relation_type": "tension_right_high",
+          "left_trait": {
+            "trait_index": 4,
+            "trait_id": "T05",
+            "trait_name": "复杂工具信仰",
+            "positive_label": "工具门槛论",
+            "negative_label": "工具无关论"
+          },
+          "right_trait": {
+            "trait_index": 21,
+            "trait_id": "T22",
+            "trait_name": "风险规避",
+            "positive_label": "风险规避",
+            "negative_label": "风险偏好"
+          },
+          "natural_language": "“工具无关论”与“风险规避”形成配置张力"
+        },
+        "current_state": "C",
+        "context_policy": "activate_only_when_semantically_relevant"
+      },
+      "action": {
+        "next_state": "CtoC",
+        "routing": "prefer",
+        "semantic_operation": "对已有方案进行细化、调整、组合或替换",
+        "guard": "必须指出具体调整内容以及它解决的冲突。"
+      },
+      "evidence": {
+        "relation_support_in_source": 35,
+        "target_support_participants": 60,
+        "residual_effect": 0.09238282,
+        "bootstrap_ci_low": -0.02854012,
+        "bootstrap_ci_high": 0.21581475,
+        "bootstrap_sign_consistency": 0.938,
+        "permutation_p": 0.14185814,
+        "fdr_q": 0.99672399,
+        "heldout_delta_log_loss": -0.00161213,
+        "heldout_improved_folds": 3,
+        "heldout_fold_count": 5,
+        "heldout_sign_agreement": 1.0
+      },
+      "internal_relation_evidence": {
+        "edge_id": "VREL_T05_T22",
+        "left_trait_index": 4,
+        "left_trait_id": "T05",
+        "left_trait_name": "复杂工具信仰",
+        "right_trait_index": 21,
+        "right_trait_id": "T22",
+        "right_trait_name": "风险规避",
+        "spearman_r": 0.34633036,
+        "bootstrap_ci_low": 0.19670587,
+        "bootstrap_ci_high": 0.49105967,
+        "bootstrap_sign_consistency": 1.0,
+        "bootstrap_samples": 1000
+      }
+    },
+    {
+      "rule_id": "KCRR_2ab401668b",
+      "rule_status": "stable_exploratory",
+      "trigger": {
+        "profile_relation": {
+          "relation_id": "VRP_c7d9c9b506",
+          "relation_type": "right_dominant",
+          "left_trait": {
+            "trait_index": 3,
+            "trait_id": "T04",
+            "trait_name": "技术支持",
+            "positive_label": "技术激进主义",
+            "negative_label": "技术审慎主义"
+          },
+          "right_trait": {
+            "trait_index": 13,
+            "trait_id": "T14",
+            "trait_name": "时代 vs 永恒",
+            "positive_label": "时代潮流派",
+            "negative_label": "永恒经典派"
+          },
+          "natural_language": "时代 vs 永恒维度相对技术支持维度至少高2分"
+        },
+        "current_state": "C",
+        "context_policy": "activate_only_when_semantically_relevant"
+      },
+      "action": {
+        "next_state": "C",
+        "routing": "prefer",
+        "semantic_operation": "形成一个明确的设计概念、原则或候选方案",
+        "guard": "下一步必须给出具体概念或原则，不能只罗列已知条件。"
+      },
+      "evidence": {
+        "relation_support_in_source": 31,
+        "target_support_participants": 46,
+        "residual_effect": 0.05787319,
+        "bootstrap_ci_low": -0.03125307,
+        "bootstrap_ci_high": 0.14971436,
+        "bootstrap_sign_consistency": 0.901,
+        "permutation_p": 0.16683317,
+        "fdr_q": 0.99672399,
+        "heldout_delta_log_loss": -0.00160015,
+        "heldout_improved_folds": 5,
+        "heldout_fold_count": 5,
+        "heldout_sign_agreement": 1.0
+      },
+      "internal_relation_evidence": {
+        "edge_id": "VREL_T04_T14",
+        "left_trait_index": 3,
+        "left_trait_id": "T04",
+        "left_trait_name": "技术支持",
+        "right_trait_index": 13,
+        "right_trait_id": "T14",
+        "right_trait_name": "时代 vs 永恒",
+        "spearman_r": 0.29880198,
+        "bootstrap_ci_low": 0.14484289,
+        "bootstrap_ci_high": 0.43679544,
+        "bootstrap_sign_consistency": 1.0,
+        "bootstrap_samples": 1000
+      }
+    },
+    {
+      "rule_id": "KCRR_ffe7cf33e7",
+      "rule_status": "stable_exploratory",
+      "trigger": {
+        "profile_relation": {
+          "relation_id": "VRP_f0eb22a49f",
+          "relation_type": "balanced",
+          "left_trait": {
+            "trait_index": 3,
+            "trait_id": "T04",
+            "trait_name": "技术支持",
+            "positive_label": "技术激进主义",
+            "negative_label": "技术审慎主义"
+          },
+          "right_trait": {
+            "trait_index": 13,
+            "trait_id": "T14",
+            "trait_name": "时代 vs 永恒",
+            "positive_label": "时代潮流派",
+            "negative_label": "永恒经典派"
+          },
+          "natural_language": "技术支持与时代 vs 永恒两个维度得分接近平衡"
+        },
+        "current_state": "C",
+        "context_policy": "activate_only_when_semantically_relevant"
+      },
+      "action": {
+        "next_state": "KtoK",
+        "routing": "prefer",
+        "semantic_operation": "在已有知识之间推导后果、限制或冲突关系",
+        "guard": "必须明确一项后果、限制或证据之间的关系。"
+      },
+      "evidence": {
+        "relation_support_in_source": 101,
+        "target_support_participants": 24,
+        "residual_effect": 0.05966001,
+        "bootstrap_ci_low": -0.00340702,
+        "bootstrap_ci_high": 0.12292452,
+        "bootstrap_sign_consistency": 0.966,
+        "permutation_p": 0.10589411,
+        "fdr_q": 0.99672399,
+        "heldout_delta_log_loss": -0.00131249,
+        "heldout_improved_folds": 4,
+        "heldout_fold_count": 5,
+        "heldout_sign_agreement": 1.0
+      },
+      "internal_relation_evidence": {
+        "edge_id": "VREL_T04_T14",
+        "left_trait_index": 3,
+        "left_trait_id": "T04",
+        "left_trait_name": "技术支持",
+        "right_trait_index": 13,
+        "right_trait_id": "T14",
+        "right_trait_name": "时代 vs 永恒",
+        "spearman_r": 0.29880198,
+        "bootstrap_ci_low": 0.14484289,
+        "bootstrap_ci_high": 0.43679544,
+        "bootstrap_sign_consistency": 1.0,
+        "bootstrap_samples": 1000
+      }
+    },
+    {
+      "rule_id": "KCRR_573ff8ac8f",
+      "rule_status": "stable_exploratory",
+      "trigger": {
+        "profile_relation": {
+          "relation_id": "VRP_1becb778b1",
+          "relation_type": "synergy_high",
+          "left_trait": {
+            "trait_index": 5,
+            "trait_id": "T06",
+            "trait_name": "混沌与灵感",
+            "positive_label": "包容失控派",
+            "negative_label": "验证至上派"
+          },
+          "right_trait": {
+            "trait_index": 9,
+            "trait_id": "T10",
+            "trait_name": "创新代价",
+            "positive_label": "创新激进派",
+            "negative_label": "惯例守护派"
+          },
+          "natural_language": "同时呈现“包容失控派”与“创新激进派”倾向"
+        },
+        "current_state": "C",
+        "context_policy": "activate_only_when_semantically_relevant"
+      },
+      "action": {
+        "next_state": "KtoK",
+        "routing": "prefer",
+        "semantic_operation": "在已有知识之间推导后果、限制或冲突关系",
+        "guard": "必须明确一项后果、限制或证据之间的关系。"
+      },
+      "evidence": {
+        "relation_support_in_source": 113,
+        "target_support_participants": 24,
+        "residual_effect": 0.05897935,
+        "bootstrap_ci_low": -0.01605514,
+        "bootstrap_ci_high": 0.1279425,
+        "bootstrap_sign_consistency": 0.948,
+        "permutation_p": 0.14185814,
+        "fdr_q": 0.99672399,
+        "heldout_delta_log_loss": -0.0012106,
+        "heldout_improved_folds": 5,
+        "heldout_fold_count": 5,
+        "heldout_sign_agreement": 1.0
+      },
+      "internal_relation_evidence": {
+        "edge_id": "VREL_T06_T10",
+        "left_trait_index": 5,
+        "left_trait_id": "T06",
+        "left_trait_name": "混沌与灵感",
+        "right_trait_index": 9,
+        "right_trait_id": "T10",
+        "right_trait_name": "创新代价",
+        "spearman_r": 0.3072229,
+        "bootstrap_ci_low": 0.15763262,
+        "bootstrap_ci_high": 0.46248931,
+        "bootstrap_sign_consistency": 1.0,
+        "bootstrap_samples": 1000
+      }
+    },
+    {
+      "rule_id": "KCRR_8add331beb",
+      "rule_status": "stable_exploratory",
+      "trigger": {
+        "profile_relation": {
+          "relation_id": "VRP_2fa5062852",
+          "relation_type": "balanced",
+          "left_trait": {
+            "trait_index": 5,
+            "trait_id": "T06",
+            "trait_name": "混沌与灵感",
+            "positive_label": "包容失控派",
+            "negative_label": "验证至上派"
+          },
+          "right_trait": {
+            "trait_index": 9,
+            "trait_id": "T10",
+            "trait_name": "创新代价",
+            "positive_label": "创新激进派",
+            "negative_label": "惯例守护派"
+          },
+          "natural_language": "混沌与灵感与创新代价两个维度得分接近平衡"
+        },
+        "current_state": "KtoC",
+        "context_policy": "activate_only_when_semantically_relevant"
+      },
+      "action": {
+        "next_state": "CtoK",
+        "routing": "prefer",
+        "semantic_operation": "检验已有方案所依赖的证据、用户影响和可行性",
+        "guard": "完成至少一项证据或风险检查前不得结束推理。"
+      },
+      "evidence": {
+        "relation_support_in_source": 120,
+        "target_support_participants": 43,
+        "residual_effect": 0.08172565,
+        "bootstrap_ci_low": -0.03294655,
+        "bootstrap_ci_high": 0.18481213,
+        "bootstrap_sign_consistency": 0.916,
+        "permutation_p": 0.17182817,
+        "fdr_q": 0.99672399,
+        "heldout_delta_log_loss": -0.00107843,
+        "heldout_improved_folds": 5,
+        "heldout_fold_count": 5,
+        "heldout_sign_agreement": 1.0
+      },
+      "internal_relation_evidence": {
+        "edge_id": "VREL_T06_T10",
+        "left_trait_index": 5,
+        "left_trait_id": "T06",
+        "left_trait_name": "混沌与灵感",
+        "right_trait_index": 9,
+        "right_trait_id": "T10",
+        "right_trait_name": "创新代价",
+        "spearman_r": 0.3072229,
+        "bootstrap_ci_low": 0.15763262,
+        "bootstrap_ci_high": 0.46248931,
+        "bootstrap_sign_consistency": 1.0,
+        "bootstrap_samples": 1000
+      }
+    },
+    {
+      "rule_id": "KCRR_56b7a7c6e1",
+      "rule_status": "stable_exploratory",
+      "trigger": {
+        "profile_relation": {
+          "relation_id": "VRP_341b1609df",
+          "relation_type": "balanced",
+          "left_trait": {
+            "trait_index": 4,
+            "trait_id": "T05",
+            "trait_name": "复杂工具信仰",
+            "positive_label": "工具门槛论",
+            "negative_label": "工具无关论"
+          },
+          "right_trait": {
+            "trait_index": 27,
+            "trait_id": "T28",
+            "trait_name": "政治中立性",
+            "positive_label": "政治中立派",
+            "negative_label": "政治表达派"
+          },
+          "natural_language": "复杂工具信仰与政治中立性两个维度得分接近平衡"
+        },
+        "current_state": "K",
+        "context_policy": "activate_only_when_semantically_relevant"
+      },
+      "action": {
+        "next_state": "C",
+        "routing": "prefer",
+        "semantic_operation": "形成一个明确的设计概念、原则或候选方案",
+        "guard": "下一步必须给出具体概念或原则，不能只罗列已知条件。"
+      },
+      "evidence": {
+        "relation_support_in_source": 83,
+        "target_support_participants": 24,
+        "residual_effect": 0.07933647,
+        "bootstrap_ci_low": -0.03890769,
+        "bootstrap_ci_high": 0.20325791,
+        "bootstrap_sign_consistency": 0.906,
+        "permutation_p": 0.23576424,
+        "fdr_q": 0.99672399,
+        "heldout_delta_log_loss": -0.00102464,
+        "heldout_improved_folds": 3,
+        "heldout_fold_count": 5,
+        "heldout_sign_agreement": 1.0
+      },
+      "internal_relation_evidence": {
+        "edge_id": "VREL_T05_T28",
+        "left_trait_index": 4,
+        "left_trait_id": "T05",
+        "left_trait_name": "复杂工具信仰",
+        "right_trait_index": 27,
+        "right_trait_id": "T28",
+        "right_trait_name": "政治中立性",
+        "spearman_r": 0.30225682,
+        "bootstrap_ci_low": 0.15012343,
+        "bootstrap_ci_high": 0.45698523,
+        "bootstrap_sign_consistency": 1.0,
+        "bootstrap_samples": 1000
+      }
+    },
+    {
+      "rule_id": "KCRR_66be9744f2",
+      "rule_status": "stable_exploratory",
+      "trigger": {
+        "profile_relation": {
+          "relation_id": "VRP_dc254e2e87",
+          "relation_type": "tension_left_high",
+          "left_trait": {
+            "trait_index": 8,
+            "trait_id": "T09",
+            "trait_name": "完美主义/MVP",
+            "positive_label": "完美主义",
+            "negative_label": "速度优先"
+          },
+          "right_trait": {
+            "trait_index": 15,
+            "trait_id": "T16",
+            "trait_name": "仿生与有机",
+            "positive_label": "有机自然派",
+            "negative_label": "几何工业派"
+          },
+          "natural_language": "“完美主义”与“几何工业派”形成配置张力"
+        },
+        "current_state": "C",
+        "context_policy": "activate_only_when_semantically_relevant"
+      },
+      "action": {
+        "next_state": "KtoC",
+        "routing": "prefer",
+        "semantic_operation": "基于已有证据或约束推导一个新的设计方案",
+        "guard": "必须说明依据如何导向新方案，并至少产出一个可执行候选。"
+      },
+      "evidence": {
+        "relation_support_in_source": 27,
+        "target_support_participants": 54,
+        "residual_effect": 0.12583669,
+        "bootstrap_ci_low": -0.01225453,
+        "bootstrap_ci_high": 0.27656928,
+        "bootstrap_sign_consistency": 0.964,
+        "permutation_p": 0.04495504,
+        "fdr_q": 0.99672399,
+        "heldout_delta_log_loss": -0.00093913,
+        "heldout_improved_folds": 4,
+        "heldout_fold_count": 5,
+        "heldout_sign_agreement": 1.0
+      },
+      "internal_relation_evidence": {
+        "edge_id": "VREL_T09_T16",
+        "left_trait_index": 8,
+        "left_trait_id": "T09",
+        "left_trait_name": "完美主义/MVP",
+        "right_trait_index": 15,
+        "right_trait_id": "T16",
+        "right_trait_name": "仿生与有机",
+        "spearman_r": 0.30603467,
+        "bootstrap_ci_low": 0.14298004,
+        "bootstrap_ci_high": 0.4566669,
+        "bootstrap_sign_consistency": 1.0,
+        "bootstrap_samples": 1000
+      }
+    },
+    {
+      "rule_id": "KCRR_61e5b46636",
+      "rule_status": "stable_exploratory",
+      "trigger": {
+        "profile_relation": {
+          "relation_id": "VRP_3719cbd40b",
+          "relation_type": "balanced",
+          "left_trait": {
+            "trait_index": 4,
+            "trait_id": "T05",
+            "trait_name": "复杂工具信仰",
+            "positive_label": "工具门槛论",
+            "negative_label": "工具无关论"
+          },
+          "right_trait": {
+            "trait_index": 19,
+            "trait_id": "T20",
+            "trait_name": "资产开源",
+            "positive_label": "开源道德派",
+            "negative_label": "竞争壁垒派"
+          },
+          "natural_language": "复杂工具信仰与资产开源两个维度得分接近平衡"
+        },
+        "current_state": "C",
+        "context_policy": "activate_only_when_semantically_relevant"
+      },
+      "action": {
+        "next_state": "C",
+        "routing": "prefer",
+        "semantic_operation": "形成一个明确的设计概念、原则或候选方案",
+        "guard": "下一步必须给出具体概念或原则，不能只罗列已知条件。"
+      },
+      "evidence": {
+        "relation_support_in_source": 110,
+        "target_support_participants": 46,
+        "residual_effect": 0.06374517,
+        "bootstrap_ci_low": -0.00419954,
+        "bootstrap_ci_high": 0.12783826,
+        "bootstrap_sign_consistency": 0.963,
+        "permutation_p": 0.0979021,
+        "fdr_q": 0.99672399,
+        "heldout_delta_log_loss": -0.00062313,
+        "heldout_improved_folds": 4,
+        "heldout_fold_count": 5,
+        "heldout_sign_agreement": 1.0
+      },
+      "internal_relation_evidence": {
+        "edge_id": "VREL_T05_T20",
+        "left_trait_index": 4,
+        "left_trait_id": "T05",
+        "left_trait_name": "复杂工具信仰",
+        "right_trait_index": 19,
+        "right_trait_id": "T20",
+        "right_trait_name": "资产开源",
+        "spearman_r": 0.41037848,
+        "bootstrap_ci_low": 0.27823821,
+        "bootstrap_ci_high": 0.53875173,
+        "bootstrap_sign_consistency": 1.0,
+        "bootstrap_samples": 1000
+      }
+    }
+  ]
+}

@@ -1,0 +1,161 @@
+{
+  "schema_version": "main_method_r2_component_uptake_diagnostic_v1",
+  "analysis_tier": "POST_HOC_DIAGNOSTIC",
+  "sequence_changes": {
+    "c_dual-b_dynamic": {
+      "n": 162,
+      "sequence_changed_n": 92,
+      "sequence_changed_rate": 0.5679012345679012,
+      "changed_improved_n": 38,
+      "changed_worsened_n": 29,
+      "changed_tied_n": 25,
+      "mean_kc_delta_all": -0.00022290809327846355,
+      "mean_kc_delta_when_changed": -0.0003925120772946858
+    },
+    "d_rules-c_dual": {
+      "n": 162,
+      "sequence_changed_n": 108,
+      "sequence_changed_rate": 0.6666666666666666,
+      "changed_improved_n": 29,
+      "changed_worsened_n": 41,
+      "changed_tied_n": 38,
+      "mean_kc_delta_all": -0.007997969109080218,
+      "mean_kc_delta_when_changed": -0.011996953663620327
+    },
+    "e_near-d_rules": {
+      "n": 162,
+      "sequence_changed_n": 91,
+      "sequence_changed_rate": 0.5617283950617284,
+      "changed_improved_n": 27,
+      "changed_worsened_n": 32,
+      "changed_tied_n": 32,
+      "mean_kc_delta_all": -0.0015236135606505991,
+      "mean_kc_delta_when_changed": -0.0027123669980812864
+    },
+    "f_far-d_rules": {
+      "n": 162,
+      "sequence_changed_n": 89,
+      "sequence_changed_rate": 0.5493827160493827,
+      "changed_improved_n": 30,
+      "changed_worsened_n": 26,
+      "changed_tied_n": 33,
+      "mean_kc_delta_all": 0.002530374289633548,
+      "mean_kc_delta_when_changed": 0.00460584983056893
+    },
+    "e_near-f_far": {
+      "n": 162,
+      "sequence_changed_n": 91,
+      "sequence_changed_rate": 0.5617283950617284,
+      "changed_improved_n": 24,
+      "changed_worsened_n": 33,
+      "changed_tied_n": 34,
+      "mean_kc_delta_all": -0.004053987850284147,
+      "mean_kc_delta_when_changed": -0.007216989359846504
+    }
+  },
+  "rule_uptake": {
+    "participants": 162,
+    "rules_per_participant": {
+      "3": 162
+    },
+    "selected_rules_by_layer": {
+      "KCOR": 162,
+      "KCRR": 162,
+      "KCAP": 162
+    },
+    "unknown_rule_ids": {},
+    "conditional_transition_opportunities": 230,
+    "conditional_transition_hits": 45,
+    "conditional_transition_hit_rate": 0.1956521739130435,
+    "aux_presence_total": 162,
+    "aux_target_presence_rate_d": 1.0,
+    "same_aux_target_presence_rate_c": 0.9876543209876543,
+    "aux_presence_increment_d_minus_c": 0.012345679012345678,
+    "by_layer": {
+      "KCAP": {
+        "total": 162,
+        "opportunities": 162,
+        "hits": 162
+      },
+      "KCOR": {
+        "total": 162,
+        "opportunities": 120,
+        "hits": 26
+      },
+      "KCRR": {
+        "total": 162,
+        "opportunities": 110,
+        "hits": 19
+      }
+    }
+  },
+  "dynamic_cues": {
+    "participants": 162,
+    "relevance_pool_size": 10,
+    "cues_per_step": 8,
+    "structural_minimum_id_jaccard": 0.6,
+    "observed_cue_id_union": [
+      "V01",
+      "V04",
+      "V07",
+      "V09",
+      "V22",
+      "V24",
+      "V25",
+      "V26",
+      "V27",
+      "V29"
+    ],
+    "mean_within_participant_step_id_jaccard": 0.7574942844078647,
+    "matched_transition_contexts_with_multiple_users": 44,
+    "mean_cross_user_id_jaccard_same_transition_context": 0.902885722922455,
+    "mean_cross_user_exact_text_jaccard_same_transition_context": 0.23562797327174892,
+    "mean_users_per_compared_context": 17.522727272727273,
+    "cue_id_frequency": {
+      "V27": 785,
+      "V09": 785,
+      "V01": 785,
+      "V07": 784,
+      "V22": 781,
+      "V26": 606,
+      "V29": 585,
+      "V24": 500,
+      "V25": 398,
+      "V04": 271
+    },
+    "distinct_renderings_per_cue_id": {
+      "V01": 4,
+      "V04": 4,
+      "V07": 4,
+      "V09": 4,
+      "V22": 4,
+      "V24": 4,
+      "V25": 4,
+      "V26": 4,
+      "V27": 4,
+      "V29": 4
+    }
+  },
+  "prompt_lengths": {
+    "b_dynamic": {
+      "phase1_input_tokens_mean": 3099.8271604938273,
+      "phase2_input_tokens_mean": 4660.450617283951
+    },
+    "c_dual": {
+      "phase1_input_tokens_mean": 3369.0185185185187,
+      "phase2_input_tokens_mean": 5091.598765432099
+    },
+    "d_rules": {
+      "phase1_input_tokens_mean": 3518.9753086419755,
+      "phase2_input_tokens_mean": 5304.6543209876545
+    },
+    "e_near": {
+      "phase1_input_tokens_mean": 4610.0123456790125,
+      "phase2_input_tokens_mean": 6399.228395061728
+    },
+    "f_far": {
+      "phase1_input_tokens_mean": 4478.888888888889,
+      "phase2_input_tokens_mean": 6247.962962962963
+    }
+  }
+}

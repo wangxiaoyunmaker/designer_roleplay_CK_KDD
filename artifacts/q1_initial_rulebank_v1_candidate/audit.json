@@ -1,0 +1,57 @@
+{
+  "schema_version": "q1_initial_rulebank_audit_v1",
+  "rulebank_id": "Q1_INIT_RULEBANK_V1_CANDIDATE",
+  "status": "EXPLORATORY_NOT_FROZEN",
+  "q7_used": false,
+  "participant_count": 162,
+  "q1_usable_participant_count": 148,
+  "q1_excluded_v_or_missing_count": 14,
+  "q1_state_counts": {
+    "CtoC": 66,
+    "CtoK": 23,
+    "KtoK": 59
+  },
+  "single_candidate_count": 90,
+  "single_rule_count": 6,
+  "double_relation_edge_count": 12,
+  "double_relation_predicate_count": 66,
+  "double_candidate_count": 192,
+  "double_rule_count": 12,
+  "total_rule_count": 18,
+  "validated_rule_count": 0,
+  "activation_summary": {
+    "participant_count": 162,
+    "single_layer_participant_coverage": 162,
+    "double_layer_participant_coverage": 162,
+    "any_layer_participant_coverage": 162,
+    "mean_active_single_rules": 3.31481481,
+    "mean_active_double_rules": 5.88271605,
+    "max_active_single_rules": 5,
+    "max_active_double_rules": 10
+  },
+  "input_sha256": {
+    "participants": "9657ed1e383007fca68f2c7d21d55916cf1779cdbb0c54270617bf8f036a7ed1",
+    "aux": "9a7191c3940517716d4f4937110c52bc47f16400a2ba8cc34b5301550e86b45b",
+    "trait_items": "67d9fc5f90a6d93b5e4d8358b8588bd88e8e994b2953e6193e5d466a399937b5"
+  },
+  "config": {
+    "resampling_protocol_id": "participant_resampling_v1",
+    "software_versions": {
+      "python": "3.11.15",
+      "numpy": "2.4.6",
+      "scipy": "1.17.1",
+      "scikit_learn": "1.8.0"
+    },
+    "bootstrap": 1000,
+    "permutations": 1000,
+    "folds": 5,
+    "seed": 20260727,
+    "single_c": 0.3,
+    "single_selection": 0.8,
+    "single_sign_consistency": 0.9,
+    "single_abs_effect": 0.1,
+    "double_min_residual_effect": 0.05,
+    "double_sign_consistency": 0.9,
+    "max_pairs": 12
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "schema_version": "1.0.0",
+  "lexicon_id": "v30_design_value_profile_short_v1",
+  "status": "approved",
+  "source_long_lexicon": {
+    "path": "route_a/configs/v30_value_profile_lexicon_v1.json",
+    "sha256": "283a6b650df4ea70fd9992a04cb521050bcc228e7687510c5be5b4e3b84082f5"
+  },
+  "items": [
+    {"item_id":"V01","order":1,"agree_short":"相信设计直觉","disagree_short":"重视外部证据"},
+    {"item_id":"V02","order":2,"agree_short":"相信天赋差异","disagree_short":"相信训练积累"},
+    {"item_id":"V03","order":3,"agree_short":"接受 AI 替代","disagree_short":"关注替代伦理"},
+    {"item_id":"V04","order":4,"agree_short":"尽早整合新技术","disagree_short":"先审视长期影响"},
+    {"item_id":"V05","order":5,"agree_short":"重视复杂工具","disagree_short":"工具不决定设计"},
+    {"item_id":"V06","order":6,"agree_short":"为灵感留余地","disagree_short":"强调验证与可控"},
+    {"item_id":"V07","order":7,"agree_short":"结果优先于透明","disagree_short":"要求透明与知情"},
+    {"item_id":"V08","order":8,"agree_short":"偏好微模块解耦","disagree_short":"保留整体可理解性"},
+    {"item_id":"V09","order":9,"agree_short":"完成度优先上线","disagree_short":"先 MVP 后迭代"},
+    {"item_id":"V10","order":10,"agree_short":"愿承担创新代价","disagree_short":"优先成熟交互"},
+    {"item_id":"V11","order":11,"agree_short":"专业审美优先","disagree_short":"尊重测试反馈"},
+    {"item_id":"V12","order":12,"agree_short":"看重情感仪式","disagree_short":"任务效率优先"},
+    {"item_id":"V13","order":13,"agree_short":"认可装饰价值","disagree_short":"功能与极简优先"},
+    {"item_id":"V14","order":14,"agree_short":"适配时代趋势","disagree_short":"追求跨时代性"},
+    {"item_id":"V15","order":15,"agree_short":"本土语境优先","disagree_short":"通用扩展优先"},
+    {"item_id":"V16","order":16,"agree_short":"偏好自然有机","disagree_short":"偏好几何工业"},
+    {"item_id":"V17","order":17,"agree_short":"个人愿景主导","disagree_short":"团队共创决策"},
+    {"item_id":"V18","order":18,"agree_short":"通过限制防错","disagree_short":"保留探索弹性"},
+    {"item_id":"V19","order":19,"agree_short":"保留作者辨识度","disagree_short":"服务项目目标"},
+    {"item_id":"V20","order":20,"agree_short":"支持资产开源","disagree_short":"保护设计资产"},
+    {"item_id":"V21","order":21,"agree_short":"封闭生态竞争","disagree_short":"开放互通选择"},
+    {"item_id":"V22","order":22,"agree_short":"风险规避","disagree_short":"承担高回报风险"},
+    {"item_id":"V23","order":23,"agree_short":"先独立打磨","disagree_short":"早期团队共创"},
+    {"item_id":"V24","order":24,"agree_short":"接受商业成瘾","disagree_short":"拒绝成瘾性变现"},
+    {"item_id":"V25","order":25,"agree_short":"以数据换个性化","disagree_short":"优先限制数据使用"},
+    {"item_id":"V26","order":26,"agree_short":"边缘群体优先","disagree_short":"多数效率优先"},
+    {"item_id":"V27","order":27,"agree_short":"股东雇主优先","disagree_short":"用户利益优先"},
+    {"item_id":"V28","order":28,"agree_short":"设计政治中立","disagree_short":"设计承载倡议"},
+    {"item_id":"V29","order":29,"agree_short":"系统承担责任","disagree_short":"个人承担责任"},
+    {"item_id":"V30","order":30,"agree_short":"设计介入系统议题","disagree_short":"设计聚焦具体问题"}
+  ]
+}

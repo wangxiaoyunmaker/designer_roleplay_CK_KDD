@@ -1,0 +1,33 @@
+rule_id,source_state,target_state,trait,effect_direction,coefficient,odds_ratio_per_sd,bootstrap_ci_low,bootstrap_ci_high,selection_frequency,sign_consistency,support_designers,support_transitions,source_transition_count,selected_c,cv_log_loss,n_bootstrap,higher_score_stance,lower_score_stance,condition_operator,condition_stance,evidence_tier
+TR_K_K_4273fe5b,K,K,团队依恋,increases_propensity,0.3168401,1.37278305,0.10007663,0.55534052,0.999,1.0,100,135,510,0.3,1.13061695,1000,独立打磨派,团队共创派,higher_score,独立打磨派,high_confidence
+TR_P_K_73b549a3,P,K,装饰合法性,decreases_propensity,-0.30937628,0.73390456,-0.58380349,-0.09045102,0.998,1.0,155,267,437,0.3,1.14555586,1000,装饰合法派,形式追随功能,lower_score,形式追随功能,high_confidence
+TR_K_V_5ad9de40,K,V,资产开源,increases_propensity,0.22744533,1.2553888,0.05729181,0.49586218,0.992,1.0,86,91,510,0.3,1.13061695,1000,开源道德派,竞争壁垒派,higher_score,开源道德派,high_confidence
+TR_V_C_033e5c6a,V,C,商业操纵伦理,increases_propensity,0.27801839,1.32051049,0.05150032,0.55073039,0.991,1.0,111,152,429,0.3,1.18763871,1000,商业操纵容忍,用户伦理底线,higher_score,商业操纵容忍,high_confidence
+TR_K_P_73b549a3,K,P,装饰合法性,increases_propensity,0.32559911,1.38486009,0.00884745,0.5845657,0.983,1.0,131,163,510,0.3,1.13061695,1000,装饰合法派,形式追随功能,higher_score,装饰合法派,high_confidence
+TR_C_V_0e5660d9,C,V,情感附加值,decreases_propensity,-0.35132685,0.7037537,-0.66626619,-0.02243057,0.982,0.99898167,41,45,333,0.3,1.08604547,1000,仪式感优先,效率优先,lower_score,效率优先,high_confidence
+TR_V_V_5ad9de40,V,V,资产开源,increases_propensity,0.25643765,1.29231819,0.02974849,0.51975055,0.981,1.0,69,82,429,0.3,1.18763871,1000,开源道德派,竞争壁垒派,higher_score,开源道德派,high_confidence
+TR_V_K_73b549a3,V,K,装饰合法性,increases_propensity,0.3371634,1.40096796,0.01038375,0.63871409,0.977,1.0,34,35,429,0.3,1.18763871,1000,装饰合法派,形式追随功能,higher_score,装饰合法派,high_confidence
+TR_C_V_b91a5164,C,V,股东服务优先,increases_propensity,0.33242641,1.39434729,0.01155198,0.67343143,0.977,1.0,41,45,333,0.3,1.08604547,1000,股东忠诚派,用户忠诚派,higher_score,股东忠诚派,high_confidence
+TR_P_V_5ad9de40,P,V,资产开源,decreases_propensity,-0.28079683,0.75518175,-0.61610527,0.0,0.967,1.0,51,57,437,0.3,1.14555586,1000,开源道德派,竞争壁垒派,lower_score,竞争壁垒派,stable
+TR_P_K_4273fe5b,P,K,团队依恋,decreases_propensity,-0.22335256,0.79983281,-0.4632037,0.0,0.967,0.99793175,155,267,437,0.3,1.14555586,1000,独立打磨派,团队共创派,lower_score,团队共创派,stable
+TR_K_V_4273fe5b,K,V,团队依恋,decreases_propensity,-0.23165732,0.7932179,-0.48133297,0.0,0.965,0.99792746,86,91,510,0.3,1.13061695,1000,独立打磨派,团队共创派,lower_score,团队共创派,stable
+TR_K_P_4bff1850,K,P,创新代价,decreases_propensity,-0.40757856,0.66525919,-0.65831041,0.0,0.964,1.0,131,163,510,0.3,1.13061695,1000,创新激进派,惯例守护派,lower_score,惯例守护派,stable
+TR_P_V_b0fe323f,P,V,独裁 vs 委员会,increases_propensity,0.2922811,1.3394795,0.0,0.60447748,0.964,1.0,51,57,437,0.3,1.14555586,1000,独裁愿景派,民主共创派,higher_score,独裁愿景派,stable
+TR_V_C_a41645a0,V,C,时代 vs 永恒,decreases_propensity,-0.20437964,0.81515284,-0.47895241,0.0,0.964,0.99896266,111,152,429,0.3,1.18763871,1000,时代潮流派,永恒经典派,lower_score,永恒经典派,stable
+TR_C_K_0e5660d9,C,K,情感附加值,increases_propensity,0.2427685,1.27477348,0.0,0.57175002,0.962,0.9989605,63,75,333,0.3,1.08604547,1000,仪式感优先,效率优先,higher_score,仪式感优先,stable
+TR_C_K_72b79bac,C,K,系统责任归属,decreases_propensity,-0.31785866,0.72770564,-0.56948394,0.0,0.961,0.99791883,63,75,333,0.3,1.08604547,1000,系统归责派,用户归责派,lower_score,用户归责派,stable
+TR_P_P_a41645a0,P,P,时代 vs 永恒,increases_propensity,0.26035059,1.29738486,0.0,0.5130092,0.961,1.0,57,60,437,0.3,1.14555586,1000,时代潮流派,永恒经典派,higher_score,时代潮流派,stable
+TR_K_C_a41645a0,K,C,时代 vs 永恒,increases_propensity,0.20863438,1.23199448,0.0,0.50918461,0.949,0.99789252,76,90,510,0.3,1.13061695,1000,时代潮流派,永恒经典派,higher_score,时代潮流派,stable
+TR_P_K_4bff1850,P,K,创新代价,decreases_propensity,-0.19751429,0.82076841,-0.48609698,0.0,0.949,0.99894626,155,267,437,0.3,1.14555586,1000,创新激进派,惯例守护派,lower_score,惯例守护派,stable
+TR_P_P_f988263e,P,P,技术支持,decreases_propensity,-0.22881639,0.79547457,-0.44793548,0.0,0.938,1.0,57,60,437,0.3,1.14555586,1000,技术激进主义,技术审慎主义,lower_score,技术审慎主义,stable
+TR_V_C_3ac5c07a,V,C,弱势群体优先,increases_propensity,0.1813293,1.19880989,0.0,0.4507314,0.938,0.9978678,111,152,429,0.3,1.18763871,1000,边缘群体优先,多数效率优先,higher_score,边缘群体优先,stable
+TR_P_V_a41645a0,P,V,时代 vs 永恒,decreases_propensity,-0.23412014,0.79126675,-0.56068207,0.0,0.937,1.0,51,57,437,0.3,1.14555586,1000,时代潮流派,永恒经典派,lower_score,永恒经典派,stable
+TR_V_V_889f5792,V,V,天赋信仰,increases_propensity,0.17774389,1.19451935,0.0,0.4195162,0.935,0.99893048,69,82,429,0.3,1.18763871,1000,天赋决定论,后天努力论,higher_score,天赋决定论,stable
+TR_P_K_3ac5c07a,P,K,弱势群体优先,increases_propensity,0.16432409,1.17859622,0.0,0.42328934,0.932,0.99463519,155,267,437,0.3,1.14555586,1000,边缘群体优先,多数效率优先,higher_score,边缘群体优先,stable
+TR_P_K_5ad9de40,P,K,资产开源,increases_propensity,0.20671076,1.22962686,0.0,0.42825967,0.924,0.99891775,155,267,437,0.3,1.14555586,1000,开源道德派,竞争壁垒派,higher_score,开源道德派,stable
+TR_C_K_89f3307b,C,K,混沌与灵感,decreases_propensity,-0.23980658,0.78678003,-0.52274443,0.0,0.922,0.9967462,63,75,333,0.3,1.08604547,1000,包容失控派,验证至上派,lower_score,验证至上派,stable
+TR_V_P_2d46aa9a,V,P,数据 vs 直觉,increases_propensity,0.18698332,1.20560718,0.0,0.5249497,0.921,0.99782845,97,118,429,0.3,1.18763871,1000,重直觉立场,重数据立场,higher_score,重直觉立场,stable
+TR_P_V_a62c4df6,P,V,AI 替代论,decreases_propensity,-0.19939207,0.81922864,-0.60182571,0.0,0.914,0.99781182,51,57,437,0.3,1.14555586,1000,AI 替代主义,岗位保护主义,lower_score,岗位保护主义,stable
+TR_C_K_a41645a0,C,K,时代 vs 永恒,increases_propensity,0.2321827,1.26135016,0.0,0.51318209,0.908,0.99889868,63,75,333,0.3,1.08604547,1000,时代潮流派,永恒经典派,higher_score,时代潮流派,stable
+TR_C_K_73b549a3,C,K,装饰合法性,increases_propensity,0.23742557,1.26798062,0.0,0.57186905,0.904,0.99889381,63,75,333,0.3,1.08604547,1000,装饰合法派,形式追随功能,higher_score,装饰合法派,stable
+TR_K_C_033e5c6a,K,C,商业操纵伦理,decreases_propensity,-0.15637025,0.85524247,-0.43204894,0.0,0.901,0.99889012,76,90,510,0.3,1.13061695,1000,商业操纵容忍,用户伦理底线,lower_score,用户伦理底线,stable

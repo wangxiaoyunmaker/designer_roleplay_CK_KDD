@@ -1,0 +1,24 @@
+{
+  "rows": [
+    {
+      "expression_coverage": 0.15288065843621398,
+      "human_expression_f1": 0.24159854677565853,
+      "human_expression_precision": 0.17900403768506057,
+      "human_expression_recall": 0.3715083798882682,
+      "instances": 162,
+      "own_profile_advantage": 0.054156214283888546,
+      "profile_polarity_precision": 0.5550117577895356,
+      "segment_id": "seg2",
+      "system_id": "ours_no_q2__sp"
+    }
+  ],
+  "schema_version": "q7_value_expression_summary_v2",
+  "scoring": {
+    "expression_coverage": "generated non-neutral dimensions / 30 (descriptive only)",
+    "human_expression_f1": "directional claim F1 vs human Q7 claims",
+    "human_expression_precision": "generated non-neutral claims matching human Q7 claims / generated non-neutral claims",
+    "human_expression_recall": "human Q7 claims recovered with same pole / human non-neutral claims",
+    "own_profile_advantage": "own V30 alignment minus mean alignment to all other Q7 profiles",
+    "profile_polarity_precision": "generated non-neutral claims matching participant binary V30 pole"
+  }
+}

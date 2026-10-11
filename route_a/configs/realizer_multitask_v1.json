@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0.0",
+  "experiment_id": "route_a_realizer_multitask_v1",
+  "variant": "q2_plus_aux",
+  "main_task": "FULL_SEQUENCE_RESPONSE",
+  "auxiliary_task": "SINGLE_DECISION_RATIONALE",
+  "auxiliary_questions": ["Q1", "Q3", "Q4", "Q5", "Q6"],
+  "exclude_no_kc_state": true,
+  "main_to_aux_sampling_ratio": [2, 1],
+  "auxiliary_loss_weight": 0.5,
+  "selection_metric": "q2_full_answer_example_nll",
+  "learning_rate": 0.0001,
+  "weight_decay": 0.01,
+  "gradient_accumulation_steps": 12,
+  "max_input_tokens": 6144,
+  "max_updates": 800,
+  "patience": 120,
+  "evaluation_interval": 20,
+  "forbid_q7": true,
+  "direct_value_profile_only": true
+}

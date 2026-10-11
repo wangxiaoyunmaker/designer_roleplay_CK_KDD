@@ -1,0 +1,18 @@
+{
+  "rows": 152,
+  "ok": 152,
+  "repaired_count": 9,
+  "repaired_target_ids": [
+    "D016",
+    "D020",
+    "D073",
+    "D081",
+    "D082",
+    "D128",
+    "D134",
+    "D135",
+    "D156"
+  ],
+  "unresolved_count": 0,
+  "unresolved_target_ids": []
+}

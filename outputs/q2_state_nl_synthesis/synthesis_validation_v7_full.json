@@ -1,0 +1,1001 @@
+{
+  "summary": {
+    "pass": 46,
+    "fail": 116
+  },
+  "q7_gold_used": false,
+  "pi_used": false,
+  "records": [
+    {
+      "job_id": "synthesis-v7-D001",
+      "issues": []
+    },
+    {
+      "job_id": "synthesis-v7-D002",
+      "issues": [
+        "invalid direct source anchor at step 3"
+      ]
+    },
+    {
+      "job_id": "synthesis-v7-D003",
+      "issues": []
+    },
+    {
+      "job_id": "synthesis-v7-D004",
+      "issues": []
+    },
+    {
+      "job_id": "synthesis-v7-D005",
+      "issues": [
+        "V evidence mismatch"
+      ]
+    },
+    {
+      "job_id": "synthesis-v7-D006",
+      "issues": []
+    },
+    {
+      "job_id": "synthesis-v7-D007",
+      "issues": [
+        "state_nl length invalid at step 15",
+        "state_nl length invalid at step 16",
+        "V evidence mismatch",
+        "full response length invalid"
+      ]
+    },
+    {
+      "job_id": "synthesis-v7-D008",
+      "issues": []
+    },
+    {
+      "job_id": "synthesis-v7-D009",
+      "issues": []
+    },
+    {
+      "job_id": "synthesis-v7-D010",
+      "issues": []
+    },
+    {
+      "job_id": "synthesis-v7-D011",
+      "issues": []
+    },
+    {
+      "job_id": "synthesis-v7-D012",
+      "issues": [
+        "state_nl length invalid at step 4",
+        "V evidence mismatch"
+      ]
+    },
+    {
+      "job_id": "synthesis-v7-D013",
+      "issues": []
+    },
+    {
+      "job_id": "synthesis-v7-D014",
+      "issues": [
+        "V evidence mismatch",
+        "full response length invalid",
+        "personalization realization missing from generated text"
+      ]
+    },
+    {
+      "job_id": "synthesis-v7-D015",
+      "issues": [
+        "full response length invalid",
+        "personalization realization missing from generated text"
+      ]
+    },
+    {
+      "job_id": "synthesis-v7-D016",
+      "issues": []
+    },
+    {
+      "job_id": "synthesis-v7-D017",
+      "issues": []
+    },
+    {
+      "job_id": "synthesis-v7-D018",
+      "issues": []
+    },
+    {
+      "job_id": "synthesis-v7-D019",
+      "issues": [
+        "V evidence mismatch"
+      ]
+    },
+    {
+      "job_id": "synthesis-v7-D020",
+      "issues": [
+        "invalid direct source anchor at step 1",
+        "invalid direct source anchor at step 2",
+        "invalid direct source anchor at step 3",
+        "invalid direct source anchor at step 4",
+        "invalid direct source anchor at step 5",
+        "invalid direct source anchor at step 6",
+        "invalid direct source anchor at step 7",
+        "V evidence mismatch"
+      ]
+    },
+    {
+      "job_id": "synthesis-v7-D021",
+      "issues": []
+    },
+    {
+      "job_id": "synthesis-v7-D022",
+      "issues": [
+        "state_nl length invalid at step 3",
+        "state_nl length invalid at step 5",
+        "state_nl length invalid at step 7",
+        "state_nl length invalid at step 8",
+        "personalization realization missing from generated text"
+      ]
+    },
+    {
+      "job_id": "synthesis-v7-D023",
+      "issues": [
+        "invalid direct source anchor at step 1",
+        "invalid direct source anchor at step 3",
+        "invalid direct source anchor at step 4",
+        "V evidence mismatch"
+      ]
+    },
+    {
+      "job_id": "synthesis-v7-D024",
+      "issues": [
+        "personalization realization missing from generated text"
+      ]
+    },
+    {
+      "job_id": "synthesis-v7-D025",
+      "issues": [
+        "invalid direct source anchor at step 1",
+        "invalid direct source anchor at step 2",
+        "invalid direct source anchor at step 3",
+        "invalid direct source anchor at step 4",
+        "V evidence mismatch"
+      ]
+    },
+    {
+      "job_id": "synthesis-v7-D026",
+      "issues": [
+        "V evidence mismatch"
+      ]
+    },
+    {
+      "job_id": "synthesis-v7-D027",
+      "issues": [
+        "V evidence mismatch"
+      ]
+    },
+    {
+      "job_id": "synthesis-v7-D028",
+      "issues": [
+        "personalization realization missing from generated text"
+      ]
+    },
+    {
+      "job_id": "synthesis-v7-D029",
+      "issues": [
+        "personalization realization missing from generated text"
+      ]
+    },
+    {
+      "job_id": "synthesis-v7-D030",
+      "issues": [
+        "state_nl length invalid at step 1",
+        "state_nl length invalid at step 2",
+        "state_nl length invalid at step 4",
+        "state_nl length invalid at step 6",
+        "state_nl length invalid at step 7",
+        "state_nl length invalid at step 9"
+      ]
+    },
+    {
+      "job_id": "synthesis-v7-D031",
+      "issues": []
+    },
+    {
+      "job_id": "synthesis-v7-D032",
+      "issues": [
+        "V evidence mismatch"
+      ]
+    },
+    {
+      "job_id": "synthesis-v7-D033",
+      "issues": [
+        "personalization realization missing from generated text"
+      ]
+    },
+    {
+      "job_id": "synthesis-v7-D034",
+      "issues": []
+    },
+    {
+      "job_id": "synthesis-v7-D035",
+      "issues": []
+    },
+    {
+      "job_id": "synthesis-v7-D036",
+      "issues": [
+        "mandatory personalized commitment missing"
+      ]
+    },
+    {
+      "job_id": "synthesis-v7-D037",
+      "issues": []
+    },
+    {
+      "job_id": "synthesis-v7-D038",
+      "issues": []
+    },
+    {
+      "job_id": "synthesis-v7-D039",
+      "issues": [
+        "state_nl length invalid at step 5",
+        "state_nl length invalid at step 6",
+        "invalid direct source anchor at step 7"
+      ]
+    },
+    {
+      "job_id": "synthesis-v7-D040",
+      "issues": [
+        "personalization realization missing from generated text"
+      ]
+    },
+    {
+      "job_id": "synthesis-v7-D041",
+      "issues": [
+        "invalid direct source anchor at step 6",
+        "invalid Q2 grounding anchor",
+        "personalization realization missing from generated text"
+      ]
+    },
+    {
+      "job_id": "synthesis-v7-D042",
+      "issues": [
+        "invalid direct source anchor at step 5"
+      ]
+    },
+    {
+      "job_id": "synthesis-v7-D043",
+      "issues": [
+        "personalization realization missing from generated text"
+      ]
+    },
+    {
+      "job_id": "synthesis-v7-D044",
+      "issues": []
+    },
+    {
+      "job_id": "synthesis-v7-D045",
+      "issues": [
+        "invalid direct source anchor at step 2",
+        "invalid direct source anchor at step 5",
+        "invalid Q2 grounding anchor"
+      ]
+    },
+    {
+      "job_id": "synthesis-v7-D046",
+      "issues": [
+        "V evidence mismatch",
+        "personalization realization missing from generated text"
+      ]
+    },
+    {
+      "job_id": "synthesis-v7-D047",
+      "issues": [
+        "personalization realization missing from generated text"
+      ]
+    },
+    {
+      "job_id": "synthesis-v7-D048",
+      "issues": []
+    },
+    {
+      "job_id": "synthesis-v7-D049",
+      "issues": [
+        "state_nl length invalid at step 5",
+        "personalization realization missing from generated text"
+      ]
+    },
+    {
+      "job_id": "synthesis-v7-D050",
+      "issues": [
+        "V evidence mismatch"
+      ]
+    },
+    {
+      "job_id": "synthesis-v7-D051",
+      "issues": []
+    },
+    {
+      "job_id": "synthesis-v7-D052",
+      "issues": [
+        "state_nl length invalid at step 4",
+        "state_nl length invalid at step 5",
+        "state_nl length invalid at step 6",
+        "state_nl length invalid at step 7",
+        "state_nl length invalid at step 8"
+      ]
+    },
+    {
+      "job_id": "synthesis-v7-D053",
+      "issues": [
+        "full response length invalid"
+      ]
+    },
+    {
+      "job_id": "synthesis-v7-D054",
+      "issues": []
+    },
+    {
+      "job_id": "synthesis-v7-D055",
+      "issues": [
+        "full response length invalid"
+      ]
+    },
+    {
+      "job_id": "synthesis-v7-D056",
+      "issues": [
+        "invalid direct source anchor at step 1",
+        "invalid direct source anchor at step 2",
+        "invalid direct source anchor at step 3",
+        "state_nl length invalid at step 4",
+        "invalid direct source anchor at step 4"
+      ]
+    },
+    {
+      "job_id": "synthesis-v7-D057",
+      "issues": [
+        "V evidence mismatch"
+      ]
+    },
+    {
+      "job_id": "synthesis-v7-D058",
+      "issues": [
+        "full response length invalid",
+        "personalization realization missing from generated text"
+      ]
+    },
+    {
+      "job_id": "synthesis-v7-D059",
+      "issues": []
+    },
+    {
+      "job_id": "synthesis-v7-D060",
+      "issues": [
+        "full response length invalid",
+        "personalization realization missing from generated text"
+      ]
+    },
+    {
+      "job_id": "synthesis-v7-D061",
+      "issues": [
+        "state_nl length invalid at step 6"
+      ]
+    },
+    {
+      "job_id": "synthesis-v7-D062",
+      "issues": [
+        "full response length invalid"
+      ]
+    },
+    {
+      "job_id": "synthesis-v7-D063",
+      "issues": [
+        "personalization realization missing from generated text"
+      ]
+    },
+    {
+      "job_id": "synthesis-v7-D064",
+      "issues": [
+        "state_nl length invalid at step 6",
+        "state_nl length invalid at step 8",
+        "state_nl length invalid at step 9",
+        "state_nl length invalid at step 10",
+        "V evidence mismatch",
+        "full response length invalid",
+        "personalization realization missing from generated text"
+      ]
+    },
+    {
+      "job_id": "synthesis-v7-D065",
+      "issues": [
+        "V evidence mismatch"
+      ]
+    },
+    {
+      "job_id": "synthesis-v7-D066",
+      "issues": [
+        "state_nl length invalid at step 6",
+        "personalization realization missing from generated text"
+      ]
+    },
+    {
+      "job_id": "synthesis-v7-D067",
+      "issues": [
+        "full response length invalid",
+        "personalization realization missing from generated text"
+      ]
+    },
+    {
+      "job_id": "synthesis-v7-D068",
+      "issues": [
+        "personalization realization missing from generated text"
+      ]
+    },
+    {
+      "job_id": "synthesis-v7-D069",
+      "issues": [
+        "invalid direct source anchor at step 6",
+        "V evidence mismatch",
+        "personalization realization missing from generated text"
+      ]
+    },
+    {
+      "job_id": "synthesis-v7-D070",
+      "issues": [
+        "full response length invalid"
+      ]
+    },
+    {
+      "job_id": "synthesis-v7-D071",
+      "issues": [
+        "personalization realization missing from generated text"
+      ]
+    },
+    {
+      "job_id": "synthesis-v7-D072",
+      "issues": [
+        "V evidence mismatch"
+      ]
+    },
+    {
+      "job_id": "synthesis-v7-D073",
+      "issues": [
+        "V evidence mismatch"
+      ]
+    },
+    {
+      "job_id": "synthesis-v7-D074",
+      "issues": [
+        "personalization realization missing from generated text"
+      ]
+    },
+    {
+      "job_id": "synthesis-v7-D075",
+      "issues": [
+        "personalization realization missing from generated text"
+      ]
+    },
+    {
+      "job_id": "synthesis-v7-D076",
+      "issues": [
+        "personalization realization missing from generated text"
+      ]
+    },
+    {
+      "job_id": "synthesis-v7-D077",
+      "issues": [
+        "state_nl length invalid at step 7",
+        "V evidence mismatch"
+      ]
+    },
+    {
+      "job_id": "synthesis-v7-D078",
+      "issues": [
+        "full response length invalid",
+        "personalization realization missing from generated text"
+      ]
+    },
+    {
+      "job_id": "synthesis-v7-D079",
+      "issues": [
+        "full response length invalid",
+        "personalization realization missing from generated text"
+      ]
+    },
+    {
+      "job_id": "synthesis-v7-D080",
+      "issues": [
+        "invalid direct source anchor at step 1",
+        "invalid direct source anchor at step 2",
+        "invalid direct source anchor at step 3",
+        "invalid direct source anchor at step 4",
+        "invalid direct source anchor at step 5",
+        "invalid direct source anchor at step 6",
+        "state_nl length invalid at step 7",
+        "invalid direct source anchor at step 7",
+        "state_nl length invalid at step 8",
+        "invalid direct source anchor at step 8",
+        "invalid direct source anchor at step 9",
+        "invalid direct source anchor at step 10",
+        "state_nl length invalid at step 11",
+        "invalid direct source anchor at step 11",
+        "V evidence mismatch"
+      ]
+    },
+    {
+      "job_id": "synthesis-v7-D081",
+      "issues": [
+        "personalization realization missing from generated text"
+      ]
+    },
+    {
+      "job_id": "synthesis-v7-D082",
+      "issues": []
+    },
+    {
+      "job_id": "synthesis-v7-D083",
+      "issues": []
+    },
+    {
+      "job_id": "synthesis-v7-D084",
+      "issues": [
+        "V evidence mismatch",
+        "personalization realization missing from generated text"
+      ]
+    },
+    {
+      "job_id": "synthesis-v7-D085",
+      "issues": [
+        "state_nl length invalid at step 3",
+        "state_nl length invalid at step 4",
+        "state_nl length invalid at step 5",
+        "V evidence mismatch"
+      ]
+    },
+    {
+      "job_id": "synthesis-v7-D086",
+      "issues": [
+        "full response length invalid",
+        "personalization realization missing from generated text"
+      ]
+    },
+    {
+      "job_id": "synthesis-v7-D087",
+      "issues": [
+        "non-V step count mismatch",
+        "V evidence mismatch",
+        "full response length invalid",
+        "full response coverage trace mismatch"
+      ]
+    },
+    {
+      "job_id": "synthesis-v7-D088",
+      "issues": [
+        "full response length invalid"
+      ]
+    },
+    {
+      "job_id": "synthesis-v7-D089",
+      "issues": [
+        "invalid direct source anchor at step 6",
+        "V evidence mismatch",
+        "personalization realization missing from generated text"
+      ]
+    },
+    {
+      "job_id": "synthesis-v7-D090",
+      "issues": []
+    },
+    {
+      "job_id": "synthesis-v7-D091",
+      "issues": []
+    },
+    {
+      "job_id": "synthesis-v7-D092",
+      "issues": [
+        "state_nl length invalid at step 7",
+        "personalization realization missing from generated text"
+      ]
+    },
+    {
+      "job_id": "synthesis-v7-D093",
+      "issues": [
+        "state_nl length invalid at step 7",
+        "V evidence mismatch"
+      ]
+    },
+    {
+      "job_id": "synthesis-v7-D094",
+      "issues": [
+        "state_nl length invalid at step 6",
+        "state_nl length invalid at step 8",
+        "state_nl length invalid at step 10",
+        "state_nl length invalid at step 11",
+        "state_nl length invalid at step 12",
+        "personalization realization missing from generated text"
+      ]
+    },
+    {
+      "job_id": "synthesis-v7-D095",
+      "issues": [
+        "full response length invalid",
+        "personalization realization missing from generated text"
+      ]
+    },
+    {
+      "job_id": "synthesis-v7-D096",
+      "issues": [
+        "full response length invalid"
+      ]
+    },
+    {
+      "job_id": "synthesis-v7-D097",
+      "issues": [
+        "state_nl length invalid at step 4",
+        "state_nl length invalid at step 6"
+      ]
+    },
+    {
+      "job_id": "synthesis-v7-D098",
+      "issues": [
+        "personalization realization missing from generated text"
+      ]
+    },
+    {
+      "job_id": "synthesis-v7-D099",
+      "issues": [
+        "V evidence mismatch",
+        "personalization realization missing from generated text"
+      ]
+    },
+    {
+      "job_id": "synthesis-v7-D100",
+      "issues": [
+        "state_nl length invalid at step 11",
+        "state_nl length invalid at step 12",
+        "personalization realization missing from generated text"
+      ]
+    },
+    {
+      "job_id": "synthesis-v7-D101",
+      "issues": []
+    },
+    {
+      "job_id": "synthesis-v7-D102",
+      "issues": []
+    },
+    {
+      "job_id": "synthesis-v7-D103",
+      "issues": [
+        "V evidence mismatch"
+      ]
+    },
+    {
+      "job_id": "synthesis-v7-D104",
+      "issues": [
+        "state_nl length invalid at step 3",
+        "state_nl length invalid at step 4",
+        "state_nl length invalid at step 5",
+        "state_nl length invalid at step 6"
+      ]
+    },
+    {
+      "job_id": "synthesis-v7-D105",
+      "issues": [
+        "V evidence mismatch"
+      ]
+    },
+    {
+      "job_id": "synthesis-v7-D106",
+      "issues": []
+    },
+    {
+      "job_id": "synthesis-v7-D107",
+      "issues": [
+        "full response length invalid"
+      ]
+    },
+    {
+      "job_id": "synthesis-v7-D108",
+      "issues": [
+        "personalization realization missing from generated text"
+      ]
+    },
+    {
+      "job_id": "synthesis-v7-D109",
+      "issues": []
+    },
+    {
+      "job_id": "synthesis-v7-D110",
+      "issues": []
+    },
+    {
+      "job_id": "synthesis-v7-D111",
+      "issues": [
+        "V evidence mismatch",
+        "personalization realization missing from generated text"
+      ]
+    },
+    {
+      "job_id": "synthesis-v7-D112",
+      "issues": [
+        "personalization realization missing from generated text"
+      ]
+    },
+    {
+      "job_id": "synthesis-v7-D113",
+      "issues": [
+        "V evidence mismatch"
+      ]
+    },
+    {
+      "job_id": "synthesis-v7-D114",
+      "issues": [
+        "V evidence mismatch"
+      ]
+    },
+    {
+      "job_id": "synthesis-v7-D115",
+      "issues": [
+        "full response length invalid"
+      ]
+    },
+    {
+      "job_id": "synthesis-v7-D116",
+      "issues": [
+        "V evidence mismatch"
+      ]
+    },
+    {
+      "job_id": "synthesis-v7-D117",
+      "issues": []
+    },
+    {
+      "job_id": "synthesis-v7-D118",
+      "issues": []
+    },
+    {
+      "job_id": "synthesis-v7-D119",
+      "issues": [
+        "state_nl length invalid at step 7"
+      ]
+    },
+    {
+      "job_id": "synthesis-v7-D120",
+      "issues": [
+        "personalization realization missing from generated text"
+      ]
+    },
+    {
+      "job_id": "synthesis-v7-D121",
+      "issues": []
+    },
+    {
+      "job_id": "synthesis-v7-D122",
+      "issues": [
+        "V evidence mismatch"
+      ]
+    },
+    {
+      "job_id": "synthesis-v7-D123",
+      "issues": [
+        "V evidence mismatch"
+      ]
+    },
+    {
+      "job_id": "synthesis-v7-D124",
+      "issues": []
+    },
+    {
+      "job_id": "synthesis-v7-D125",
+      "issues": [
+        "personalization realization missing from generated text"
+      ]
+    },
+    {
+      "job_id": "synthesis-v7-D126",
+      "issues": []
+    },
+    {
+      "job_id": "synthesis-v7-D127",
+      "issues": [
+        "V evidence mismatch"
+      ]
+    },
+    {
+      "job_id": "synthesis-v7-D128",
+      "issues": [
+        "V evidence mismatch"
+      ]
+    },
+    {
+      "job_id": "synthesis-v7-D129",
+      "issues": []
+    },
+    {
+      "job_id": "synthesis-v7-D130",
+      "issues": [
+        "V evidence mismatch"
+      ]
+    },
+    {
+      "job_id": "synthesis-v7-D131",
+      "issues": [
+        "full response length invalid",
+        "personalization realization missing from generated text"
+      ]
+    },
+    {
+      "job_id": "synthesis-v7-D132",
+      "issues": [
+        "V evidence mismatch"
+      ]
+    },
+    {
+      "job_id": "synthesis-v7-D133",
+      "issues": [
+        "full response length invalid"
+      ]
+    },
+    {
+      "job_id": "synthesis-v7-D134",
+      "issues": []
+    },
+    {
+      "job_id": "synthesis-v7-D135",
+      "issues": [
+        "state_nl length invalid at step 4",
+        "personalization realization missing from generated text"
+      ]
+    },
+    {
+      "job_id": "synthesis-v7-D136",
+      "issues": [
+        "state_nl length invalid at step 4",
+        "state_nl length invalid at step 6",
+        "state_nl length invalid at step 7",
+        "state_nl length invalid at step 8"
+      ]
+    },
+    {
+      "job_id": "synthesis-v7-D137",
+      "issues": [
+        "V evidence mismatch"
+      ]
+    },
+    {
+      "job_id": "synthesis-v7-D138",
+      "issues": []
+    },
+    {
+      "job_id": "synthesis-v7-D139",
+      "issues": [
+        "personalization realization missing from generated text"
+      ]
+    },
+    {
+      "job_id": "synthesis-v7-D140",
+      "issues": [
+        "personalization realization missing from generated text"
+      ]
+    },
+    {
+      "job_id": "synthesis-v7-D141",
+      "issues": []
+    },
+    {
+      "job_id": "synthesis-v7-D142",
+      "issues": [
+        "personalization realization missing from generated text"
+      ]
+    },
+    {
+      "job_id": "synthesis-v7-D143",
+      "issues": [
+        "full response length invalid"
+      ]
+    },
+    {
+      "job_id": "synthesis-v7-D144",
+      "issues": []
+    },
+    {
+      "job_id": "synthesis-v7-D145",
+      "issues": [
+        "V evidence mismatch"
+      ]
+    },
+    {
+      "job_id": "synthesis-v7-D146",
+      "issues": [
+        "state_nl length invalid at step 6",
+        "personalization realization missing from generated text"
+      ]
+    },
+    {
+      "job_id": "synthesis-v7-D147",
+      "issues": [
+        "personalization realization missing from generated text"
+      ]
+    },
+    {
+      "job_id": "synthesis-v7-D148",
+      "issues": []
+    },
+    {
+      "job_id": "synthesis-v7-D149",
+      "issues": [
+        "invalid direct source anchor at step 3"
+      ]
+    },
+    {
+      "job_id": "synthesis-v7-D150",
+      "issues": [
+        "full response length invalid"
+      ]
+    },
+    {
+      "job_id": "synthesis-v7-D151",
+      "issues": []
+    },
+    {
+      "job_id": "synthesis-v7-D152",
+      "issues": [
+        "personalization realization missing from generated text"
+      ]
+    },
+    {
+      "job_id": "synthesis-v7-D153",
+      "issues": [
+        "state_nl length invalid at step 3",
+        "state_nl length invalid at step 4",
+        "state_nl length invalid at step 6",
+        "state_nl length invalid at step 8",
+        "V evidence mismatch"
+      ]
+    },
+    {
+      "job_id": "synthesis-v7-D154",
+      "issues": []
+    },
+    {
+      "job_id": "synthesis-v7-D155",
+      "issues": []
+    },
+    {
+      "job_id": "synthesis-v7-D156",
+      "issues": [
+        "full response length invalid"
+      ]
+    },
+    {
+      "job_id": "synthesis-v7-D157",
+      "issues": [
+        "V evidence mismatch"
+      ]
+    },
+    {
+      "job_id": "synthesis-v7-D158",
+      "issues": [
+        "personalization realization missing from generated text"
+      ]
+    },
+    {
+      "job_id": "synthesis-v7-D159",
+      "issues": [
+        "V evidence mismatch"
+      ]
+    },
+    {
+      "job_id": "synthesis-v7-D160",
+      "issues": [
+        "V evidence mismatch"
+      ]
+    },
+    {
+      "job_id": "synthesis-v7-D161",
+      "issues": [
+        "V evidence mismatch"
+      ]
+    },
+    {
+      "job_id": "synthesis-v7-D162",
+      "issues": [
+        "V evidence mismatch"
+      ]
+    }
+  ]
+}

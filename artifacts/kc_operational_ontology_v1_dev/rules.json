@@ -1,0 +1,631 @@
+{
+  "schema_version": "kc_operational_ontology_v1",
+  "state_ontology": [
+    "K",
+    "C",
+    "KtoC",
+    "CtoK",
+    "KtoK",
+    "CtoC"
+  ],
+  "boundary_tokens": [
+    "START",
+    "STOP"
+  ],
+  "q7_used_for_mining": false,
+  "injection_policy": {
+    "default_rule_status": "validated",
+    "routing_strength": "soft_preference",
+    "semantic_relevance_required": true
+  },
+  "rules": [
+    {
+      "rule_id": "KCOR_fff4319ea7",
+      "rule_status": "stable_exploratory",
+      "trigger": {
+        "profile": {
+          "trait_index": 5,
+          "trait_id": "T06",
+          "trait_name": "混沌与灵感",
+          "operator": "score_lte",
+          "threshold": 3.0,
+          "stance": "验证至上派"
+        },
+        "current_state": "KtoK",
+        "context_policy": "activate_only_when_semantically_relevant"
+      },
+      "action": {
+        "next_state": "C",
+        "routing": "prefer",
+        "semantic_operation": "形成一个明确的设计概念、原则或候选方案",
+        "guard": "下一步必须给出具体概念或原则，不能只罗列已知条件。"
+      },
+      "evidence": {
+        "coefficient": -0.50778636,
+        "odds_ratio_per_sd": 0.60182633,
+        "bootstrap_ci_low": -0.92901186,
+        "bootstrap_ci_high": -0.28775749,
+        "selection_frequency": 0.98333333,
+        "sign_consistency": 1.0,
+        "support_participants": 27,
+        "support_transitions": 27,
+        "permutation_p": 0.005,
+        "fdr_q": 0.846,
+        "heldout_delta_log_loss": -0.03874132,
+        "heldout_improved_folds": 4,
+        "heldout_fold_count": 5,
+        "heldout_sign_agreement": 1.0
+      }
+    },
+    {
+      "rule_id": "KCOR_1cf82f1538",
+      "rule_status": "stable_exploratory",
+      "trigger": {
+        "profile": {
+          "trait_index": 16,
+          "trait_id": "T17",
+          "trait_name": "独裁 vs 委员会",
+          "operator": "score_lte",
+          "threshold": 3.0,
+          "stance": "民主共创派"
+        },
+        "current_state": "KtoK",
+        "context_policy": "activate_only_when_semantically_relevant"
+      },
+      "action": {
+        "next_state": "C",
+        "routing": "prefer",
+        "semantic_operation": "形成一个明确的设计概念、原则或候选方案",
+        "guard": "下一步必须给出具体概念或原则，不能只罗列已知条件。"
+      },
+      "evidence": {
+        "coefficient": -0.32529557,
+        "odds_ratio_per_sd": 0.72231382,
+        "bootstrap_ci_low": -0.76264127,
+        "bootstrap_ci_high": 0.0,
+        "selection_frequency": 0.95,
+        "sign_consistency": 1.0,
+        "support_participants": 27,
+        "support_transitions": 27,
+        "permutation_p": 0.015,
+        "fdr_q": 0.846,
+        "heldout_delta_log_loss": -0.01773105,
+        "heldout_improved_folds": 3,
+        "heldout_fold_count": 5,
+        "heldout_sign_agreement": 1.0
+      }
+    },
+    {
+      "rule_id": "KCOR_17d08804fc",
+      "rule_status": "stable_exploratory",
+      "trigger": {
+        "profile": {
+          "trait_index": 19,
+          "trait_id": "T20",
+          "trait_name": "资产开源",
+          "operator": "score_gte",
+          "threshold": 4.0,
+          "stance": "开源道德派"
+        },
+        "current_state": "C",
+        "context_policy": "activate_only_when_semantically_relevant"
+      },
+      "action": {
+        "next_state": "K",
+        "routing": "prefer",
+        "semantic_operation": "补充可核查的事实、数据、经验或现实约束",
+        "guard": "下一步必须明确至少一项可核查依据，不能只重复方案判断。"
+      },
+      "evidence": {
+        "coefficient": 0.38085869,
+        "odds_ratio_per_sd": 1.46354077,
+        "bootstrap_ci_low": 0.05757527,
+        "bootstrap_ci_high": 0.66680728,
+        "selection_frequency": 1.0,
+        "sign_consistency": 1.0,
+        "support_participants": 51,
+        "support_transitions": 51,
+        "permutation_p": 0.005,
+        "fdr_q": 0.846,
+        "heldout_delta_log_loss": -0.01548342,
+        "heldout_improved_folds": 4,
+        "heldout_fold_count": 5,
+        "heldout_sign_agreement": 1.0
+      }
+    },
+    {
+      "rule_id": "KCOR_961cfea96e",
+      "rule_status": "stable_exploratory",
+      "trigger": {
+        "profile": {
+          "trait_index": 19,
+          "trait_id": "T20",
+          "trait_name": "资产开源",
+          "operator": "score_gte",
+          "threshold": 4.0,
+          "stance": "开源道德派"
+        },
+        "current_state": "KtoC",
+        "context_policy": "activate_only_when_semantically_relevant"
+      },
+      "action": {
+        "next_state": "KtoK",
+        "routing": "prefer",
+        "semantic_operation": "在已有知识之间推导后果、限制或冲突关系",
+        "guard": "必须明确一项后果、限制或证据之间的关系。"
+      },
+      "evidence": {
+        "coefficient": 0.45611687,
+        "odds_ratio_per_sd": 1.57793474,
+        "bootstrap_ci_low": 0.12160911,
+        "bootstrap_ci_high": 0.78335372,
+        "selection_frequency": 1.0,
+        "sign_consistency": 1.0,
+        "support_participants": 38,
+        "support_transitions": 38,
+        "permutation_p": 0.01,
+        "fdr_q": 0.846,
+        "heldout_delta_log_loss": -0.0133939,
+        "heldout_improved_folds": 4,
+        "heldout_fold_count": 5,
+        "heldout_sign_agreement": 1.0
+      }
+    },
+    {
+      "rule_id": "KCOR_22887e620e",
+      "rule_status": "stable_exploratory",
+      "trigger": {
+        "profile": {
+          "trait_index": 19,
+          "trait_id": "T20",
+          "trait_name": "资产开源",
+          "operator": "score_lte",
+          "threshold": 3.0,
+          "stance": "竞争壁垒派"
+        },
+        "current_state": "KtoC",
+        "context_policy": "activate_only_when_semantically_relevant"
+      },
+      "action": {
+        "next_state": "K",
+        "routing": "prefer",
+        "semantic_operation": "补充可核查的事实、数据、经验或现实约束",
+        "guard": "下一步必须明确至少一项可核查依据，不能只重复方案判断。"
+      },
+      "evidence": {
+        "coefficient": -0.53066014,
+        "odds_ratio_per_sd": 0.58821654,
+        "bootstrap_ci_low": -0.9423047,
+        "bootstrap_ci_high": -0.17339394,
+        "selection_frequency": 0.98333333,
+        "sign_consistency": 1.0,
+        "support_participants": 31,
+        "support_transitions": 31,
+        "permutation_p": 0.01,
+        "fdr_q": 0.846,
+        "heldout_delta_log_loss": -0.00616771,
+        "heldout_improved_folds": 3,
+        "heldout_fold_count": 5,
+        "heldout_sign_agreement": 1.0
+      }
+    },
+    {
+      "rule_id": "KCOR_1fe7616ecc",
+      "rule_status": "stable_exploratory",
+      "trigger": {
+        "profile": {
+          "trait_index": 18,
+          "trait_id": "T19",
+          "trait_name": "创作者署名",
+          "operator": "score_gte",
+          "threshold": 4.0,
+          "stance": "作者性优先"
+        },
+        "current_state": "C",
+        "context_policy": "activate_only_when_semantically_relevant"
+      },
+      "action": {
+        "next_state": "KtoK",
+        "routing": "prefer",
+        "semantic_operation": "在已有知识之间推导后果、限制或冲突关系",
+        "guard": "必须明确一项后果、限制或证据之间的关系。"
+      },
+      "evidence": {
+        "coefficient": 0.49259945,
+        "odds_ratio_per_sd": 1.63656486,
+        "bootstrap_ci_low": 0.11199959,
+        "bootstrap_ci_high": 0.85717732,
+        "selection_frequency": 1.0,
+        "sign_consistency": 1.0,
+        "support_participants": 24,
+        "support_transitions": 24,
+        "permutation_p": 0.025,
+        "fdr_q": 0.86769231,
+        "heldout_delta_log_loss": -0.00763256,
+        "heldout_improved_folds": 4,
+        "heldout_fold_count": 5,
+        "heldout_sign_agreement": 1.0
+      }
+    },
+    {
+      "rule_id": "KCOR_dd80ed9833",
+      "rule_status": "stable_exploratory",
+      "trigger": {
+        "profile": {
+          "trait_index": 18,
+          "trait_id": "T19",
+          "trait_name": "创作者署名",
+          "operator": "score_gte",
+          "threshold": 4.0,
+          "stance": "作者性优先"
+        },
+        "current_state": "KtoC",
+        "context_policy": "activate_only_when_semantically_relevant"
+      },
+      "action": {
+        "next_state": "K",
+        "routing": "prefer",
+        "semantic_operation": "补充可核查的事实、数据、经验或现实约束",
+        "guard": "下一步必须明确至少一项可核查依据，不能只重复方案判断。"
+      },
+      "evidence": {
+        "coefficient": 0.33746822,
+        "odds_ratio_per_sd": 1.40139507,
+        "bootstrap_ci_low": 0.0,
+        "bootstrap_ci_high": 0.78086808,
+        "selection_frequency": 0.95,
+        "sign_consistency": 1.0,
+        "support_participants": 31,
+        "support_transitions": 31,
+        "permutation_p": 0.03,
+        "fdr_q": 0.86769231,
+        "heldout_delta_log_loss": -0.00672571,
+        "heldout_improved_folds": 4,
+        "heldout_fold_count": 5,
+        "heldout_sign_agreement": 1.0
+      }
+    },
+    {
+      "rule_id": "KCOR_9d675d7c5c",
+      "rule_status": "stable_exploratory",
+      "trigger": {
+        "profile": {
+          "trait_index": 26,
+          "trait_id": "T27",
+          "trait_name": "股东服务优先",
+          "operator": "score_gte",
+          "threshold": 4.0,
+          "stance": "股东忠诚派"
+        },
+        "current_state": "KtoK",
+        "context_policy": "activate_only_when_semantically_relevant"
+      },
+      "action": {
+        "next_state": "C",
+        "routing": "prefer",
+        "semantic_operation": "形成一个明确的设计概念、原则或候选方案",
+        "guard": "下一步必须给出具体概念或原则，不能只罗列已知条件。"
+      },
+      "evidence": {
+        "coefficient": 0.45269837,
+        "odds_ratio_per_sd": 1.57254979,
+        "bootstrap_ci_low": 0.09843619,
+        "bootstrap_ci_high": 0.77664066,
+        "selection_frequency": 1.0,
+        "sign_consistency": 1.0,
+        "support_participants": 27,
+        "support_transitions": 27,
+        "permutation_p": 0.035,
+        "fdr_q": 0.86769231,
+        "heldout_delta_log_loss": -0.0061484,
+        "heldout_improved_folds": 3,
+        "heldout_fold_count": 5,
+        "heldout_sign_agreement": 1.0
+      }
+    },
+    {
+      "rule_id": "KCOR_ec893c2863",
+      "rule_status": "stable_exploratory",
+      "trigger": {
+        "profile": {
+          "trait_index": 10,
+          "trait_id": "T11",
+          "trait_name": "审美反民粹",
+          "operator": "score_gte",
+          "threshold": 4.0,
+          "stance": "审美精英主义"
+        },
+        "current_state": "C",
+        "context_policy": "activate_only_when_semantically_relevant"
+      },
+      "action": {
+        "next_state": "KtoC",
+        "routing": "prefer",
+        "semantic_operation": "基于已有证据或约束推导一个新的设计方案",
+        "guard": "必须说明依据如何导向新方案，并至少产出一个可执行候选。"
+      },
+      "evidence": {
+        "coefficient": 0.22322432,
+        "odds_ratio_per_sd": 1.25010097,
+        "bootstrap_ci_low": 0.02163046,
+        "bootstrap_ci_high": 0.49920326,
+        "selection_frequency": 0.98333333,
+        "sign_consistency": 1.0,
+        "support_participants": 54,
+        "support_transitions": 56,
+        "permutation_p": 0.035,
+        "fdr_q": 0.86769231,
+        "heldout_delta_log_loss": -0.00396082,
+        "heldout_improved_folds": 3,
+        "heldout_fold_count": 5,
+        "heldout_sign_agreement": 1.0
+      }
+    },
+    {
+      "rule_id": "KCOR_15582117c2",
+      "rule_status": "stable_exploratory",
+      "trigger": {
+        "profile": {
+          "trait_index": 25,
+          "trait_id": "T26",
+          "trait_name": "弱势群体优先",
+          "operator": "score_lte",
+          "threshold": 3.0,
+          "stance": "多数效率优先"
+        },
+        "current_state": "CtoK",
+        "context_policy": "activate_only_when_semantically_relevant"
+      },
+      "action": {
+        "next_state": "KtoK",
+        "routing": "prefer",
+        "semantic_operation": "在已有知识之间推导后果、限制或冲突关系",
+        "guard": "必须明确一项后果、限制或证据之间的关系。"
+      },
+      "evidence": {
+        "coefficient": -0.25707185,
+        "odds_ratio_per_sd": 0.77331265,
+        "bootstrap_ci_low": -0.83703295,
+        "bootstrap_ci_high": 0.0,
+        "selection_frequency": 0.9,
+        "sign_consistency": 1.0,
+        "support_participants": 23,
+        "support_transitions": 24,
+        "permutation_p": 0.035,
+        "fdr_q": 0.86769231,
+        "heldout_delta_log_loss": -0.00130592,
+        "heldout_improved_folds": 4,
+        "heldout_fold_count": 5,
+        "heldout_sign_agreement": 1.0
+      }
+    },
+    {
+      "rule_id": "KCOR_ce819469f9",
+      "rule_status": "stable_exploratory",
+      "trigger": {
+        "profile": {
+          "trait_index": 25,
+          "trait_id": "T26",
+          "trait_name": "弱势群体优先",
+          "operator": "score_gte",
+          "threshold": 4.0,
+          "stance": "边缘群体优先"
+        },
+        "current_state": "CtoK",
+        "context_policy": "activate_only_when_semantically_relevant"
+      },
+      "action": {
+        "next_state": "KtoC",
+        "routing": "prefer",
+        "semantic_operation": "基于已有证据或约束推导一个新的设计方案",
+        "guard": "必须说明依据如何导向新方案，并至少产出一个可执行候选。"
+      },
+      "evidence": {
+        "coefficient": 0.29854557,
+        "odds_ratio_per_sd": 1.34789695,
+        "bootstrap_ci_low": 0.01994015,
+        "bootstrap_ci_high": 0.62245536,
+        "selection_frequency": 0.96666667,
+        "sign_consistency": 1.0,
+        "support_participants": 54,
+        "support_transitions": 58,
+        "permutation_p": 0.045,
+        "fdr_q": 0.86917808,
+        "heldout_delta_log_loss": -0.01151047,
+        "heldout_improved_folds": 4,
+        "heldout_fold_count": 5,
+        "heldout_sign_agreement": 1.0
+      }
+    },
+    {
+      "rule_id": "KCOR_74cf917df2",
+      "rule_status": "stable_exploratory",
+      "trigger": {
+        "profile": {
+          "trait_index": 3,
+          "trait_id": "T04",
+          "trait_name": "技术支持",
+          "operator": "score_gte",
+          "threshold": 4.0,
+          "stance": "技术激进主义"
+        },
+        "current_state": "C",
+        "context_policy": "activate_only_when_semantically_relevant"
+      },
+      "action": {
+        "next_state": "K",
+        "routing": "prefer",
+        "semantic_operation": "补充可核查的事实、数据、经验或现实约束",
+        "guard": "下一步必须明确至少一项可核查依据，不能只重复方案判断。"
+      },
+      "evidence": {
+        "coefficient": 0.25781824,
+        "odds_ratio_per_sd": 1.29410358,
+        "bootstrap_ci_low": 0.02426074,
+        "bootstrap_ci_high": 0.55256889,
+        "selection_frequency": 1.0,
+        "sign_consistency": 1.0,
+        "support_participants": 51,
+        "support_transitions": 51,
+        "permutation_p": 0.045,
+        "fdr_q": 0.86917808,
+        "heldout_delta_log_loss": -0.00627291,
+        "heldout_improved_folds": 4,
+        "heldout_fold_count": 5,
+        "heldout_sign_agreement": 1.0
+      }
+    },
+    {
+      "rule_id": "KCOR_5111a6fe54",
+      "rule_status": "stable_exploratory",
+      "trigger": {
+        "profile": {
+          "trait_index": 20,
+          "trait_id": "T21",
+          "trait_name": "封闭生态竞争",
+          "operator": "score_gte",
+          "threshold": 4.0,
+          "stance": "封闭生态派"
+        },
+        "current_state": "CtoK",
+        "context_policy": "activate_only_when_semantically_relevant"
+      },
+      "action": {
+        "next_state": "KtoK",
+        "routing": "prefer",
+        "semantic_operation": "在已有知识之间推导后果、限制或冲突关系",
+        "guard": "必须明确一项后果、限制或证据之间的关系。"
+      },
+      "evidence": {
+        "coefficient": 0.31849906,
+        "odds_ratio_per_sd": 1.37506232,
+        "bootstrap_ci_low": 0.0,
+        "bootstrap_ci_high": 0.75388085,
+        "selection_frequency": 0.9,
+        "sign_consistency": 1.0,
+        "support_participants": 23,
+        "support_transitions": 24,
+        "permutation_p": 0.055,
+        "fdr_q": 0.90174419,
+        "heldout_delta_log_loss": -0.01474677,
+        "heldout_improved_folds": 4,
+        "heldout_fold_count": 5,
+        "heldout_sign_agreement": 1.0
+      }
+    },
+    {
+      "rule_id": "KCOR_2c9484f490",
+      "rule_status": "stable_exploratory",
+      "trigger": {
+        "profile": {
+          "trait_index": 2,
+          "trait_id": "T03",
+          "trait_name": "AI 替代论",
+          "operator": "score_lte",
+          "threshold": 3.0,
+          "stance": "岗位保护主义"
+        },
+        "current_state": "KtoC",
+        "context_policy": "activate_only_when_semantically_relevant"
+      },
+      "action": {
+        "next_state": "KtoC",
+        "routing": "prefer",
+        "semantic_operation": "基于已有证据或约束推导一个新的设计方案",
+        "guard": "必须说明依据如何导向新方案，并至少产出一个可执行候选。"
+      },
+      "evidence": {
+        "coefficient": -0.20513455,
+        "odds_ratio_per_sd": 0.81453771,
+        "bootstrap_ci_low": -0.49223294,
+        "bootstrap_ci_high": 0.0,
+        "selection_frequency": 0.9,
+        "sign_consistency": 1.0,
+        "support_participants": 22,
+        "support_transitions": 23,
+        "permutation_p": 0.055,
+        "fdr_q": 0.90174419,
+        "heldout_delta_log_loss": -0.00471536,
+        "heldout_improved_folds": 4,
+        "heldout_fold_count": 5,
+        "heldout_sign_agreement": 1.0
+      }
+    },
+    {
+      "rule_id": "KCOR_d705b40786",
+      "rule_status": "stable_exploratory",
+      "trigger": {
+        "profile": {
+          "trait_index": 22,
+          "trait_id": "T23",
+          "trait_name": "团队依恋",
+          "operator": "score_lte",
+          "threshold": 3.0,
+          "stance": "团队共创派"
+        },
+        "current_state": "C",
+        "context_policy": "activate_only_when_semantically_relevant"
+      },
+      "action": {
+        "next_state": "KtoC",
+        "routing": "prefer",
+        "semantic_operation": "基于已有证据或约束推导一个新的设计方案",
+        "guard": "必须说明依据如何导向新方案，并至少产出一个可执行候选。"
+      },
+      "evidence": {
+        "coefficient": -0.204444,
+        "odds_ratio_per_sd": 0.81510039,
+        "bootstrap_ci_low": -0.56511718,
+        "bootstrap_ci_high": 0.0,
+        "selection_frequency": 0.9,
+        "sign_consistency": 1.0,
+        "support_participants": 54,
+        "support_transitions": 56,
+        "permutation_p": 0.135,
+        "fdr_q": 0.94652778,
+        "heldout_delta_log_loss": -0.00346797,
+        "heldout_improved_folds": 4,
+        "heldout_fold_count": 5,
+        "heldout_sign_agreement": 1.0
+      }
+    },
+    {
+      "rule_id": "KCOR_4545710f1d",
+      "rule_status": "stable_exploratory",
+      "trigger": {
+        "profile": {
+          "trait_index": 14,
+          "trait_id": "T15",
+          "trait_name": "本土文化妥协",
+          "operator": "score_gte",
+          "threshold": 4.0,
+          "stance": "本土深耕派"
+        },
+        "current_state": "KtoK",
+        "context_policy": "activate_only_when_semantically_relevant"
+      },
+      "action": {
+        "next_state": "C",
+        "routing": "prefer",
+        "semantic_operation": "形成一个明确的设计概念、原则或候选方案",
+        "guard": "下一步必须给出具体概念或原则，不能只罗列已知条件。"
+      },
+      "evidence": {
+        "coefficient": 0.27021482,
+        "odds_ratio_per_sd": 1.31024588,
+        "bootstrap_ci_low": 0.0,
+        "bootstrap_ci_high": 0.67383979,
+        "selection_frequency": 0.9,
+        "sign_consistency": 1.0,
+        "support_participants": 27,
+        "support_transitions": 27,
+        "permutation_p": 0.125,
+        "fdr_q": 0.94652778,
+        "heldout_delta_log_loss": -0.00164953,
+        "heldout_improved_folds": 4,
+        "heldout_fold_count": 5,
+        "heldout_sign_agreement": 1.0
+      }
+    }
+  ]
+}

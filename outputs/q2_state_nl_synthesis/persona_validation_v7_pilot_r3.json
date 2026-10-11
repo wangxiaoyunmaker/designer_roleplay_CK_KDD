@@ -1,0 +1,24 @@
+{
+  "summary": {
+    "fail": 1,
+    "pass": 2
+  },
+  "q7_gold_used": false,
+  "pi_used": false,
+  "records": [
+    {
+      "job_id": "persona-v7-D001",
+      "issues": [
+        "invalid source quote for B2"
+      ]
+    },
+    {
+      "job_id": "persona-v7-D002",
+      "issues": []
+    },
+    {
+      "job_id": "persona-v7-D003",
+      "issues": []
+    }
+  ]
+}

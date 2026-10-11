@@ -1,0 +1,5 @@
+{
+  "schema_version": "v13_8_q2_relevance_v1",
+  "question_id": "Q2",
+  "relevant_item_ids": ["V01", "V04", "V07", "V09", "V22", "V24", "V25", "V26", "V27", "V29"]
+}

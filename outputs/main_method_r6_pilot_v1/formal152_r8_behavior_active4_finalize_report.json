@@ -1,0 +1,11 @@
+{
+  "rows": 152,
+  "ok": 152,
+  "repaired_count": 1,
+  "repaired_target_ids": [
+    "D065/seg2"
+  ],
+  "unresolved_count": 0,
+  "unresolved_target_ids": [],
+  "merged_retry_rows": 0
+}

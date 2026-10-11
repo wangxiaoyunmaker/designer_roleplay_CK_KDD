@@ -1,0 +1,14 @@
+{
+  "summary": {
+    "fail": 1
+  },
+  "q7_gold_used": false,
+  "records": [
+    {
+      "job_id": "q2-synth-D004",
+      "issues": [
+        "full_response length 160 outside configured range"
+      ]
+    }
+  ]
+}

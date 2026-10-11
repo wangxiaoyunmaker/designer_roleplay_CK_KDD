@@ -1,0 +1,970 @@
+{
+  "schema_version": "q1_initial_rulebank_v1",
+  "rulebank_id": "Q1_INIT_RULEBANK_V1_CANDIDATE",
+  "status": "EXPLORATORY_NOT_FROZEN",
+  "q7_used_for_mining": false,
+  "state_ontology": [
+    "K",
+    "C",
+    "KtoC",
+    "CtoK",
+    "KtoK",
+    "CtoC"
+  ],
+  "rule_semantics": "V30 profile condition -> preferred initial KC operation",
+  "injection_policy": {
+    "scope": "Q7_SEG1_ONLY",
+    "routing_strength": "soft_preference",
+    "max_single_rules": 1,
+    "max_double_rules": 1,
+    "labels_must_not_be_rendered_to_user": true
+  },
+  "layers": {
+    "single_dimension_main_effect": [
+      {
+        "rule_id": "KQ1S_96e6aa4b08",
+        "rule_status": "stable_exploratory",
+        "trigger": {
+          "profile": {
+            "trait_index": 24,
+            "trait_id": "T25",
+            "v30_item_id": "V25",
+            "trait_name": "数据隐私交换",
+            "operator": "score_lte",
+            "threshold": 3,
+            "stance": "隐私保护派"
+          },
+          "position_policy": "initial_operation_only"
+        },
+        "action": {
+          "initial_state": "KtoK",
+          "routing": "prefer",
+          "semantic_operation": "在已有知识之间推导后果、限制或冲突关系",
+          "guard": "仅影响第一反应的组织方式，不得据此虚构事实或用户经历。"
+        },
+        "evidence": {
+          "support_participants": 59,
+          "question_participants": 148,
+          "coefficient": -0.3040959,
+          "selection_frequency": 0.93,
+          "sign_consistency": 0.99784946,
+          "bootstrap_ci_low": -0.77256994,
+          "bootstrap_ci_high": 0.0,
+          "heldout_delta_log_loss": -0.00916451,
+          "heldout_improved_folds": 3,
+          "heldout_fold_count": 5,
+          "heldout_sign_agreement": 1.0,
+          "permutation_p": 0.03896104,
+          "fdr_q": 0.98701299
+        }
+      },
+      {
+        "rule_id": "KQ1S_2cda3292c3",
+        "rule_status": "stable_exploratory",
+        "trigger": {
+          "profile": {
+            "trait_index": 28,
+            "trait_id": "T29",
+            "v30_item_id": "V29",
+            "trait_name": "系统责任归属",
+            "operator": "score_lte",
+            "threshold": 3,
+            "stance": "用户归责派"
+          },
+          "position_policy": "initial_operation_only"
+        },
+        "action": {
+          "initial_state": "KtoK",
+          "routing": "prefer",
+          "semantic_operation": "在已有知识之间推导后果、限制或冲突关系",
+          "guard": "仅影响第一反应的组织方式，不得据此虚构事实或用户经历。"
+        },
+        "evidence": {
+          "support_participants": 59,
+          "question_participants": 148,
+          "coefficient": -0.26626952,
+          "selection_frequency": 0.908,
+          "sign_consistency": 0.99889868,
+          "bootstrap_ci_low": -0.65939544,
+          "bootstrap_ci_high": 0.0,
+          "heldout_delta_log_loss": -0.00898362,
+          "heldout_improved_folds": 3,
+          "heldout_fold_count": 5,
+          "heldout_sign_agreement": 1.0,
+          "permutation_p": 0.03096903,
+          "fdr_q": 0.98701299
+        }
+      },
+      {
+        "rule_id": "KQ1S_fc9f45617c",
+        "rule_status": "stable_exploratory",
+        "trigger": {
+          "profile": {
+            "trait_index": 24,
+            "trait_id": "T25",
+            "v30_item_id": "V25",
+            "trait_name": "数据隐私交换",
+            "operator": "score_gte",
+            "threshold": 4,
+            "stance": "体验换隐私"
+          },
+          "position_policy": "initial_operation_only"
+        },
+        "action": {
+          "initial_state": "CtoC",
+          "routing": "prefer",
+          "semantic_operation": "对已有方案进行细化、调整、组合或替换",
+          "guard": "仅影响第一反应的组织方式，不得据此虚构事实或用户经历。"
+        },
+        "evidence": {
+          "support_participants": 66,
+          "question_participants": 148,
+          "coefficient": 0.21766587,
+          "selection_frequency": 0.861,
+          "sign_consistency": 0.99535424,
+          "bootstrap_ci_low": 0.0,
+          "bootstrap_ci_high": 0.65657964,
+          "heldout_delta_log_loss": -0.00402051,
+          "heldout_improved_folds": 3,
+          "heldout_fold_count": 5,
+          "heldout_sign_agreement": 1.0,
+          "permutation_p": 0.10889111,
+          "fdr_q": 0.98701299
+        }
+      },
+      {
+        "rule_id": "KQ1S_47bfa4a654",
+        "rule_status": "stable_exploratory",
+        "trigger": {
+          "profile": {
+            "trait_index": 23,
+            "trait_id": "T24",
+            "v30_item_id": "V24",
+            "trait_name": "商业操纵伦理",
+            "operator": "score_lte",
+            "threshold": 3,
+            "stance": "用户伦理底线"
+          },
+          "position_policy": "initial_operation_only"
+        },
+        "action": {
+          "initial_state": "CtoK",
+          "routing": "prefer",
+          "semantic_operation": "检验已有方案所依赖的证据、用户影响和可行性",
+          "guard": "仅影响第一反应的组织方式，不得据此虚构事实或用户经历。"
+        },
+        "evidence": {
+          "support_participants": 23,
+          "question_participants": 148,
+          "coefficient": -0.29517807,
+          "selection_frequency": 0.861,
+          "sign_consistency": 1.0,
+          "bootstrap_ci_low": -0.74085426,
+          "bootstrap_ci_high": 0.0,
+          "heldout_delta_log_loss": -0.00398798,
+          "heldout_improved_folds": 3,
+          "heldout_fold_count": 5,
+          "heldout_sign_agreement": 1.0,
+          "permutation_p": 0.02997003,
+          "fdr_q": 0.98701299
+        }
+      },
+      {
+        "rule_id": "KQ1S_552d7ca701",
+        "rule_status": "stable_exploratory",
+        "trigger": {
+          "profile": {
+            "trait_index": 18,
+            "trait_id": "T19",
+            "v30_item_id": "V19",
+            "trait_name": "创作者署名",
+            "operator": "score_gte",
+            "threshold": 4,
+            "stance": "作者性优先"
+          },
+          "position_policy": "initial_operation_only"
+        },
+        "action": {
+          "initial_state": "KtoK",
+          "routing": "prefer",
+          "semantic_operation": "在已有知识之间推导后果、限制或冲突关系",
+          "guard": "仅影响第一反应的组织方式，不得据此虚构事实或用户经历。"
+        },
+        "evidence": {
+          "support_participants": 59,
+          "question_participants": 148,
+          "coefficient": 0.23586125,
+          "selection_frequency": 0.851,
+          "sign_consistency": 0.99764982,
+          "bootstrap_ci_low": 0.0,
+          "bootstrap_ci_high": 0.71443278,
+          "heldout_delta_log_loss": -0.00109848,
+          "heldout_improved_folds": 3,
+          "heldout_fold_count": 5,
+          "heldout_sign_agreement": 1.0,
+          "permutation_p": 0.14585415,
+          "fdr_q": 0.98701299
+        }
+      },
+      {
+        "rule_id": "KQ1S_8635f4cb31",
+        "rule_status": "stable_exploratory",
+        "trigger": {
+          "profile": {
+            "trait_index": 11,
+            "trait_id": "T12",
+            "v30_item_id": "V12",
+            "trait_name": "情感附加值",
+            "operator": "score_gte",
+            "threshold": 4,
+            "stance": "仪式感优先"
+          },
+          "position_policy": "initial_operation_only"
+        },
+        "action": {
+          "initial_state": "KtoK",
+          "routing": "prefer",
+          "semantic_operation": "在已有知识之间推导后果、限制或冲突关系",
+          "guard": "仅影响第一反应的组织方式，不得据此虚构事实或用户经历。"
+        },
+        "evidence": {
+          "support_participants": 59,
+          "question_participants": 148,
+          "coefficient": 0.25609208,
+          "selection_frequency": 0.9,
+          "sign_consistency": 0.99888889,
+          "bootstrap_ci_low": 0.0,
+          "bootstrap_ci_high": 0.70913991,
+          "heldout_delta_log_loss": -0.00033146,
+          "heldout_improved_folds": 3,
+          "heldout_fold_count": 5,
+          "heldout_sign_agreement": 1.0,
+          "permutation_p": 0.13886114,
+          "fdr_q": 0.98701299
+        }
+      }
+    ],
+    "double_dimension_interaction": [
+      {
+        "rule_id": "KQ1R_538cbd49b4",
+        "rule_status": "stable_exploratory",
+        "trigger": {
+          "profile_relation": {
+            "relation_id": "VRP_81db174d1f",
+            "relation_type": "balanced",
+            "left_trait": {
+              "trait_index": 7,
+              "trait_id": "T08",
+              "trait_name": "系统微模块",
+              "positive_label": "解耦优先",
+              "negative_label": "整体感优先"
+            },
+            "right_trait": {
+              "trait_index": 22,
+              "trait_id": "T23",
+              "trait_name": "团队依恋",
+              "positive_label": "独立打磨派",
+              "negative_label": "团队共创派"
+            },
+            "natural_language": "系统微模块与团队依恋两个维度得分接近平衡"
+          },
+          "position_policy": "initial_operation_only"
+        },
+        "action": {
+          "initial_state": "CtoC",
+          "routing": "prefer",
+          "semantic_operation": "对已有方案进行细化、调整、组合或替换",
+          "guard": "仅影响第一反应的组织方式，不得据此虚构事实或用户经历。"
+        },
+        "evidence": {
+          "relation_support_in_source": 96,
+          "target_support_participants": 66,
+          "residual_effect": 0.2429068,
+          "bootstrap_ci_low": 0.09851361,
+          "bootstrap_ci_high": 0.40102704,
+          "bootstrap_sign_consistency": 0.996,
+          "permutation_p": 0.002997,
+          "fdr_q": 0.575424,
+          "heldout_delta_log_loss": -0.0295059,
+          "heldout_improved_folds": 5,
+          "heldout_fold_count": 5,
+          "heldout_sign_agreement": 1.0
+        },
+        "internal_relation_evidence": {
+          "edge_id": "VREL_T08_T23",
+          "left_trait_index": 7,
+          "left_trait_id": "T08",
+          "left_trait_name": "系统微模块",
+          "right_trait_index": 22,
+          "right_trait_id": "T23",
+          "right_trait_name": "团队依恋",
+          "spearman_r": 0.30558603,
+          "bootstrap_ci_low": 0.14614117,
+          "bootstrap_ci_high": 0.44964474,
+          "bootstrap_sign_consistency": 1.0,
+          "bootstrap_samples": 1000
+        }
+      },
+      {
+        "rule_id": "KQ1R_2b0aa2dbc2",
+        "rule_status": "stable_exploratory",
+        "trigger": {
+          "profile_relation": {
+            "relation_id": "VRP_3fc6fd9bf4",
+            "relation_type": "synergy_low",
+            "left_trait": {
+              "trait_index": 7,
+              "trait_id": "T08",
+              "trait_name": "系统微模块",
+              "positive_label": "解耦优先",
+              "negative_label": "整体感优先"
+            },
+            "right_trait": {
+              "trait_index": 22,
+              "trait_id": "T23",
+              "trait_name": "团队依恋",
+              "positive_label": "独立打磨派",
+              "negative_label": "团队共创派"
+            },
+            "natural_language": "同时呈现“整体感优先”与“团队共创派”倾向"
+          },
+          "position_policy": "initial_operation_only"
+        },
+        "action": {
+          "initial_state": "CtoC",
+          "routing": "prefer",
+          "semantic_operation": "对已有方案进行细化、调整、组合或替换",
+          "guard": "仅影响第一反应的组织方式，不得据此虚构事实或用户经历。"
+        },
+        "evidence": {
+          "relation_support_in_source": 66,
+          "target_support_participants": 66,
+          "residual_effect": 0.13078061,
+          "bootstrap_ci_low": -0.03117312,
+          "bootstrap_ci_high": 0.28010812,
+          "bootstrap_sign_consistency": 0.941,
+          "permutation_p": 0.11788212,
+          "fdr_q": 0.99720175,
+          "heldout_delta_log_loss": -0.01451623,
+          "heldout_improved_folds": 3,
+          "heldout_fold_count": 5,
+          "heldout_sign_agreement": 1.0
+        },
+        "internal_relation_evidence": {
+          "edge_id": "VREL_T08_T23",
+          "left_trait_index": 7,
+          "left_trait_id": "T08",
+          "left_trait_name": "系统微模块",
+          "right_trait_index": 22,
+          "right_trait_id": "T23",
+          "right_trait_name": "团队依恋",
+          "spearman_r": 0.30558603,
+          "bootstrap_ci_low": 0.14614117,
+          "bootstrap_ci_high": 0.44964474,
+          "bootstrap_sign_consistency": 1.0,
+          "bootstrap_samples": 1000
+        }
+      },
+      {
+        "rule_id": "KQ1R_8efe3a74bf",
+        "rule_status": "stable_exploratory",
+        "trigger": {
+          "profile_relation": {
+            "relation_id": "VRP_1becb778b1",
+            "relation_type": "synergy_high",
+            "left_trait": {
+              "trait_index": 5,
+              "trait_id": "T06",
+              "trait_name": "混沌与灵感",
+              "positive_label": "包容失控派",
+              "negative_label": "验证至上派"
+            },
+            "right_trait": {
+              "trait_index": 9,
+              "trait_id": "T10",
+              "trait_name": "创新代价",
+              "positive_label": "创新激进派",
+              "negative_label": "惯例守护派"
+            },
+            "natural_language": "同时呈现“包容失控派”与“创新激进派”倾向"
+          },
+          "position_policy": "initial_operation_only"
+        },
+        "action": {
+          "initial_state": "KtoK",
+          "routing": "prefer",
+          "semantic_operation": "在已有知识之间推导后果、限制或冲突关系",
+          "guard": "仅影响第一反应的组织方式，不得据此虚构事实或用户经历。"
+        },
+        "evidence": {
+          "relation_support_in_source": 108,
+          "target_support_participants": 59,
+          "residual_effect": 0.15738301,
+          "bootstrap_ci_low": -0.03009867,
+          "bootstrap_ci_high": 0.32504834,
+          "bootstrap_sign_consistency": 0.949,
+          "permutation_p": 0.1028971,
+          "fdr_q": 0.99720175,
+          "heldout_delta_log_loss": -0.01272576,
+          "heldout_improved_folds": 4,
+          "heldout_fold_count": 5,
+          "heldout_sign_agreement": 1.0
+        },
+        "internal_relation_evidence": {
+          "edge_id": "VREL_T06_T10",
+          "left_trait_index": 5,
+          "left_trait_id": "T06",
+          "left_trait_name": "混沌与灵感",
+          "right_trait_index": 9,
+          "right_trait_id": "T10",
+          "right_trait_name": "创新代价",
+          "spearman_r": 0.3072229,
+          "bootstrap_ci_low": 0.15763262,
+          "bootstrap_ci_high": 0.46248931,
+          "bootstrap_sign_consistency": 1.0,
+          "bootstrap_samples": 1000
+        }
+      },
+      {
+        "rule_id": "KQ1R_5a9710927d",
+        "rule_status": "stable_exploratory",
+        "trigger": {
+          "profile_relation": {
+            "relation_id": "VRP_f0eb22a49f",
+            "relation_type": "balanced",
+            "left_trait": {
+              "trait_index": 3,
+              "trait_id": "T04",
+              "trait_name": "技术支持",
+              "positive_label": "技术激进主义",
+              "negative_label": "技术审慎主义"
+            },
+            "right_trait": {
+              "trait_index": 13,
+              "trait_id": "T14",
+              "trait_name": "时代 vs 永恒",
+              "positive_label": "时代潮流派",
+              "negative_label": "永恒经典派"
+            },
+            "natural_language": "技术支持与时代 vs 永恒两个维度得分接近平衡"
+          },
+          "position_policy": "initial_operation_only"
+        },
+        "action": {
+          "initial_state": "KtoK",
+          "routing": "prefer",
+          "semantic_operation": "在已有知识之间推导后果、限制或冲突关系",
+          "guard": "仅影响第一反应的组织方式，不得据此虚构事实或用户经历。"
+        },
+        "evidence": {
+          "relation_support_in_source": 97,
+          "target_support_participants": 59,
+          "residual_effect": 0.19366985,
+          "bootstrap_ci_low": 0.03355581,
+          "bootstrap_ci_high": 0.35977747,
+          "bootstrap_sign_consistency": 0.988,
+          "permutation_p": 0.02697303,
+          "fdr_q": 0.99720175,
+          "heldout_delta_log_loss": -0.01237204,
+          "heldout_improved_folds": 4,
+          "heldout_fold_count": 5,
+          "heldout_sign_agreement": 1.0
+        },
+        "internal_relation_evidence": {
+          "edge_id": "VREL_T04_T14",
+          "left_trait_index": 3,
+          "left_trait_id": "T04",
+          "left_trait_name": "技术支持",
+          "right_trait_index": 13,
+          "right_trait_id": "T14",
+          "right_trait_name": "时代 vs 永恒",
+          "spearman_r": 0.29880198,
+          "bootstrap_ci_low": 0.14484289,
+          "bootstrap_ci_high": 0.43679544,
+          "bootstrap_sign_consistency": 1.0,
+          "bootstrap_samples": 1000
+        }
+      },
+      {
+        "rule_id": "KQ1R_014dbc4840",
+        "rule_status": "stable_exploratory",
+        "trigger": {
+          "profile_relation": {
+            "relation_id": "VRP_9825ed0fe0",
+            "relation_type": "left_dominant",
+            "left_trait": {
+              "trait_index": 20,
+              "trait_id": "T21",
+              "trait_name": "封闭生态竞争",
+              "positive_label": "封闭生态派",
+              "negative_label": "开放兼容派"
+            },
+            "right_trait": {
+              "trait_index": 21,
+              "trait_id": "T22",
+              "trait_name": "风险规避",
+              "positive_label": "风险规避",
+              "negative_label": "风险偏好"
+            },
+            "natural_language": "封闭生态竞争维度相对风险规避维度至少高2分"
+          },
+          "position_policy": "initial_operation_only"
+        },
+        "action": {
+          "initial_state": "CtoK",
+          "routing": "prefer",
+          "semantic_operation": "检验已有方案所依赖的证据、用户影响和可行性",
+          "guard": "仅影响第一反应的组织方式，不得据此虚构事实或用户经历。"
+        },
+        "evidence": {
+          "relation_support_in_source": 24,
+          "target_support_participants": 23,
+          "residual_effect": 0.13752268,
+          "bootstrap_ci_low": -0.04380118,
+          "bootstrap_ci_high": 0.31660756,
+          "bootstrap_sign_consistency": 0.919,
+          "permutation_p": 0.09390609,
+          "fdr_q": 0.99720175,
+          "heldout_delta_log_loss": -0.01052129,
+          "heldout_improved_folds": 5,
+          "heldout_fold_count": 5,
+          "heldout_sign_agreement": 1.0
+        },
+        "internal_relation_evidence": {
+          "edge_id": "VREL_T21_T22",
+          "left_trait_index": 20,
+          "left_trait_id": "T21",
+          "left_trait_name": "封闭生态竞争",
+          "right_trait_index": 21,
+          "right_trait_id": "T22",
+          "right_trait_name": "风险规避",
+          "spearman_r": 0.29857852,
+          "bootstrap_ci_low": 0.13430208,
+          "bootstrap_ci_high": 0.44777012,
+          "bootstrap_sign_consistency": 1.0,
+          "bootstrap_samples": 1000
+        }
+      },
+      {
+        "rule_id": "KQ1R_0e517e9b2c",
+        "rule_status": "stable_exploratory",
+        "trigger": {
+          "profile_relation": {
+            "relation_id": "VRP_2d2e1f8ed8",
+            "relation_type": "synergy_low",
+            "left_trait": {
+              "trait_index": 20,
+              "trait_id": "T21",
+              "trait_name": "封闭生态竞争",
+              "positive_label": "封闭生态派",
+              "negative_label": "开放兼容派"
+            },
+            "right_trait": {
+              "trait_index": 21,
+              "trait_id": "T22",
+              "trait_name": "风险规避",
+              "positive_label": "风险规避",
+              "negative_label": "风险偏好"
+            },
+            "natural_language": "同时呈现“开放兼容派”与“风险偏好”倾向"
+          },
+          "position_policy": "initial_operation_only"
+        },
+        "action": {
+          "initial_state": "KtoK",
+          "routing": "prefer",
+          "semantic_operation": "在已有知识之间推导后果、限制或冲突关系",
+          "guard": "仅影响第一反应的组织方式，不得据此虚构事实或用户经历。"
+        },
+        "evidence": {
+          "relation_support_in_source": 49,
+          "target_support_participants": 59,
+          "residual_effect": 0.1087493,
+          "bootstrap_ci_low": -0.05684252,
+          "bootstrap_ci_high": 0.27671778,
+          "bootstrap_sign_consistency": 0.903,
+          "permutation_p": 0.21578422,
+          "fdr_q": 0.99720175,
+          "heldout_delta_log_loss": -0.00959707,
+          "heldout_improved_folds": 3,
+          "heldout_fold_count": 5,
+          "heldout_sign_agreement": 1.0
+        },
+        "internal_relation_evidence": {
+          "edge_id": "VREL_T21_T22",
+          "left_trait_index": 20,
+          "left_trait_id": "T21",
+          "left_trait_name": "封闭生态竞争",
+          "right_trait_index": 21,
+          "right_trait_id": "T22",
+          "right_trait_name": "风险规避",
+          "spearman_r": 0.29857852,
+          "bootstrap_ci_low": 0.13430208,
+          "bootstrap_ci_high": 0.44777012,
+          "bootstrap_sign_consistency": 1.0,
+          "bootstrap_samples": 1000
+        }
+      },
+      {
+        "rule_id": "KQ1R_0d6f1b9da7",
+        "rule_status": "stable_exploratory",
+        "trigger": {
+          "profile_relation": {
+            "relation_id": "VRP_d3ae4d24cc",
+            "relation_type": "tension_left_high",
+            "left_trait": {
+              "trait_index": 20,
+              "trait_id": "T21",
+              "trait_name": "封闭生态竞争",
+              "positive_label": "封闭生态派",
+              "negative_label": "开放兼容派"
+            },
+            "right_trait": {
+              "trait_index": 21,
+              "trait_id": "T22",
+              "trait_name": "风险规避",
+              "positive_label": "风险规避",
+              "negative_label": "风险偏好"
+            },
+            "natural_language": "“封闭生态派”与“风险偏好”形成配置张力"
+          },
+          "position_policy": "initial_operation_only"
+        },
+        "action": {
+          "initial_state": "CtoK",
+          "routing": "prefer",
+          "semantic_operation": "检验已有方案所依赖的证据、用户影响和可行性",
+          "guard": "仅影响第一反应的组织方式，不得据此虚构事实或用户经历。"
+        },
+        "evidence": {
+          "relation_support_in_source": 35,
+          "target_support_participants": 23,
+          "residual_effect": 0.11933433,
+          "bootstrap_ci_low": -0.03014582,
+          "bootstrap_ci_high": 0.2711797,
+          "bootstrap_sign_consistency": 0.943,
+          "permutation_p": 0.0979021,
+          "fdr_q": 0.99720175,
+          "heldout_delta_log_loss": -0.00954241,
+          "heldout_improved_folds": 4,
+          "heldout_fold_count": 5,
+          "heldout_sign_agreement": 1.0
+        },
+        "internal_relation_evidence": {
+          "edge_id": "VREL_T21_T22",
+          "left_trait_index": 20,
+          "left_trait_id": "T21",
+          "left_trait_name": "封闭生态竞争",
+          "right_trait_index": 21,
+          "right_trait_id": "T22",
+          "right_trait_name": "风险规避",
+          "spearman_r": 0.29857852,
+          "bootstrap_ci_low": 0.13430208,
+          "bootstrap_ci_high": 0.44777012,
+          "bootstrap_sign_consistency": 1.0,
+          "bootstrap_samples": 1000
+        }
+      },
+      {
+        "rule_id": "KQ1R_656c5d9f32",
+        "rule_status": "stable_exploratory",
+        "trigger": {
+          "profile_relation": {
+            "relation_id": "VRP_dc254e2e87",
+            "relation_type": "tension_left_high",
+            "left_trait": {
+              "trait_index": 8,
+              "trait_id": "T09",
+              "trait_name": "完美主义/MVP",
+              "positive_label": "完美主义",
+              "negative_label": "速度优先"
+            },
+            "right_trait": {
+              "trait_index": 15,
+              "trait_id": "T16",
+              "trait_name": "仿生与有机",
+              "positive_label": "有机自然派",
+              "negative_label": "几何工业派"
+            },
+            "natural_language": "“完美主义”与“几何工业派”形成配置张力"
+          },
+          "position_policy": "initial_operation_only"
+        },
+        "action": {
+          "initial_state": "KtoK",
+          "routing": "prefer",
+          "semantic_operation": "在已有知识之间推导后果、限制或冲突关系",
+          "guard": "仅影响第一反应的组织方式，不得据此虚构事实或用户经历。"
+        },
+        "evidence": {
+          "relation_support_in_source": 25,
+          "target_support_participants": 59,
+          "residual_effect": 0.16118011,
+          "bootstrap_ci_low": -0.05242739,
+          "bootstrap_ci_high": 0.38710897,
+          "bootstrap_sign_consistency": 0.918,
+          "permutation_p": 0.14185814,
+          "fdr_q": 0.99720175,
+          "heldout_delta_log_loss": -0.00782206,
+          "heldout_improved_folds": 3,
+          "heldout_fold_count": 5,
+          "heldout_sign_agreement": 1.0
+        },
+        "internal_relation_evidence": {
+          "edge_id": "VREL_T09_T16",
+          "left_trait_index": 8,
+          "left_trait_id": "T09",
+          "left_trait_name": "完美主义/MVP",
+          "right_trait_index": 15,
+          "right_trait_id": "T16",
+          "right_trait_name": "仿生与有机",
+          "spearman_r": 0.30603467,
+          "bootstrap_ci_low": 0.14298004,
+          "bootstrap_ci_high": 0.4566669,
+          "bootstrap_sign_consistency": 1.0,
+          "bootstrap_samples": 1000
+        }
+      },
+      {
+        "rule_id": "KQ1R_8d0f6b558e",
+        "rule_status": "stable_exploratory",
+        "trigger": {
+          "profile_relation": {
+            "relation_id": "VRP_1eda1a703b",
+            "relation_type": "balanced",
+            "left_trait": {
+              "trait_index": 20,
+              "trait_id": "T21",
+              "trait_name": "封闭生态竞争",
+              "positive_label": "封闭生态派",
+              "negative_label": "开放兼容派"
+            },
+            "right_trait": {
+              "trait_index": 21,
+              "trait_id": "T22",
+              "trait_name": "风险规避",
+              "positive_label": "风险规避",
+              "negative_label": "风险偏好"
+            },
+            "natural_language": "封闭生态竞争与风险规避两个维度得分接近平衡"
+          },
+          "position_policy": "initial_operation_only"
+        },
+        "action": {
+          "initial_state": "KtoK",
+          "routing": "prefer",
+          "semantic_operation": "在已有知识之间推导后果、限制或冲突关系",
+          "guard": "仅影响第一反应的组织方式，不得据此虚构事实或用户经历。"
+        },
+        "evidence": {
+          "relation_support_in_source": 110,
+          "target_support_participants": 59,
+          "residual_effect": 0.14479247,
+          "bootstrap_ci_low": -0.03851192,
+          "bootstrap_ci_high": 0.32159455,
+          "bootstrap_sign_consistency": 0.945,
+          "permutation_p": 0.12387612,
+          "fdr_q": 0.99720175,
+          "heldout_delta_log_loss": -0.00431194,
+          "heldout_improved_folds": 3,
+          "heldout_fold_count": 5,
+          "heldout_sign_agreement": 1.0
+        },
+        "internal_relation_evidence": {
+          "edge_id": "VREL_T21_T22",
+          "left_trait_index": 20,
+          "left_trait_id": "T21",
+          "left_trait_name": "封闭生态竞争",
+          "right_trait_index": 21,
+          "right_trait_id": "T22",
+          "right_trait_name": "风险规避",
+          "spearman_r": 0.29857852,
+          "bootstrap_ci_low": 0.13430208,
+          "bootstrap_ci_high": 0.44777012,
+          "bootstrap_sign_consistency": 1.0,
+          "bootstrap_samples": 1000
+        }
+      },
+      {
+        "rule_id": "KQ1R_018f3e8348",
+        "rule_status": "stable_exploratory",
+        "trigger": {
+          "profile_relation": {
+            "relation_id": "VRP_552f60e9c6",
+            "relation_type": "balanced",
+            "left_trait": {
+              "trait_index": 7,
+              "trait_id": "T08",
+              "trait_name": "系统微模块",
+              "positive_label": "解耦优先",
+              "negative_label": "整体感优先"
+            },
+            "right_trait": {
+              "trait_index": 19,
+              "trait_id": "T20",
+              "trait_name": "资产开源",
+              "positive_label": "开源道德派",
+              "negative_label": "竞争壁垒派"
+            },
+            "natural_language": "系统微模块与资产开源两个维度得分接近平衡"
+          },
+          "position_policy": "initial_operation_only"
+        },
+        "action": {
+          "initial_state": "KtoK",
+          "routing": "prefer",
+          "semantic_operation": "在已有知识之间推导后果、限制或冲突关系",
+          "guard": "仅影响第一反应的组织方式，不得据此虚构事实或用户经历。"
+        },
+        "evidence": {
+          "relation_support_in_source": 100,
+          "target_support_participants": 59,
+          "residual_effect": 0.11960727,
+          "bootstrap_ci_low": -0.05912711,
+          "bootstrap_ci_high": 0.29504496,
+          "bootstrap_sign_consistency": 0.916,
+          "permutation_p": 0.19080919,
+          "fdr_q": 0.99720175,
+          "heldout_delta_log_loss": -0.0039869,
+          "heldout_improved_folds": 3,
+          "heldout_fold_count": 5,
+          "heldout_sign_agreement": 1.0
+        },
+        "internal_relation_evidence": {
+          "edge_id": "VREL_T08_T20",
+          "left_trait_index": 7,
+          "left_trait_id": "T08",
+          "left_trait_name": "系统微模块",
+          "right_trait_index": 19,
+          "right_trait_id": "T20",
+          "right_trait_name": "资产开源",
+          "spearman_r": 0.30523286,
+          "bootstrap_ci_low": 0.14878375,
+          "bootstrap_ci_high": 0.45402495,
+          "bootstrap_sign_consistency": 1.0,
+          "bootstrap_samples": 1000
+        }
+      },
+      {
+        "rule_id": "KQ1R_d896cce5bf",
+        "rule_status": "stable_exploratory",
+        "trigger": {
+          "profile_relation": {
+            "relation_id": "VRP_2fa5062852",
+            "relation_type": "balanced",
+            "left_trait": {
+              "trait_index": 5,
+              "trait_id": "T06",
+              "trait_name": "混沌与灵感",
+              "positive_label": "包容失控派",
+              "negative_label": "验证至上派"
+            },
+            "right_trait": {
+              "trait_index": 9,
+              "trait_id": "T10",
+              "trait_name": "创新代价",
+              "positive_label": "创新激进派",
+              "negative_label": "惯例守护派"
+            },
+            "natural_language": "混沌与灵感与创新代价两个维度得分接近平衡"
+          },
+          "position_policy": "initial_operation_only"
+        },
+        "action": {
+          "initial_state": "KtoK",
+          "routing": "prefer",
+          "semantic_operation": "在已有知识之间推导后果、限制或冲突关系",
+          "guard": "仅影响第一反应的组织方式，不得据此虚构事实或用户经历。"
+        },
+        "evidence": {
+          "relation_support_in_source": 120,
+          "target_support_participants": 59,
+          "residual_effect": 0.13533931,
+          "bootstrap_ci_low": -0.05421613,
+          "bootstrap_ci_high": 0.31873551,
+          "bootstrap_sign_consistency": 0.911,
+          "permutation_p": 0.19480519,
+          "fdr_q": 0.99720175,
+          "heldout_delta_log_loss": -0.0037698,
+          "heldout_improved_folds": 3,
+          "heldout_fold_count": 5,
+          "heldout_sign_agreement": 1.0
+        },
+        "internal_relation_evidence": {
+          "edge_id": "VREL_T06_T10",
+          "left_trait_index": 5,
+          "left_trait_id": "T06",
+          "left_trait_name": "混沌与灵感",
+          "right_trait_index": 9,
+          "right_trait_id": "T10",
+          "right_trait_name": "创新代价",
+          "spearman_r": 0.3072229,
+          "bootstrap_ci_low": 0.15763262,
+          "bootstrap_ci_high": 0.46248931,
+          "bootstrap_sign_consistency": 1.0,
+          "bootstrap_samples": 1000
+        }
+      },
+      {
+        "rule_id": "KQ1R_2ca7731436",
+        "rule_status": "stable_exploratory",
+        "trigger": {
+          "profile_relation": {
+            "relation_id": "VRP_37d3cd2e62",
+            "relation_type": "left_dominant",
+            "left_trait": {
+              "trait_index": 0,
+              "trait_id": "T01",
+              "trait_name": "数据 vs 直觉",
+              "positive_label": "重直觉立场",
+              "negative_label": "重数据立场"
+            },
+            "right_trait": {
+              "trait_index": 22,
+              "trait_id": "T23",
+              "trait_name": "团队依恋",
+              "positive_label": "独立打磨派",
+              "negative_label": "团队共创派"
+            },
+            "natural_language": "数据 vs 直觉维度相对团队依恋维度至少高2分"
+          },
+          "position_policy": "initial_operation_only"
+        },
+        "action": {
+          "initial_state": "CtoK",
+          "routing": "prefer",
+          "semantic_operation": "检验已有方案所依赖的证据、用户影响和可行性",
+          "guard": "仅影响第一反应的组织方式，不得据此虚构事实或用户经历。"
+        },
+        "evidence": {
+          "relation_support_in_source": 25,
+          "target_support_participants": 23,
+          "residual_effect": 0.1191296,
+          "bootstrap_ci_low": -0.05657221,
+          "bootstrap_ci_high": 0.28969602,
+          "bootstrap_sign_consistency": 0.912,
+          "permutation_p": 0.12087912,
+          "fdr_q": 0.99720175,
+          "heldout_delta_log_loss": -0.00132619,
+          "heldout_improved_folds": 3,
+          "heldout_fold_count": 5,
+          "heldout_sign_agreement": 1.0
+        },
+        "internal_relation_evidence": {
+          "edge_id": "VREL_T01_T23",
+          "left_trait_index": 0,
+          "left_trait_id": "T01",
+          "left_trait_name": "数据 vs 直觉",
+          "right_trait_index": 22,
+          "right_trait_id": "T23",
+          "right_trait_name": "团队依恋",
+          "spearman_r": 0.34261075,
+          "bootstrap_ci_low": 0.17907793,
+          "bootstrap_ci_high": 0.47413392,
+          "bootstrap_sign_consistency": 1.0,
+          "bootstrap_samples": 1000
+        }
+      }
+    ]
+  }
+}

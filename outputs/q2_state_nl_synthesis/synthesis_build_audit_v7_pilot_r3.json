@@ -1,0 +1,15 @@
+{
+  "schema_version": "synthesis_build_audit_v7",
+  "job_count": 3,
+  "tier_counts": {
+    "A": 2,
+    "B": 1
+  },
+  "prompt_sha256": "0eee3e470919566e69f4ffcc4b88159470685f978309f080b406dc35ceb0fd47",
+  "q7_gold_used": false,
+  "pi_used": false,
+  "raw_user_ids_written": false,
+  "score_vectors_written": false,
+  "q7_rows_read": false,
+  "persona_result_contract": "only validated V7 persona results included"
+}
